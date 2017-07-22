@@ -1,0 +1,30 @@
+<netuixml>
+	<style id="s">
+		<node id="root" class="default">
+			<Node.StyleTree>
+				<element layoutChildren="horizontal" background="msocbvcrCBCtlBkgdMouseDown" Children="*Bind(Property=Children)"/>
+			</Node.StyleTree>
+		</node>
+
+		<node id="list">
+			<Node.StyleTree>
+				<scrollviewer>
+					<!-- Error: Not allowed to specify BindType, UpdateType, or Source on Children binding. -->
+					<element layoutChildren="vertical" Children="*Bind(Property=Children;BindType=TwoWay;UpdateType=Immediate;Source=StyledParent)"/>
+				</scrollviewer>
+			</Node.StyleTree>
+		</node>
+
+		<node id="listitem">
+			<Node.StyleTree>
+				<label text="An item"/>
+			</Node.StyleTree>
+		</node>
+	</style>
+
+	<node sheet="#s" id="root" class="default">
+		<node id="list">
+			<node id="listitem"/>
+		</node>
+	</node>
+</netuixml>

@@ -1,0 +1,48 @@
+<xml>
+
+<defs>
+	<color id="softBlue"> #D6DFF7 </color>
+	<color id="textNormal"> #215DC6 </color>
+	<color id="deepBlue"> #6579D7 </color>
+	<color id="dropTargetBG"> #00FF00 </color>
+</defs>
+
+<style id="errorWinStyle" src="##default">
+	<button background="#softBlue" foreground="#textNormal" bordercolor="#softBlue"/>
+	<label foreground="#textNormal" fontWeight="bold" isDropTarget="true"/>
+	<viewer height="30" width="30" background="white"/>
+	<label condition="isCurrentDropTarget" background="#dropTargetBG"/>
+</style>
+
+<element sheet="#errorWinStyle" layoutChildren="vertical" background="#deepBlue" alignChildren="center" padding="10,10,10,10" expandToFillHoriz="true" expandToFillVert="true" childrenMargin="10">
+	<scrollviewer expandToFillHoriz="true" expandToFillVert="true" background="#softBlue" xisDraggable="true" borderThickness="5,5,5,5">
+		<element layoutChildren="vertical" childrenMargin="0">
+			<label id="template" text="random: _fBit.bDefaultForeground = true;"/>
+			<label id="template" text="random: _fBit.bDefaultFontWeight = true;"/>
+			<label id="template" text="random: _fBit.bDefaultFontStyle = true;"/>
+			<label id="template" text="This item is not draggable"/>
+			<label id="template" text="This item is draggable." isDraggable="true" active="mouse"/>
+			<label id="template" text="random item"/>
+			<label id="template" text="random: _fBit.bNeedsDSUpdate = false;"/>
+			<label id="template" text="random: _fBit.fNeedsLayout = LC_Pass;"/>
+			<label id="template" text="random: _fBit.bHasChildren = false;"/>
+			<label id="template" text="random: _fBit.bHasLayout = false;"/>
+			<label id="template" text="random: _fBit.bHasBorder = false;"/>
+			<label id="template" text="random: _fBit.bHasPadding = false;"/>
+			<label id="template" text="random: _fBit.bHasMargin = false;"/>
+			<label id="template" text="random: _fBit.bHasContent = false;"/>
+			<label id="template" text="random: _fBit.bDefaultCAlign = true;"/>
+			<label id="template" text="random: _fBit.bWordWrap = false;"/>
+			<label id="template" text="random: _fBit.bHasAnimation = false;"/>
+			<label id="template" text="random: _fBit.bDefaultCursor = true;"/>
+			<label id="template" text="random: _fBit.bDefaultBorderColor = true;"/>
+			<label id="template" text="random: _fBit.bDefaultForeground = true;"/>
+			<label id="template" text="random: _fBit.bDefaultFontWeight = true;"/>
+			<label id="template" text="random: _fBit.bDefaultFontStyle = true;"/>
+		</element>
+	</scrollviewer>
+	<button id="OK" isDefaultButton="true" isCancelButton="true" text="OK"/>
+</element>
+
+
+</xml>

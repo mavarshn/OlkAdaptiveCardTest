@@ -1,0 +1,1 @@
+#warning( disable : hardcodedColor )

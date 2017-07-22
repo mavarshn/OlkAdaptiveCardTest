@@ -1,0 +1,138 @@
+<FlexML>
+	<Style ID="S" Src="#DialogView">
+		<DialogView>
+			<Node.StyleTree>
+				<Element Class="MenuContainer" LayoutChildren="Vertical" ExpandToFillHoriz="true">
+					<!-- Use MenuView style for the PanViewer so it has nice looking up/down buttons -->
+					<PanViewer Sheet="#MenuView" ExpandToFillHoriz="true" ExpandToFillVert="true" PanDirection="vertical" FirstMouseOverDelay="100" MouseOverDelay="50">
+						<Element Sheet="#DialogView" Children="*Bind(Property=Children)" LayoutChildren="Vertical" ChildrenMargin="0"/>
+					</PanViewer>
+				</Element>
+			</Node.StyleTree>
+		</DialogView>
+	</Style>
+
+<DialogView Sheet="#S">
+	<ExecuteAction IsVisible="true" Label="1"/>
+	<ExecuteAction IsVisible="true" Label="2"/>
+	<ExecuteAction IsVisible="true" Label="3"/>
+	<ExecuteAction IsVisible="true" Label="4"/>
+	<ExecuteAction IsVisible="true" Label="5"/>
+	<ExecuteAction IsVisible="true" Label="6"/>
+	<ExecuteAction IsVisible="true" Label="7"/>
+	<ExecuteAction IsVisible="true" Label="8"/>
+	<ExecuteAction IsVisible="true" Label="9"/>
+	<ExecuteAction IsVisible="true" Label="10"/>
+	<ExecuteAction IsVisible="true" Label="11"/>
+	<ExecuteAction IsVisible="true" Label="12"/>
+	<ExecuteAction IsVisible="true" Label="13"/>
+	<ExecuteAction IsVisible="true" Label="14"/>
+	<ExecuteAction IsVisible="true" Label="15"/>
+	<ExecuteAction IsVisible="true" Label="16"/>
+	<ExecuteAction IsVisible="true" Label="17"/>
+	<ExecuteAction IsVisible="true" Label="18"/>
+	<ExecuteAction IsVisible="true" Label="19"/>
+	<ExecuteAction IsVisible="true" Label="20"/>
+	<ExecuteAction IsVisible="true" Label="21"/>
+	<ExecuteAction IsVisible="true" Label="22"/>
+	<ExecuteAction IsVisible="true" Label="23"/>
+	<ExecuteAction IsVisible="true" Label="24"/>
+	<ExecuteAction IsVisible="true" Label="25"/>
+	<ExecuteAction IsVisible="true" Label="26"/>
+	<ExecuteAction IsVisible="true" Label="27"/>
+	<ExecuteAction IsVisible="true" Label="28"/>
+	<ExecuteAction IsVisible="true" Label="29"/>
+	<ExecuteAction IsVisible="true" Label="30"/>
+	<ExecuteAction IsVisible="true" Label="31"/>
+	<ExecuteAction IsVisible="true" Label="32"/>
+	<ExecuteAction IsVisible="true" Label="33"/>
+	<ExecuteAction IsVisible="true" Label="34"/>
+	<ExecuteAction IsVisible="true" Label="35"/>
+	<ExecuteAction IsVisible="true" Label="36"/>
+	<ExecuteAction IsVisible="true" Label="37"/>
+	<ExecuteAction IsVisible="true" Label="38"/>
+	<ExecuteAction IsVisible="true" Label="39"/>
+	<ExecuteAction IsVisible="true" Label="40"/>
+	<ExecuteAction IsVisible="true" Label="41"/>
+	<ExecuteAction IsVisible="true" Label="42"/>
+	<ExecuteAction IsVisible="true" Label="43"/>
+	<ExecuteAction IsVisible="true" Label="44"/>
+	<ExecuteAction IsVisible="true" Label="45"/>
+	<ExecuteAction IsVisible="true" Label="46"/>
+	<ExecuteAction IsVisible="true" Label="47"/>
+	<ExecuteAction IsVisible="true" Label="48"/>
+	<ExecuteAction IsVisible="true" Label="49"/>
+	<ExecuteAction IsVisible="true" Label="50"/>
+	<ExecuteAction IsVisible="true" Label="51"/>
+	<ExecuteAction IsVisible="true" Label="52"/>
+	<ExecuteAction IsVisible="true" Label="53"/>
+	<ExecuteAction IsVisible="true" Label="54"/>
+	<ExecuteAction IsVisible="true" Label="55"/>
+	<ExecuteAction IsVisible="true" Label="56"/>
+	<ExecuteAction IsVisible="true" Label="57"/>
+	<ExecuteAction IsVisible="true" Label="58"/>
+	<ExecuteAction IsVisible="true" Label="59"/>
+	<ExecuteAction IsVisible="true" Label="60"/>
+	<ExecuteAction IsVisible="true" Label="61"/>
+	<ExecuteAction IsVisible="true" Label="62"/>
+	<ExecuteAction IsVisible="true" Label="63"/>
+	<ExecuteAction IsVisible="true" Label="64"/>
+	<ExecuteAction IsVisible="true" Label="65"/>
+	<ExecuteAction IsVisible="true" Label="66"/>
+	<ExecuteAction IsVisible="true" Label="67"/>
+	<ExecuteAction IsVisible="true" Label="68"/>
+	<ExecuteAction IsVisible="true" Label="69"/>
+	<ExecuteAction IsVisible="true" Label="70"/>
+	<ExecuteAction IsVisible="true" Label="71"/>
+	<ExecuteAction IsVisible="true" Label="72"/>
+	<ExecuteAction IsVisible="true" Label="73"/>
+	<ExecuteAction IsVisible="true" Label="74"/>
+	<ExecuteAction IsVisible="true" Label="75"/>
+	<ExecuteAction IsVisible="true" Label="76"/>
+	<ExecuteAction IsVisible="true" Label="77"/>
+	<ExecuteAction IsVisible="true" Label="78"/>
+	<ExecuteAction IsVisible="true" Label="79"/>
+	<ExecuteAction IsVisible="true" Label="80"/>
+	<ExecuteAction IsVisible="true" Label="81"/>
+	<ExecuteAction IsVisible="true" Label="82"/>
+	<ExecuteAction IsVisible="true" Label="83"/>
+	<ExecuteAction IsVisible="true" Label="84"/>
+	<ExecuteAction IsVisible="true" Label="85"/>
+	<ExecuteAction IsVisible="true" Label="86"/>
+	<ExecuteAction IsVisible="true" Label="87"/>
+	<ExecuteAction IsVisible="true" Label="88"/>
+	<ExecuteAction IsVisible="true" Label="89"/>
+	<ExecuteAction IsVisible="true" Label="90"/>
+	<ExecuteAction IsVisible="true" Label="91"/>
+	<ExecuteAction IsVisible="true" Label="92"/>
+	<ExecuteAction IsVisible="true" Label="93"/>
+	<ExecuteAction IsVisible="true" Label="94"/>
+	<ExecuteAction IsVisible="true" Label="95"/>
+	<ExecuteAction IsVisible="true" Label="96"/>
+	<ExecuteAction IsVisible="true" Label="97"/>
+	<ExecuteAction IsVisible="true" Label="98"/>
+	<ExecuteAction IsVisible="true" Label="99"/>
+	<ExecuteAction IsVisible="true" Label="100"/>
+	<ExecuteAction IsVisible="true" Label="101"/>
+	<ExecuteAction IsVisible="true" Label="102"/>
+	<ExecuteAction IsVisible="true" Label="103"/>
+	<ExecuteAction IsVisible="true" Label="104"/>
+	<ExecuteAction IsVisible="true" Label="105"/>
+	<ExecuteAction IsVisible="true" Label="106"/>
+	<ExecuteAction IsVisible="true" Label="107"/>
+	<ExecuteAction IsVisible="true" Label="108"/>
+	<ExecuteAction IsVisible="true" Label="109"/>
+	<ExecuteAction IsVisible="true" Label="110"/>
+	<ExecuteAction IsVisible="true" Label="111"/>
+	<ExecuteAction IsVisible="true" Label="112"/>
+	<ExecuteAction IsVisible="true" Label="113"/>
+	<ExecuteAction IsVisible="true" Label="114"/>
+	<ExecuteAction IsVisible="true" Label="115"/>
+	<ExecuteAction IsVisible="true" Label="116"/>
+	<ExecuteAction IsVisible="true" Label="117"/>
+	<ExecuteAction IsVisible="true" Label="118"/>
+	<ExecuteAction IsVisible="true" Label="119"/>
+	<ExecuteAction IsVisible="true" Label="120"/>
+</DialogView>
+
+</FlexML>

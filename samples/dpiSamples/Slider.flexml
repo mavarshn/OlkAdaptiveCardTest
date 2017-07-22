@@ -1,0 +1,84 @@
+<!-- This file is used to test the NetUI Slider control at 100% and 200% DPI.
+
+The easiest way to use this file is in Lime's Airspace NetUI Test Toolkit:
+1. Run Lime
+2. From the Ribbon, select "Pause Recording"
+3. Scroll down to the section "Open a NetUI Document"
+4. "Browse..." for this file and select "Open File"
+5. Drag the NetUI Test Toolkit across monitors with different DPI settings and verify the Slider invalidates and re-renders appropriately
+-->
+
+<FlexUI>
+	<FlexML UseAirSpace="true">	
+
+		<Defs>
+			<img id="SliderThumb">*Graphic(SmartBitmapId=sbidOsZoomSliderThumb)</img>
+			<img id="SliderThumb_192">*Graphic(SmartBitmapId=sbidOsZoomSliderThumb_192)</img>
+		</Defs>
+
+		<Style ID="SliderView">
+
+			<!-- Common Slider Styling -->
+			<Slider
+				ID="#112"
+				Content="msocbvcrWPSliderTrack"
+				Maximum="200"
+				Minimum="-100"
+				Position="100"
+				AccessibleName="Slider Name"
+				AccessibleDescription="Slider Description"
+				Screentip="Slider Screen Tip" />
+
+			<!-- Extra controls needed for a given Slider control -->
+			<Repeatbutton Class="#66"
+				Background="None"
+				BorderStyle = "NoDraw" />
+			<RepeatButton ID="#68"
+				AccessibleName="Accessible Name Left" />
+			<RepeatButton ID="#69"
+				AccessibleName="Accessible Name Right" />
+
+			<Thumb Class="#67"
+				CrossFadeDuration="0"
+				Background="None"
+				borderThickness="1,2,1,2"
+				BorderStyle="NoDraw"
+				Padding="0,0,0,0"
+				 />
+
+			<!-- Conditions for Thumb to change state -->
+			
+			<!-- Slider smartbitmap will be set against System DPI; it is not properly dynamic -->
+			<Thumb Class="#67" Condition="DPI == 96" Content="#SliderThumb" />
+			<Thumb Class="#67" Condition="DPI == 192" Content="#SliderThumb_192" />
+
+			<Thumb Class="#67" Condition="ControlState == Button.Hover"
+				CrossFadeDuration="#FsFadeToHover"
+				BackgroundFrame="1" />
+
+			<Thumb Class="#67" Condition="ControlState == Button.Pressed"
+				CrossFadeDuration="#FsFadeToPressed"
+				BackgroundFrame="2" />
+
+			<Thumb Class="#67" Condition="IsEnabled == false"
+				CrossFadeDuration="#FsFadeToPressed"
+				BackgroundFrame="3" />
+		</Style>
+
+		<Element LayoutChildren="Vertical">
+
+			<Slider
+				ID="#112"
+				RenderStyle="StatusBar"
+				HasTick="true"
+				Sheet="#SliderView" />
+
+			<Slider
+				ID="#112"
+				RenderStyle="Fresh"
+				Sheet="#SliderView" />
+
+		</Element>
+
+	</FlexML>
+</FlexUI>

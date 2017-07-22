@@ -1,0 +1,5 @@
+<element layoutchildren="vertical">
+	<textbox>
+		<label text="can't be in textbox!" />
+	</textbox>
+</element>

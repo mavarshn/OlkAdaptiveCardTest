@@ -1,0 +1,48 @@
+<element layoutChildren="vertical" background="buttonface">
+
+<customProperty name="isCurrentSheet" isInherited="true" />
+
+<style id="myStyle">
+	<simplebutton condition="mousewithin" isCurrentSheet="true" />
+	<element class="page" isVisible="false" borderThickness="1,1,1,1" borderstyle="raised" expandToFillHoriz="true"/>
+	<element class="page" condition="isCurrentSheet" isVisible="true" />
+</style>
+
+<element sheet="#myStyle" layoutChildren="overlap" active="inactive" borderThickness="1,1,1,1">
+	<simplebutton layoutChildren="vertical" background="none" active="inactive" borderStyle="noDraw">
+		<simplebutton indent="6" text="Page 3" />
+		<element class="page" layoutChildren="vertical">
+			<checkbox text="enable feature a" />
+			<checkbox text="enable feature b" />
+			<checkbox text="enable feature c" />
+			<checkbox text="enable feature d" />
+			<checkbox text="enable feature e" />
+		</element>
+	</simplebutton>	
+	<simplebutton layoutChildren="vertical" background="none" active="inactive" borderStyle="noDraw">
+		<simplebutton indent="3" text="Page 2" />
+		<element class="page" layoutChildren="vertical">
+			<radiogroup layoutchildren="vertical">
+				<radiobutton text="choice 1" />
+				<radiobutton text="choice 2" />
+				<radiobutton text="choice 3" />
+				<radiobutton text="choice 4" />
+				<radiobutton text="choice 5" />
+			</radiogroup>
+		</element>
+	</simplebutton>	
+	<simplebutton layoutChildren="vertical" background="none" active="inactive" borderStyle="noDraw">
+		<simplebutton text="Page 1" />
+		<element class="page" layoutChildren="vertical">
+			<button text="btn 1" />
+			<button text="btn 2" />
+			<button text="btn 3" />
+			<button text="btn 4" />
+			<button text="btn 5" />
+		</element>
+	</simplebutton>	
+</element>
+
+
+</element>
+

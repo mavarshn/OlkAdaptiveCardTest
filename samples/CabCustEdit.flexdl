@@ -1,0 +1,35 @@
+<DataSource ID="CABCUSTEDIT" HeaderFile="cedit.flexhs">
+
+	<!-- Properties that were in the old CAB -->
+	<Property ID="hszPictureEditor" Type="String" />
+	<Property ID="hszStyleClickType" Type="String" />
+
+	<Property ID="hszGalFmt" Type="Int32" />	
+	<Property ID="fAutoDelete" Type="Int32" />
+	<Property ID="fDragNDrop" Type="Int32" />
+	<Property ID="fInsPaste" Type="Int32" />
+	<Property ID="fOvertypeMode" Type="Int32" />
+	<Property ID="fSmartCursoring" Type="Int32" />
+	<Property ID="wrm" Type="Int32" />
+	<Property ID="fSmartParaSel" Type="Int32" />
+	<Property ID="fHypCtrlClickFollow" Type="Int32" />
+	<Property ID="fAutoWordSel" Type="Int32" />
+	<Property ID="fPromptUpdateStyle" Type="Int32" />
+	<Property ID="fFccBkg" Type="Int32" />
+	<Property ID="fShowFccError" Type="Int32" />
+	<Property ID="fAutoKey" Type="Int32" />
+	<Property ID="fUpAccented" Type="Int32" />
+	<Property ID="fPasteRecovery" Type="Int32" />
+	<Property ID="fSmartCutPaste" Type="Int32" />
+	<Property ID="fClickType" Type="Int32" />
+	<Property ID="fIMEClose" Type="Int32" />
+	<Property ID="fTrueInline" Type="Int32" />
+	<Property ID="fTabIndent" Type="Int32" />
+	<Property ID="fBsParaAlign" Type="Int32" />
+	<Property ID="fFillPicServerList" Type="Int32" />
+
+    <AdditionalCode>
+		#define tmcReplSel	18
+    </AdditionalCode>
+
+</DataSource>

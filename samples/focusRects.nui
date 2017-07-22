@@ -1,0 +1,49 @@
+<element layoutchildren="horizontal">
+
+<element layoutchildren="vertical">
+	<simplebutton text="no colors" />
+	<simplebutton background="#ECE9D8" foreground="#131627" text="gray and inv-gray" />
+	<simplebutton background="white" foreground="black" text="white and black" />
+	<simplebutton background="white" foreground="blue" text="white and blue" />
+	<simplebutton background="none" foreground="blue" text="none and blue" />
+	<simplebutton background="none" foreground="black" text="none and black" />
+	<simplebutton background="blue" foreground="black" text="blue and black" />
+	<simplebutton background="#007F00" foreground="white" text="dark green and white" />
+	<simplebutton background="black" foreground="white" text="black and white" />
+	<simplebutton background="#4F4F4F" foreground="#E0E0E0" text="#4F4F4F and light" />
+	<simplebutton background="#505050" foreground="#E0E0E0" text="#505050 and light" />
+	<simplebutton background="#7F7F7F" foreground="black" text="#7F7F7F and black" />
+	<simplebutton background="#707070" foreground="white" text="#707070 and white" />
+	<simplebutton background="#6F6F6F" foreground="white" text="#6F6F6F and white" />
+	<simplebutton background="#D6DFF7" foreground="black" text="soft blue and black" />
+	<hyperlink text="http://www.microsoft.com/?default-colors" />
+	<hyperlink text="http://www.microsoft.com/?blue-on-white" background="white" foreground="blue"/>
+	<hyperlink text="http://www.microsoft.com/?red-on-white" background="white" foreground="red"/>
+	<hyperlink text="http://www.microsoft.com/?blue-on-none" background="none" foreground="blue"/>
+</element>
+
+<element layoutchildren="vertical">
+	<button text="no colors" />
+	<button background="#ECE9D8" foreground="#131627" text="gray and inv-gray" />
+	<button background="white" foreground="black" text="white and black" />
+	<button background="white" foreground="blue" text="white and blue" />
+	<button background="none" foreground="blue" text="none and blue" />
+	<button background="none" foreground="black" text="none and black" />
+	<button background="blue" foreground="black" text="blue and black" />
+	<button background="#007F00" foreground="white" text="dark green and white" />
+	<button background="black" foreground="white" text="black and white" />
+	<button background="#4F4F4F" foreground="#E0E0E0" text="#4F4F4F and light" />
+	<button background="#505050" foreground="#E0E0E0" text="#505050 and light" />
+	<button background="#7F7F7F" foreground="black" text="#7F7F7F and black" />
+	<button background="#707070" foreground="white" text="#707070 and white" />
+	<button background="#6F6F6F" foreground="white" text="#6F6F6F and white" />
+
+	<element layoutchildren="vertical" background="black" padding="5,5,5,5">
+		<hyperlink text="http://www.microsoft.com/?default-colors" />
+		<hyperlink text="http://www.microsoft.com/?blue-on-white" background="white" foreground="blue"/>
+		<hyperlink text="http://www.microsoft.com/?red-on-white" background="white" foreground="red"/>
+		<hyperlink text="http://www.microsoft.com/?yellow-on-none" background="none" foreground="yellow"/>
+	</element>
+</element>
+
+</element>

@@ -1,0 +1,194 @@
+<netui>
+
+<style id="mystyle">
+<element borderstyle="solid" bordercolor="black" borderthickness="1,1,1,1" width="100" height="12" />
+</style>
+
+<style id="nostyle">
+<element />
+</style>
+
+<element sheet="#mystyle" layoutchildren="vertical" expandtofillvert="true" expandtofillhoriz="true">
+<scrollviewer id="sv" expandtofillvert="true" expandtofillhoriz="true">
+<element layoutchildren="table" cols="2" rows="180" >
+<label tablePosition="1,1,2,1" text="WARNING:  This list may be out of date.  Please contact MsoNUIQs if this list is missing colors you care about."/>
+<label id="0" text="MSO Colors" fontweight="bold" fontsize="msoFontSizeLargest"/> <element sheet="#nostyle"/>
+<label id="1" text="msocbvcrCBBkgd" /> <element background="msocbvcrCBBkgd" /> 
+<label id="2" text="msocbvcrCBDragHandle" /> <element background="msocbvcrCBDragHandle" /> 
+<label id="3" text="msocbvcrCBSplitterLine" /> <element background="msocbvcrCBSplitterLine" /> 
+<label id="4" text="msocbvcrCBTitleBkgd" /> <element background="msocbvcrCBTitleBkgd" /> 
+<label id="5" text="msocbvcrCBTitleText" /> <element background="msocbvcrCBTitleText" /> 
+<label id="6" text="msocbvcrCBBdrOuterFloating" /> <element background="msocbvcrCBBdrOuterFloating" /> 
+<label id="7" text="msocbvcrCBBdrOuterDocked" /> <element background="msocbvcrCBBdrOuterDocked" /> 
+<label id="8" text="msocbvcrCBTearOffHandle" /> <element background="msocbvcrCBTearOffHandle" /> 
+<label id="9" text="msocbvcrCBTearOffHandleMouseOver" /> <element background="msocbvcrCBTearOffHandleMouseOver" /> 
+<label id="10" text="msocbvcrCBCtlBkgd" /> <element background="msocbvcrCBCtlBkgd" /> 
+<label id="11" text="msocbvcrCBCtlText" /> <element background="msocbvcrCBCtlText" /> 
+<label id="12" text="msocbvcrCBCtlTextDisabled" /> <element background="msocbvcrCBCtlTextDisabled" /> 
+<label id="13" text="msocbvcrCBCtlBkgdMouseOver" /> <element background="msocbvcrCBCtlBkgdMouseOver" /> 
+<label id="14" text="msocbvcrCBCtlBdrMouseOver" /> <element background="msocbvcrCBCtlBdrMouseOver" /> 
+<label id="15" text="msocbvcrCBCtlTextMouseOver" /> <element background="msocbvcrCBCtlTextMouseOver" /> 
+<label id="16" text="msocbvcrCBCtlBkgdMouseDown" /> <element background="msocbvcrCBCtlBkgdMouseDown" /> 
+<label id="17" text="msocbvcrCBCtlBdrMouseDown" /> <element background="msocbvcrCBCtlBdrMouseDown" /> 
+<label id="18" text="msocbvcrCBCtlTextMouseDown" /> <element background="msocbvcrCBCtlTextMouseDown" /> 
+<label id="19" text="msocbvcrCBCtlBkgdSelected" /> <element background="msocbvcrCBCtlBkgdSelected" /> 
+<label id="20" text="msocbvcrCBCtlBdrSelected" /> <element background="msocbvcrCBCtlBdrSelected" /> 
+<label id="21" text="msocbvcrCBCtlBkgdSelectedMouseOver" /> <element background="msocbvcrCBCtlBkgdSelectedMouseOver" /> 
+<label id="22" text="msocbvcrCBCtlBdrSelectedMouseOver" /> <element background="msocbvcrCBCtlBdrSelectedMouseOver" /> 
+<label id="23" text="msocbvcrCBCtlBkgdLight" /> <element background="msocbvcrCBCtlBkgdLight" /> 
+<label id="24" text="msocbvcrCBCtlTextLight" /> <element background="msocbvcrCBCtlTextLight" /> 
+<label id="25" text="msocbvcrCBMainMenuBkgd" /> <element background="msocbvcrCBMainMenuBkgd" /> 
+<label id="26" text="msocbvcrCBMenuBkgd" /> <element background="msocbvcrCBMenuBkgd" /> 
+<label id="27" text="msocbvcrCBMenuCtlText" /> <element background="msocbvcrCBMenuCtlText" /> 
+<label id="28" text="msocbvcrCBMenuCtlTextDisabled" /> <element background="msocbvcrCBMenuCtlTextDisabled" /> 
+<label id="29" text="msocbvcrCBMenuBdrOuter" /> <element background="msocbvcrCBMenuBdrOuter" /> 
+<label id="30" text="msocbvcrCBMenuIconBkgd" /> <element background="msocbvcrCBMenuIconBkgd" /> 
+<label id="31" text="msocbvcrCBMenuIconBkgdDropped" /> <element background="msocbvcrCBMenuIconBkgdDropped" /> 
+<label id="32" text="msocbvcrCBMenuSplitArrow" /> <element background="msocbvcrCBMenuSplitArrow" /> 
+<label id="33" text="msocbvcrWPBkgd" /> <element background="msocbvcrWPBkgd" /> 
+<label id="34" text="msocbvcrWPText " /> <element background="msocbvcrWPText " /> 
+<label id="35" text="msocbvcrWPTitleBkgdActive" /> <element background="msocbvcrWPTitleBkgdActive" /> 
+<label id="36" text="msocbvcrWPTitleBkgdInactive" /> <element background="msocbvcrWPTitleBkgdInactive" /> 
+<label id="37" text="msocbvcrWPTitleTextActive" /> <element background="msocbvcrWPTitleTextActive" /> 
+<label id="38" text="msocbvcrWPTitleTextInactive" /> <element background="msocbvcrWPTitleTextInactive" /> 
+<label id="39" text="msocbvcrWPBdrOuterFloating" /> <element background="msocbvcrWPBdrOuterFloating" /> 
+<label id="40" text="msocbvcrWPBdrOuterDocked" /> <element background="msocbvcrWPBdrOuterDocked" /> 
+<label id="41" text="msocbvcrWPCtlBdr" /> <element background="msocbvcrWPCtlBdr" /> 
+<label id="42" text="msocbvcrWPCtlText" /> <element background="msocbvcrWPCtlText" /> 
+<label id="43" text="msocbvcrWPCtlBkgd" /> <element background="msocbvcrWPCtlBkgd" /> 
+<label id="44" text="msocbvcrWPCtlBdrDisabled" /> <element background="msocbvcrWPCtlBdrDisabled" /> 
+<label id="45" text="msocbvcrWPCtlTextDisabled" /> <element background="msocbvcrWPCtlTextDisabled" /> 
+<label id="46" text="msocbvcrWPCtlBkgdDisabled" /> <element background="msocbvcrWPCtlBkgdDisabled" /> 
+<label id="47" text="msocbvcrWPCtlBdrDefault" /> <element background="msocbvcrWPCtlBdrDefault" /> 
+<label id="48" text="msocbvcrWPGroupline" /> <element background="msocbvcrWPGroupline" /> 
+<label id="49" text="msocbvcrSBBdr" /> <element background="msocbvcrSBBdr" /> 
+<label id="50" text="msocbvcrOBBkgdBdr" /> <element background="msocbvcrOBBkgdBdr" /> 
+<label id="51" text="msocbvcrOBBkgdBdrContrast" /> <element background="msocbvcrOBBkgdBdrContrast" /> 
+<label id="52" text="msocbvcrOABBkgd" /> <element background="msocbvcrOABBkgd" /> 
+<label id="53" text="msocbvcrGDHeaderBkgd" /> <element background="msocbvcrGDHeaderBkgd" /> 
+<label id="54" text="msocbvcrGDHeaderBdr" /> <element background="msocbvcrGDHeaderBdr" /> 
+<label id="55" text="msocbvcrGDHeaderCellBdr" /> <element background="msocbvcrGDHeaderCellBdr" /> 
+<label id="56" text="msocbvcrGDHeaderSeeThroughSelection" /> <element background="msocbvcrGDHeaderSeeThroughSelection" /> 
+<label id="57" text="msocbvcrGDHeaderCellBkgd" /> <element background="msocbvcrGDHeaderCellBkgd" /> 
+<label id="58" text="msocbvcrCBShadow" /> <element background="msocbvcrCBShadow" /> 
+<label id="59" text="msocbvcrCBOptionsButtonShadow" /> <element background="msocbvcrCBOptionsButtonShadow" /> 
+<label id="60" text="msocbvcrWPNavBarBkgnd" /> <element background="msocbvcrWPNavBarBkgnd" /> 
+<label id="61" text="msocbvcrCBGradMainMenuHorzBegin" /> <element background="msocbvcrCBGradMainMenuHorzBegin" /> 
+<label id="62" text="msocbvcrCBGradMainMenuHorzEnd" /> <element background="msocbvcrCBGradMainMenuHorzEnd" /> 
+<label id="63" text="msocbvcrCBGradVertBegin" /> <element background="msocbvcrCBGradVertBegin" /> 
+<label id="64" text="msocbvcrCBGradVertMiddle" /> <element background="msocbvcrCBGradVertMiddle" /> 
+<label id="65" text="msocbvcrCBGradVertEnd" /> <element background="msocbvcrCBGradVertEnd" /> 
+<label id="66" text="msocbvcrCBGradOptionsBegin" /> <element background="msocbvcrCBGradOptionsBegin" /> 
+<label id="67" text="msocbvcrCBGradOptionsMiddle" /> <element background="msocbvcrCBGradOptionsMiddle" /> 
+<label id="68" text="msocbvcrCBGradOptionsEnd" /> <element background="msocbvcrCBGradOptionsEnd" /> 
+<label id="69" text="msocbvcrCBGradMenuTitleBkgdBegin" /> <element background="msocbvcrCBGradMenuTitleBkgdBegin" /> 
+<label id="70" text="msocbvcrCBGradMenuTitleBkgdEnd" /> <element background="msocbvcrCBGradMenuTitleBkgdEnd" /> 
+<label id="71" text="msocbvcrCBGradMenuIconBkgdBegin" /> <element background="msocbvcrCBGradMenuIconBkgdBegin" /> 
+<label id="72" text="msocbvcrCBGradMenuIconBkgdMiddle" /> <element background="msocbvcrCBGradMenuIconBkgdMiddle" /> 
+<label id="73" text="msocbvcrCBGradMenuIconBkgdEnd" /> <element background="msocbvcrCBGradMenuIconBkgdEnd" /> 
+<label id="74" text="msocbvcrCBGradMenuIconBkgdDroppedBegin" /> <element background="msocbvcrCBGradMenuIconBkgdDroppedBegin" /> 
+<label id="75" text="msocbvcrCBGradMenuIconBkgdDroppedMiddle" /> <element background="msocbvcrCBGradMenuIconBkgdDroppedMiddle" /> 
+<label id="76" text="msocbvcrCBGradMenuIconBkgdDroppedEnd" /> <element background="msocbvcrCBGradMenuIconBkgdDroppedEnd" /> 
+<label id="77" text="msocbvcrCBGradHorzBegin" /> <element background="msocbvcrCBGradHorzBegin" /> 
+<label id="78" text="msocbvcrCBGradHorzMiddle" /> <element background="msocbvcrCBGradHorzMiddle" /> 
+<label id="79" text="msocbvcrCBGradHorzEnd" /> <element background="msocbvcrCBGradHorzEnd" /> 
+<label id="80" text="msocbvcrCBGradOptionsSelectedBegin" /> <element background="msocbvcrCBGradOptionsSelectedBegin" /> 
+<label id="81" text="msocbvcrCBGradOptionsSelectedMiddle" /> <element background="msocbvcrCBGradOptionsSelectedMiddle" /> 
+<label id="82" text="msocbvcrCBGradOptionsSelectedEnd" /> <element background="msocbvcrCBGradOptionsSelectedEnd" /> 
+<label id="83" text="msocbvcrCBGradOptionsMouseOverBegin" /> <element background="msocbvcrCBGradOptionsMouseOverBegin" /> 
+<label id="84" text="msocbvcrCBGradOptionsMouseOverMiddle" /> <element background="msocbvcrCBGradOptionsMouseOverMiddle" /> 
+<label id="85" text="msocbvcrCBGradOptionsMouseOverEnd" /> <element background="msocbvcrCBGradOptionsMouseOverEnd" /> 
+<label id="86" text="msocbvcrNetLookBkgnd" /> <element background="msocbvcrNetLookBkgnd" /> 
+<label id="87" text="msocbvcrCBMenuShadow" /> <element background="msocbvcrCBMenuShadow" /> 
+<label id="88" text="msocbvcrCBDockSeperatorLine" /> <element background="msocbvcrCBDockSeperatorLine" /> 
+<label id="89" text="msocbvcrOLKGridlines" /> <element background="msocbvcrOLKGridlines" /> 
+<label id="90" text="msocbvcrOLKGroupText" /> <element background="msocbvcrOLKGroupText" /> 
+<label id="91" text="msocbvcrOLKGroupLine" /> <element background="msocbvcrOLKGroupLine" /> 
+<label id="92" text="msocbvcrOLKGroupShaded" /> <element background="msocbvcrOLKGroupShaded" /> 
+<label id="93" text="msocbvcrOLKGroupNested" /> <element background="msocbvcrOLKGroupNested" /> 
+<label id="94" text="msocbvcrOLKIconBar" /> <element background="msocbvcrOLKIconBar" /> 
+<label id="95" text="msocbvcrOLKFlagNone" /> <element background="msocbvcrOLKFlagNone" /> 
+<label id="96" text="msocbvcrOLKFolderbarLight" /> <element background="msocbvcrOLKFolderbarLight" /> 
+<label id="97" text="msocbvcrOLKFolderbarDark" /> <element background="msocbvcrOLKFolderbarDark" /> 
+<label id="98" text="msocbvcrOLKFolderbarText" /> <element background="msocbvcrOLKFolderbarText" /> 
+<label id="101" text="msocbvcrOLKWBButtonLight" /> <element background="msocbvcrOLKWBButtonLight" /> 
+<label id="102" text="msocbvcrOLKWBButtonDark" /> <element background="msocbvcrOLKWBButtonDark" /> 
+<label id="103" text="msocbvcrOLKWBSelectedButtonLight" /> <element background="msocbvcrOLKWBSelectedButtonLight" /> 
+<label id="104" text="msocbvcrOLKWBSelectedButtonDark" /> <element background="msocbvcrOLKWBSelectedButtonDark" /> 
+<label id="105" text="msocbvcrOLKWBHoverButtonLight" /> <element background="msocbvcrOLKWBHoverButtonLight" /> 
+<label id="106" text="msocbvcrOLKWBHoverButtonDark" /> <element background="msocbvcrOLKWBHoverButtonDark" /> 
+<label id="107" text="msocbvcrOLKWBPressedButtonLight" /> <element background="msocbvcrOLKWBPressedButtonLight" /> 
+<label id="108" text="msocbvcrOLKWBPressedButtonDark" /> <element background="msocbvcrOLKWBPressedButtonDark" /> 
+<label id="110" text="msocbvcrOLKWBDarkOutline" /> <element background="msocbvcrOLKWBDarkOutline" /> 
+<label id="111" text="msocbvcrOLKWBSplitterLight" /> <element background="msocbvcrOLKWBSplitterLight" /> 
+<label id="112" text="msocbvcrOLKWBSplitterDark" /> <element background="msocbvcrOLKWBSplitterDark" /> 
+<label id="114" text="msocbvcrOLKWBActionLinkText" /> <element background="msocbvcrOLKWBActionLinkText" /> 
+<label id="115" text="msocbvcrOLKWBActionDividerLine" /> <element background="msocbvcrOLKWBActionDividerLine" /> 
+<label id="116" text="msocbvcrOLKWBLabelText" /> <element background="msocbvcrOLKWBLabelText" /> 
+<label id="118" text="msocbvcrOLKWBFoldersBackground" /> <element background="msocbvcrOLKWBFoldersBackground" /> 
+<label id="121" text="msocbvcrOLKDatePickerHeader" /> <element background="msocbvcrOLKDatePickerHeader" /> 
+<label id="122" text="msocbvcrOLKTodayIndicatorLight" /> <element background="msocbvcrOLKTodayIndicatorLight" /> 
+<label id="123" text="msocbvcrOLKTodayIndicatorDark" /> <element background="msocbvcrOLKTodayIndicatorDark" /> 
+<label id="124" text="msocbvcrHyperlink" /> <element background="msocbvcrHyperlink" /> 
+<label id="125" text="msocbvcrHyperlinkFollowed" /> <element background="msocbvcrHyperlinkFollowed" /> 
+<label id="126" text="msocbvcrOGWorkspaceBkgd" /> <element background="msocbvcrOGWorkspaceBkgd" /> 
+<label id="127" text="msocbvcrOGMDIParentWorkspaceBkgd" /> <element background="msocbvcrOGMDIParentWorkspaceBkgd" /> 
+<label id="128" text="msocbvcrOGRulerBkgd" /> <element background="msocbvcrOGRulerBkgd" /> 
+<label id="129" text="msocbvcrOGRulerActiveBkgd" /> <element background="msocbvcrOGRulerActiveBkgd" /> 
+<label id="130" text="msocbvcrOGRulerInactiveBkgd" /> <element background="msocbvcrOGRulerInactiveBkgd" /> 
+<label id="131" text="msocbvcrOGRulerText" /> <element background="msocbvcrOGRulerText" /> 
+<label id="132" text="msocbvcrOGRulerTabStopTicks" /> <element background="msocbvcrOGRulerTabStopTicks" /> 
+<label id="133" text="msocbvcrOGRulerBdr" /> <element background="msocbvcrOGRulerBdr" /> 
+<label id="134" text="msocbvcrOGRulerTabBoxBdr" /> <element background="msocbvcrOGRulerTabBoxBdr" /> 
+<label id="135" text="msocbvcrOGRulerTabBoxBdrHighlight" /> <element background="msocbvcrOGRulerTabBoxBdrHighlight" /> 
+<label id="136" text="msocbvcrXLFormulaBarBkgd" /> <element background="msocbvcrXLFormulaBarBkgd" /> 
+<!-- <label id="137" text="msocbvcrXLCurrentCellBdr" /> <element background="msocbvcrXLCurrentCellBdr" /> -->
+<label id="138" text="msocbvcrCBDragHandleShadow" /> <element background="msocbvcrCBDragHandleShadow" /> 
+<label id="139" text="msocbvcrOGTaskPaneGroupBoxHeaderBkgd" /> <element background="msocbvcrOGTaskPaneGroupBoxHeaderBkgd" /> 
+<label id="140" text="msocbvcrPPOutlineThumbnailsPaneTabAreaBkgd" /> <element background="msocbvcrPPOutlineThumbnailsPaneTabAreaBkgd" /> 
+<label id="141" text="msocbvcrPPOutlineThumbnailsPaneTabInactiveBkgd" /> <element background="msocbvcrPPOutlineThumbnailsPaneTabInactiveBkgd" /> 
+<label id="142" text="msocbvcrPPOutlineThumbnailsPaneTabBdr" /> <element background="msocbvcrPPOutlineThumbnailsPaneTabBdr" /> 
+<label id="143" text="msocbvcrPPOutlineThumbnailsPaneTabText" /> <element background="msocbvcrPPOutlineThumbnailsPaneTabText" /> 
+<label id="144" text="msocbvcrPPSlideBdrActiveSelected" /> <element background="msocbvcrPPSlideBdrActiveSelected" /> 
+<label id="145" text="msocbvcrPPSlideBdrInactiveSelected" /> <element background="msocbvcrPPSlideBdrInactiveSelected" /> 
+<label id="146" text="msocbvcrPPSlideBdrMouseOver" /> <element background="msocbvcrPPSlideBdrMouseOver" /> 
+<label id="147" text="msocbvcrPPSlideBdrActiveSelectedMouseOver  " /> <element background="msocbvcrPPSlideBdrActiveSelectedMouseOver  " /> 
+<label id="147" text="msocbvcrPPLBkgd  " /> <element background="msocbvcrPPLBkgd  " />
+
+<label id="149" text="System Colors" fontweight="bold" fontsize="msoFontSizeLargest" /><element sheet="#nostyle"/>
+
+<label id="151" text="activeborder" /> <element background="activeborder" /> 
+<label id="152" text="activecaption" /> <element background="activecaption" /> 
+<label id="153" text="appworkspace" /> <element background="appworkspace" /> 
+<label id="154" text="background" /> <element background="background" /> 
+<label id="155" text="buttonface" /> <element background="buttonface" /> 
+<label id="156" text="buttonhighlight" /> <element background="buttonhighlight" /> 
+<label id="157" text="buttonshadow" /> <element background="buttonshadow" /> 
+<label id="158" text="buttontext" /> <element background="buttontext" /> 
+<label id="159" text="captiontext" /> <element background="captiontext" /> 
+<label id="160" text="GradientActiveCaption" /> <element background="GradientActiveCaption" /> 
+<label id="161" text="GradientInactiveCaption" /> <element background="GradientInactiveCaption" /> 
+<label id="162" text="graytext" /> <element background="graytext" /> 
+<label id="163" text="highlight" /> <element background="highlight" /> 
+<label id="164" text="highlighttext" /> <element background="highlighttext" /> 
+<label id="165" text="HotLight" /> <element background="HotLight" /> 
+<label id="166" text="inactiveborder" /> <element background="inactiveborder" /> 
+<label id="167" text="inactivecaption" /> <element background="inactivecaption" /> 
+<label id="168" text="inactivecaptiontext" /> <element background="inactivecaptiontext" /> 
+<label id="169" text="infobackground" /> <element background="infobackground" /> 
+<label id="170" text="infotext" /> <element background="infotext" /> 
+<label id="171" text="menu" /> <element background="menu" /> 
+<label id="172" text="menutext" /> <element background="menutext" /> 
+<label id="173" text="scrollbar" /> <element background="scrollbar" /> 
+<label id="174" text="threeddarkshadow" /> <element background="threeddarkshadow" /> 
+<label id="175" text="threedface" /> <element background="threedface" /> 
+<label id="176" text="threedhighlight" /> <element background="threedhighlight" /> 
+<label id="177" text="threedlightshadow" /> <element background="threedlightshadow" /> 
+<label id="178" text="threedshadow" /> <element background="threedshadow" /> 
+<label id="179" text="window" /> <element background="window" /> 
+<label id="180" text="windowframe" /> <element background="windowframe" /> 
+<label id="181" text="windowtext" /> <element background="windowtext" /> 
+</element>
+</scrollviewer>
+</element>
+</netui>

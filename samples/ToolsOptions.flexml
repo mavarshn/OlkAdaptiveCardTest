@@ -1,0 +1,139 @@
+<GroupedDialogView>
+	
+
+	<Category Label="View" ImageSource="resources/icon_view.png" Description="Customize the way Word and your document look.">
+
+	    <Category Label="Show" ImageSource="resources/icon_show.png" Description="Settings that specify how the application looks while working with any document.">
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fShowAtStartup)" Label="Startup Task Pane" Description="The getting started task pane will appear when you launch Word.  It helps you, open a previous document, start a new blank document, or start one from a template on your computer or online."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fShowHighlight)" Label="Highlight" ImageSource="resources/image1.png" Description="Displays highlighted text on the screen and in printed documents."     />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fvisiShowBmkBnds)" Label="Bookmarks" ImageSource="resources/image2.png" Description="Displays bookmarks on the screen by enclosing them in square brackets ([]). If you assign a bookmark to an item, the bookmark appears in brackets ([?]). If you assign a bookmark to a location, the bookmark appears as an I-beam. The brackets do not appear in printed documents."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fStatusBar)" Label="Status bar" ImageSource="resources/image3.png" Description="Displays the status bar at the bottom of the Word window. The status bar provides information about the state of the document and Word."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fvisiScrnTp)" Label="ScreenTips" Description="Displays reviewers' comments in yellow pop-up boxes. The comments appear when you rest your mouse pointer above a comment reference mark."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fvisiShowFactoids)" Label="Smart tags" Description="Displays a purple dotted underline beneath text recognized as a smart tag."    />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fShowTextSfx)" Label="Animated text" Description="Displays text animations on your screen. Turn this off to see how the text will look when printed."   />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fHorzScroll)" Label="Horizontal scroll bar" ImageSource="resources/image4.png" Description="Shows the horizontal scrollbar at the bottom of the document window."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fVertScroll)" Label="Vertical scroll bar"  Description="Shows the vertical scroll bar at the side of the document window."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fPicPlaceholders)" Label="Picture placeholders" ImageSource="resources/image5.png" Description="Displays an empty box in place of each graphic in your documents. This option speeds the process of scrolling through a document that contains a large number of graphics."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fSDIOn)" Label="Windows in Taskbar" Description="Displays an icon on the Microsoft Windows taskbar for each open window in a Microsoft Office program. Clearing this check box places a single icon for each open program on the taskbar."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fFieldCodes)" Label="Field codes" Description="Displays field codes instead of field results in your documents. For example, you may see { TIME @\&quot;MMMM, d, YYYY&quot; } instead of February 4, 2004. Clear this check box to view field results."  />
+	        <SelectSingleItem Label="Field shading" Description="Specifies whether and when fields are shaded. In the list, select Always or When Selected to shade your fields. Shading fields makes them easy to identify. The shading appears on the screen but does not print." >
+	            <SelectionItem Label="Never" />
+	            <SelectionItem Label="Always" />
+	            <SelectionItem Label="When selected" />
+	        </SelectSingleItem>
+	    </Category>
+	    
+	    <Category Label="Formatting Marks" ImageSource="resources/icon_formatting.png" Description="Settings that define how the content of your document is displayed.">
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fvisiTabs)" Label="Tab characters" Description="Displays tab characters in your documents."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fvisiSpaces)" Label="Spaces" Description="Displays spaces between words as dots."  />
+            <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fvisiParaMarks)" Label="Paragraph Marks" Description="Displays paragraph marks in your documents."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fSeeHidden)" Label="Hidden text" Description=" Displays text formatted as hidden with a dotted underline. When you print hidden text, the dotted underline does not appear."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fvisiCondHyp)" Label="Optional hyphens" Description="Displays hyphens that indicate where to divide a word at the end of a line. Optional hyphens don't print unless a word actually breaks at the end of a line; then they print as regular hyphens."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fvisiShowAll)" Label="All" Description="Displays all the formatting characters listed in this Formatting marks area."  />
+	    </Category>
+	    
+	    <Category Label="Print and Web Layout" ImageSource="resources/icon_print.png" Description="How your application and document will look in the Print Layout and Web Layout Views of your documents.">
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fDrawings)" Label="Drawings" Description="Displays objects created with the Word drawing tools in print layout view or Web layout view. Clear this check box to hide drawings and possibly speed the display of documents that contain many drawings. Drawings will print even if you clear this check box."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fAnchors)" Label="Object anchors" Description="Displays objects anchors, which indicate that an object is attached to a specific paragraph."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fTextBoundaries)" Label="Text boundaries" Description="Displays dotted lines around text margins, columns, and paragraphs. The boundaries are for layout purposes; they do not print."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fPageBoundaries)" Label="White space between pages (Print view only)" Description=" Displays the white space between the top of your text and the top edge of the page."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fBackgrounds)" Label="Background colors and images (Print view only)" Description=" Displays background colors and images."  />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fVertRuler)" Label="Vertical ruler (Print view only)" Description="Displays the vertical ruler at the left side of the document window. Make sure you also click Ruler on the View menu."  />
+	    </Category>
+	    
+	    <Category Label="Outline and Normal options" ImageSource="resources/icon_outline.png" Description=" How your application and document will look in the Outline and Normal Views of your documents.">
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fWrapToWindow)" Label="Wrap to window" Description="Wraps text to the document window, making it easier to read on the screen. To wrap text as it will appear when printed, clear this check box."    />
+	        <!-- TODO:  Style area width bound to uNmAreaSize -->
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fFont)" Label="Draft font" Description="Speeds the screen display of documents with extensive formatting. This option displays most character formatting as underlined and bold."  />
+	        <!--
+	        <SelectSingleItem Label="Font Name"  />
+	        -->
+	        <!-- TODO:  Font size bound to hps -->
+	    </Category>
+	</Category>	
+
+	<Category Label="General" ImageSource="resources/general.png" Description="The General category lets you set some overall operations of Word that apply to all documents in all views.">
+        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fBkgrndPag)" Label="Background repagination"  Description="Repaginates documents automatically as you work. This option is unavailable when you use page layout view because it works automatically in that mode and you can't turn it off." />
+		<BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fBlueScreen)" Label="Blue background, white text"  Description="Displays white text on a blue background."/>
+		<BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fErrBeeps)" Label="Provide feedback with sound"  Description="Adds sounds to certain actions or events in Word and Microsoft Office. For example, Word can play a sound when it completes a process. To change the sound associated with an event, open the Sounds and Audio Devices folder in Microsoft Windows Control Panel. Your computer must have a sound card to play most sounds." />
+		<BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fAnimatedCursors)" Label="Provide feedback with animation"  Description="Animates the movement of your mouse in Word and the other Office programs. This option also provides animated cursors for actions such as printing, saving, automatic formatting, and find-and-replace operations." />
+		<BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fConfirmCvrtr)" Label="Confirm conversion at Open"  Description="Instructs Word to prompt you to manually choose the file converter that Word uses to open files created in another program. Clear this check box if you want Word to automatically select a converter." />
+		<BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fUpdateLinksOpen)" Label="Update automatic links at Open"  Description="Automatically updates any information that is linked to other files each time you open a document." />
+		<BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fMailAsAttachment)" Label="Mail as attachment"  Description="Attaches the active document to an e-mail message when you point to Send To and then click Mail Recipient (As Attachment) on the File menu. Clear this check box if you want to insert the contents of the active document into an e-mail message instead of attaching it. You must have an e-mail program installed on your computer to use this option."/>
+        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fWPCommandKeys)" Label="Help for WordPerfect users"  Description="Displays instructions or demonstrates a Word equivalent when you press a WordPerfect for DOS key combination. When you select this option, Word asks you for confirmation whenever you try to delete a block of text." />
+		<BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fWPNavigationKeys)" Label="Navigation for WordPerfect users"  Description="Changes the functions of the PAGE UP, PAGE DOWN, HOME, END, and ESC keys to their WordPerfect equivalents." />
+		<BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fBackgroundOpen)" Label="Allow background open of web pages"  Description="Allows you to open HTML files and still use Word to complete other tasks."/>
+		<BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fAutoCreateCanvas)" Label="Automatically create drawing canvas when inserting AutoShapes"  Description="Determines whether Word places a drawing canvas around drawing objects or ink drawing and writing when you insert them into your document. A drawing canvas helps you to arrange drawing objects and pictures and to move them as a unit." />
+		<SelectSingleItem Label="Measurement units" Description="Selects the default measurement unit for the horizontal ruler and for measurements you type in dialog boxes." >
+			<SelectionItem Label="inches" />
+			<SelectionItem Label="centimeters" />
+			<SelectionItem Label="millimeters" />
+            <SelectionItem Label="points" />
+            <SelectionItem Label="picas" />
+		 </SelectSingleItem>
+    </Category>
+	
+	<Category Label="Edit" ImageSource="resources/edit.png" Description="The Edit category lets you set content editing options that affect editing in all documents and in all views.">
+	   <Category Label="Editing Options" Description="Set up options for how you select and type in your document space.">
+            <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fAutoDelete)" Label="Typing replaces selection"  Description="Deletes the selected text when you begin to type. If you clear this check box, Word inserts new text in front of the selected text and does not delete the selected text."/>
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fDragNDrop)" Label="Drag-and-drop text editing"  Description="Allows you to move or copy selected text by dragging it. To move text: Select the text, and then drag it to a new location. To copy text: Select the text, and then hold down the CTRL key while you drag the selection to its new location."/>
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fInsPaste)" Label="Use the INS key for paste"  Description="Uses the INSERT key to insert the contents of the Office Clipboard into a document." />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fOvertypeMode)" Label="Overtype mode"  Description="Replaces existing text as you type, one character at a time. Double-click OVR in the status bar to start or stop this mode." />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fSmartCursoring)" Label="Use smart cursoring"  Description="Specifies that the insertion point moves as you scroll up or down. When you press the LEFT ARROW, RIGHT ARROW, UP ARROW, or DOWN ARROW keys, the insertion point responds at the page currently in view, not at its position prior to scrolling."/>
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fSmartParaSel)" Label="Use smart paragraph selection"  Description="Selects the paragraph mark when you select a whole paragraph. If you include the paragraph mark when you cut and paste a paragraph, you don't leave a blank paragraph, and your formatting automatically stays with the paragraph." />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fHypCtrlClickFollow)" Label="Use CTRL + Click to follow hyperlink"  Description="Specifies that to follow a hyperlink, you press CTRL when clicking the link." />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fAutoWordSel)" Label="When selecting, automatically select entire word"  Description="Selects an entire word and the following space when you select part of a word."/>
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fPromptUpdateStyle)" Label="Prompt to update style"  Description="Specifies that Word prompts you when you directly modify text that contains a style and then select the same style again. When prompted, you can either update the style based on recent changes or reapply the formatting of the style."/>
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fFccBkg)" Label="Keep track of formatting"  Description="Allows Word to keep track of your formatting as you type. This enables you to easily apply the same formatting elsewhere."/>
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fShowFccError)" Label="Mark formatting inconsistencies"  Description="Marks formatting with a wavy blue underline when it is similar to, but not exactly the same as, other formatting in your documents. To use this option, you must also select Keep track of formatting."/>
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fUpAccented)" Label="Enforce accented uppercase in French"  Description="Allows Word to add or suggest accent marks for uppercase letters in text formatted as French. For some variants of French, such as French Canadian, it is not necessary to use this option as those dictionaries always use the accented uppercase form."/>
+            <SelectSingleItem Label="Picture editor:" Description="Specifies the program that Word uses as a picture editor.">
+	            <SelectionItem Label="Microsoft Office Word" />
+	        </SelectSingleItem>
+	        <SelectSingleItem Label="Insert/paste pictures as:"  Description="Determines how Word inserts pictures relative to the text in your document. You can insert images inline with text, allow images to move with text, or wrap text around, in front of, or behind an image.">
+	            <SelectionItem Label="Inline with text" />
+	            <SelectionItem Label="Square" />
+	            <SelectionItem Label="Tight" />
+             	<SelectionItem Label="Behind Text" />
+             	<SelectionItem Label="Infront of Text" />
+	        </SelectSingleItem>
+			<!-- TODO:  All data binding needs to get done here -->
+			<BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fClickType)" Label="Enable click and type"  Description="Allows you insert text, graphics, tables, or other items in a blank area of a document by double-clicking in a blank area. Click and Type automatically applies the paragraph formatting and alignment necessary to position the item where you double-clicked. This feature is available only in print layout view and Web layout view."/>
+			<SelectSingleItem Label="Default paragraph style:" Description="Specifies the style applied to text when you select the Enable click and type option.">
+				<SelectionItem Label="Normal" />
+            </SelectSingleItem>
+       </Category>
+
+	   <Category Label="Cut and paste options" Description="Defines how Word behaves when cutting and pasting content in a document.">
+	        <!-- TODO:  All data binding needs to get done here -->
+            <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fPasteRecovery)" Label="Show Paste Options buttons"  Description="Places the Paste Options button, which allows you to format pasted text, at the bottom corner of the text after you paste it" />
+	        <BooleanChoice SelectionValue="*Bind(BindType=TwoWay; Property=fSmartCutPaste)" Label="Smart cut and paste"  Description="Enables Word to automatically adjust formatting as you paste text. After you select this check box, you can click Settings to set options for pasting."/>
+	   </Category>        
+    </Category>
+	
+	<Category Label="Print" ImageSource="resources/print.png" Description="Setup advanced print options.">
+	</Category>
+	
+	<Category Label="Save" ImageSource="resources/save.png" Description="Setup auto save properties and default file formats.">
+	</Category>
+	
+	<Category Label="User Information" ImageSource="resources/user_information.png" Description="Personal information like your name, initials and address that can automatically be inserted into documents.">
+	</Category>
+	
+	<Category Label="Compatibility" ImageSource="resources/compatibility.png" Description="Settings for documents when working with older versions.">
+	</Category>
+	
+	<Category Label="File Locations" ImageSource="resources/file_locations.png" Description="Directories where files and templates are stored.">
+	</Category>
+	
+	<Category Label="Security" ImageSource="resources/security.png" Description="Password protect your document and ensure that there is no private information in a document.">
+	</Category>
+	
+	<Category Label="Spelling and Grammar" ImageSource="resources/spelling.png" Description="Customize the spell/grammar check and auto correct settings.">
+	</Category>
+	
+	<Category Label="Track Changes" ImageSource="resources/track_changes.png" Description="Set up the colours and style for in place corrections and commetn balloons.">
+	</Category>
+
+
+</GroupedDialogView>

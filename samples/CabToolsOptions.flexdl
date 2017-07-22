@@ -1,0 +1,114 @@
+<DataSource ID="CabToolsOptions" HeaderFile="CabToolsOptions.flexhs">
+<!--
+	<Property ID="pView" Type="CABCUSTVIEW" />
+	<Property ID="pEdit" Type="CABCUSTEDIT" />
+	<Property ID="pGeneral" Type="CABCUSTGENERAL" />
+-->
+
+	<!-- View -->
+	<Event ID="TestEvent" />
+	<Property ID="fShowAtStartup" Type="Int32" />
+	<Property ID="fShowHighlight" Type="Int32" />
+	<Property ID="fvisiShowBmkBnds" Type="Int32" />
+	<Property ID="fStatusBar" Type="Int32" />
+	<Property ID="fvisiScrnTp" Type="Int32" />
+	<Property ID="fvisiShowFactoids" Type="Int32" />
+	<Property ID="fShowTextSfx" Type="Int32" />
+	<Property ID="fHorzScroll" Type="Int32" />
+	<Property ID="fVertScroll" Type="Int32" />
+	<Property ID="fPicPlaceholders" Type="Int32" />
+	<Property ID="fSDIOn" Type="Int32" />
+	<Property ID="fFieldCodes" Type="Int32" />
+	<Property ID="grpfShadeFlds" Type="Int32" />
+	<Property ID="fLeftScroll" Type="Int32" />
+	<Property ID="fvisiTabs" Type="Int32" />
+	<Property ID="fvisiSpaces" Type="Int32" />
+	<Property ID="fvisiParaMarks" Type="Int32" />
+	<Property ID="fSeeHidden" Type="Int32" />
+	<Property ID="fvisiCondHyp" Type="Int32" />
+	<Property ID="fvisiShowAll" Type="Int32" />
+	<Property ID="fvisiOptBreak" Type="Int32" />
+	<Property ID="fDrawings" Type="Int32" />
+	<Property ID="fAnchors" Type="Int32" />
+	<Property ID="fTextBoundaries" Type="Int32" />
+	<Property ID="fPageBoundaries" Type="Int32" />
+	<Property ID="fBackgrounds" Type="Int32" />
+	<Property ID="fVertRuler" Type="Int32" />
+	<Property ID="fRightRuler" Type="Int32" />
+	<Property ID="fWrapToWindow" Type="Int32" />
+	<Property ID="uNmAreaSize" Type="Int32" />
+	<Property ID="fFont" Type="Int32" />
+	<Property ID="ftc" Type="Int32" />
+	<Property ID="hps" Type="Int32" />
+	<Property ID="hpsZoomFont" Type="Int32" />
+	<Property ID="fBrowseToWindow" Type="Int32" />
+
+	<!-- Edit -->
+	<Property ID="hszPictureEditor" Type="String" />
+	<Property ID="hszStyleClickType" Type="String" />
+
+	<Property ID="hszGalFmt" Type="Int32" />	
+	<Property ID="fAutoDelete" Type="Int32" />
+	<Property ID="fDragNDrop" Type="Int32" />
+	<Property ID="fInsPaste" Type="Int32" />
+	<Property ID="fOvertypeMode" Type="Int32" />
+	<Property ID="fSmartCursoring" Type="Int32" />
+	<Property ID="wrm" Type="Int32" />
+	<Property ID="fSmartParaSel" Type="Int32" />
+	<Property ID="fHypCtrlClickFollow" Type="Int32" />
+	<Property ID="fAutoWordSel" Type="Int32" />
+	<Property ID="fPromptUpdateStyle" Type="Int32" />
+	<Property ID="fFccBkg" Type="Int32" />
+	<Property ID="fShowFccError" Type="Int32" />
+	<Property ID="fAutoKey" Type="Int32" />
+	<Property ID="fUpAccented" Type="Int32" />
+	<Property ID="fPasteRecovery" Type="Int32" />
+	<Property ID="fSmartCutPaste" Type="Int32" />
+	<Property ID="fClickType" Type="Int32" />
+	<Property ID="fIMEClose" Type="Int32" />
+	<Property ID="fTrueInline" Type="Int32" />
+	<Property ID="fTabIndent" Type="Int32" />
+	<Property ID="fBsParaAlign" Type="Int32" />
+	<Property ID="fFillPicServerList" Type="Int32" />
+
+
+	<!-- General -->
+	<Property ID="fBkgrndPag" Type="Int32" />
+	<Property ID="fBlueScreen" Type="Int32" />
+	<Property ID="fErrBeeps" Type="Int32" />
+	<Property ID="fAnimatedCursors" Type="Int32" />
+	<Property ID="fConfirmCvrtr" Type="Int32" />
+	<Property ID="fUpdateLinksOpen" Type="Int32" />
+	<Property ID="fMailAsAttachment" Type="Int32" />
+	<Property ID="fFileCache" Type="Int32" />
+	<Property ID="cCachedFiles" Type="Int32" />
+	<Property ID="fWPCommandKeys" Type="Int32" />
+	<Property ID="fWPNavigationKeys" Type="Int32" />
+	<Property ID="fBackgroundOpen" Type="Int32" />
+	<Property ID="fAutoCreateCanvas" Type="Int32" />
+	<Property ID="iUnit" Type="Int32" />
+	<Property ID="fUsePixelsInDialogs" Type="Int32" />
+	<Property ID="fUseCharacterUnit" Type="Int32" />
+	<Property ID="fAllowReadingMode" Type="Int32" />
+	<Property ID="fSeparateFont" Type="Int32" />
+	<Property ID="iAsianText" Type="Int32" />
+	<Property ID="cBtnFldClicks" Type="Int32" />
+	<Property ID="fRTFInClipboard" Type="Int32" />
+	<Property ID="fShortMenuNames" Type="Int32" />
+	<Property ID="fVirus" Type="Int32" />
+	<Property ID="f3dFxOn" Type="Int32" />
+	<Property ID="fTipWizardActive" Type="Int32" />
+	<Property ID="fExitWithRestoreSession" Type="Int32" />
+	<Property ID="fInterpretHIANSIToDBC" Type="Int32" />
+	<Property ID="wSavCachedFiles" Type="Int32" />
+	
+	<State>
+		<Property  
+			Target="fShowAtStartup"
+			IsReadOnly="true"
+			IsUndefined="true"
+			Condition="(fShowHighlight EQ true AND fvisiShowBmkBnds EQ TRUE) OR fStatusBar NEQ true"
+			/>
+	</State>
+	
+</DataSource>

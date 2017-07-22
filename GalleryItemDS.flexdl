@@ -1,0 +1,22 @@
+<!--	GalleryItemDS.flexdl
+		Owner: AndrewH
+		Copyright (c) Microsoft Corporation. All rights reserved. -->
+
+<DataSource ID="GalleryItemDS">
+	<Property ID="Label" Type="String" />
+	<Property ID="Tooltip" Type="String" />
+	<Property ID="ImageSource" Type="Image" />
+	<Property ID="TextPosition" Type="Int32" />
+	<Property ID="TextPercentImage" Type="Int32" />
+	<Property ID="pvClient" Type="UInt32" />
+	<Property ID="LargeImageSource" Type="Image" />
+	<Property ID="ImageWidth" Type="Int32" />
+	<Property ID="ImageHeight" Type="Int32" />
+	<Property ID="LargePreviewPercentImage" Type="Int32" />
+	<Property ID="RTFLabel" Type="String" />
+	<Property ID="SelectionValue" Type="Int32"/>
+
+	<Property ID="ContextMenuFlexMLContentID"  Type="Int32"/>
+	<Property ID="ContextMenuDataSource"       Type="DataSource"/>
+</DataSource>
+

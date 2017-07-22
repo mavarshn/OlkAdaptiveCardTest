@@ -1,0 +1,104 @@
+<netuixml>
+	<customProperty name="ExpandoText" />
+
+	<style id="s">
+		<node id="root" class="default">
+			<Node.StyleTree>
+				<element layoutChildren="horizontal" background="msocbvcrCBCtlBkgdMouseDown" Children="*Bind(Property=Children)"/>
+			</Node.StyleTree>
+		</node>
+		<node id="root" class="pretty">
+			<Node.StyleTree>
+				<element layoutChildren="table" rows="3" cols="3" background="gradient(msocbvcrCBGradVertBegin,msocbvcrCBGradVertEnd,vertical)" Children="*Bind(Property=Children)"/>
+			</Node.StyleTree>
+		</node>
+		<node id="root" class="nostyletree">
+			<Node.StyleTree>
+			</Node.StyleTree>
+		</node>
+		<node id="buttoncheckbox">
+			<Node.StyleTree>
+				<element layoutChildren="horizontal">
+					<element id="visualtree" layoutChildren="vertical" active="mouse">
+						<button id="b" text="Click Me"/>
+					</element>
+					<checkbox id="c" background="buttonface"/>
+				</element>
+			</Node.StyleTree>
+		</node>
+		<node id="twocheckboxes">
+			<Node.StyleTree>
+				<element layoutChildren="vertical">
+					<checkbox id="c1" text="First: OneWay bound to Second"/>
+					<checkbox id="c2" text="Second" IsChecked="*Bind(Property=IsChecked; Source=c1; BindType=OneWay)"/>
+
+					<checkbox id="c3" text="Third: TwoWay bound to Fourth"/>
+					<checkbox id="c4" text="Fourth" IsChecked="*Bind(Property=IsChecked; Source=c3)"/>
+				</element>
+			</Node.StyleTree>
+		</node>
+		<node id="button">
+			<Node.StyleTree>
+				<button id="b" text="Button"/>
+			</Node.StyleTree>
+		</node>
+		<node class="edit">
+			<Node.StyleTree>
+				<element layoutChildren="vertical">
+					<textbox id="t" text="*Bind(Property=ExpandoText; BindType=TwoWay)" expandToFitString="0123456789012345"/>
+					<textbox id="t2" text="*Bind(Property=Text; Source=t; BindType=TwoWay)" expandToFitString="0123456789012345"/>
+				</element>
+			</Node.StyleTree>
+		</node>
+		<node id="list">
+			<Node.StyleTree>
+				<scrollviewer>
+					<element layoutChildren="vertical" childrenMargin="0" Children="*Bind(Property=Children)"/>
+				</scrollviewer>
+			</Node.StyleTree>
+		</node>
+		<node id="listitem">
+			<Node.StyleTree>
+				<label text="*Bind(Property=ExpandoText)"/>
+			</Node.StyleTree>
+		</node>
+		<node id="CategoryVertical">
+			<Node.StyleTree>
+				<element layoutChildren="vertical" Children="*Bind(Property=Children)"/>
+			</Node.StyleTree>
+		</node>
+		<node id="composite">
+			<Node.StyleTree>
+				<node id="CategoryVertical">
+					<node id="button"/>
+					<node id="button"/>
+					<node id="list"/>
+				</node>
+			</Node.StyleTree>
+		</node>
+		<node class="classtest">
+			<Node.StyleTree>
+				<node id="twocheckboxes" />
+			</Node.StyleTree>
+		</node>
+	</style>
+	<node sheet="#s" id="root" class="default">
+		<node id="list">
+			<node id="listitem" ExpandoText="random: _fBit.bDefaultForeground = true;"/>
+			<node id="listitem" ExpandoText="random: _fBit.bDefaultFontWeight = true;"/>
+			<node id="listitem" ExpandoText="random: _fBit.bDefaultFontStyle = true;"/>
+			<node id="listitem" ExpandoText="This item is not draggable"/>
+			<node id="listitem" ExpandoText="This item is draggable." isDraggable="true"/>
+			<node id="listitem" ExpandoText="random item"/>
+			<node id="listitem" ExpandoText="random: _fBit.bNeedsDSUpdate = false;"/>
+			<node id="listitem" ExpandoText="random: _fBit.fNeedsLayout = LC_Pass;"/>
+			<node id="listitem" ExpandoText="random: _fBit.bHasChildren = false;"/>
+		</node>
+		<node id="buttoncheckbox"/>
+		<node class="edit" id="edit1"/>
+		<node id="button"/>
+		<node id="composite"/>
+		<node class="edit" ExpandoText="*Bind(Property=ExpandoText; Source=edit1; BindType=TwoWay)"/>
+		<node class="classtest"/>
+	</node>
+</netuixml>

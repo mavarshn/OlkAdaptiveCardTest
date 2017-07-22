@@ -1,0 +1,195 @@
+<DialogView DataSourceType="ViewerGalleryRootDS">
+
+	<Category Label="Horizontal Gallery">
+
+		<Gallery
+			Class="simple"
+			Anchor="None"
+			Layout="horizontal" 
+			Label="Horizontal, items only" 
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="1"
+			SelectedItem="*Bind(Property=SelectedItem)"
+			SelectedValue="*Bind(Property=SelectedValue)"
+			/>
+
+		<Gallery
+			Class="simple"
+			Anchor="None"
+			Layout="horizontal" 
+			Label="Horizontal, items, menus, filters, commands" 
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="1"
+			IsFilterVisible="true"
+			FilterIndex="*Bind(Property=FilterIndex)"
+			SelectedItem="*Bind(Property=SelectedItem)"
+			SelectedValue="*Bind(Property=SelectedValue)"
+			FilterItems="*Bind(Property=FilterItems)"
+			/>
+		<Gallery
+			Class="simple"
+			Anchor="None"
+			Layout="horizontal" 
+			Label="Horizontal, items, menus, filters, commands" 
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="1"
+			IsFilterVisible="true"
+			FilterIndex="*Bind(Property=FilterIndex)"
+			FilterItems="*Bind(Property=FilterItems)"
+			/>
+	</Category>
+
+	<Category Label="Horizontal-popup Gallery">
+
+		<Gallery
+			Class="simple"
+			Anchor="DropButton"
+			Layout="horizontal" 
+			Label="Select a gallery item"
+			ImageSource="*Bind(Property=ImageSource)"
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="1"
+			IsFilterVisible="true"
+			SelectedItem="*Bind(Property=SelectedItem)"
+			SelectedValue="*Bind(Property=SelectedValue)"
+			FilterIndex="*Bind(Property=FilterIndex)"
+			FilterItems="*Bind(Property=FilterItems)"
+			/>
+
+	</Category>
+	<Category Label="Vertical Gallery">
+
+
+		<Gallery
+			Class="simple"
+			Anchor="DropButton"
+			IsBigButton="true"
+			Layout="vertical"
+			Label="Vertical dropbuttonlarge gallery"
+			ImageSource="*Bind(Property=ImageSource)"
+			SelectedItem="*Bind(Property=SelectedItem)"
+			SelectedValue="*Bind(Property=SelectedValue)"
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="-1"
+			/>
+
+		<Gallery
+			Class="simple"
+			Anchor="DropButton"
+			Layout="vertical"
+			Label="Vertical dropbuttonstandard gallery"
+			ImageSource="*Bind(Property=ImageSource)"
+			SelectedItem="*Bind(Property=SelectedItem)"
+			SelectedValue="*Bind(Property=SelectedValue)"
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="-1"
+			/>
+
+		<Gallery
+			Class="simple"
+			Anchor="DropButton"
+			ShowLabel="false"
+			Layout="vertical"
+			Label="Vertical dropbuttonsmall gallery"
+			ImageSource="*Bind(Property=ImageSource)"
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="-1"
+			/>
+		<Gallery
+			Class="simple"
+			Anchor="DropButton"
+			IsBigButton="true"
+			Layout="vertical"
+			Label="Vertical dropbuttonlarge gallery, no imagesource"
+			SelectedItem="*Bind(Property=SelectedItem)"
+			SelectedValue="*Bind(Property=SelectedValue)"
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="-1"
+			/>
+
+		<Gallery
+			Class="simple"
+			Anchor="DropButton"
+			Layout="vertical"
+			Label="Vertical dropbuttonstandard gallery, no imagesource"
+			SelectedItem="*Bind(Property=SelectedItem)"
+			SelectedValue="*Bind(Property=SelectedValue)"
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="-1"
+			/>
+
+		<Gallery
+			Class="simple"
+			Anchor="DropButton"
+			ShowLabel="false"
+			Layout="vertical"
+			Label="Vertical dropbuttonsmall gallery, no imagesource"
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="-1"
+			/>
+		<Gallery
+			Class="simple"
+			Anchor="DropDown"
+			Layout="vertical"
+			Label="Vertical dropdown gallery"
+			ImageSource="*Bind(Property=ImageSource)"
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="-1"
+			/>
+
+		<Gallery
+			Class="simple"
+			Anchor="ComboBox"
+			Layout="vertical"
+			Label="Vertical combobox gallery"
+			ImageSource="*Bind(Property=ImageSource)"
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="-1"
+			/>
+
+		<Gallery
+			Class="simple"
+			Anchor="SplitButton"
+			Layout="vertical"
+			Label="Vertical splitbutton gallery"
+			ImageSource="*Bind(Property=ImageSource)"
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemsHeight="-1"
+			/>
+
+	</Category>
+
+	<Category Label="Grid Gallery (nyi, same as vert)">
+
+		<Gallery
+			Class="simple"
+			SelectedItem="*Bind(Property=SelectedItem)"
+			SelectedValue="*Bind(Property=SelectedValue)"
+			ItemsWidth="2" ItemsHeight="2" 
+			Anchor="DropButton" Layout="grid" Label="Select a gallery item"
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			/>
+
+	</Category>
+
+	<EnterInteger Label="FilterIndex:" Value="*Bind(Property=FilterIndex)" Minimum="-1" Maximum="1000" />
+
+	<EnterString Label="SelectedValue:" Value="*Bind(Property=SelectedValue)" />
+	<EnterString Label="HighlightedValue:" Value="*Bind(Property=HighlightedValue)" />
+
+</DialogView>
+

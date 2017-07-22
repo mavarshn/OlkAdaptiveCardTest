@@ -1,0 +1,135 @@
+<DialogView>
+	<style id="s" src="#DialogView">
+		<SelectSingleItem>
+			<Node.StyleTree>
+				<element id="container"
+					layoutChildren="horizontal" expandToFillHoriz="true"
+					IsEnabled="*Bind(Property=State.IsNotReadOnly; BindType=OneWay)"
+					IsVisible="*Bind(Property=State.IsNotUndefined; BindType=OneWay)"
+					LayoutPosition="*Bind(Property=State.IsUndefined; BindType=OneWay)">
+					
+					<element layoutChildren="vertical">
+						<element layoutChildren="horizontal" expandToFillHoriz="true">
+							<image src="*Bind(Property=ImageSource)"/>
+							<label text="*Bind(Property=Label)" textAlign="wrapLeft" expandToFillHoriz="true"/>
+						</element>
+						<radiogroup SelectedIndex="*Bind(Property=SelectedIndex; BindType=TwoWay)" layoutChildren="vertical" children="*Bind(Property=Children)"/>
+					</element>
+					<element id="colorSwatch" width="100" expandToFillVert="true"/>
+					<label id="label" background="buttonface"/>
+				</element>
+				<PropertyTriggers>
+					<!-- The condition on this first trigger is excessive, to briefly test the condition types besides == and != -->
+					<Trigger condition="SelectedIndex GT -1;SelectedIndex GTE 0;SelectedIndex LTE 3;SelectedIndex LT 4">
+						<element Target="container" borderThickness="0,0,0,0"/>
+						<element Target="colorSwatch" background="white"/>
+						<label Target="label" text="White is a pretty bland color." fontSize="msoFontSize"/>
+					</Trigger>
+					<Trigger condition="SelectedIndex==1">
+						<element Target="colorSwatch" background="red"/>
+						<label Target="label" text="Your selected color is Red.  Do you really want Red?" fontSize="msoFontSizeLarger"/>
+					</Trigger>
+					<Trigger condition="SelectedIndex==2">
+						<element Target="container" borderThickness="1,1,1,1"/>
+						<element Target="colorSwatch" background="green"/>
+						<label Target="label" text="Your selected color is Green.  Good choice!"/>
+						<radiobutton Target="radio" background="red"/>
+					</Trigger>
+				</PropertyTriggers>
+			</Node.StyleTree>
+		</SelectSingleItem>
+
+		<SelectionItem>
+				<Node.StyleTree>
+						<element layoutChildren="horizontal" expandToFillHoriz="true">
+								<image src="*Bind(Property=ImageSource)"/>
+								<radiobutton id="radio"
+										text="*Bind(Property=Label)"
+										IsEnabled="*Bind(Property=State.IsNotReadOnly; BindType=OneWay)"
+										IsVisible="*Bind(Property=State.IsNotUndefined; BindType=OneWay)"
+										LayoutPosition="*Bind(Property=State.IsUndefined; BindType=OneWay)" />
+						</element>
+				</Node.StyleTree>
+		</SelectionItem>
+				
+
+		<EnterInteger>
+			<Node.StyleTree>
+				<element layoutChildren="vertical" expandToFillHoriz="true"
+					IsEnabled="*Bind(Property=State.IsNotReadOnly; BindType=OneWay)"
+					IsVisible="*Bind(Property=State.IsNotUndefined; BindType=OneWay)"
+					LayoutPosition="*Bind(Property=State.IsUndefined; BindType=OneWay)">
+					<element layoutChildren="horizontal" expandToFillHoriz="true">
+						<image src="*Bind(Property=ImageSource)"/>
+						<label text="*Bind(Property=Label)" textAlign="wrapLeft"/>
+						<textbox ID="ValidatingTextbox" MaxCharacters="30"
+							text="*Bind(Property=EntryValue)" expandToFitString="XXXXXXXXXXXXX" isEditable="true" isMultiline="false"
+							AcceptEntryCommand="StyledParent.TextBoxEntryChanging" ValidateEntryCommand="StyledParent.TextBoxValidationRequest"
+							HoverMessage="*Bind(Property=ValidationDescription)" isThemeEnabled="false" borderStyle="solid"/>
+					</element>
+					<label text="*Bind(Property=Description)" textAlign="wrapLeft"/>
+				</element>
+				<PropertyTriggers>
+					<Trigger condition="IsValid==true">
+						<textbox Target="ValidatingTextbox" borderColor="black"/>
+					</Trigger>
+					<Trigger condition="IsValid==false">
+						<textbox Target="ValidatingTextbox" borderColor="red"/>
+					</Trigger>
+				</PropertyTriggers>
+			</Node.StyleTree>
+		</EnterInteger>
+
+		<BooleanChoice>
+			<Node.StyleTree>
+				<element 
+					layoutChildren="vertical"
+					ExpandToFillHoriz="true"
+					IsEnabled="*Bind(Property=State.IsNotReadOnly; BindType=OneWay)"
+					IsVisible="*Bind(Property=State.IsNotUndefined; BindType=OneWay)"
+					LayoutPosition="*Bind(Property=State.IsUndefined; BindType=OneWay)">
+					
+					<element layoutChildren="horizontal">
+						<image src="*Bind(Property=ImageSource)"/>
+						<checkbox id="cb" text="*Bind(Property=Label)" isChecked="*Bind(Property=Value)"/>
+					</element>
+					<ExecuteAction Label="Random styled object to get in the way before the description"/>
+					<label id="desc" text="*Bind(Property=Description)" padding="15,0,0,0" textAlign="wrapLeft"/>
+				</element>
+				<PropertyTriggers>
+					<Trigger condition="Value==true">
+						<label Target="desc" layoutPosition="auto"/>
+					</Trigger>
+					<Trigger condition="Value==false">
+						<label Target="desc" layoutPosition="none"/>
+					</Trigger>
+				</PropertyTriggers>
+			</Node.StyleTree>
+		</BooleanChoice>
+
+		<BooleanChoice Class="StyleChanger">
+			<Node.StyleTree>
+				<label text="Styled differently now."/>
+			</Node.StyleTree>
+		</BooleanChoice>
+		<BooleanChoice Class="StyleChanger" condition="Value==true">
+			<Node.StyleTree>
+				<checkbox id="cb" text="*Bind(Property=Label)" isChecked="*Bind(Property=Value)"/>
+			</Node.StyleTree>
+		</BooleanChoice>
+
+	</style>
+	
+	<Category Sheet="#s" Label="This is the Category Label">
+		<BooleanChoice ID="bc1" Label="I am a &amp;Boolean Choice" Value="true" Description="This is my description"/>
+		<SelectSingleItem Label="&amp;Select one item" SelectedIndex="1">
+			<SelectionItem Label="Item One - White Background"/>
+			<SelectionItem Label="Item Two - Red Background"/>
+			<SelectionItem Label="Item Three - Green Background"/>
+		</SelectSingleItem>
+		<ExecuteAction Label="Execute Me!"/>
+		<EnterInteger ID="ValidatingConcept" Label="Enter an integer" Value="10" Minimum="5" Maximum="15" ValidationCondition="Immediate"/>
+		<BooleanChoice Class="StyleChanger" Label="Re-styles when value is toggled" Value="*Bind(Property=Value; Source=bc1)"/>
+	</Category>
+	
+</DialogView>

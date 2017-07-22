@@ -1,0 +1,12 @@
+<NetUI>
+
+<g layoutChildren="Flow" alignChildren="topleft" background="gray">
+
+   <ocxcontrol id="flashplayer" classid="{D27CDB6E-AE6D-11cf-96B8-444553540000}" width="640" height="200">
+	<param name="movie" value="\\mapudall\netuiview\xbox.swf" />
+	<param name="quality" value="high"/>
+	<param name="bgcolor" value="#FFFFFF"/>
+   </ocxcontrol>
+
+</g>
+</NetUI>

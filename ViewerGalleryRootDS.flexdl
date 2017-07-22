@@ -1,0 +1,7 @@
+<!--	ViewerGalleryRootDS.flexdl
+		Owner: AStout
+		Copyright (c) Microsoft Corporation. All rights reserved. -->
+
+<DataSource ID="ViewerGalleryRootDS" IsTestable="false" BasedOn="OfficeSpace::FSGallery">
+
+</DataSource>

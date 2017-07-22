@@ -1,0 +1,14 @@
+# NetUI CIT List of Flex DataSources
+#
+#	DataSource ID                 Filename             
+#-----------------------------------------------------------------------    
+	ViewerGalleryRootDS           ViewerGalleryRootDS.flexdl
+	GalleryCategoryDS             GalleryCategoryDS.flexdl
+	GalleryItemDS                 GalleryItemDS.flexdl
+	GalleryFilterDS               GalleryFilterDS.flexdl
+	GalleryMenuDS                 GalleryMenuDS.flexdl
+	GalleryMenuCategoryDS         GalleryMenuCategoryDS.flexdl
+	GalleryMenuItemDS             GalleryMenuItemDS.flexdl
+
+
+

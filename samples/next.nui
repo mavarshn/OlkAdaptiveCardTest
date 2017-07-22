@@ -1,0 +1,80 @@
+<element layoutchildren="vertical" padding="20,20,20,20">
+	<style id="s">
+		<simplebutton borderThickness="0,0,0,0" background="none" foreground="msocbvcrHyperlink" fontStyle="underline" padding="3,3,3,3" alignChildren="center" cursor="hand" childrenmargin="ICON_TEXT_GAP"/>
+		<simplebutton condition="ispressed" borderThickness="0,0,0,0" padding="3,3,3,3"/>
+	</style>
+	<element sheet="#s" layoutchildren="table" cols="2" rows="4" alignchildren="center">
+		<label text="LTR using direction=RTL for Next hyperlink:" />
+		<element layoutchildren="horizontal" direction="LTR" background="whitesmoke">
+			<hyperlink id="btnPrevious" imagesrc=":bitmap() jumpback.bmp" text="Previous"/>
+			<hyperlink id="btnNext" direction="RTL" imagesrc=":bitmap() jumpnext.bmp" text="Next"/>
+		</element>
+
+		<label text="RTL using direction=RTL for Next hyperlink:" />
+		<element layoutchildren="horizontal" direction="RTL" background="whitesmoke">
+			<hyperlink id="btnPrevious" imagesrc=":bitmap() jumpback.bmp" text="Previous"/>
+			<hyperlink id="btnNext" direction="RTL" imagesrc=":bitmap() jumpnext.bmp" text="Next"/>
+		</element>
+
+		<label text="LTR simplebutton:" />
+		<element layoutchildren="horizontal" direction="LTR" background="whitesmoke">
+			<simplebutton id="btnPrevious">
+				<image src=":bitmap() jumpback.bmp" />
+				<label text="Previous"/>
+			</simplebutton>
+			<simplebutton id="btnNext">
+				<label text="Next"/>
+				<image src=":bitmap() jumpnext.bmp" />
+			</simplebutton>
+		</element>
+
+		<label text="RTL simplebutton:" />
+		<element layoutchildren="horizontal" direction="RTL" background="whitesmoke">
+			<simplebutton id="btnPrevious">
+				<image src=":bitmap() jumpback.bmp" />
+				<label text="Previous"/>
+			</simplebutton>
+			<simplebutton id="btnNext">
+				<label text="Next"/>
+				<image src=":bitmap() jumpnext.bmp" />
+			</simplebutton>
+		</element>
+	</element>
+
+	<label text="Button approach with flipping icons:" padding="0,20,0,20"/>
+
+	<style id="sflip">
+		<simplebutton borderThickness="0,0,0,0" background="none" foreground="msocbvcrHyperlink" fontStyle="underline" padding="3,3,3,3" alignChildren="center" cursor="hand" childrenmargin="ICON_TEXT_GAP"/>
+		<simplebutton condition="ispressed" borderThickness="0,0,0,0" padding="3,3,3,3"/>
+		<image id="imgPrev" src=":bitmap() jumpback.bmp" />
+		<image id="imgNext" src=":bitmap() jumpnext.bmp" />
+		<image id="imgPrev" condition="direction==RTL" src=":bitmap() jumpnext.bmp" />
+		<image id="imgNext" condition="direction==RTL" src=":bitmap() jumpback.bmp" />
+	</style>
+	<element sheet="#sflip" layoutchildren="table" cols="2" rows="4" alignchildren="center">
+
+		<label text="LTR simplebutton (with flipping icon):" />
+		<element layoutchildren="horizontal" direction="LTR" background="whitesmoke">
+			<simplebutton id="btnPrevious">
+				<image id="imgPrev" src=":bitmap() jumpback.bmp" />
+				<label text="Previous"/>
+			</simplebutton>
+			<simplebutton id="btnNext">
+				<label text="Next"/>
+				<image id="imgNext" src=":bitmap() jumpnext.bmp" />
+			</simplebutton>
+		</element>
+
+		<label text="RTL simplebutton (with flipping icon):" />
+		<element layoutchildren="horizontal" direction="RTL" background="whitesmoke">
+			<simplebutton id="btnPrevious">
+				<image id="imgPrev" />
+				<label text="Previous"/>
+			</simplebutton>
+			<simplebutton id="btnNext">
+				<label text="Next"/>
+				<image id="imgNext" />
+			</simplebutton>
+		</element>
+	</element>
+</element>

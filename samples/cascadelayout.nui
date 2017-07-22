@@ -1,0 +1,40 @@
+	<element layoutChildren="vertical" background="buttonface">
+
+<style id="myStyle">
+	<element class="LayoutContainer" layoutChildren="vertical" borderstyle="sunken" bordercolor="black" borderthickness="1,1,1,1"/>
+	<element class="LayoutContainer" condition="keywithin" layoutChildren="horizontal"/>
+
+	<element condition="layoutChildren==horizontal" background="yellow"/>
+	<element condition="layoutChildren==vertical" background="blue"/>
+	<element condition="layoutChildren==table" background="green"/>
+
+	<checkbox condition="keywithin" background="gold" />
+</style>
+
+<element layoutChildren="vertical" sheet="#myStyle">
+	<element class="LayoutContainer">
+		<checkbox text="enable feature a" />
+		<checkbox text="enable feature b" />
+		<checkbox text="enable feature c" />
+		<checkbox text="enable feature d" />
+		<checkbox text="enable feature e" />
+	</element>
+	<element class="LayoutContainer">
+		<checkbox text="enable feature a" />
+		<checkbox text="enable feature b" />
+		<checkbox text="enable feature c" />
+		<checkbox text="enable feature d" />
+		<checkbox text="enable feature e" />
+	</element>
+	<element class="LayoutContainer" layoutChildren="table" rows="2" cols="3" id="LAYOUTELEMENT">
+		<checkbox text="enable feature a" />
+		<checkbox text="enable feature b" />
+		<checkbox text="enable feature c" />
+		<checkbox text="enable feature d" />
+		<checkbox text="enable feature e" />
+	</element>
+</element>
+
+
+</element>
+

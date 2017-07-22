@@ -1,0 +1,38 @@
+<DialogView>
+	<DeclareCustomConcept Name="SpecialBooleanChoice" Base="BooleanChoice">
+		<DeclareProperty Name="FontSize" Type="int"/>
+		<DeclareProperty Name="LargeLabel" Type="string"/>
+	</DeclareCustomConcept>
+
+	<style id="s" src="#DialogView">
+		<SpecialBooleanChoice>
+			<Node.StyleTree>
+				<element 
+					layoutChildren="vertical"
+					ExpandToFillHoriz="true"
+					Background="highlight"
+					IsEnabled="*Bind(Property=State.IsNotReadOnly; BindType=OneWay)"
+					IsVisible="*Bind(Property=State.IsNotUndefined; BindType=OneWay)"
+					LayoutPosition="*Bind(Property=State.IsUndefined; BindType=OneWay)">
+					
+					<element layoutChildren="horizontal">
+						<image src="*Bind(Property=ImageSource)"/>
+						<checkbox id="cb" text="*Bind(Property=Label)" isChecked="*Bind(Property=Value)"/>
+					</element>
+					<label id="large" text="*Bind(Property=LargeLabel)" fontsize="*Bind(Property=FontSize)"/>
+				</element>
+				<PropertyTriggers>
+					<Trigger Condition="FontSize==5">
+						<label Target="large" FontFace="Arial"/>
+					</Trigger>
+				</PropertyTriggers>
+			</Node.StyleTree>
+		</SpecialBooleanChoice>
+	</style>
+	
+	<Category Sheet="#s" Label="This is the Category Label">
+		<BooleanChoice Label="Normal BooleanChoice"/>
+		<SpecialBooleanChoice Label="Special BooleanChoice" LargeLabel="Second label" FontSize="msoFontSizeLargest"/>
+	</Category>
+	
+</DialogView>

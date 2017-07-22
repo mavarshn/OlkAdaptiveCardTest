@@ -1,0 +1,57 @@
+<netuixml>
+	<style id="s">
+		<button background="green" />
+		<!-- <button condition="mousewithin" background="red" /> -->
+		<button condition="width   GT          1000" background="blue"></button>
+	</style>
+
+	<element layoutchildren="vertical" sheet="#s">
+		<button id="bindingsource" text="Binding Source"/>
+		<element layoutchildren="flow">
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+			<element id="bindingdestination" text="Binding Destination"/> <element id="bindingdestination" text="Binding Destination"/>
+		</element>
+		<checkbox id="twowaybinding1" text="Bound checkbox #1"/>
+		<checkbox id="twowaybinding2" text="BoundCheckBox #2"/>
+	</element>
+</netuixml>
+
+

@@ -1,0 +1,205 @@
+<xml>
+
+<defs>
+	<color id="softBlue"> #D6DFF7 </color>
+	<color id="textNormal"> #215DC6 </color>
+	<color id="deepBlue"> #6579D7 </color>
+	<color id="dropTargetBG"> #00FF00 </color>
+</defs>
+
+<style id="errorWinStyle" src="##default">
+	<button background="#softBlue" foreground="#textNormal" bordercolor="#softBlue"/>
+	<label foreground="#textNormal" fontWeight="bold" isDropTarget="true"/>
+	<label class="nodrop" isDropTarget="false"/>
+	<viewer height="30" width="30" background="white"/>
+	<label condition="isCurrentDropTarget" background="#dropTargetBG"/>
+</style>
+
+<element sheet="#errorWinStyle" layoutChildren="vertical" background="#deepBlue" alignChildren="center" padding="10,10,10,10" expandToFillHoriz="true" expandToFillVert="true" childrenMargin="10">
+	<scrollviewer expandToFillHoriz="true" expandToFillVert="true" background="#softBlue" xisDraggable="true" borderThickness="5,5,5,5">
+		<element layoutChildren="vertical" childrenMargin="0">
+			<label text="random: _fBit.bDefaultForeground = true;"/>
+			<label text="random: _fBit.bDefaultFontWeight = true;"/>
+			<label text="random: _fBit.bDefaultFontStyle = true;"/>
+			<label text="This item is not draggable"/>
+			<label text="This item is draggable." isDraggable="true"/>
+			<label text="random item"/>
+			<label text="random: _fBit.bNeedsDSUpdate = false;"/>
+			<label text="random: _fBit.fNeedsLayout = LC_Pass;"/>
+			<label text="random: _fBit.bHasChildren = false;"/>
+			<label text="random: _fBit.bHasLayout = false;"/>
+			<label text="random: _fBit.bHasBorder = false;"/>
+			<label text="random: _fBit.bHasPadding = false;"/>
+			<label text="random: _fBit.bHasMargin = false;"/>
+			<label text="random: _fBit.bHasContent = false;"/>
+			<label text="random: _fBit.bDefaultCAlign = true;"/>
+			<label text="random: _fBit.bWordWrap = false;"/>
+			<label text="random: _fBit.bHasAnimation = false;"/>
+			<label text="random: _fBit.bDefaultCursor = true;"/>
+			<label text="random: _fBit.bDefaultBorderColor = true;"/>
+			<label text="random: _fBit.bDefaultForeground = true;"/>
+			<label text="random: _fBit.bDefaultFontWeight = true;"/>
+			<label text="random: _fBit.bDefaultFontStyle = true;"/>
+			<label text="The container element looks like this: &lt;scrollviewer expandToFillHoriz='true' expandToFillVert='true' background='#softBlue' xisDraggable='true' borderThickness='5,5,5,5'&gt;" />
+			<label text="aliceblue"/>
+			<label text="antiquewhite"/>
+			<label text="aqua"/>
+			<label text="aquamarine"/>
+			<label text="azure"/>
+			<label text="beige"/>
+			<label text="bisque"/>
+			<label text="black"/>
+			<label text="blanchedalmond"/>
+			<label text="blue"/>
+			<label text="blueviolet"/>
+			<label text="brown"/>
+			<label text="burlywood"/>
+			<label text="cadetblue"/>
+			<label text="chartreuse"/>
+			<label text="chocolate"/>
+			<label text="coral"/>
+			<label text="cornflowerblue"/>
+			<label text="cornsilk"/>
+			<label text="crimson"/>
+			<label text="cyan"/>
+			<element layoutchildren="vertical" isDraggable="true" childrenMargin="0">
+				<label class="nodrop" text="Draggable (bug not a drop target):" />
+				<label class="nodrop" indent="1" text="This item is draggable, and as you can see" />
+				<label class="nodrop" indent="1" text="it takes up several lines of display.  This" />
+				<label class="nodrop" indent="1" text="is to make it easier to see what a larger" />
+				<label class="nodrop" indent="1" text="drag item image looks like, and to see how" />
+				<label class="nodrop" indent="1" text="it is handled when some of the image is not" />
+				<label class="nodrop" indent="1" text="visible.  The drag image should not be the" />
+				<label class="nodrop" indent="1" text="full size of the element showing some of the" />
+				<label class="nodrop" indent="1" text="window outside of the scrollviewer if this" />
+				<label class="nodrop" indent="1" text="element is being clipped by the scrollviewer." />
+			</element>
+			<label text="darkblue"/>
+			<label text="darkcyan"/>
+			<label text="darkgoldenrod"/>
+			<label text="darkgray"/>
+			<label text="darkgreen"/>
+			<label text="darkkhaki"/>
+			<label text="darkmagenta"/>
+			<label text="darkolivegreen"/>
+			<label text="darkorange"/>
+			<label text="darkorchid"/>
+			<label text="darkred"/>
+			<label text="darksalmon"/>
+			<label text="darkseagreen"/>
+			<label text="darkslateblue"/>
+			<label text="darkslategray"/>
+			<label text="darkturquoise"/>
+			<label text="darkviolet"/>
+			<label text="deeppink"/>
+			<label text="deepskyblue"/>
+			<label text="dimgray"/>
+			<label text="dodgerblue"/>
+			<label text="firebrick"/>
+			<label text="floralwhite"/>
+			<label text="forestgreen"/>
+			<label text="fuchsia"/>
+			<label text="gainsboro"/>
+			<label text="ghostwhite"/>
+			<label text="gold"/>
+			<label text="goldenrod"/>
+			<label text="gray"/>
+			<label text="green"/>
+			<label text="greenyellow"/>
+			<label text="honeydew"/>
+			<label text="hotpink"/>
+			<label text="indianred"/>
+			<label text="indigo"/>
+			<label text="ivory"/>
+			<label text="khaki"/>
+			<label text="lavender"/>
+			<label text="lavenderblush"/>
+			<label text="lawngreen"/>
+			<label text="lemonchiffon"/>
+			<label text="lightblue"/>
+			<label text="lightcoral"/>
+			<label text="lightcyan"/>
+			<label text="lightgoldenrodyellow"/>
+			<label text="lightgray"/>
+			<label text="lightgreen"/>
+			<label text="lightgrey"/>
+			<label text="lightpink"/>
+			<label text="lightsalmon"/>
+			<label text="lightseagreen"/>
+			<label text="lightskyblue"/>
+			<label text="lightslategray"/>
+			<label text="lightsteelblue"/>
+			<label text="lightyellow"/>
+			<label text="lime"/>
+			<label text="limegreen"/>
+			<label text="linen"/>
+			<label text="magenta"/>
+			<label text="maroon"/>
+			<label text="mediumaquamarine"/>
+			<label text="mediumblue"/>
+			<label text="mediumorchid"/>
+			<label text="mediumpurple"/>
+			<label text="mediumseagreen"/>
+			<label text="mediumslateblue"/>
+			<label text="mediumspringgreen"/>
+			<label text="mediumturquoise"/>
+			<label text="mediumvioletred"/>
+			<label text="midnightblue"/>
+			<label text="mintcream"/>
+			<label text="mistyrose"/>
+			<label text="moccasin"/>
+			<label text="not a drop target: navajowhite" isDropTarget="false"/>
+			<label text="not a drop target: navy" isDropTarget="false"/>
+			<label text="not a drop target: oldlace" isDropTarget="false"/>
+			<label text="not a drop target: olive" isDropTarget="false"/>
+			<label text="not a drop target: olivedrab" isDropTarget="false"/>
+			<label text="not a drop target: orange" isDropTarget="false"/>
+			<label text="not a drop target: orangered" isDropTarget="false"/>
+			<label text="not a drop target: orchid" isDropTarget="false"/>
+			<label text="not a drop target: palegoldenrod" isDropTarget="false"/>
+			<label text="not a drop target: palegreen" isDropTarget="false"/>
+			<label text="not a drop target: paleturquoise" isDropTarget="false"/>
+			<label text="palevioletred"/>
+			<label text="papayawhip"/>
+			<label text="peachpuff"/>
+			<label text="peru"/>
+			<label text="pink"/>
+			<label text="plum"/>
+			<label text="powderblue"/>
+			<label text="purple"/>
+			<label text="red"/>
+			<label text="rosybrown"/>
+			<label text="royalblue"/>
+			<label text="saddlebrown"/>
+			<label text="salmon"/>
+			<label text="sandybrown"/>
+			<label text="seagreen"/>
+			<label text="seashell"/>
+			<label text="sienna"/>
+			<label text="silver"/>
+			<label text="skyblue"/>
+			<label text="slateblue"/>
+			<label text="slategray"/>
+			<label text="snow"/>
+			<label text="springgreen"/>
+			<label text="steelblue"/>
+			<label text="tan"/>
+			<label text="teal"/>
+			<label text="thistle"/>
+			<label text="tomato"/>
+			<label text="transparent"/>
+			<label text="turquoise"/>
+			<label text="violet"/>
+			<label text="wheat"/>
+			<label text="white"/>
+			<label text="whitesmoke"/>
+			<label text="yellow"/>
+			<label text="yellowgreen"/>
+
+		</element>
+	</scrollviewer>
+	<button id="OK" isDefaultButton="true" isCancelButton="true" text="OK"/>
+</element>
+
+
+</xml>

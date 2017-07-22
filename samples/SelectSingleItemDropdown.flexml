@@ -1,0 +1,101 @@
+<DialogView>
+	<SelectSingleItem ShowOnlySelected="true" ID="SSI" Label="Which Place?" SizeControlToFitItems="false">
+		<SelectionItem ID="SI1" Label="First" ImageSource=":rcicon(321)"/>
+		<SelectionItem ID="SI2" Label="Second" ImageSource=":rcicon(320)"/>
+		<SelectionItem ID="SI3" Label="Third" ImageSource=":rcicon(321)"/>
+		<SelectionItem ID="SI3" Label="Fourth &amp; Final &amp; Finished" ImageSource=":rcicon(320)"/>
+	</SelectSingleItem>
+
+	<ShowInformation Label="SelectedIndex:" Value="*Bind(Property=SelectedIndex; Source=SSI; BindType=OneWay)" />
+	<ShowInformation Label="Selected Label:" Value="*Bind(Property=SOSSelectedItem.Label; Source=SSI; BindType=OneWay)" />
+	<ShowInformation Label="TelemetryId:" Value="*Bind(Property=Telemetry; BindType=OneWay)" />
+
+
+	<SelectSingleItem ShowOnlySelected="true" ID="SSI2" Label="Pick a standard system icon:" SizeControlToFitItems="false">
+		<SelectionItem ID="SI1" Label="IDI_APPLICATION" ImageSource=":stdicon( IDI_APPLICATION)" SelectionValue="101"/>
+		<SelectionItem ID="SI2" Label="IDI_ASTERISK"    ImageSource=":stdicon( IDI_ASTERISK   )" SelectionValue="111"/>
+		<SelectionItem ID="SI3" Label="IDI_ERROR"       ImageSource=":stdicon( IDI_ERROR      )" SelectionValue="121"/>
+		<SelectionItem ID="SI4" Label="IDI_EXCLAMATION" ImageSource=":stdicon( IDI_EXCLAMATION)" SelectionValue="131"/>
+		<SelectionItem ID="SI5" Label="IDI_HAND"        ImageSource=":stdicon( IDI_HAND       )" SelectionValue="141"/>
+		<SelectionItem ID="SI6" Label="IDI_INFORMATION" ImageSource=":stdicon( IDI_INFORMATION)" SelectionValue="151"/>
+		<SelectionItem ID="SI7" Label="IDI_QUESTION"    ImageSource=":stdicon( IDI_QUESTION   )" SelectionValue="161"/>
+		<SelectionItem ID="SI8" Label="IDI_WARNING"     ImageSource=":stdicon( IDI_WARNING    )" SelectionValue="171"/>
+		<SelectionItem ID="SI9" Label="IDI_WINLOGO"     ImageSource=":stdicon( IDI_WINLOGO    )" SelectionValue="181"/>
+	</SelectSingleItem>
+
+	<SelectSingleItem ID="SSI-Norm" Label="Which Place?">
+		<SelectionItem ID="SI1" Label="First" ImageSource=":rcicon(321)"/>
+		<SelectionItem ID="SI2" Label="Second" ImageSource=":rcicon(320)"/>
+		<SelectionItem ID="SI3" Label="Third" ImageSource=":rcicon(321)"/>
+	</SelectSingleItem>
+	
+	<SelectSingleItem ID="SSI-ListView" Class="listview" Label="Which Place?">
+		<SelectionItem ID="SI1" Label="First" ImageSource=":rcicon(321)"/>
+		<SelectionItem ID="SI2" Label="Second" ImageSource=":rcicon(320)"/>
+		<SelectionItem ID="SI3" Label="Third" ImageSource=":rcicon(321)"/>
+	</SelectSingleItem>
+
+
+	<!-- ======================================================================================= -->
+	<!-- ==      Test cloning a ShowOnlySelected="true" SSI to ensure two clones each get     == -->
+	<!-- ==      their own list with their own DataSources.                                   == -->
+	<!-- ======================================================================================= -->
+
+	<Style ID="CloneSSI" Src="#DialogView">
+		<SelectSingleItem Class="CloneMe">
+			<Node.StyleTree>
+				<SelectSingleItem ShowOnlySelected="true" ID="SSICloned" Label="*Bind(Property=Label; BindType=OneWay)"
+						SOSSelectedItem="*Bind(Property=SOSSelectedItem; BindType=ReverseOneWay)"
+						TelemetryId="*Bind(Property=Telemetry; BindType=OneWay)"
+						SelectedIndex="*Bind(Property=SelectedIndex; BindType=ReverseOneWay)"
+						SelectedValue="*Bind(Property=SelectedValue; BindType=ReverseOneWay)">
+					<SelectionItem ID="SI1" Label="First" ImageSource=":rcicon(321)" SelectionValue="111"/>
+					<SelectionItem ID="SI2" Label="Second" ImageSource=":rcicon(320)" SelectionValue="222"/>
+					<SelectionItem ID="SI3" Label="Third" ImageSource=":rcicon(321)" SelectionValue="333"/>
+				</SelectSingleItem>
+			</Node.StyleTree>
+		</SelectSingleItem>
+	</Style>
+
+	<Category Label="Test Deep Clone (of an entire SSI with items)">
+		<SelectSingleItem Class="CloneMe" ID="CM1" Sheet="#CloneSSI" Label="Cloned value 1:"/>
+		<ShowInformation Label="Clone 1 SelectedIndex:" Value="*Bind(Property=SelectedIndex; Source=CM1; BindType=OneWay)" />
+		<ShowInformation Label="Clone 1 SOSSelectedItem.Label:" Value="*Bind(Property=SOSSelectedItem.Label; Source=CM1; BindType=OneWay)" />
+		<ShowInformation Label="TelemetryId:" Value="*Bind(Property=Telemetry; BindType=OneWay)" />
+		<ShowInformation Label="Clone 1 Selected Value:" Value="*Bind(Property=SelectedValue; Source=CM1; BindType=OneWay)" />
+		
+		<SelectSingleItem Class="CloneMe" ID="CM2" Sheet="#CloneSSI" Label="Cloned value 2:"/>
+
+		<EnterString Label="Change 'Cloned value 1's label" Value="*Bind(Property=SOSSelectedItem.Label; Source=CM1; BindType=TwoWay)"/>
+	</Category>
+
+	<!-- ======================================================================================= -->
+	<!-- ==      Test SizeControlToFitItems="true" mode for ShowOnlySelected="true" SSI's.    == -->
+	<!-- ==      Should be able to size narrower or wider than the default size.              == -->
+	<!-- ======================================================================================= -->
+
+	<Category Label="SelectSingleItems that size to fit items">
+		<SelectSingleItem ShowOnlySelected="true" Label="Which Place?">
+			<SelectionItem ID="SI1" Label="First" ImageSource=":rcicon(321)"/>
+			<SelectionItem ID="SI2" Label="Second" ImageSource=":rcicon(320)"/>
+			<SelectionItem ID="SI3" Label="Third" ImageSource=":rcicon(321)"/>
+		</SelectSingleItem>
+		<SelectSingleItem ShowOnlySelected="true" Label="No icons:">
+			<SelectionItem ID="SI1" Label="First"/>
+			<SelectionItem ID="SI2" Label="Second is long"/>
+			<SelectionItem ID="SI3" Label="Third"/>
+		</SelectSingleItem>
+		<SelectSingleItem ShowOnlySelected="true" Label="Longer:">
+			<SelectionItem ID="SI1" Label="Exciting Option Number One" ImageSource=":rcicon(321)"/>
+			<SelectionItem ID="SI2" Label="Really exciting option number Two" ImageSource=":rcicon(320)"/>
+			<SelectionItem ID="SI3" Label="Unsurpassable unbelievably exciting option number Three" ImageSource=":rcicon(321)"/>
+		</SelectSingleItem>
+		<SelectSingleItem ShowOnlySelected="true" Label="Large Icons:">
+			<SelectionItem ID="SI1" Label="Application Icon" ImageSource=":stdicon( IDI_APPLICATION)" SelectionValue="101"/>
+			<SelectionItem ID="SI2" Label="Info icon"        ImageSource=":stdicon( IDI_ASTERISK   )" SelectionValue="111"/>
+			<SelectionItem ID="SI3" Label="Error icon"       ImageSource=":stdicon( IDI_ERROR      )" SelectionValue="121"/>
+			<SelectionItem ID="SI4" Label="Warning icon"     ImageSource=":stdicon( IDI_EXCLAMATION)" SelectionValue="131"/>
+		</SelectSingleItem>
+	</Category>
+
+</DialogView>

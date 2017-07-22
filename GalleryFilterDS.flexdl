@@ -1,0 +1,12 @@
+<!--	GalleryFilterDS.flexdl
+		Owner: AndrewH
+		Copyright (c) Microsoft Corporation. All rights reserved. -->
+
+<DataSource ID="GalleryFilterDS">
+	<Property ID="Label" Type="String" />
+	<Property ID="ImageSource" Type="Image" />
+	<Property ID="FilterType" Type="Int32" />
+	<Property ID="FilterMask" Type="Int32" />
+	<Property ID="pvClient" Type="UInt32" />
+</DataSource>
+

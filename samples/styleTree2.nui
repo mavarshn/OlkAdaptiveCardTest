@@ -1,0 +1,111 @@
+<netuixml>
+	<customProperty name="ExpandoText" />
+
+	<style id="s">
+		<!-- ********************** Root styles *********************** -->
+		<node id="root" class="default">
+			<Node.StyleTree>
+				<element layoutChildren="vertical" background="msocbvcrCBCtlBkgdMouseDown">
+					<label fontSize="msoFontSizeLargest" FontStyle="underline" text="Root Tree Style:  Default (aka &quot;Ugly&quot;)"/>
+					<element margin="10" />
+					<element layoutChildren="horizontal" children="*Bind(Property=Children)"/>
+				</element>
+			</Node.StyleTree>
+		</node>
+		<node id="root" class="pretty">
+			<Node.StyleTree>
+				<element layoutChildren="vertical" background="gradient(msocbvcrCBGradVertBegin,msocbvcrCBGradVertEnd,vertical)">
+					<label fontSize="msoFontSizeLargest" FontStyle="underline" text="Root Tree Style:  Pretty"/>
+					<element margin="10" />
+					<element layoutChildren="table" rows="3" cols="3" background="gradient(msocbvcrCBGradVertBegin,msocbvcrCBGradVertEnd,vertical)" children="*Bind(Property=Children)"/>
+				</element>
+			</Node.StyleTree>
+		</node>
+		<node id="root" class="nostyletree">
+			<Node.StyleTree>
+			</Node.StyleTree>
+		</node>
+
+
+		<!-- ********************** Category styles *********************** -->
+		<node id="CategoryVert">
+			<Node.StyleTree>
+				<element layoutChildren="vertical" Children="*Bind(Property=Children)"/>
+			</Node.StyleTree>
+		</node>
+		<node id="CategoryHoriz">
+			<Node.StyleTree>
+				<element layoutChildren="horizontal" Children="*Bind(Property=Children)"/>
+			</Node.StyleTree>
+		</node>
+
+		<!-- ********************** Databound Checkboxes style *********************** -->
+		<node id="dbCheckboxes">
+			<Node.StyleTree>
+				<element layoutChildren="vertical">
+					<label fontSize="msoFontSizeLarger" text="Simple Databinding Test"/>
+
+					<label margin="16" text="First checkbox controls the Second:"/>
+					<checkbox id="c1" text="First: OneWay bound to Second"/>
+					<checkbox id="c2" text="Second" IsChecked="*Bind(Property=IsChecked; Source=c1; BindType=OneWay)"/>
+
+					<label margin="16" text="Third checkbox is bound two-way to the Fourth:"/>
+					<checkbox id="c3" text="Third: TwoWay bound to Fourth"/>
+					<checkbox id="c4" text="Fourth" IsChecked="*Bind(Property=IsChecked; Source=c3; BindType=TwoWay)"/>
+				</element>
+			</Node.StyleTree>
+		</node>
+
+		<!-- ********************** Databound textboxes style *********************** -->
+		<node class="edit">
+			<Node.StyleTree>
+				<element layoutChildren="vertical">
+					<textbox id="t" text="*Bind(Property=ExpandoText; BindType=TwoWay)" expandToFitString="0123456789012345"/>
+					<textbox id="t2" text="*Bind(Property=Text; Source=t; BindType=TwoWay)" expandToFitString="0123456789012345"/>
+				</element>
+			</Node.StyleTree>
+		</node>
+
+		<!-- ********************** Other random styles *********************** -->
+		<node id="button">
+			<Node.StyleTree>
+				<button id="b" text="Button"/>
+			</Node.StyleTree>
+		</node>
+		<node id="list">
+			<Node.StyleTree>
+				<scrollviewer>
+					<element layoutChildren="vertical" childrenMargin="0">
+						<label text="random: _fBit.bDefaultForeground = true;"/>
+						<label text="random: _fBit.bDefaultFontWeight = true;"/>
+						<label text="random: _fBit.bDefaultFontStyle = true;"/>
+						<label text="This item is not draggable"/>
+						<label text="This item is draggable." isDraggable="true"/>
+						<label text="random item"/>
+						<label text="random: _fBit.bNeedsDSUpdate = false;"/>
+						<label text="random: _fBit.fNeedsLayout = LC_Pass;"/>
+						<label text="random: _fBit.bHasChildren = false;"/>
+					</element>
+				</scrollviewer>
+			</Node.StyleTree>
+		</node>
+		<node id="composite">
+			<Node.StyleTree>
+				<node id="CategoryVert">
+					<node id="button"/>
+					<node id="button"/>
+					<node id="list"/>
+				</node>
+			</Node.StyleTree>
+		</node>
+	</style>
+
+	<!-- ********************** Tree (like FlexML) *********************** -->
+	<node sheet="#s" id="root" class="default">
+		<node id="dbCheckboxes"/>
+		<node class="edit" id="edit1"/>
+		<node id="composite"/>
+		<node class="edit" ExpandoText="*Bind(Property=ExpandoText; Source=edit1; BindType=TwoWay)"/>
+	</node>
+
+</netuixml>

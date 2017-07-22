@@ -1,0 +1,32 @@
+<netuixml>
+	<style id="s">
+		<simplebutton expandToFillVert="true" width="75"/>
+		<button condition="mousewithin" height="30" />
+	</style>
+
+	<element layoutchildren="vertical" sheet="#s">
+		<element background="lightblue" animation="sizev | linear | mediumfast">
+			<button text="button 1" />
+			<simplebutton text="button 2a" animation="sizev | linear | mediumfast"/>
+			<simplebutton text="button 3" />
+			<simplebutton text="button 4a" animation="sizev | linear | mediumfast"/>
+			<button text="button 5" />
+		</element>
+		<element background="lightgreen" animation="position | linear | mediumfast" lowerby="9">
+			<button text="button 1" height="50" />
+			<button text="button 2" />
+			<button text="button 3" />
+			<button text="button 4" />
+			<button text="button 5" />
+		</element>
+		<element background="red" animation="sizev | linear | mediumfast">
+			<button text="button 1" />
+			<button text="button 2" />
+			<button text="button 3" />
+			<button text="button 4" />
+			<button text="button 5" />
+		</element>
+	</element>
+</netuixml>
+
+

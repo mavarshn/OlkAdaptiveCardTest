@@ -1,0 +1,22 @@
+<netuixml>
+	<customProperty name="ExpandoText" />
+
+	<style id="s">
+		<node id="root" class="default">
+			<Node.StyleTree>
+				<element layoutChildren="horizontal" background="msocbvcrCBCtlBkgdMouseDown"/>
+			</Node.StyleTree>
+		</node>
+		<node class="buttons">
+			<!-- Error: Node.StyleTree tag does not have any properties, including "class". -->
+			<Node.StyleTree class="blah">
+				<button text="button 1"/>
+				<!-- Error:  Node.StyleTree tag can only have one child.  This second button is an error. -->
+				<button text="button 2"/>
+			</Node.StyleTree>
+		</node>
+	</style>
+	<node sheet="#s" id="root" class="default">
+		<node class="buttons"/>
+	</node>
+</netuixml>

@@ -1,0 +1,4205 @@
+<Element LayoutChildren="horizontal" ExpandChildrenToFillVert="true">
+	<ListView ExpandToFillVert="true" SelectedIndex="0">
+		<ListViewItem ID="PreferredWidth.xml" Text="PreferredWidth.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALAbsolute.xml" Text="DALAbsolute.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalall.xml" Text="dalall.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALanim.xml" Text="DALanim.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalcascade.xml" Text="dalcascade.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALCheckboxes.xml" Text="DALCheckboxes.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALCit.xml" Text="DALCit.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALComboBox.xml" Text="DALComboBox.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALConsole.xml" Text="DALConsole.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALDistributeFlow.xml" Text="DALDistributeFlow.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="daldontexpand.xml" Text="daldontexpand.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="daldropdown.xml" Text="daldropdown.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalexpand.xml" Text="dalexpand.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalexpand2.xml" Text="dalexpand2.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALExpandTabs.xml" Text="DALExpandTabs.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALFlow.xml" Text="DALFlow.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalflowexpand.xml" Text="dalflowexpand.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalflowexpand2.xml" Text="dalflowexpand2.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalflowsamewidth.xml" Text="dalflowsamewidth.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALFrameGroup.xml" Text="DALFrameGroup.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALFrameGroup2.xml" Text="DALFrameGroup2.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALGroupBox.xml" Text="DALGroupBox.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalheightlines1.xml" Text="dalheightlines1.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalheightlines2.xml" Text="dalheightlines2.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalheightlines3.xml" Text="dalheightlines3.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALHierarchy.xml" Text="DALHierarchy.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALHorizDistribute.xml" Text="DALHorizDistribute.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALhorizVert.xml" Text="DALhorizVert.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALHyperLink.xml" Text="DALHyperLink.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALImage.xml" Text="DALImage.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALImage2.xml" Text="DALImage2.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALImageButton.xml" Text="DALImageButton.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalinfinitelayout.xml" Text="dalinfinitelayout.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALLabel.xml" Text="DALLabel.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALLayout.xml" Text="DALLayout.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dallistbox.xml" Text="dallistbox.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALListView.xml" Text="DALListView.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALListView2.xml" Text="DALListView2.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalmargin.xml" Text="dalmargin.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalmarginandchildrenmargin.xml" Text="dalmarginandchildrenmargin.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalmultiexpand.xml" Text="dalmultiexpand.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALNoMargin.xml" Text="DALNoMargin.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALNoMargin2.xml" Text="DALNoMargin2.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalOneElement.xml" Text="dalOneElement.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALOverLap.xml" Text="DALOverLap.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALPcc.xml" Text="DALPcc.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalpcc3.xml" Text="dalpcc3.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALRadioButtons.xml" Text="DALRadioButtons.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALRichlabel.xml" Text="DALRichlabel.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALRTL.xml" Text="DALRTL.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalsamewidth.xml" Text="dalsamewidth.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalsamewidth2.xml" Text="dalsamewidth2.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalsamewidth3.xml" Text="dalsamewidth3.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalsamewidthonflow.xml" Text="dalsamewidthonflow.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALScrollViewer.xml" Text="DALScrollViewer.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalscrollviewlong.xml" Text="dalscrollviewlong.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalShrinkWidthCrash.xml" Text="dalShrinkWidthCrash.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALSingleDistribute.xml" Text="DALSingleDistribute.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALtable.xml" Text="DALtable.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALTable2.xml" Text="DALTable2.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALTable3.xml" Text="DALTable3.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALTable4.xml" Text="DALTable4.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALTable5.xml" Text="DALTable5.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALTable6.xml" Text="DALTable6.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="daltableexpand.xml" Text="daltableexpand.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="daltableexpand2.xml" Text="daltableexpand2.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="daltablemargin.xml" Text="daltablemargin.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="daltreeview.xml" Text="daltreeview.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalvert2.xml" Text="dalvert2.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalvertflow.xml" Text="dalvertflow.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALWrap.xml" Text="DALWrap.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALWrapCBCenter.xml" Text="DALWrapCBCenter.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALWrapCBLeft.xml" Text="DALWrapCBLeft.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALWrapCBRight.xml" Text="DALWrapCBRight.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalwraplabel.xml" Text="dalwraplabel.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalwraplabelWithConstraint.xml" Text="dalwraplabelWithConstraint.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalwraplabelWithoutConstraint.xml" Text="dalwraplabelWithoutConstraint.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalwraplabelWithWidth.xml" Text="dalwraplabelWithWidth.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="dalwrapradiobutton.xml" Text="dalwrapradiobutton.xml" ExpandToFillHoriz="true"/>
+		<ListViewItem ID="DALZoom.xml" Text="DALZoom.xml" ExpandToFillHoriz="true"/>
+	</ListView>
+
+	<Viewer ExpandToFillHoriz="true" ExpandToFillVert="true" Height="1" Width="1" XScrollable="false" YScrollable="false">
+		<Element LayoutChildren="overlap" ExpandToFillHoriz="true" ExpandToFillVert="true" ExpandChildrenToFillHoriz="true" ExpandChildrenToFillVert="true">
+			<Viewer ID="ContentsDALAbsolute.xml" IsVisible="*Bind(Property=IsSelected;Source=DALAbsolute.xml)">
+				<element 
+					layoutChildren="vertical" 
+					background="#aaddbb"
+					alignChildren="topleft">
+
+				<button 
+
+					background="#00ffcc" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="11" 
+					width="200"
+					height="200"
+					text="CommandButton"/>
+
+				<element layoutChildren="flow" vertMargin="0" layoutPosition="absolute" x="250" y="100" width="300" height="200" background="red" >
+
+
+				<label  text="overlapped layout" background="#cc00aa"/>
+
+				<label  text="overlapped layout" background="#cc00aa"/>
+
+				<label  text="overlapped layout" background="#cc00aa"/>
+
+
+
+				</element>
+
+
+				</element>
+			</Viewer>
+			<Viewer ID="Contentsdalall.xml" IsVisible="*Bind(Property=IsSelected;Source=dalall.xml)">
+				<element 
+					layoutChildren="vertical"
+					background="#aaddbb"
+					childrenMargin="8"
+					alignChildren="topleft">
+
+				<label text="expandToFillHoriz" background="red" expandToFillHoriz="true"/>
+
+				<element layoutPOsition="absolute" x="500" y="250"
+					layoutChildren="flow" background="cyan" width="500" height="50"
+					text="this is absoultely positioned" alignChildren="bottom">
+					<button text="commandButton in flow"/>
+					<button text="commandButton in flow"/>
+					<button text="commandButton in flow"/>
+				</element>
+
+
+				<element layoutChildren="horizontal" background="red" width="800" distributeChildren="true" 
+					sameWidthChildren="true" sameHeightChildren="true">
+					<label text="sameWidth(Height)Children" background="cyan"/>
+					<button text="distribute short"/>
+					<button text="distribute middle length"/>
+					<button text="distribute long long length"/>
+				</element>
+
+				<element layoutChildren="horizontal" background="red" childrenMargin="20">
+					<label text="parent has ChildrenMargin = 20" background="cyan"/>
+					<button text="parent has ChildrenMargin = 20"/>
+					<button text="parent has ChildrenMargin = 20"/>
+				</element>
+
+				<element layoutChildren="horizontal" width="1000">
+
+				<element layoutChildren="vertical" background="red" childrenMargin="5">
+					<label text="parent has ChildrenMargin = 5" background="cyan"/>
+					<button text="parent has ChildrenMargin = 5"/>
+					<button text="parent has ChildrenMargin = 5"/>
+				</element>
+
+				<element layoutChildren="vertical" background="green" direction="rtl" width="400">
+					<label text="this frame is right to left" background="white"/>
+					<button text="indent = 2" indent="2"/>
+					<button text="lowerBy = 15" lowerBy="15"/>
+					<button text="commandButton in vertical layout"/>
+				</element>
+				</element>
+
+				<element layoutChildren="flow" background="red" width="800" sameWidthChildren="true" 
+					DistributeChildrenHoriz="true"
+					IndentLatterRows="true"
+					vertMargin="0">
+					<button text="flow has indent later rows"/>
+					<button text="expandToFillRowVert" expandToFillRowVert="true"/>
+					<button text="parent flow's vertMargin=0" height="40"/>
+					<button text="sameWidthChildren on the parent frame"/>
+				</element>
+
+				<element layoutChildren="flow" background="red" width="800" sameWidthChildren="true" 
+					IndentLatterRowsByFirstChild="true"
+					vertMargin="0">
+					<button text="flow IndentLatterRowsByFirstChild"/>
+					<button text="expandToFillRowVert" expandToFillRowVert="true"/>
+					<button text="parent flow's vertMargin=0" height="40"/>
+					<button text="sameWidthChildren on the parent frame"/>
+				</element>
+
+				<element layoutChildren="flow" background="red" distributeRows="true">
+					<button text="distribute rows"/>
+					<button text="distribute rows"/>
+					<button text="distribute rows"/>
+				</element>
+
+				<element layoutChildren="horizontal" width="1000" background="red">
+					<button text="NoWiderForlongWordNoWiderForlongWord" widthFlags="NoWiderForlongWord" width="100"/>
+
+					<checkbox text="MaxPcntToExceedStrTargetWidthMaxPcntToExceedStrTargetWidth" background="yellow"/>
+				</element>
+
+				<element layoutChildren="flow" width="1000">
+					<element layoutChildren="table" rows="3" cols="3" background="blue" 
+						colMargin="1:20;2:20;3:20" rowMargin="1:5;2:5;3:5">
+						<button text="1,1"/>
+						<button text="1,2, this is a very very long string"/>
+						<button text="1,3"/>
+
+						<button text="2,1, I am high" height="50"/>
+						<button text="2,2, ExpandToFillCellHoriz"  ExpandToFillCellHoriz="true"/>
+						<button text="2,3, ExpandToFillCellVert" ExpandToFillCellVert="true"/>
+
+						<button text="3,1" expandToFitString="helow|world|averylonglonglongstring"/>
+						<button text="3,2"/>
+						<button text="3,3"/>
+
+					</element>
+					<element layoutChildren="table" rows="3" cols="3" background="blue" distributeRows="true" DistributeCols="true">
+						<button text="1,1"/>
+						<button text="1,2, this is a very very long string"/>
+						<button text="1,3"/>
+
+						<button text="2,1, I am high" height="50"/>
+						<button text="2,2, ExpandToFillCellHoriz"  ExpandToFillCellHoriz="true"/>
+						<button text="2,3, ExpandToFillCellVert" ExpandToFillCellVert="true"/>
+
+						<button text="3,1" expandToFitString="helow|world|averylonglonglongstring"/>
+						<button text="3,2"/>
+						<button text="3,3"/>
+
+					</element>
+				</element>
+
+				<label text="expandToFillVert and setWidthToFitPreexistingItems"
+					background="red" expandToFillVert="true"/>
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALanim.xml" IsVisible="*Bind(Property=IsSelected;Source=DALanim.xml)">
+				<style id="myStyle">
+					<button borderstyle="raised" bordercolor="#D4D0C8" width="150" height="30" TextAlign="middlecenter" borderthickness="1,1,1,1" />
+					<button condition="mousewithin" background="#B6BDD2" height="80" animation="slow | linear | rectangle"/>
+					<button condition="isPressed" borderstyle="sunken" background="#8592B5" foreground="white" />
+					<button condition="height==31" TextAlign="bottomright" />
+					<button condition="keyfocused" focusRect="dotted" />
+					<button condition="text==Task Options..." TextAlign="bottomleft" focusRect="dotted"/>
+					<button condition="height!=31" foreground="red" />
+				</style>
+
+				<Element sheet="#myStyle" x="0" y="0" background="buttonface" layoutChildren="vertical" alignChildren="topright">
+
+					<element id="g1" layoutChildren="horizontal" alignChildren="topright">
+						<element fontface="tahoma" fontSize="8" text="Change the appearance of messages and the way they are handled." />
+						<button fontface="tahoma" fontSize="8" text="E-mail Options..." />
+					</element>
+
+
+					<element layoutChildren="horizontal" alignChildren="topright">
+						<element  fontface="tahoma" fontSize="8" text="Customize the appearance of the Calendar." />
+						<combobox fontface="tahoma" fontSize="8" text="15 minutes" width="100" />
+						<button   fontface="tahoma" fontSize="8" text="Calendar Options..." height="31"/>
+					</element>
+
+
+					<element layoutChildren="horizontal" alignChildren="topright">
+						<element  fontface="tahoma" fontSize="8" text="Change the appearance of tasks." />
+						<combobox fontface="tahoma" fontSize="8" text="8:00 AM" width="100" />
+						<button  fontface="tahoma" fontSize="8" text="Task Options..." />
+					</element>
+
+
+					<element layoutChildren="horizontal" alignChildren="topright">
+						<element  fontface="tahoma" fontSize="8" text="Change default settings for contact and journal." />
+						<button   fontface="tahoma" fontSize="8" text="Contact Options..." />
+						<button   fontface="tahoma" fontSize="8" text="Journal Options..." />
+					</element>
+
+
+					<element layoutChildren="horizontal" alignChildren="topright">
+						<element  fontface="tahoma" fontSize="8" text="Change the appearance of notes." />
+						<button   fontface="tahoma" fontSize="8" text="Note Options..." />
+					</element>
+
+
+					<element layoutChildren="horizontal" alignChildren="topright">
+						<button   fontface="tahoma" fontSize="8" text="OK" />
+						<button   fontface="tahoma" fontSize="8" text="Cancel" />
+						<button   fontface="tahoma" fontSize="8" text="Apply" />
+					</element>
+				</Element>
+			</Viewer>
+			<Viewer ID="Contentsdalcascade.xml" IsVisible="*Bind(Property=IsSelected;Source=dalcascade.xml)">
+				<element layoutChildren="horizontal" vertMargin="10" alignChildren="topright" expandChildrenToFillHoriz="true" expandChildrenToFillVert="true">
+
+
+				<element layoutChildren="horizontal">
+				<button text="hello, world"/>
+				</element>
+
+				<element layoutChildren="vertical" background="yellow"
+					expandChildrenToFillHoriz="true" expandChildrenToFillVert="true"
+					>
+
+				<button text="hello, world" background="red" padding="20,20,20,20" borderthickness="10,10,10,10"/>
+				<button text="hello, world" background="green"/>
+				</element>
+
+
+				<button text="hello, world"/>
+
+
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALCheckboxes.xml" IsVisible="*Bind(Property=IsSelected;Source=DALCheckboxes.xml)">
+				<Element layoutChildren="Vertical">
+					<checkbox id="cb" text="^Hello, World, long checkbox I think" isChecked="false" fontsize="7" fontface="system" bordercolor="black" borderthickness="1,1,1,1" textAlign="WrapLeft" padding="2,2,2,2" background="#EEEEEE" />
+					<checkbox id="cc" text="NetUI ^Rules!" isChecked="true" fontface="courier" />
+					<checkbox id="cd" text="Disabled Checkbox :(" isChecked="true" fontface="helvetica" foreground="#BBBBBB" background="#AA0000" isEnabled="false" />
+					<checkbox id="ce" text="Big checkbo^x" fontsize="20" bordercolor="blue" borderthickness="3,3,3,3" />
+					<label text="Notice the next checkbox has a focus rect problem because the padding is too high!" />
+					<checkbox id="cb" text="^Hello, World, long checkbox I think" isChecked="false" fontsize="11" fontface="arial" bordercolor="#04B000" borderthickness="1,7,7,7" textAlign="WrapLeft" padding="10,10,10,10" />
+				</Element>
+			</Viewer>
+			<Viewer ID="ContentsDALCit.xml" IsVisible="*Bind(Property=IsSelected;Source=DALCit.xml)">
+				<Element x="0" y="0" background="buttonface" layoutChildren="vertical" alignChildren="topRight">
+
+				<customProperty name="blah"/>
+
+				<style id="citStyle" >
+
+				<button condition="height GT 40" background="green"/>
+				<button condition="blah==2" background="red" />
+
+				<button borderstyle="raised" bordercolor="#D4D0C8" background="#D4D0C8" textAlign="middlecenter" borderthickness="1,1,1,1" />
+				<button condition="mousewithin" background="#B6BDD2" />
+				<button condition="isPressed" borderstyle="sunken" background="#8592B5" foreground="white" />
+
+				<pcc bordercolor="window" />
+				<pcc condition="mousewithin" bordercolor="#d40000"/>
+
+				<dropButton bordercolor="#d40000" foreground="buttontext" background="buttonface" fontface="marlett" textAlign="MiddleCenter" fontsize="9pt" text="6"/>
+				<dropButton condition="mousewithin" background="#B6BDD2"/>
+				<dropButton condition="isPressed" background="#8592B5" foreground="white"/>
+
+				<groupheader foreground="black" fontface="tahoma" fontSize="8" height="15" />
+
+				<!-- These are from the default style sheet... -->
+				<hyperlink foreground="#0000FF"  textAlign="wrapLeft" cursor="hand" />" <!-- TODO: Change foreground to MsoHyperlinkColor -->
+				<textbox background="buttonface" borderthickness="1,1,1,1"  bordercolor="black"  textAlign="MiddleCenter" height="23"/>
+				</style>
+
+				<style id="scrollEnabled">
+				<pcc  bordercolor="window" />
+				<pcc condition="mousewithin" bordercolor="#d40000"/>
+
+				<dropButton bordercolor="#d40000" foreground="buttontext" background="buttonface" fontface="marlett" textAlign="MiddleCenter" fontsize="9pt" text="6"/>
+				<dropButton condition="mousewithin" background="#B6BDD2"/>
+				<dropButton condition="isPressed" background="#8592B5" foreground="white"/>
+
+				<button condition="keyfocused" textAlign="MiddleCenter" focusRect="dotted" />
+				<simplebutton condition="keyfocused" textAlign="MiddleCenter" focusRect="dotted" />
+				<thumb background="buttonface" borderstyle="raised" bordercolor="buttonface"  />
+				<repeatbutton textAlign="MiddleCenter" foreground="buttontext" fontface="marlett" background="buttonface" fontsize="9pt" />
+				<repeatbutton id="lineleft" text="3" />
+				<repeatbutton id="lineright" text="4" />
+				<repeatbutton id="lineup" text="5" />
+				<repeatbutton id="linedown" text="6" />
+				<repeatbutton class="VertLine" borderstyle="raised" bordercolor="buttonface" />
+				<repeatbutton class="HorizLine" borderstyle="raised" bordercolor="buttonface" />
+				<repeatbutton class="VertLine" condition="isPressed"  borderstyle="sunken" />
+				<repeatbutton class="HorizLine" condition="isPressed"  borderstyle="sunken" />
+				<repeatbutton class="VertPage" background="scrollbar" />
+				<repeatbutton class="HorizPage" background="scrollbar" />
+				<repeatbutton class="VertPage" condition="isPressed" background="buttonshadow" />
+				<repeatbutton class="HorizPage" condition="isPressed" background="buttonshadow" />
+				<button background="buttonface" foreground="buttontext" borderstyle="raised" bordercolor="buttonface" textAlign="MiddleCenter" />
+				<button condition="isPressed" borderstyle="sunken" />
+				<simplebutton background="buttonface" foreground="buttontext"  borderstyle="raised" bordercolor="buttonface"  textAlign="MiddleCenter" />
+				<simplebutton condition="isPressed" borderstyle="sunken" />
+					<textbox background="buttonface" borderstyle="sunken" bordercolor="buttonface" textAlign="MiddleCenter" />
+				<viewer background="window"/>
+
+				<listview background="buttonface"  bordercolor="windowtext"/>
+				<listview condition="selectedIndex LT 2" />
+				<listviewItem foreground="windowtext" background="window"/>
+				<listviewItem condition="isSelected" background="highlight" foreground="highlighttext"/>
+				</style>
+
+
+				<element sheet="#citStyle" layoutChildren="vertical" alignChildren="topright">
+
+
+
+				<element background="#aaddbb" bordercolor="black" layoutChildren="vertical">
+
+					<pcc background="#ddeeaa">
+						<pcccontent layoutChildren="vertical" AccessibleDefaultAction="Press">
+							<label text="label in pcc" />
+						</pcccontent>
+						<dropButton />
+					</pcc>
+
+					<pcc background="#ddeeaa">
+						<pcccontent layoutChildren="vertical" AccessibleDefaultAction="Press">
+							<hyperlink text="hyperlink in pcc" />
+						</pcccontent>
+						<dropButton/>
+					</pcc>
+
+					<pcc background="#ddeeaa">
+						<pcccontent layoutChildren="vertical" AccessibleDefaultAction="Press">
+							<button text="button in pcc" />
+						</pcccontent>
+						<dropButton/>
+					</pcc>
+				</element>
+
+
+				<radiogroup layoutChildren="vertical" background="#aaddbb">
+					<radiobutton  text="Option ^1" />
+					<radiobutton  text="Option ^2" />
+				</radiogroup>
+
+
+
+				<label  id="textboxlabel" text="^Use my accelerator to focus the below textbox:" />
+
+				<hyperlink  text="Hotmail home :)" height="35" href="http://www.hotmail.com/" imageSrc="msn.bmp" background="#aaddbb"/>
+
+				<checkbox  id="cb1" text="Click ^here." />
+
+				<textbox  text="Textbox text." associatedLabelID="textboxlabel" width="120"
+					isEditable="true" isMultiline="false" />
+
+
+				<element layoutChildren="horizontal" background="#aaddbb">
+					<button  background="gradient(red,blue,horizontal)" foreground="white" text="red to blue gradient"/>
+					<button  text="tall button (should be green)" height="50"/>
+					<button  text="customProperty makes this red" blah="2"/>
+				</element>
+
+
+				<groupBox layoutChildren="vertical" background="#aaddbb">
+					<groupheader linecolor="yellow" text="Calendar" />
+					<groupContent layoutChildren="horizontal" alignChildren="topRight">
+						<element   fontface="tahoma" fontSize="8" text="Customize the appearance of the Calendar." />
+						<combobox  fontface="tahoma" fontSize="8" selectedIndex="3" listHeight="2" width="100" height="20" maxCharacters="30" >
+							<listitem text="15 minutes" />
+							<listitem text="30 minutes" />
+							<listitem text="1 hour" />
+							<listitem text="2 hours" />
+							<listitem text="4 hours" />
+							<listitem text="8 hours" />
+						</combobox>
+						<button  fontface="tahoma" fontSize="8" text="Calendar Options..." />
+					</groupContent>
+				</groupBox>
+
+				<groupBox layoutChildren="vertical" alignChildren="topRight">
+					<groupheader text="Tasks" />
+					<groupContent layoutChildren="horizontal" alignChildren="topRight">
+						<element   fontface="tahoma" fontSize="8" text="Change the appearance of tasks." />
+						<dropdown  fontface="tahoma" fontSize="8" text="10:00 AM" listHeight="4" width="100" height="20">
+							<listitem text="8:00 AM"/>
+							<listitem text="9:00 AM"/>
+							<listitem text="10:00 AM"/>
+							<listitem text="11:00 AM"/>
+							<listitem text="12:00 PM"/>
+							<listitem text="1:00 PM"/>
+							<listitem text="2:00 PM"/>
+						</dropdown>
+						<button  fontface="tahoma" fontSize="8" text="Task Options..." />
+					</groupContent>
+				</groupBox>
+
+
+				<groupBox IsCollapsible="false" layoutChildren="vertical" alignChildren="topRight" background="#aaddbb">
+					<groupheader text="Contacts (not collapsable)" />
+					<groupContent layoutChildren="horizontal" alignChildren="topRight">
+						<element   fontface="tahoma" fontSize="8" text="Change default settings for contact and journal." />
+						<button    fontface="tahoma" fontSize="8" text="Contact Options..." />
+						<button    fontface="tahoma" fontSize="8" text="Journal Options..." />
+					</groupContent>
+				</groupBox>
+
+				<groupBox layoutChildren="vertical" alignChildren="topRight" background="#aaddbb">
+					<groupheader text="Notes"  />
+					<groupContent layoutChildren="horizontal" alignChildren="topRight">
+						<element   fontface="tahoma" fontSize="8" text="Change the appearance of notes." />
+						<listbox  width="100" height="17" multiselect="full" fontface="tahoma" fontSize="8" listheight="5" selectedIndex="6">
+							<listitem text="8:00 AM"/>
+							<listitem text="9:00 AM"/>
+							<listitem text="10:00 AM"/>
+							<listitem text="11:00 AM"/>
+							<listitem text="12:00 PM"/>
+							<listitem text="1:00 PM"/>
+							<listitem text="2:00 PM"/>
+						</listbox>
+						<button    fontface="tahoma" fontSize="8" text="Note Options..." />
+					</groupContent>
+				</groupBox>
+
+				<groupBox eventHandler="DllEventHandler" layoutChildren="vertical" fontface="tahoma" fontSize="8" alignChildren="topRight" background="#aaddbb">
+					<groupheader text="Event Handling"  />
+					<groupContent layoutChildren="horizontal" alignChildren="topRight">
+						<button  text="Button with handler" eventHandler="DllEventHandler" />
+						<button  text="Button with eater and handler" eventHandler="DllEventHandler;DllEventEater" />
+					</groupContent>
+				</groupBox>
+
+
+				<element layoutChildren="flow" background="#aaddbb" alignChildren="topright">
+					<button    fontface="tahoma" fontSize="8" text="OK" />
+					<button    fontface="tahoma" fontSize="8" text="Cancel" />
+					<button    fontface="tahoma" fontSize="8" text="Apply" />
+					<element id="inserthere" layoutChildren="flow"/>
+				</element>
+
+				<element layoutChildren="vertical" alignChildren="topRight">
+					<checkbox fontface="tahoma" fontSize="8" text="CheckBox" />
+				</element>
+
+
+				</element>
+
+				</Element>
+			</Viewer>
+			<Viewer ID="ContentsDALComboBox.xml" IsVisible="*Bind(Property=IsSelected;Source=DALComboBox.xml)">
+				<element 
+					layoutChildren="flow"
+					background="#aaddbb">
+
+
+				<combobox 
+					fontface="tahoma" 
+					background="#aabbcc"
+					fontSize="12" 
+					selectedIndex="0" 
+					listHeight="2" 
+					setWidthToFitPreexistingItems="minWidthChars:50;maxWidthChars:100"
+					>
+
+					<listitem text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" />
+					<listitem text="30 minutes" />
+					<listitem text="1 hour" />
+					<listitem text="2 hours" />
+					<listitem text="4 hours" />
+					<listitem text="8 hours" />
+				</combobox>
+
+				<label fontsize="12" text="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"/>
+
+
+				<combobox 
+					fontface="tahoma" 
+					background="#aabbcc"
+					fontSize="12" 
+					selectedIndex="0" 
+					listHeight="2" 
+					setWidthToFitPreexistingItems="minWidthChars:50;maxWidthChars:100"
+					>
+
+					<listitem text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" />
+						<listitem text="30 minutes" />
+						<listitem text="1 hour" />
+						<listitem text="2 hours" />
+						<listitem text="4 hours" />
+						<listitem text="8 hours" />
+				</combobox>
+
+				<label fontsize="12" text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALConsole.xml" IsVisible="*Bind(Property=IsSelected;Source=DALConsole.xml)">
+
+				<netui>
+
+				<defs>
+					<!-- Main UI Colors -->
+					<color id="clrMainBackground">#1567D0</color>
+					<color id="clrBlockBackground">#B6D2F9</color>
+					<color id="clrListViewBackground">floralwhite</color>
+
+					<!-- Button Colors -->
+					<color id="clrButton1BackgroundDefault">#B6D2F9</color>
+					<color id="clrButton1BackgroundOver">#B6BDD2</color>
+					<color id="clrButton1BackgroundPressed">#8592B5</color>
+					<color id="clrButton1BorderDefault">#D4D0C8</color>
+
+					<color id="clrButton2BackgroundDefault">floralwhite</color>
+					<color id="clrButton2BackgroundOver">#B6BDD2</color>
+					<color id="clrButton2BackgroundPressed">#B6BDD2</color>
+
+					<!-- Block Seperator -->
+					<color id="clrBlockSeperator">white</color>
+
+					<!-- Roster Specific Colors -->
+				</defs>
+
+				<style id="globalStyle">
+					<element
+						fontSize="9"
+						fontFace="Verdana"
+						ChildrenMargin="0"
+					/>
+					<button 
+						background="#clrButton1BackgroundDefault"
+						borderstyle="raised" 
+						bordercolor="#clrButton1BorderDefault" 
+						textalign="middlecenter" 
+						borderthickness="2,2,2,2" 
+					/>
+					<button 
+						condition="mousewithin" 
+						background="#clrButton1BackgroundOver" 
+					/>
+					<button 
+						condition="ispressed" 
+						borderstyle="sunken" 
+						background="#clrButton1BackgroundPressed" 
+						foreground="white" 
+					/>
+					<label
+						textAlign="MiddleLeft"
+					/>
+				</style>
+
+				<style id="blockHR">
+					<element
+						background="#clrBlockSeperator"
+						Height="2"
+					/>
+				</style>
+
+				<style id="styleBlockShell" src="#globalStyle">
+					<element
+						background="#clrBlockBackground"
+					/>
+				</style>
+
+				<element sheet="#globalStyle"
+					background="#clrMainBackground"
+					id="idConf"
+					layoutChildren="vertical"
+					ExpandChildrenToFillHoriz="TRUE"
+					ChildrenMargin="0"
+					alignChildren="topright"
+				>
+					<!-- Console Controls Block -->
+				<!--
+					<element 
+						layoutChildren="horizontal"
+						alignChildren="TopRight"
+					>
+						<Button
+							id="idConsoleBlockBtnExit" 
+							text="Exit" 
+						/>
+					</element>
+				-->
+
+				<!--
+					<element sheet="#blockHR" />
+				-->
+					<!-- End Console Controls Block -->
+
+					<!-- Status Block -->
+					<element
+						background="red"
+						layoutChildren="vertical"
+						id="idStatusBlock"
+					>
+						<label 
+							id="idBlockStatusPreLoadMsg" 
+							text="Isn't Expanded" 
+							background="pink"
+						/>
+				<!--
+						<element sheet="#blockHR"/>
+				-->
+					</element>
+					<!-- End Status Block -->
+
+					<label text="IsExpanded" background="lightgreen" ExpandToFillHoriz="false"/>
+
+
+				</element>
+
+				</netui>
+			</Viewer>
+			<Viewer ID="ContentsDALDistributeFlow.xml" IsVisible="*Bind(Property=IsSelected;Source=DALDistributeFlow.xml)">
+				<element 
+					layoutChildren="flow"
+					VertMargin="50"
+					DistributeRows="true"
+					background="#aaddbb">
+
+					<button 
+						background="#00ff00" 
+						foreground="#ff0000" 
+						fontface="tahoma" 
+						fontSize="7" 
+						text="This is a test example of how the DAL in NetUI works ..."/>
+
+					<button 
+						background="#00ff00" 
+						foreground="#ff0000" 
+						fontface="tahoma" 
+						fontSize="7" 
+						text="This is a test example of how the DAL in NetUI works ..."/>
+
+					<button 
+						background="#00ff00" 
+						foreground="#ff0000" 
+						fontface="tahoma" 
+						fontSize="7" 
+						text="This is a test example of how the DAL in NetUI works ..."/>
+
+					<button 
+						background="#00ff00" 
+						foreground="#ff0000" 
+						fontface="tahoma" 
+						fontSize="7" 
+						text="This is a test example of how the DAL in NetUI works ..."/>
+
+					<button 
+						background="#00ff00" 
+						foreground="#ff0000" 
+						fontface="tahoma" 
+						fontSize="7" 
+						text="This is a test example of how the DAL in NetUI works ..."/>
+
+					<button 
+						background="#00ff00" 
+						foreground="#ff0000" 
+						fontface="tahoma" 
+						fontSize="7" 
+						text="This is a test example of how the DAL in NetUI works ..."/>
+
+					<button 
+						background="#00ff00" 
+						foreground="#ff0000" 
+						fontface="tahoma" 
+						fontSize="7" 
+						text="This is a test example of how the DAL in NetUI works ..."/>
+
+					<button 
+						background="#00ff00" 
+						foreground="#ff0000" 
+						fontface="tahoma" 
+						fontSize="7" 
+						text="This is a test example of how the DAL in NetUI works ..."/>
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="Contentsdaldontexpand.xml" IsVisible="*Bind(Property=IsSelected;Source=daldontexpand.xml)">
+				<element height="200" 
+					layoutChildren="horizontal"
+					background="#aaddbb"  padding="20,20,20,20" expandchildrentofillhoriz="true" expandchildrentofillvert="true">
+
+
+
+				<Element background="red" layoutchildren="vertical" expandtofillhoriz="false" >
+					<element width="100" height="50" background="cyan" >
+					</element>
+					<element width="100" height="50" background="cyan" >
+					</element>
+					<element width="100" height="50" background="cyan" >
+					</element>
+				</Element>	
+
+
+
+
+				<Element background="yellow"  layoutchildren="vertical" expandtofillvert="false" expandchildrentofillhoriz="true">
+					<element width="100" height="50" background="cyan" expandtofillhoriz="false">
+					</element>
+					<element width="100" height="50" background="cyan" >
+					</element>
+					<element width="100" height="50" background="cyan" >
+					</element>
+				</Element>
+
+				<Element background="yellow" layoutchildren="vertical" expandchildrentofillvert="True">
+					<element width="100" height="50" background="cyan" expandtofillvert="false">
+					</element>
+					<element width="100" height="50" background="cyan" >
+					</element>
+					<element width="100" height="50" background="cyan" >
+					</element>
+				</Element>
+
+
+
+				</element>
+			</Viewer>
+			<Viewer ID="Contentsdaldropdown.xml" IsVisible="*Bind(Property=IsSelected;Source=daldropdown.xml)">
+				<element 
+					layoutChildren="flow"
+					margin="100" 
+					alignChildren="left"
+					background="#aaddbb">
+
+				<style id="citStyle" >
+					<pcc borderthickness="1, 1, 1, 1" bordercolor="window" />
+					<pcc condition="mousewithin" bordercolor="#d40000"/>
+
+					<dropButton borderthickness="1, 1, 1, 1" bordercolor="#d40000" foreground="buttontext" background="buttonface" fontface="marlett" TextAlign="MiddleCenter" fontsize="9pt" text="6"/>
+					<dropButton condition="mousewithin" background="#B6BDD2"/>
+					<dropButton condition="ispressed" background="#8592B5" foreground="white"/>
+
+					<!-- These are from the default style sheet... -->
+					<hyperlink foreground="#0000FF" padding="3,3,3,3" TextAlign="wrapLeft" cursor="hand" />
+				</style>
+
+
+
+
+				<dropdown
+
+					fontface="tahoma" 
+					background="#aabbcc"
+					fontSize="9" 
+					selectedIndex="3" 
+					listHeight="2" >
+						<listitem text="15 minutes" />
+						<listitem text="30 minutes" />
+						<listitem text="1 hour" />
+						<listitem text="2 hours" />
+						<listitem text="4 hours" />
+						<listitem text="8 hours" />
+				</dropdown>
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="Contentsdalexpand.xml" IsVisible="*Bind(Property=IsSelected;Source=dalexpand.xml)">
+
+				<element layoutChildren="vertical" x="100" y="100" width="500" height="150" background="green" distributeChildren="true">
+
+					<element layoutChildren="horizontal" childrenMargin="0" distributeChildren="true" background="red" expandtofillhoriz="true">
+						<element text="one" background="blue"/>
+						<element alignChildren="right" childrenMargin="0" layoutChildren="horizontal" distributeChildren="false" background="yellow">
+							<element margin="0" text="two"/>
+							<element margin="0" text="three"/>
+						</element>		
+					</element>
+
+					<element layoutChildren="horizontal" childrenMargin="0" distributeChildren="true" background="red" expandtofillhoriz="true">
+						<element text="one" background="blue"/>
+						<element alignChildren="right" childrenMargin="0" layoutChildren="horizontal" distributeChildren="false" background="yellow">
+							<element margin="0" text="two"/>
+							<element margin="0" text="three"/>
+							<element margin="0" text="four"/>
+							<element margin="0" text="five"/>
+							<element margin="0" text="six"/>
+						</element>			
+					</element>
+
+
+
+				</element>
+			</Viewer>
+			<Viewer ID="Contentsdalexpand2.xml" IsVisible="*Bind(Property=IsSelected;Source=dalexpand2.xml)">
+				<element layoutChildren="vertical" childrenmargin="20">
+
+				<element layoutChildren="vertical" samewidthchildren="true">
+
+				<element layoutChildren="table" rows="2" cols="2" background="cyan" colmargin="2:40">
+				<element layoutChildren="vertical" background="yellow" ChildrenMargin="30" borderthickness="1,1,1,1" padding="5,5,5,5" tablePosition="1,1">
+					<radiogroup layoutChildren="vertical" alignChildren="center">
+						<radiobutton  text="Basic Option ^1" />
+						<radiobutton  text="Basic Option ^2" />
+					</radiogroup>
+				</element>
+				<button text="More" tablePosition="2,2"/>
+				</element>
+
+				<element layoutChildren="table" rows="2" cols="2" background="cyan" colmargin="2:40">
+				<element layoutChildren="vertical" background="yellow" ChildrenMargin="30" borderthickness="1,1,1,1" padding="5,5,5,5" tablePosition="1,1">
+					<radiogroup layoutChildren="vertical" alignChildren="center">
+						<radiobutton  text="Basic Option ^3" />
+						<radiobutton  text="Basic Option ^4" />
+					</radiogroup>
+				</element>
+				<button text="Less" tablePosition="2,2"/>
+				</element>
+
+				<element layoutChildren="vertical" background="cyan" ChildrenMargin="30" >
+					<radiogroup layoutChildren="vertical" alignChildren="topleft" background="yellow" borderthickness="1,1,1,1" padding="5,5,5,5">
+						<radiobutton  text="Adcanved Option ^1" />
+						<radiobutton  text="Advanced Option ^2" />
+					</radiogroup>
+				</element>
+				</element>
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALExpandTabs.xml" IsVisible="*Bind(Property=IsSelected;Source=DALExpandTabs.xml)">
+				<netpane LayoutChildren="vertical">
+					<label text="Here are some tabs:&#9;&#9;&#9;Should have expanded." textAlign="expandTabs" />
+					<label text="Here are some tabs:&#9;&#9;&#9;Should not have expanded." />
+				</netpane>
+			</Viewer>
+			<Viewer ID="ContentsDALFlow.xml" IsVisible="*Bind(Property=IsSelected;Source=DALFlow.xml)">
+				<element 
+					layoutChildren="flow"
+					margin="100" 
+					alignChildren="left"
+					background="#aaddbb">
+
+				<style id="citStyle" >
+					<pcc borderthickness="1, 1, 1, 1" bordercolor="window" />
+					<pcc condition="mousewithin" bordercolor="#d40000"/>
+
+					<dropButton borderthickness="1, 1, 1, 1" bordercolor="#d40000" foreground="buttontext" background="buttonface" fontface="marlett" textalign="MiddleCenter" fontsize="9pt" text="6"/>
+					<dropButton condition="mousewithin" background="#B6BDD2"/>
+					<dropButton condition="isPressed" background="#8592B5" foreground="white"/>
+
+					<!-- These are from the default style sheet... -->
+					<hyperlink foreground="#0000FF" padding="3,3,3,3" textAlign="wrapLeft" cursor="hand" />
+				</style>
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="SimpleButton" />
+
+				<radiogroup layoutChildren="vertical" alignChildren="center">
+					<radiobutton  text="Option ^1" />
+					<radiobutton  text="Option ^2" />
+				</radiogroup>
+
+				<button 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="CommandButton" margin="10"/>
+
+				<label  text="this is a label" background="#cc00aa"/>
+
+				<textbox 
+					width="250"
+					text="Non-multiline rich edit control"/>
+
+				<checkbox 
+					id="cb1" 
+					text="Click ^here." background="#ffbbcc" />
+
+				<combobox 
+					fontface="tahoma" 
+					background="#aabbcc"
+					fontSize="8" 
+					selectedIndex="3" 
+					listHeight="2" 
+					maxCharacters="30" >
+						<listitem text="15 minutes" />
+						<listitem text="30 minutes" />
+						<listitem text="1 hour" />
+						<listitem text="2 hours" />
+						<listitem text="4 hours" />
+						<listitem text="8 hours" />
+				</combobox>
+
+				<element 
+					background="#bbccaa" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="general element with text in it" />
+
+				<pcc sheet="#citStyle" alignChildren="topright">
+					<pcccontent layoutChildren="vertical"  AccessibleDefaultAction="Press">
+						<label  text="label in pcc"/>
+						<hyperlink  text="hyperlink in pcc" />
+						<button  text="button in pcc" />
+					</pcccontent>
+					<dropButton />
+				</pcc>
+
+				<groupBox background="#aabbcc" layoutChildren="vertical" alignChildren="TopRight">
+				<groupheader text="Notes"  background="#aaff00"/>
+				<groupContent layoutChildren="horizontal" background="yellow" alignChildren="TopRight">
+
+					<element  background="#00ffaa" fontface="tahoma" fontSize="8" text="Change the appearance of notes." />
+
+					<combobox  fontface="tahoma" fontSize="8" selectedIndex="3" listHeight="2" maxCharacters="30" >
+						<listitem text="15 minutes" />
+						<listitem text="30 minutes" />
+						<listitem text="1 hour" />
+						<listitem text="2 hours" />
+						<listitem text="4 hours" />
+						<listitem text="8 hours" />
+					</combobox>
+
+					<button  fontface="tahoma" fontSize="8" text="Note Options..." background="#00ffaa"/>
+				</groupContent>
+				</groupBox>
+
+
+				<hyperlink 
+					background="#ccbbaa" 
+					height="35"	 
+					text="Hotmail home :)" 
+					href="http://www.hotmail.com/" imageSrc="msn.bmp" />
+
+
+
+				<!--
+				<listview  selectedIndex="3" sheet="#scrollEnabled" Width="100" Height="90">
+				<listviewitem>     
+					<listcontent>
+					<label text="new row: col 0"/>
+					</listcontent>
+
+					<listcontent>
+					<label text="same row: col 1"/>
+					</listcontent>     	
+				</listviewitem>
+
+				<label text="new row"/>
+				<label text="new row1"/>
+
+				<listviewitem>
+					<label text="new row"/>
+					<label text="(not a new col)"/>
+				</listviewitem>
+				</listview>
+				-->
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="Contentsdalflowexpand.xml" IsVisible="*Bind(Property=IsSelected;Source=dalflowexpand.xml)">
+				<element 
+					layoutChildren="flow"
+					margin="100" 
+					alignChildren="topleft"
+					background="#aaddbb">
+
+				<element layoutChildren="vertical" width="800" height="300" background="yellow">
+
+				<element layoutchildren="flow" width="200" expandtofillhoriz="true" expandtofillvert="true" background="blue">
+
+				<button 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="Command"/>
+
+
+				<button 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="Command"/>
+
+				<button 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="Command"/>
+
+
+				</element>
+
+				<label  text="this is a label" background="#cc00aa"/>
+
+				<textbox 
+					Width="250"
+					text="Non-multiline rich edit control"/>
+
+				<checkbox 
+
+					id="cb1" 
+					text="Click _here." background="#ffbbcc" />
+
+				</element>
+				</element>
+
+			</Viewer>
+			<Viewer ID="Contentsdalflowexpand2.xml" IsVisible="*Bind(Property=IsSelected;Source=dalflowexpand2.xml)">
+				<element 
+					layoutChildren="vertical"
+					background="#aaddbb">
+
+
+				<button 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="Command"/>
+
+
+				<button 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="Command"/>
+
+				<button 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="Command"/>
+
+				<element layoutchildren="flow" expandtofillhoriz="true" expandtofillvert="true" background="blue" expandchildrentofillvert="true">
+
+				<label  text="this is a label" background="#cc00aa"/>
+
+
+				<element layoutchildren="flow" expandtofillhoriz="true" expandtofillvert="true" background="red">
+				<textbox 
+					Width="250"
+					text="Non-multiline rich edit control"/>
+
+				<checkbox 
+
+					id="cb1" 
+					text="Click _here." background="#ffbbcc" />
+
+				</element>
+
+				</element>
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="Contentsdalflowsamewidth.xml" IsVisible="*Bind(Property=IsSelected;Source=dalflowsamewidth.xml)">
+				<element 
+					layoutChildren="vertical"
+					background="#aaddbb"
+					childrenMargin="8"
+					alignChildren="topleft">
+
+
+				<button text="commandbutton"/>
+
+
+				<element layoutChildren="flow" background="red" width="600" sameWidthChildren="true">
+					<button text="short"/>
+					<button text="middle length"/>
+					<button text="sameWidthChildren on the parent frame"/>
+				</element>
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALFrameGroup.xml" IsVisible="*Bind(Property=IsSelected;Source=DALFrameGroup.xml)">
+				<element 
+					layoutChildren="vertical"
+					background="#aaddbb">
+
+					<element
+						layoutChildren="horizontal"
+						distributeChildren="true"
+						background="#aaddbb">
+
+						<simplebutton 
+
+							background="#00ff00" 
+							frameGroup="1"
+							fontface="tahoma" 
+							fontSize="7" 
+							text="frame group 1" margin="10"/>
+
+						<simplebutton 
+
+							background="#00ff00" 
+							foreground="#ff0000" 
+							fontface="tahoma" 
+							fontSize="9" 
+							text="in horizontal" margin="10"/>
+					</element>
+
+					<element
+						layoutChildren="horizontal"
+						distributeChildren="true"
+						background="#aaddbb">
+
+						<simplebutton 
+
+							background="#00ff00" 
+							foreground="#ff0000"
+							frameGroup="2"
+							fontface="tahoma" 
+							fontSize="10" 
+							text="frame group 2"/>
+
+						<simplebutton 
+
+							background="#00ff00" 
+							foreground="#ff0000" 
+							fontface="tahoma" 
+							fontSize="11" 
+							text="second horizontal"/>
+
+						<simplebutton 
+
+							background="#00ff00" 
+							foreground="#ff0000" 
+							fontface="tahoma" 
+							fontSize="16" 
+							text="socond horizontal"/>
+					</element>
+
+					<element
+						layoutChildren="horizontal"
+						distributeChildren="true"
+						bordercolor="#D4D0C8" 
+						background="#aaddbb">
+
+						<element
+							layoutChildren="vertical"
+							bordercolor="#D4D0C8" 
+							background="#aaddbb">
+
+							<simplebutton 
+
+								background="#00ff00" 
+								foreground="#ff0000" 
+								fontface="tahoma" 
+								fontSize="16"
+								frameGroup="1"
+								text="frame group 1"/>
+
+							<simplebutton 
+
+								background="#00ff00" 
+								foreground="#ff0000" 
+								fontface="tahoma" 
+								fontSize="16" 
+								text="first vertical in third horiz"/>
+						</element>
+
+						<element
+							layoutChildren="vertical"
+							distributeChildren="true"
+							bordercolor="#D4D0C8" 
+							background="#aaddbb">
+
+							<simplebutton 
+
+								background="#00ff00" 
+								foreground="#ff0000" 
+								fontface="tahoma" 
+								fontSize="16" 
+								text="second vertical in third horiz"/>
+
+							<simplebutton 
+
+								background="#00ff00" 
+								foreground="#ff0000" 
+								fontface="tahoma" 
+								fontSize="16" 
+								text="second vertical in third horiz"/>
+						</element>
+
+						<element
+							layoutChildren="vertical"
+							distributeChildren="true"
+							bordercolor="#D4D0C8" 
+							background="#aaddbb">
+
+							<simplebutton 
+
+								background="#00ff00" 
+								foreground="#ff0000" 
+								fontface="tahoma" 
+								fontSize="16"
+								frameGroup="2"
+								text="frame group 2"/>
+
+							<simplebutton 
+
+								background="#00ff00" 
+								foreground="#ff0000" 
+								fontface="tahoma" 
+								fontSize="16" 
+								text="third vertical in third horiz"/>
+						</element>
+
+					</element>
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALFrameGroup2.xml" IsVisible="*Bind(Property=IsSelected;Source=DALFrameGroup2.xml)">
+				<element background="cyan" layoutChildren="vertical">
+
+
+				<button
+					background="#00ff00" 
+					frameGroup="1"
+					fontface="tahoma" 
+					fontSize="12" 
+					text="let's make the string long and long enough frame group 1"/>
+
+				<button
+					background="#00ff00" 
+					frameGroup="1"
+					fontface="tahoma" 
+					fontSize="7" 
+					text="frame group 1"/>
+
+				<element layoutChildren="vertical" background="red">
+					<button text="hello, world, I am in group 1" framegroup="1"/>
+					<button text="I am in group 2" framegroup="2"/>
+				</element>
+
+				<element text="group 2" framegroup="2" background="Red"/>
+
+
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALGroupBox.xml" IsVisible="*Bind(Property=IsSelected;Source=DALGroupBox.xml)">
+				<element 
+					layoutChildren="vertical"
+					expandToFillHoriz="true"
+					margin="100" 
+					alignChildren="top"
+					background="#aaddbb">
+
+
+				<groupBox layoutChildren="vertical" background="#aabbcc" alignChildren="TopRight">
+				<groupheader text="Notes"  background="#aaff00"/>
+
+				<groupContent layoutChildren="horizontal" background="yellow" alignChildren="TopRight">
+
+					<element  background="#00ffaa" fontface="tahoma" fontSize="8" text="Change the appearance of notes." />
+
+					<combobox  fontface="tahoma" fontSize="8" selectedIndex="3" listHeight="2" Width="100" height="20" maxCharacters="30" >
+						<listitem text="15 minutes" />
+						<listitem text="30 minutes" />
+						<listitem text="1 hour" />
+						<listitem text="2 hours" />
+						<listitem text="4 hours" />
+						<listitem text="8 hours" />
+					</combobox>
+
+					<button  fontface="tahoma" fontSize="8" text="Note Options..." background="#00ffaa"/>
+
+				</groupContent>
+
+				</groupBox>
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="Contentsdalheightlines1.xml" IsVisible="*Bind(Property=IsSelected;Source=dalheightlines1.xml)">
+				<element 
+					layoutChildren="vertical"
+					background="#aaddbb">
+
+				<element LayoutChildren="horizontal" background="Red" expandtofillhoriz="true">
+					<label  bordercolor="green"
+						text="TextWrapping without setting the width. This is a test of a very long string being loaded This is a test of a very long string being loaded This is a test of a very long string being loaded"
+						textAlign="Wrapleft"
+						heightlines="3"
+						height="400"
+						background="lightblue"
+						borderthickness="10,10,10,10"
+					/>
+
+
+					<label  bordercolor="green"
+						text="TextWrapping without setting the width. This is a test of a very long string being loaded This is a test of a very long string being loaded This is a test of a very long string being loaded"
+						textAlign="Wrapleft"
+						heightlines="3"
+						background="lightblue"
+					/>
+				</element>
+
+
+
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="Contentsdalheightlines2.xml" IsVisible="*Bind(Property=IsSelected;Source=dalheightlines2.xml)">
+				<element 
+					layoutChildren="vertical"
+					background="#aaddbb">
+
+				<element LayoutChildren="horizontal" background="red">
+						<textbox text="textbox" expandtofitstring="how are you doing today? hello, world" heightlines="8" ismultiline="true" borderthickness="10,10,10,10" bordercolor="yellow"/>
+						<textbox text="textbox" expandtofitstring="how are you doing today? hello, world" heightlines="8" ismultiline="true" bordercolor="yellow"/>
+				</element>
+
+
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="Contentsdalheightlines3.xml" IsVisible="*Bind(Property=IsSelected;Source=dalheightlines3.xml)">
+				<element 
+					layoutChildren="horizontal"
+					background="#aaddbb">
+
+				<listbox
+					borderthickness="10,10,10,10"
+					bordercolor="red"
+					setWidthToFitPreexistingItems="minWidthChars:50;maxWidthChars:180;extraWidthChars:0"
+					fontface="tahoma" 
+					background="#aabbcc"
+					selectedIndex="1"
+					heightLines="12">
+
+					<listitem text="15 minutes" />
+						<listitem text="30 minutes af;daghrea;hgfd;ahjdddddddddddddd" />
+						<listitem text="1 hour" />
+						<listitem text="2 hours" />
+						<listitem text="4 hours" />
+						<listitem text="8 hours" />
+				</listbox>
+
+				<listbox
+					borderthickness="0,0,0,0"
+					bordercolor="red"
+					setWidthToFitPreexistingItems="minWidthChars:50;maxWidthChars:180;extraWidthChars:0"
+					fontface="tahoma" 
+					background="#aabbcc"
+					selectedIndex="1"
+					heightLines="12">
+
+					<listitem text="15 minutes" />
+						<listitem text="30 minutes af;daghrea;hgfd;ahjddddddddddddddd" />
+						<listitem text="1 hour" />
+						<listitem text="2 hours" />
+						<listitem text="4 hours" />
+						<listitem text="8 hours" />
+				</listbox>
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALHierarchy.xml" IsVisible="*Bind(Property=IsSelected;Source=DALHierarchy.xml)">
+				<element 
+					layoutChildren="vertical"
+					background="#aaddbb">
+
+				<element
+					layoutChildren="horizontal"
+					expandToFillHoriz="true"
+					distributeChildren="true"
+					bordercolor="#ffeeaa" 
+					borderThickness="1,1,1,1" 
+					margin="100" 
+					background="#aabbff">
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="in horizontal"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="in horizontal"/>
+
+				</element>
+
+				<element
+					layoutChildren="horizontal"
+					distributeChildren="true"
+					bordercolor="#D4D0C8" 
+					borderThickness="1,1,1,1" 
+					background="#aaffaa">
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="10" 
+					text="second horizontal"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="11" 
+					text="second horizontal"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="socond horizontal"/>
+				</element>
+
+				<element
+					layoutChildren="horizontal"
+					distributeChildren="true"
+					bordercolor="#D4D0C8" 
+					borderThickness="1,1,1,1"
+					background="#ccbbff">
+
+				<element
+					layoutChildren="vertical"
+					background="#eeddaa">
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="first vertical in third horiz"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="first vertical in third horiz"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="first vertical in third horiz"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="first vertical in third horiz"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="first vertical in third horiz"/>
+				</element>
+
+				<element
+					layoutChildren="vertical"
+					distributeChildren="true"
+					background="#eeddaa">
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="second vertical in third horiz"/>
+
+				<element layoutChildren="horizontal" expandChildrenToFillHoriz="true" background="#ffaabb">
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="hello"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="world"/>
+				</element>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="second vertical in third horiz"/>
+				</element>
+
+				<element
+					layoutChildren="vertical"
+					distributeChildren="true"
+					background="#eeddaa">
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="third vertical in third horiz"/>
+
+				<element layoutChildren="horizontal">
+				<element layoutChildren="table" cols="3" rows="2" distributeCols="true" background="#aaeeff">
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="cell"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="cell"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="cell"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="cell"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="cell"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="cell"/>
+				</element>
+				</element>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="third vertical in third horiz"/>
+				</element>
+
+				</element>
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALHorizDistribute.xml" IsVisible="*Bind(Property=IsSelected;Source=DALHorizDistribute.xml)">
+				<element 
+					layoutChildren="vertical" 
+					background="#aaddbb"
+					alignChildren="topLeft">
+
+
+				<element layoutChildren="horizontal" distributeChildren="true" expandtofillhoriz="true">
+
+
+				<button
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7"
+					borderThickness="1,1,1,1" 
+					text="page title"/>
+
+				<button
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7"
+					borderThickness="1,1,1,1" 
+					text="microsoft confidental"/>
+
+				<button
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7"
+					borderThickness="1,1,1,1" 
+					text="08/21/01"/>
+
+				</element>
+
+				<element layoutChildren="horizontal" alignChildren="center">
+
+
+				<button
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7"
+					borderThickness="1,1,1,1" 
+					text="notes written by Tim Sellers"/>
+
+
+				</element>
+
+
+				<element layoutChildren="horizontal" distributeChildren="true">
+
+
+				<button
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7"
+					borderThickness="1,1,1,1" 
+					text="physics 101"/>
+
+
+				<button
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7"
+					borderThickness="1,1,1,1" 
+					text="August 21, 2001"/>
+
+				</element>
+
+
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALhorizVert.xml" IsVisible="*Bind(Property=IsSelected;Source=DALhorizVert.xml)">
+				<element 
+					layoutChildren="horizontal"
+					background="#aaddbb"
+					expandChildrenToFillHoriz="true"
+					alignChildren="topLeft">
+
+
+				<element 
+					layoutChildren="vertical"
+					ChildrenMargin="100"
+					background="#aaddbb">
+
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="12" 
+					text="simple button" />
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="14" 
+					text="simple button" />
+
+				</element>
+
+
+				<element 
+					layoutChildren="vertical"
+					background="#aaddbb">
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="simple button" margin="50"/>
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="18" 
+					text="simple button"/>
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="24" 
+					text="simple button"/>
+
+				<button 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="18" 
+					text="CommandButton"/>
+
+				</element>
+
+				<element 
+					layoutChildren="vertical"
+					background="#aaddbb"
+					alignChildren="center">
+
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="12" 
+					text="simple button"/>
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="14" 
+					text="simple button"/>
+
+				</element>
+
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALHyperLink.xml" IsVisible="*Bind(Property=IsSelected;Source=DALHyperLink.xml)">
+				<element 
+					layoutChildren="vertical"
+					alignChildren="center"
+					background="#aaddbb">
+
+				<hyperlink
+					background="#ccbbaa" 
+					padding="10,10,10,10"
+					borderthickness="2,2,2,2"
+					text="Hotmail home :)" 
+					href="http://www.hotmail.com/" imageSrc="msn.bmp" />
+
+
+
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALImage.xml" IsVisible="*Bind(Property=IsSelected;Source=DALImage.xml)">
+				<element 
+					layoutChildren="vertical"
+					alignChildren="center"
+					background="#aaddbb">
+
+					<image background="#ccbbaa" padding="10,10,10,10" borderthickness="5,5,5,5" Src="msn.bmp" />
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALImage2.xml" IsVisible="*Bind(Property=IsSelected;Source=DALImage2.xml)">
+				<element layoutChildren="Flow">
+					<image width="400" height="400"	src="baobob.bmp"/>
+
+					<image id="baobob" width="600" height="400" src="baobob.bmp" />
+
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALImageButton.xml" IsVisible="*Bind(Property=IsSelected;Source=DALImageButton.xml)">
+				<element layoutchildren="vertical" padding="10,10,10,10" expandToFillHoriz="true">
+
+					<style id="p">
+						<sublabel class="ButtonLabel" padding="3,3,3,3" />
+					</style>
+
+					<defs>
+						<img id="iconID">:icon() stop.ico</img>
+					</defs>
+
+					<button sheet="#p" id="BitmapButton" margin="10"  text="^Button with bitmap" imageSrc="intarrowdn.bmp"/>
+					
+					<button id="IconButton" margin="10"  text="^Menu Button with icon" imageSrc=":icon() stop.ico" isMenuButton="true" expandToFillHoriz="true" expandToFillVert="true" />
+					
+					<button id="IconButton1" margin="10"  text="Button ^with icon, icon loaded via def" imageSrc="#iconID" 
+						expandToFitString="Button ^with icon, icon loaded via def big big big" isMenuButton="True" />
+
+					<button id="NoBitmapButton" margin="10"  text="Button with ^no bitmap"/>
+					
+					<simplebutton id="SimpleButton" margin="10"  text="Simple button" />
+				</element>
+			</Viewer>
+			<Viewer ID="Contentsdalinfinitelayout.xml" IsVisible="*Bind(Property=IsSelected;Source=dalinfinitelayout.xml)">
+				<element layoutChildren="vertical" expandToFillHoriz="true" padding="10,10,10,10"
+									expandToFillVert="true">
+
+					<label textAlign="wrapLeft" padding="0,0,0,10" text="how are you doing today, sir" background="yellow"/>
+
+					<element layoutChildren="horizontal" expandToFillHoriz="true" expandToFillVert="true">
+						<element layoutChildren="vertical" expandToFillVert="true" expandToFillHoriz="true">
+							<listView listLayout="standardList"
+									BorderStyle="solid" BorderThickness="1,1,1,1"
+									expandToFillHoriz="true"  expandToFillVert="true" background="red">
+
+								<listHeader showColumnHeaders="true">
+									<listColumn width="140" text="stuff"/>
+								</listHeader>
+
+								<listViewItem LayoutChildren="horizontal" AccessibleName="List Item">
+									<listcontent LayoutChildren="horizontal">
+										<label fontWeight="bold" text="Reference" />
+									</listcontent>
+								</listViewItem>
+								<listViewItem LayoutChildren="horizontal" AccessibleName="List Item">
+									<listcontent LayoutChildren="horizontal">
+										<checkBox indent="1" isChecked="true" text="Encarta English Dictionary" expandToFillHoriz="true" />
+									</listcontent>
+								</listViewItem>
+
+								<listViewItem id="cloneme" LayoutChildren="horizontal" AccessibleName="List Item">
+									<listcontent LayoutChildren="horizontal">
+										<checkBox indent="1" isChecked="false" text="Encarta English Thesaurus" expandToFillHoriz="true" />
+									</listcontent>
+								</listViewItem>
+
+							</listView>
+							<element layoutChildren="horizontal" expandToFillHoriz="true" background="red">
+									<button text="this is a button long long button" />
+							</element>
+
+						</element>
+
+					</element>
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALLabel.xml" IsVisible="*Bind(Property=IsSelected;Source=DALLabel.xml)">
+				<element 
+					layoutChildren="vertical"
+					ExpandToFillHoriz="true"
+					background="#aaddbb">
+
+				<element 
+					layoutChildren="horizontal"
+					ExpandToFillHoriz="true"
+					background="#aaddbb">
+
+				<label  text="this is a label"  background="#cc00aa"/>
+				<label  text="this is a label"  background="#cc00aa"/>
+				<label  text="this is a label"  background="#cc00aa"/>
+				<label  text="this is a label"  background="#cc00aa"/>
+				<label  text="this is a label"  background="#cc00aa"/>
+				<label  text="this is a label"  background="#cc00aa"/>
+				</element>
+
+				<element 
+					layoutChildren="horizontal"
+					ExpandToFillHoriz="true"
+					background="#aaddbb">
+
+				<label  text="this is a label"  background="#cc00aa"/>
+				<label  text="this is a label"  background="#cc00aa"/>
+				<label  text="this is a label"  background="#cc00aa"/>
+				<label  text="this is a label"  background="#cc00aa"/>
+				<label  text="this is a label"  background="#cc00aa"/>
+				<label  text="this is a label"  background="#cc00aa"/>
+				</element>
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALLayout.xml" IsVisible="*Bind(Property=IsSelected;Source=DALLayout.xml)">
+				<Element x="0" y="0" layoutChildren="vertical" background="buttonface">
+
+				<customProperty name="blah"/>
+
+				<style id="citStyle" >
+				<element margin="10" />
+
+				<button condition="height GT 40" background="green" />
+				<button condition="blah==2" background="red" />
+
+				<button borderstyle="raised" bordercolor="#D4D0C8" background="#D4D0C8" textAlign="middlecenter" borderthickness="2,2,2,2" padding="2,2,2,2"/>
+				<button condition="mousewithin" background="#B6BDD2" />
+				<button condition="isPressed" borderstyle="sunken" background="#8592B5" foreground="white" padding="3,3,1,1" />
+
+				<pcc borderthickness="1, 1, 1, 1" bordercolor="window" />
+				<pcc condition="mousewithin" borderthickness="1, 1, 1, 1" bordercolor="#d40000"/>
+
+				<dropButton borderthickness="1, 1, 1, 1" bordercolor="#d40000" foreground="buttontext" background="buttonface" fontface="marlett" textAlign="MiddleCenter" fontsize="9pt" text="6"/>
+				<dropButton condition="mousewithin" background="#B6BDD2"/>
+				<dropButton condition="isPressed" background="#8592B5" foreground="white"/>
+
+				<groupheader foreground="black" fontface="tahoma" fontSize="8" />
+
+				<!-- These are from the default style sheet... -->
+				<hyperlink foreground="#0000FF" padding="3,3,3,3" textAlign="wrapLeft" cursor="hand" />" <!-- TODO: Change foreground to MsoHyperlinkColor -->
+				<textbox background="buttonface" borderthickness="1,1,1,1"  bordercolor="black" padding="0,0,0,0" textAlign="MiddleCenter" height="23"/>
+				</style>
+
+				<style id="scrollEnabled">
+				<pcc borderthickness="1, 1, 1, 1" bordercolor="window" />
+				<pcc condition="mousewithin" borderthickness="1, 1, 1, 1" bordercolor="#d40000"/>
+
+				<dropButton borderthickness="1, 1, 1, 1" bordercolor="#d40000" foreground="buttontext" background="buttonface" fontface="marlett" textAlign="MiddleCenter" fontsize="9pt" text="6"/>
+				<dropButton condition="mousewithin" background="#B6BDD2"/>
+				<dropButton condition="isPressed" background="#8592B5" foreground="white"/>
+
+				<Element Margin="10" />
+				<button condition="keyfocused" textAlign="MiddleCenter" focusRect="dotted" />
+				<simplebutton condition="keyfocused" textAlign="MiddleCenter" focusRect="dotted" />
+				<thumb background="buttonface" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="2,2,2,2" />
+				<repeatbutton textAlign="MiddleCenter" foreground="buttontext" fontface="marlett" background="buttonface" fontsize="9pt" />
+				<repeatbutton id="lineleft" text="3" />
+				<repeatbutton id="lineright" text="4" />
+				<repeatbutton id="lineup" text="5" />
+				<repeatbutton id="linedown" text="6" />
+				<repeatbutton class="VertLine" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="1,1,1,1" />
+				<repeatbutton class="HorizLine" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="1,1,1,1" />
+				<repeatbutton class="VertLine" condition="isPressed" padding="2,2,0,0" borderstyle="sunken" />
+				<repeatbutton class="HorizLine" condition="isPressed" padding="2,2,0,0" borderstyle="sunken" />
+				<repeatbutton class="VertPage" background="scrollbar" />
+				<repeatbutton class="HorizPage" background="scrollbar" />
+				<repeatbutton class="VertPage" condition="isPressed" background="buttonshadow" />
+				<repeatbutton class="HorizPage" condition="isPressed" background="buttonshadow" />
+				<button background="buttonface" foreground="buttontext" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="2,2,2,2" textAlign="MiddleCenter" />
+				<button condition="isPressed" borderstyle="sunken" padding="3,3,1,1" />
+				<simplebutton background="buttonface" foreground="buttontext" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="2,2,2,2" textAlign="MiddleCenter" />
+				<simplebutton condition="isPressed" borderstyle="sunken" padding="3,3,1,1" />
+				<textbox background="buttonface" borderthickness="2,2,2,2" borderstyle="sunken" bordercolor="buttonface" padding="2,2,2,2" textAlign="MiddleCenter" />
+				<viewer background="window"/>
+
+				<listview background="buttonface"  borderthickness="1,1,1,1" bordercolor="windowtext"/>
+				<listview condition="selectedIndex LT 2" borderthickness="5,5,5,5"/>
+				<listviewItem foreground="windowtext" background="window" LayoutChildren="horizontal" AccessibleName="List Item"/>
+				<listviewItem condition="isSelected" background="highlight" foreground="highlighttext"/>
+				<listcontent LayoutChildren="horizontal"/>
+				</style>
+
+
+				<element sheet="#citStyle" layoutChildren="vertical" >
+
+				<listview selectedIndex="3" sheet="#scrollEnabled" width="100" height="90">
+
+					<listviewitem>     
+						<listcontent>
+						<label text="new row: col 0"/>
+						</listcontent>
+
+						<listcontent>
+						<label text="same row: col 1"/>
+						</listcontent>     	
+					</listviewitem>
+
+					<label text="new row"/>
+					<label text="new row1"/>
+
+					<listviewitem>
+						<label text="new row"/>
+						<label text="(not a new col)"/>
+					</listviewitem>
+				</listview>
+
+				<element background="white" bordercolor="black" borderthickness="1,1,1,1" layoutChildren="vertical">
+					<pcc layoutChildren="vertical">
+						<pcccontent layoutChildren="vertical" AccessibleDefaultAction="Press">
+							<label text="label in pcc"/>
+						</pcccontent>
+						<dropButton />
+					</pcc>
+					<pcc layoutChildren="vertical">
+						<pcccontent layoutChildren="vertical" AccessibleDefaultAction="Press">
+							<hyperlink text="hyperlink in pcc"/>
+						</pcccontent>
+						<dropButton/>
+					</pcc>
+					<pcc layoutChildren="vertical">
+						<pcccontent layoutChildren="vertical" AccessibleDefaultAction="Press">
+							<button text="button in pcc"/>
+						</pcccontent>
+						<dropButton/>
+					</pcc>
+				</element>
+
+				<radiogroup layoutChildren="vertical">
+					<radiobutton text="Option ^1" />
+					<radiobutton text="Option ^2" />
+				</radiogroup>
+				<label id="textboxlabel" text="^Use my accelerator to focus the below textbox:" />
+				<hyperlink text="Hotmail home :)" href="http://www.hotmail.com/" imageSrc="msn.bmp" />
+				<checkbox id="cb1" text="Click ^here." />
+				<textbox text="Textbox text." width="150" associatedLabelID="textboxlabel"
+					isEditable="true" isMultiline="false" />
+
+				<element layoutChildren="flow">
+					<button background="gradient(red,blue,horizontal)" foreground="white" text="red to blue gradient"/>
+					<button text="tall button (should be green)" height="50"/>
+					<button text="customProperty makes this red" blah="2"/>
+				</element>
+
+				<groupBox layoutChildren="vertical">
+					<groupheader linecolor="yellow" text="Calendar" />
+					<groupContent layoutChildren="flow">
+						<element  fontface="tahoma" fontSize="8" text="Customize the appearance of the Calendar." />
+						<combobox fontface="tahoma" fontSize="8" selectedIndex="3" listHeight="2" width="100" maxCharacters="30" >
+							<listitem text="15 minutes" />
+							<listitem text="30 minutes" />
+							<listitem text="1 hour" />
+							<listitem text="2 hours" />
+							<listitem text="4 hours" />
+							<listitem text="8 hours" />
+						</combobox>
+						<button   fontface="tahoma" fontSize="8" text="Calendar Options..." margin="10"/>
+					</groupContent>
+				</groupBox>
+
+				<groupBox layoutChildren="vertical">
+					<groupheader text="Tasks"/>
+					<groupContent layoutChildren="flow">
+						<element  fontface="tahoma" fontSize="8" text="Change the appearance of tasks." />
+						<dropdown fontface="tahoma" fontSize="8" text="10:00 AM" listHeight="4" width="100">
+							<listitem text="8:00 AM"/>
+							<listitem text="9:00 AM"/>
+							<listitem text="10:00 AM"/>
+							<listitem text="11:00 AM"/>
+							<listitem text="12:00 PM"/>
+							<listitem text="1:00 PM"/>
+							<listitem text="2:00 PM"/>
+						</dropdown>
+						<button   fontface="tahoma" fontSize="8" text="Task Options..." margin="10"/>
+					</groupContent>
+				</groupBox>
+
+				<groupBox IsCollapsible="false" layoutChildren="vertical">
+					<groupheader text="Contacts (not collapsable)"/>
+					<groupContent layoutChildren="flow">   
+						<element  fontface="tahoma" fontSize="8" text="Change default settings for contact and journal." />
+						<button   fontface="tahoma" fontSize="8" text="Contact Options..." margin="10"/>
+						<button   fontface="tahoma" fontSize="8" text="Journal Options..." margin="10"/>
+					</groupContent>
+				</groupBox>
+
+				<groupBox layoutChildren="vertical">
+					<groupheader text="Notes"/>
+					<groupContent layoutChildren="flow">
+						<element  fontface="tahoma" fontSize="8" text="Change the appearance of notes." />
+						<listbox multiselect="full" fontface="tahoma" fontSize="8" listheight="5" width="100" selectedIndex="6" >
+							<listitem text="8:00 AM"/>
+							<listitem text="9:00 AM"/>
+							<listitem text="10:00 AM"/>
+							<listitem text="11:00 AM"/>
+							<listitem text="12:00 PM"/>
+							<listitem text="1:00 PM"/>
+							<listitem text="2:00 PM"/>
+						</listbox>
+						<button   fontface="tahoma" fontSize="8" text="Note Options..." margin="10"/>
+					</groupContent>
+				</groupBox>
+
+				<groupBox eventHandler="DllEventHandler" layoutChildren="vertical" fontface="tahoma" fontSize="8">
+					<groupheader text="Event Handling" />
+					<groupContent layoutChildren="flow">
+						<button text="Button with handler" eventHandler="DllEventHandler" />
+						<button text="Button with eater and handler" eventHandler="DllEventHandler;DllEventEater" />
+					</groupContent>
+				</groupBox>
+
+				<element borderThickness="800,1,1,1" />
+
+				<element padding="10,10,10,10" layoutChildren="flow">
+					<button   margin="10" fontface="tahoma" fontSize="8" text="OK" />
+					<button   margin="10" fontface="tahoma" fontSize="8" text="Cancel" />
+					<button   margin="10" fontface="tahoma" fontSize="8" text="Apply" />
+					<element id="inserthere" layoutChildren="flow"/>
+				</element>
+
+				<element borderThickness="800,1,1,1" />
+
+				<element padding="10,10,10,10" layoutChildren="vertical">
+					<checkbox margin="10" fontface="tahoma" fontSize="8" text="CheckBox" />
+				</element>
+
+
+				</element>
+
+				</Element>
+			</Viewer>
+			<Viewer ID="Contentsdallistbox.xml" IsVisible="*Bind(Property=IsSelected;Source=dallistbox.xml)">
+				<element 
+					layoutChildren="vertical"
+					background="#aaddbb">
+
+				<listbox
+					fontface="tahoma" 
+					background="red"
+					fontSize="9" 
+					selectedIndex="3" >
+
+					<listitem text="15 minutes adfasdfasdfa" />
+						<listitem text="30 minutes adfasdfasdfasdfasdfasd" />
+						<listitem text="1 hour" />
+						<listitem text="2 hours" />
+						<listitem text="4 hours" />
+						<listitem text="8 hours" />
+
+				</listbox>
+
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALListView.xml" IsVisible="*Bind(Property=IsSelected;Source=DALListView.xml)">
+				<element 
+					layoutChildren="vertical"
+					alignChildren="center"
+					background="#aaddbb">
+
+				<style id="myStyle">
+					<viewer height="130"/>	
+
+					<listviewitem LayoutChildren="horizontal" AccessibleName="List Item"/>
+					<listcontent LayoutChildren="horizontal"/>
+				</style>
+
+				<listview selectedIndex="3" sheet="#myStyle" background="red" borderthickness="10,10,10,10" bordercolor="green" >
+
+					<listviewitem background="blue">     
+						<listcontent background="green">
+						<button text="first row, first column"/>
+						<textbox text="first row, first column" width="130"/>
+						</listcontent>
+
+
+						<listcontent background="yellow">
+						<label text="first row, second column" padding="10,10,10,10"/>
+						</listcontent>     	
+
+					</listviewitem>
+
+					<listviewitem background="white">     
+						<listcontent>
+							<button text="second row, first column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="second row, second column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="second row, third column"/>
+						</listcontent>
+
+					</listviewitem>
+
+
+					<listviewitem background="green" text="third row">     
+						<listcontent background="yellow">
+							<label text="third row, first column"/>
+						</listcontent>
+
+					</listviewitem>
+
+					<listviewitem background="white" text="fourth row">     
+						<listcontent background="yellow">
+							<label text="fourth row, first column"/>
+						</listcontent>
+					</listviewitem>
+
+					<listviewitem background="white">     
+						<listcontent>
+							<button text="fifth row, first column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="fifth row, second column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="fifth row, third column"/>
+						</listcontent>
+
+					</listviewitem>
+
+					<listviewitem background="white">     
+						<listcontent>
+							<button text="new row, first column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, second column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, third column"/>
+						</listcontent>
+
+					</listviewitem>
+
+					<listviewitem background="white">     
+						<listcontent>
+							<button text="new row, first column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, second column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, third column"/>
+						</listcontent>
+
+					</listviewitem>
+
+					<listviewitem background="white">     
+						<listcontent>
+							<button text="new row, first column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, second column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, third column"/>
+						</listcontent>
+
+					</listviewitem>
+
+					<listviewitem background="white">     
+						<listcontent>
+							<button text="new row, first column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, second column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, third column"/>
+						</listcontent>
+
+					</listviewitem>
+
+					<listviewitem background="white">     
+						<listcontent>
+							<button text="new row, first column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, second column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, third column"/>
+						</listcontent>
+
+					</listviewitem>
+
+					<listviewitem background="white">     
+						<listcontent>
+							<button text="new row, first column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, second column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, third column"/>
+						</listcontent>
+
+					</listviewitem>
+
+					<listviewitem background="white">     
+						<listcontent>
+							<button text="new row, first column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, second column"/>
+						</listcontent>
+
+						<listcontent background="yellow">
+							<button text="same row, third column"/>
+						</listcontent>
+
+					</listviewitem>
+
+
+				</listview>
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALListView2.xml" IsVisible="*Bind(Property=IsSelected;Source=DALListView2.xml)">
+				<Element x="0" y="0" background="cyan" layoutChildren="flow">
+
+
+				<label text="Scrolling table of buttons:"/>
+
+
+				<scrollviewer sheet="#scrollEnabled" hasHorizontalScrollbar="true" hasVerticalScrollbar="true" background="green">
+
+					<element layoutChildren="table" cols="4" rows="100">
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+
+					</element>
+
+				</scrollviewer>
+
+				</Element>
+			</Viewer>
+			<Viewer ID="Contentsdalmargin.xml" IsVisible="*Bind(Property=IsSelected;Source=dalmargin.xml)">
+				<element 
+					layoutChildren="vertical" 
+					background="yellow"
+					alignChildren="topright">
+
+				<button 
+					margin="100"
+					background="#00ffcc" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="11" 
+					width="200"
+					height="200"
+					text="CommandButton"/>
+
+				<element width="500" background="green"/>
+
+				<element width="100" text="textstring" background="green"/>
+
+				<element layoutChildren="vertical" background="cyan" width="400" height="300">
+
+				<label text="hello world hello world hello world hello world hello world hello world" background="red"/>
+
+
+				</element>
+				</element>
+			</Viewer>
+			<Viewer ID="Contentsdalmarginandchildrenmargin.xml" IsVisible="*Bind(Property=IsSelected;Source=dalmarginandchildrenmargin.xml)">
+				<element layoutChildren="vertical" >
+
+				<element layoutchildren="horizontal" background="pink" width="200"  height="200" childrenMargin="100">
+					<button text="bt1" margin="20"/>
+					<button text="bt2" margin="50"/>	
+					<button text="bt3" />	
+				</element>
+
+
+				<element layoutchildren="vertical" background="pink" width="200"  height="200" childrenMargin="100">
+					<button text="bt1" />
+					<button text="bt2" margin="300" />	
+					<button text="bt3" />
+				</element>
+
+
+				</element>
+			</Viewer>
+			<Viewer ID="Contentsdalmultiexpand.xml" IsVisible="*Bind(Property=IsSelected;Source=dalmultiexpand.xml)">
+				<netuixml>
+
+				<style id="errorWinStyle" src="##default">
+					<viewer height="300" expandToFillCellVert="true" background="white"/>
+				</style>
+
+				<element sheet="#errorWinStyle" layoutChildren="vertical" background="blue" padding="10,10,10,10"  childrenMargin="10">
+
+					<scrollviewer colMargin="2:0" background="green">
+						<element layoutChildren="vertical" childrenMargin="0">
+							<label id="template" text="No errors or warnings." background="pink"/>
+						</element>
+					</scrollviewer>
+
+					<button text="hello, world"/>
+
+				</element>
+
+
+				</netuixml>
+			</Viewer>
+			<Viewer ID="ContentsDALNoMargin.xml" IsVisible="*Bind(Property=IsSelected;Source=DALNoMargin.xml)">
+				<element 
+					layoutChildren="vertical" 
+					margin="100" 
+					background="#aaddbb"
+					alignChildren="topLeft">
+
+
+				<element layoutChildren="vertical" childrenMargin="0" background="blue">
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="simple button" />
+
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="simple button"/>
+
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="simple button" />
+				</element>
+
+
+				<element layoutChildren="horizontal" childrenMargin="0" background="yellow">
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="simple button" />
+
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="simple button"/>
+
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="simple button" />
+				</element>
+
+				<element layoutChildren="flow" width="200" vertMargin="0" background="red">
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="simple button" />
+
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="simple button"/>
+
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="simple button" />
+				</element>
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALNoMargin2.xml" IsVisible="*Bind(Property=IsSelected;Source=DALNoMargin2.xml)">
+				<element 
+					layoutChildren="vertical" 
+					background="#aaddbb"
+					alignChildren="topLeft">
+
+
+				<simplebutton 
+					margin="100"
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="12" 
+					text="simple button" />
+
+				<simplebutton 
+					margin="100"
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="12" 
+					text="simple button" />
+
+				<simplebutton 
+					margin="100"
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="12" 
+					text="simple button" />
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="14" 
+					text="simple button"/>
+
+
+
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsdalOneElement.xml" IsVisible="*Bind(Property=IsSelected;Source=dalOneElement.xml)">
+				<element text="hello, world" background="blue" padding="10,10,10,10" LayoutChildren="horizontal" borderthickness="20,20,20,20">
+
+				<element text="hello, world" background="yellow" padding="10,10,10,10"/>
+
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALOverLap.xml" IsVisible="*Bind(Property=IsSelected;Source=DALOverLap.xml)">
+				<element 
+					layoutChildren="overlap"
+					background="#aaddbb"
+					alignChildren="topleft"
+					>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="SimpleButton" />
+
+				<radiogroup layoutChildren="vertical" alignChildren="topLeft" background="red">
+					<radiobutton  text="Option ^1" />
+					<radiobutton  text="Option ^2" />
+					<radiobutton  text="Option ^3" />
+					<radiobutton  text="Option ^4" />
+					<radiobutton  text="Option ^5" />
+					<radiobutton  text="Option ^6" />
+					<radiobutton  text="Option ^7" />
+					<radiobutton  text="Option ^8" />
+					<radiobutton  text="Option ^9" />
+				</radiogroup>
+
+				<button 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="11" 
+					text="CommandButton is under the label" margin="10"/>
+
+				<label  text="overlapped layout" background="#cc00aa"/>
+
+
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALPcc.xml" IsVisible="*Bind(Property=IsSelected;Source=DALPcc.xml)">
+				<element 
+					layoutChildren="vertical"
+					alignChildren="topleft"
+					background="#aaddbb">
+
+					<style id="citStyle" >
+						<pcc borderthickness="1, 1, 1, 1" bordercolor="window" />
+						<pcc condition="mousewithin" borderthickness="1, 1, 1, 1" bordercolor="#d40000"/>
+
+						<dropButton borderthickness="1, 1, 1, 1" bordercolor="#d40000" foreground="buttontext" background="buttonface" fontface="marlett" textAlign="MiddleCenter" fontsize="9pt" text="6"/>
+						<dropButton condition="mousewithin" background="#B6BDD2"/>
+						<dropButton condition="isPressed" background="#8592B5" foreground="white"/>
+
+						<!-- These are from the default style sheet... -->
+						<hyperlink foreground="#0000FF" textAlign="wrapLeft" cursor="hand" />" <!-- TODO: Change foreground to MsoHyperlinkColor -->
+					</style>
+
+
+					<pcc sheet="#citStyle">
+						<pcccontent layoutChildren="vertical" AccessibleDefaultAction="Press">
+							<label  text="label in pcc"/>
+							<label  text="label in pcc" />
+							<label  text="label in pcc" />
+						</pcccontent>
+						<dropButton />
+					</pcc>
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="Contentsdalpcc3.xml" IsVisible="*Bind(Property=IsSelected;Source=dalpcc3.xml)">
+				<element 
+					layoutChildren="vertical"
+					alignChildren="topleft"
+					background="#aaddbb" childrenMargin="30">
+
+				<style id="citStyle" >
+				<pcc borderthickness="1, 1, 1, 1" bordercolor="window" />
+				<pcc condition="mousewithin" borderthickness="1, 1, 1, 1" bordercolor="#d40000"/>
+
+				<dropButton borderthickness="1, 1, 1, 1" bordercolor="#d40000" foreground="buttontext" background="buttonface" fontface="marlett" textAlign="MiddleCenter" fontsize="9pt" text="6"/>
+				<dropButton condition="mousewithin" background="#B6BDD2"/>
+				<dropButton condition="isPressed" background="#8592B5" foreground="white"/>
+
+				<hyperlink foreground="#0000FF" textAlign="wrapLeft" cursor="hand" />"
+				</style>
+
+
+				<pcc background="red" layoutChildren="horizontal">
+
+				<pcccontent layoutChildren="table" rows="2" cols="5" background="yellow" width="300" height="200" AccessibleDefaultAction="Press">
+
+					<button text="aaaa" tablePosition="1,1,1,2" background="cyan" expandtofillcellvert="true" expandtofillcellhoriz="true"/>
+					<button text="bbbb" tablePosition="2,1" background="cyan"/>
+					<button text="cccc" tablePosition="3,1,2,1" background="cyan"/>
+					<button text="dddd" tablePosition="5,1" background="cyan"/>
+					<button text="eeee" tablePosition="2,2,2,1" background="cyan" expandtofillcellvert="true" expandtofillcellhoriz="true"/>
+					<button text="ffff" tablePosition="4,2,2,1" background="cyan" expandtofillcellvert="true" expandtofillcellhoriz="true"/>
+
+				</pcccontent>
+				<dropButton background="green"/>
+				</pcc>
+
+
+				<element layoutChildren="overlap" background="red">
+				<element layoutChildren="table" rows="2" cols="5" background="yellow">
+
+					<button text="aaaa" tablePosition="1,1,1,2" background="cyan" expandtofillcellvert="true" expandtofillcellhoriz="true"/>
+					<button text="bbbb" tablePosition="2,1" background="cyan"/>
+					<button text="cccc" tablePosition="3,1,2,1" background="cyan"/>
+					<button text="dddd" tablePosition="5,1" background="cyan"/>
+					<button text="eeee" tablePosition="2,2,2,1" background="cyan" expandtofillcellvert="true" expandtofillcellhoriz="true"/>
+					<button text="ffff" tablePosition="4,2,2,1" background="cyan" expandtofillcellvert="true" expandtofillcellhoriz="true"/>
+
+				</element>
+				</element>
+
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALRadioButtons.xml" IsVisible="*Bind(Property=IsSelected;Source=DALRadioButtons.xml)">
+				<netuixml>
+
+					<style id="myStyle">
+						<radiogroup bordercolor="black" borderthickness="1,1,1,1" padding="5,5,5,5" margin="10"/>
+					</style>
+
+					<element sheet="#myStyle" LayoutChildren="flow" padding="10,10,10,10">
+						<radiogroup LayoutChildren="vertical">
+							<radiobutton id="rb1" text="^red" foreground="red" />
+							<radiobutton id="rb2" text="^green" foreground="green" isSelected="true" />
+							<radiobutton id="rb3" text="^blue" foreground="blue" />
+						</radiogroup>
+
+						<radiogroup textAlign="topright" bordercolor="#454545" fontface="system" foreground="purple" LayoutChildren="vertical">
+							<radiobutton id="rb4" text="^8 spokes" fontface="arial" foreground="black"/>
+							<radiobutton id="rb5" text="1^6 spokes" fontface="courier" />
+							<radiobutton id="rb6" text="An ^unlimited number of spokes" fontface="tahoma" />
+						</radiogroup>
+					</element>
+
+				</netuixml>
+			</Viewer>
+			<Viewer ID="ContentsDALRichlabel.xml" IsVisible="*Bind(Property=IsSelected;Source=DALRichlabel.xml)">
+				<Element layoutchildren="vertical" >
+
+					<richlabel rtftext="{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}{\f1\froman\fprq2\fcharset0 Bodoni MT;}{\f2\froman\fprq2\fcharset0 Times New Roman;}{\f3\fswiss\fprq2\fcharset0 Trebuchet MS;}{\f4\fswiss\fprq2\fcharset0 Tahoma;}}
+				\viewkind4\uc1\pard\f0\fs40 The \b\f1\fs36 quick \b0\f0\fs32 brown \i\f2\fs28 fox \i0\f0\fs24 jumped \b\i\f3\fs20 over \b0\i0\f0\fs18 the \ul\f4\fs16 lazy\ulnone  \fs12 dog\f0\fs20 .\par
+				}"
+						textAlign="wrapLeft"
+						background="pink"
+						expandToFillHoriz="true"
+				/>
+
+					<richlabel rtftext="{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fmodern\fcharset0 Courier;}{\f1\fswiss\fcharset0 Tahoma;}{\f2\fswiss\fcharset0 Arial;}}{\colortbl ;\red0\green0\blue0;}\viewkind4\uc1\pard\cf1\ul\i\f0\fs48 Test \i0 Code\i  \f1 Ha\f0  Ha\cf0\ulnone\i0\f2\fs20\par}"
+						background="lightblue" />
+
+					<richlabel rtftext="{\rtf1\ansi\ansicpg1252{\fonttbl{\f1\fnil\fcharset0\fprq0 Arial;}}{\colortbl;\red0\green0\blue0;}\pard\plain\ltrpar\qc\f1\fs88\ppscheme-3\cf1\lang1033\ql {\f1 Hello, there }{\i\f1 World!}}"
+						background="gray" />
+
+					<richlabel rtftext="{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}{\f1\fnil\fprq2\fcharset2 Wingdings;}{\f2\fswiss\fcharset2 Arial;}{\f3\fswiss\fprq2\fcharset0 Tahoma;}}{\colortbl ;\red0\green255\blue0;\red255\green0\blue0;}\viewkind4\uc1\pard\f0\fs20 This is a fairly long document!  It has lots of formatting and fonts.  This opening paragraph is a pretty regular font, using Arial 10 point font.  Not too much else to say, but I should keep writing to make sure it is long enough.\par\par\b BOLD 10pt Arial:\par\fs44 BOLD 22pt Arial:\par\b0\fs16 8pt arial\par Wingdings:\f1\fs22 Hello, world!aa\b\f0\fs20\par\b0\par\cf1 LIME TEXT\par\par\cf2\i\f2 Italicized red text\par\fs44 22pt Italics\par\par\ul\b\f3\fs28 Tahoma bold italic, underlined\cf0\ulnone\b0\i0\f0\fs20\par\par\pard\li1440 Indented paragraph\par\pard Thanks,\par Nick\par}"
+						background="yellow" textAlign="wrapLeft"/>
+
+					<richLabel rtftext="{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}}\viewkind4\uc1\pard\f0\fs20 Hello, world\par}"
+						background="pink" />
+
+				</Element>
+			</Viewer>
+			<Viewer ID="ContentsDALRTL.xml" IsVisible="*Bind(Property=IsSelected;Source=DALRTL.xml)">
+				<element 
+					layoutChildren="horizontal" direction="rtl"
+					width="800"
+					height="500"
+					background="#aaddbb"
+					alignChildren="topLeft">
+
+				<element layoutChildren="vertical" background="yellow">
+
+				<element layoutChildren="horizontal" background="#bbccee">
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="original left of pane 1" />
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="original right of pane 1" />
+
+				</element>
+				</element>
+
+
+				<element layoutChildren="vertical" background="cyan">
+				<element layoutChildren="horizontal" background="#bbccee">
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="original left of pane 2"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="original right of pane 2" />
+
+				</element>
+				</element>
+
+
+
+
+				</element>
+			</Viewer>
+			<Viewer ID="Contentsdalsamewidth.xml" IsVisible="*Bind(Property=IsSelected;Source=dalsamewidth.xml)">
+				<element layoutChildren="horizontal" background="red" sameWidthChildren="true">
+					<button text="OK" />
+					<button text="Cancel"/>
+				</element>
+			</Viewer>
+			<Viewer ID="Contentsdalsamewidth2.xml" IsVisible="*Bind(Property=IsSelected;Source=dalsamewidth2.xml)">
+				<element layoutChildren="horizontal" background="red" sameWidthChildren="true" distributeChildren="true">
+					<label text="sameWidth(Height)Children" background="cyan"/>
+					<button text="distribute short"/>
+					<button text="distribute middle length"/>
+					<button text="distribute long long long long long long length"/>
+				</element>
+			</Viewer>
+			<Viewer ID="Contentsdalsamewidth3.xml" IsVisible="*Bind(Property=IsSelected;Source=dalsamewidth3.xml)">
+				<netui layoutchildren="vertical" >
+
+				<label text="Horizontal layout:" />
+
+				<Element layoutChildren="horizontal" sameWidthChildren="true" borderstyle="solid" >
+					<button text="Ok"/>
+					<button text="Cancel"/>
+				</Element>
+
+				<label text="Flow layout:" />
+				<Element layoutChildren="flow" sameWidthChildren="true" borderstyle="solid" >
+					<button text="Ok" />
+					<button text="Cancel" />
+				</Element>
+
+				<label text="Vertical layout:" />
+				<Element layoutChildren="vertical" sameWidthChildren="true" borderstyle="solid" >
+					<button text="Ok" />
+					<button text="Cancel" />
+				</Element>
+
+				</netui>
+			</Viewer>
+			<Viewer ID="Contentsdalsamewidthonflow.xml" IsVisible="*Bind(Property=IsSelected;Source=dalsamewidthonflow.xml)">
+				<element 
+					layoutChildren="vertical"
+					background="#aaddbb"
+					childrenMargin="8"
+					alignChildren="topleft">
+
+
+				<button text="commandbutton"/>
+
+
+				<element layoutChildren="flow" background="red" width="600" sameWidthChildren="true">
+					<button text="short"/>
+					<button text="middle length"/>
+					<button text="sameWidthChildren on the parent frame"/>
+				</element>
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALScrollViewer.xml" IsVisible="*Bind(Property=IsSelected;Source=DALScrollViewer.xml)">
+				<Element x="0" y="0" background="cyan" layoutChildren="flow">
+
+				<style id="scrollEnabled">
+				<Element Margin="10" />
+				<button condition="keyfocused" textAlign="MiddleCenter" focusRect="dotted" />
+				<simplebutton condition="keyfocused" textAlign="MiddleCenter" focusRect="dotted" />
+				<thumb background="buttonface" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="2,2,2,2" />
+				<repeatbutton textAlign="MiddleCenter" foreground="buttontext" fontface="marlett" background="buttonface" fontsize="9pt" />
+				<repeatbutton id="lineleft" text="3" />
+				<repeatbutton id="lineright" text="4" />
+				<repeatbutton id="lineup" text="5" />
+				<repeatbutton id="linedown" text="6" />
+				<repeatbutton class="VertLine" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="1,1,1,1" />
+				<repeatbutton class="HorizLine" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="1,1,1,1" />
+				<repeatbutton class="VertLine" condition="isPressed" padding="2,2,0,0" borderstyle="sunken" />
+				<repeatbutton class="HorizLine" condition="isPressed" padding="2,2,0,0" borderstyle="sunken" />
+				<repeatbutton class="VertPage" background="scrollbar" />
+				<repeatbutton class="HorizPage" background="scrollbar" />
+				<repeatbutton class="VertPage" condition="isPressed" background="buttonshadow" />
+				<repeatbutton class="HorizPage" condition="isPressed" background="buttonshadow" />
+				<button background="gradient(red,blue,horizontal)" foreground="buttontext" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="1,1,1,1" textAlign="MiddleCenter" width="400"/>
+				<button condition="isPressed" borderstyle="sunken" />
+				<simplebutton background="buttonface" foreground="buttontext" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="2,2,2,2" textAlign="MiddleCenter" />
+				<simplebutton condition="isPressed" borderstyle="sunken" padding="3,3,1,1" />
+				<textbox background="buttonface" borderthickness="2,2,2,2" borderstyle="sunken" bordercolor="buttonface" padding="2,2,2,2" textAlign="MiddleCenter" />
+				<label textAlign="wrapLeft" />
+				</style>
+
+
+				<scrollviewer sheet="#scrollEnabled" hasHorizontalScrollbar="true" hasVerticalScrollbar="true" background="green">
+
+					<element layoutChildren="vertical" childrenMargin="0">
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+					</element>
+
+				</scrollviewer>
+
+				</Element>
+			</Viewer>
+			<Viewer ID="Contentsdalscrollviewlong.xml" IsVisible="*Bind(Property=IsSelected;Source=dalscrollviewlong.xml)">
+				<Element x="0" y="0" background="cyan" layoutChildren="vertical" childrenMargin="0">
+
+				<style id="scrollEnabled">
+				<Element Margin="10" />
+				<button condition="keyfocused" TextAlign="MiddleCenter" focusRect="dotted" />
+				<simplebutton condition="keyfocused" TextAlign="MiddleCenter" focusRect="dotted" />
+				<thumb background="buttonface" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="2,2,2,2" />
+				<repeatbutton TextAlign="MiddleCenter" foreground="buttontext" fontface="marlett" background="buttonface" fontsize="9pt" />
+				<repeatbutton id="lineleft" text="3" />
+				<repeatbutton id="lineright" text="4" />
+				<repeatbutton id="lineup" text="5" />
+				<repeatbutton id="linedown" text="6" />
+				<repeatbutton class="VertLine" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="1,1,1,1" />
+				<repeatbutton class="HorizLine" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="1,1,1,1" />
+				<repeatbutton class="VertLine" condition="ispressed" padding="2,2,0,0" borderstyle="sunken" />
+				<repeatbutton class="HorizLine" condition="ispressed" padding="2,2,0,0" borderstyle="sunken" />
+				<repeatbutton class="VertPage" background="scrollbar" />
+				<repeatbutton class="HorizPage" background="scrollbar" />
+				<repeatbutton class="VertPage" condition="ispressed" background="buttonshadow" />
+				<repeatbutton class="HorizPage" condition="ispressed" background="buttonshadow" />
+				<button background="gradient(red,blue,horizontal)" foreground="buttontext" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="1,1,1,1" TextAlign="MiddleCenter" width="400"/>
+				<button condition="ispressed" borderstyle="sunken" />
+				<simplebutton background="buttonface" foreground="buttontext" borderthickness="2,2,2,2" borderstyle="raised" bordercolor="buttonface" padding="2,2,2,2" TextAlign="MiddleCenter" />
+				<simplebutton condition="ispressed" borderstyle="sunken" padding="3,3,1,1" />
+				<textbox background="buttonface" borderthickness="2,2,2,2" borderstyle="sunken" bordercolor="buttonface" padding="2,2,2,2" TextAlign="MiddleCenter" />
+				<label TextAlign="wrapLeft" />
+				<viewer width="100" height="100" />
+				</style>
+
+
+				<label text="Scrolling set of textboxes and buttons:"/>
+
+				<scrollviewer sheet="#scrollEnabled" hasHorizontalScrollbar="true" hasVerticalScrollbar="true" height="300">
+
+					<element layoutChildren="vertical" childrenMargin="0">
+						<textbox text="button 1"/>
+						<textbox text="button 2"/>
+						<textbox text="button 3"/>
+
+						<textbox text="button 1"/>
+						<textbox text="button 2"/>
+						<textbox text="button 3"/>
+						<textbox text="button 1"/>
+						<textbox text="button 2"/>
+						<textbox text="button 3"/>
+						<textbox text="button 1"/>
+						<textbox text="button 2"/>
+						<textbox text="button 3"/>
+						<textbox text="button 1"/>
+						<textbox text="button 2"/>
+						<textbox text="button 3"/>
+						<textbox text="button 1"/>
+						<textbox text="button 2"/>
+						<textbox text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+					</element>
+
+				</scrollviewer>
+				<scrollviewer indent="2" sheet="#scrollEnabled" hasHorizontalScrollbar="true" hasVerticalScrollbar="true" >
+
+					<element layoutChildren="vertical" childrenMargin="0">
+						<textbox text="button 1"/>
+						<textbox text="button 2"/>
+						<textbox text="button 3"/>
+
+						<textbox text="button 1"/>
+						<textbox text="button 2"/>
+						<textbox text="button 3"/>
+						<textbox text="button 1"/>
+						<textbox text="button 2"/>
+						<textbox text="button 3"/>
+						<textbox text="button 1"/>
+						<textbox text="button 2"/>
+						<textbox text="button 3"/>
+						<textbox text="button 1"/>
+						<textbox text="button 2"/>
+						<textbox text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+
+					</element>
+
+				</scrollviewer>
+
+				</Element>
+			</Viewer>
+			<Viewer ID="ContentsdalShrinkWidthCrash.xml" IsVisible="*Bind(Property=IsSelected;Source=dalShrinkWidthCrash.xml)">
+				<element 
+					layoutChildren="vertical"
+					background="#aaddbb"
+					childrenMargin="8"
+					alignChildren="topleft">
+
+
+				<element layoutChildren="flow" background="red" ShrinkWidthBy="30">
+					<button text="flow has indent later rows"/>
+					<button text="expandToFillRowVert" expandToFillRowVert="true"/>
+					<button text="parent flow's vertMargin=0" height="40"/>
+					<button text="sameWidthChildren on the parent frame"/>
+				</element>
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALSingleDistribute.xml" IsVisible="*Bind(Property=IsSelected;Source=DALSingleDistribute.xml)">
+				<element distributeChildren="true" layoutChildren="vertical">
+					<label text="testing" layoutPosition="none" background="buttonface"/>
+					<label text="testing" background="buttonface"/>
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALtable.xml" IsVisible="*Bind(Property=IsSelected;Source=DALtable.xml)">
+				<element 
+					layoutChildren="table" 
+					cols="4" rows="3"
+					setWidthColChildren="1:200;4:550"
+					setHeightRowChildren="2:200;3:200"
+					colMargin="1:30"
+					margin="100" 
+					background="#aaddbb">
+
+				<combobox  fontface="tahoma" fontSize="8" text="15 minutes" width="120"/>
+
+				<button    fontface="tahoma" fontSize="8" text="Calendar Options..." margin="10"/>
+
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="expand to fill horiz" margin="10"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="simple button" margin="10"/>
+
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="10" 
+					text="expand to fill vert" margin="10"/>
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="11" 
+					text="hello" margin="10"/>
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="18" 
+					textAlign="wrapleft"
+					text="text long to wrap to left" margin="10"/>
+
+				<button 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="11" 
+					text="command button" margin="10"/>
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="simple button" margin="10"/>
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="9" 
+					text="simple button" margin="10"/>
+
+
+				<simplebutton 
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="10" 
+					text="simple button" margin="10"/>
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALTable2.xml" IsVisible="*Bind(Property=IsSelected;Source=DALTable2.xml)">
+				<element 
+					layoutChildren="table" cols="4" rows="3"
+					expandColToFillHoriz="2;3"
+					expandRowToFillVert="1;3"
+					colMargin="1:30"
+					background="#aaddbb">
+
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="simple button" margin="10"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="7" 
+					text="simple button" margin="10"/>
+
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="10" 
+					text="simple button" margin="10"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="11" 
+					text="simple button" margin="10"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="simple button" margin="10"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="simple button" margin="10"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="simple button" margin="10"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="simple button" margin="10"/>
+
+				<simplebutton 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="16" 
+					text="simple button" margin="10"/>
+
+				<button 
+
+					background="#00ff00" 
+					foreground="#ff0000" 
+					fontface="tahoma" 
+					fontSize="11" 
+					text="simple button" margin="10"/>
+
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALTable3.xml" IsVisible="*Bind(Property=IsSelected;Source=DALTable3.xml)">
+
+				<element layoutChildren="table" cols="2" rows="2" background="green">
+
+					<element layoutChildren="vertical">
+						<button text="button 1"/>
+						<button text="button 2"/>
+						<button text="button 3"/>
+					</element>
+
+					<scrollbar vertical="true" expandToFillCellVert="true"/>
+					<scrollbar vertical="false" expandToFillCellHoriz="true"/>
+
+				</element>
+
+
+			</Viewer>
+			<Viewer ID="ContentsDALTable4.xml" IsVisible="*Bind(Property=IsSelected;Source=DALTable4.xml)">
+				<element layoutchildren="vertical">
+
+				<element 
+					layoutChildren="table" 
+					cols="4" rows="4"
+					padding="10,10,10,10"
+					background="#aaddbb"
+					width="400"
+					height="400">
+
+
+				<button fontface="tahoma" fontSize="13" text="Calendar Options..." background="yellow" tableposition="1,1,2,2"
+				expandtofillcellvert="true" expandtofillcellhoriz="true"/>
+
+				<button    fontface="tahoma" fontSize="13" text="first" background="red"/>
+
+				<button    fontface="tahoma" fontSize="13" text="second" background="red"/>
+
+				<button    fontface="tahoma" fontSize="13" text="third" background="red"/>
+
+				<button    fontface="tahoma" fontSize="13" text="fourth" background="red"/>
+
+				<button    fontface="tahoma" fontSize="13" text="fifth" background="red"/>
+
+				</element>
+
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALTable5.xml" IsVisible="*Bind(Property=IsSelected;Source=DALTable5.xml)">
+				<element layoutchildren="vertical"> 
+				<element layoutChildren="table" cols="4" rows="4" padding="10,10,10,10" background="#aaddbb" width="400" height="400"> 
+
+
+
+				<button fontface="tahoma" fontSize="13" text="1Calendar Options..." background="yellow" tableposition="1,1,2,1" />
+				<button fontface="tahoma" fontSize="13" text="5Calendar Options..." background="red" tableposition="3,3"/> 
+				<button fontface="tahoma" fontSize="13" text="4Calendar Options..." background="red" tableposition="2,2"/> 
+
+				<button fontface="tahoma" fontSize="13" text="5Calendar Options..." background="red" tableposition="2,3"/> 
+
+				</element> 
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALTable6.xml" IsVisible="*Bind(Property=IsSelected;Source=DALTable6.xml)">
+				<element layoutchildren="vertical">
+
+				<element 
+					layoutChildren="table" 
+					cols="4" rows="4"
+					padding="10,10,10,10"
+					background="#aaddbb"
+					width="400"
+					height="400">
+
+
+				<button fontface="tahoma" fontSize="13" text="Calendar Options..." background="yellow" 
+				tableposition="2,1,2,2" width="300" height="200"
+				expandtofillcellvert="true" expandtofillcellhoriz="true"/>
+
+				<button    fontface="tahoma" fontSize="13" text="first" background="red"/>
+
+				<button    fontface="tahoma" fontSize="13" text="second" background="red" tableposition="4,3"/>
+
+				<button    fontface="tahoma" fontSize="13" text="third" background="red"/>
+
+				<button    fontface="tahoma" fontSize="13" text="fourth" background="red"/>
+
+				<button    fontface="tahoma" fontSize="13" text="fifth" background="red"/>
+
+				</element>
+
+				</element>
+			</Viewer>
+			<Viewer ID="Contentsdaltableexpand.xml" IsVisible="*Bind(Property=IsSelected;Source=daltableexpand.xml)">
+				<netui background="green">
+
+				<element layoutchildren="table" rows="2" cols="2" expandcoltofillhoriz="1" expandrowtofillvert="1" background="red">
+
+					<element layoutChildren="vertical" padding="10,10,25,25" tablePosition="1,1" background="yellow">
+						<button text="Button1"/>
+						<button text="Button2"/>
+
+						<element layoutChildren="horizontal" sameWidthChildren="true" background="green">
+							<button text="OK"/>
+							<button text="Cancel"/>
+						</element>
+					</element>
+
+						<element tableposition="2,2" background="blue" layoutChildren="horizontal">
+							<button text="another text here" background="green"/>
+
+						</element>
+
+
+
+				</element>
+
+
+
+				</netui>
+			</Viewer>
+			<Viewer ID="Contentsdaltableexpand2.xml" IsVisible="*Bind(Property=IsSelected;Source=daltableexpand2.xml)">
+
+
+				<element layoutChildren="table" rows="1" cols="2" background="pink" expandColToFillHoriz="1" >
+						<textbox id="tb1" text="I am in row1,col1 and inside another table" /> 
+						<textbox id="tb1" text="I am in row1,col1 and inside another table" /> 
+				</element>
+
+
+
+
+			</Viewer>
+			<Viewer ID="Contentsdaltablemargin.xml" IsVisible="*Bind(Property=IsSelected;Source=daltablemargin.xml)">
+				<netui>
+
+				<element layoutChildren="table" cols="2" rows="1" allColMargins="0" background="red">
+
+					<checkbox margin="0" padding="0,0,0,0" background="cyan"/>
+
+					<label text="Test" margin="0" padding="0,0,0,0" background="yellow"/>
+
+				</element>
+
+				</netui>
+
+			</Viewer>
+			<Viewer ID="Contentsdaltreeview.xml" IsVisible="*Bind(Property=IsSelected;Source=daltreeview.xml)">
+				<element layoutchildren="vertical" background="yellow" padding="10,10,10,10">	
+
+
+					<scrollviewer expandToFillVert="true" expandToFillHoriz="true" padding="10,10,10,10" background="green">
+						<element background="pink" expandToFillVert="true" expandToFillHoriz="true" layoutchildren="vertical">
+
+							<treeView background="Red" expandtofillhoriz="true"
+								expandtofillvert="true" hasverticalscrollbar="true" hashorizontalscrollbar="true">
+								<treeViewItem text="hello" hasChildren="true" background="cyan"/>
+
+								<treeViewItem>
+									<treeViewContent text="asdf" />
+								</treeViewItem>
+
+								<treeViewItem text="item1">
+									<treeViewItem text="item2"/>
+								</treeViewItem>
+
+								<treeViewItem text="item1">
+									<treeViewChildren>
+										<treeViewItem text="item2"/>
+									</treeViewChildren>
+								</treeViewItem>
+
+								<treeViewItem>
+									<treeViewContent text="item1"/>
+									<treeViewChildren>
+										<treeViewItem text="item2"/>
+									</treeViewChildren>
+								</treeViewItem>
+							</treeView>
+
+							<treeView background="Red" expandtofillhoriz="true"
+								expandtofillvert="true" hasverticalscrollbar="true" hashorizontalscrollbar="true">
+								<treeViewItem text="hello" hasChildren="true" background="cyan"/>
+
+								<treeViewItem>
+									<treeViewContent text="asdf" />
+								</treeViewItem>
+
+								<treeViewItem text="item1">
+									<treeViewItem text="item2"/>
+								</treeViewItem>
+
+								<treeViewItem text="item1">
+									<treeViewChildren>
+										<treeViewItem text="item2"/>
+									</treeViewChildren>
+								</treeViewItem>
+
+								<treeViewItem>
+									<treeViewContent text="item1"/>
+									<treeViewChildren>
+										<treeViewItem text="item2"/>
+									</treeViewChildren>
+								</treeViewItem>
+							</treeView>
+
+							<element LayoutChildren="horizontal" background="green">
+								<hyperlink text="blah"/>
+							</element>     
+						</element>
+
+					</scrollviewer>
+
+					<button text="button"/>
+					<button text="button"/>
+					<button text="button"/>
+				</element>
+			</Viewer>
+			<Viewer ID="Contentsdalvert2.xml" IsVisible="*Bind(Property=IsSelected;Source=dalvert2.xml)">
+				<element layoutChildren="vertical" background="cyan">
+
+				<element layoutChildren="vertical" background="blue" childrenMargin="50">
+
+				<element layoutChildren="vertical">
+				<element background="yellow" text="Some silly text that doesn't really matter"/>
+				<button background="yellow" text="No, really, I don't care"/>
+				</element>
+
+				<element layoutChildren="horizontal" background="green" expandToFillHoriz="true" distributeChildren="true">
+				<button background="yellow"  text="help"/>
+
+				<element layoutChildren="horizontal">
+				<button background="yellow"  text="back"/>
+				<button background="yellow"  text="next"/>
+
+				<button background="yellow"  text="cancel" margin="15"/>
+				</element>
+
+				</element>
+
+				</element>
+				</element>
+			</Viewer>
+			<Viewer ID="Contentsdalvertflow.xml" IsVisible="*Bind(Property=IsSelected;Source=dalvertflow.xml)">
+				<element 
+					layoutChildren="vertical"
+					expandChildrenToFillHoriz="true"
+				>
+
+				<element layoutChildren="verticalflow" background="red" horizMargin="50" >
+
+
+				<label expandtofillcolhoriz="true"
+					background="#ccbbaa" 
+					text="hello" 
+				/>
+
+				<hyperlink 
+					background="#ccbbaa" 
+					height="35"	 
+					text="Hotmail home :)  2" 
+					href="http://www.hotmail.com/" imageSrc="msn.bmp" />
+
+				<hyperlink 
+					background="#ccbbaa" 
+					height="35"	 
+					text="Hotmail home :) 3" 
+					href="http://www.hotmail.com/" imageSrc="msn.bmp" />
+
+				<hyperlink 
+					background="#ccbbaa" 
+					height="35"	 
+					text="Hotmail home :) 4" 
+					href="http://www.hotmail.com/" imageSrc="msn.bmp" />
+
+				<hyperlink 
+					background="#ccbbaa" 
+					height="35"	 
+					text="Hotmail home :) 5" 
+					href="http://www.hotmail.com/" imageSrc="msn.bmp" />
+
+				<hyperlink 
+					background="#ccbbaa" 
+					height="35"	 
+					text="Hotmail home :) 6" 
+					href="http://www.hotmail.com/" imageSrc="msn.bmp" />
+
+				<hyperlink 
+					background="#ccbbaa" 
+					height="35"	  
+					text="Hotmail home :) 7" 
+					href="http://www.hotmail.com/" imageSrc="msn.bmp" />
+
+
+				</element>
+
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALWrap.xml" IsVisible="*Bind(Property=IsSelected;Source=DALWrap.xml)">
+				<netui 
+					layoutChildren="horizontal"
+					ExpandChildrenToFillHoriz="TRUE"
+				>
+
+				<style id="globalStyle">
+					<element
+						fontSize="14"
+						fontFace="Verdana"
+						ChildrenMargin="0"
+					/>
+					<button 
+						background="#B6D2F9"
+						borderstyle="raised" 
+						bordercolor="#D4D0C8" 
+						textalign="middlecenter" 
+						borderthickness="2,2,2,2" 
+						height="25"
+					/>
+					<button 
+						condition="mousewithin" 
+						background="#B6BDD2" 
+					/>
+					<button 
+						condition="ispressed" 
+						borderstyle="sunken" 
+						background="#8592B5" 
+						foreground="#FFFFFF" 
+					/>
+				</style>
+
+				<style id="blockHR">
+					<element
+						background="#FFFFFF"
+						Height="2"
+					/>
+				</style>
+
+				<style id="styleBlockShell" src="#globalStyle">
+					<element
+						background="#B6D2F9"
+					/>
+				</style>
+
+				<defs>
+					<!-- Console Control Strings -->
+					<string id="strConsoleBlockBtnExitConsole">Exit</string>
+
+					<!-- Status Strings -->
+					<string id="strStatusBlockJoiningConference">Joining conference and this is a very long string. Note how this string wraps even though label is not set to expand. All via the power of textAlign ExpandToNaturalWidth flag</string>
+
+					<!-- Roster Strings -->
+					<string id="strRosterBlockHeader">Attendees</string>
+
+				</defs>
+
+				<Element sheet="#globalStyle"
+					background="#1567D0"
+					id="idConf"
+					layoutChildren="vertical"
+					ChildrenMargin="0"
+				>
+					<!-- Console Controls Block -->
+					<Element 
+						layoutChildren="horizontal"
+						alignChildren="TopRight"
+					>
+						<Button
+							id="idConsoleBlockBtnExit" 
+							text="#strConsoleBlockBtnExitConsole" 
+						/>
+					</Element>
+					<Element sheet="#blockHR" />
+					<!-- End Console Controls Block -->
+
+					<!-- Status Block -->
+					<Element sheet="#styleBlockShell"
+						layoutChildren="vertical"
+						id="idStatusBlock"
+					>
+						<label 
+							id="idBlockStatusPreLoadMsg" 
+							text="#strStatusBlockJoiningConference" 
+							textAlign="WrapLeft | ExpandToNaturalWidth"
+						/>
+						<Element sheet="#blockHR"/>
+					</Element>
+					<!-- End Status Block -->
+
+					<!-- Roster Block -->
+					<Element sheet="#styleBlockShell"
+						id="idRosterBlock"
+						layoutChildren="vertical"
+						ChildrenMargin="0"
+					>
+						<Element
+							layoutChildren="horizontal"
+							ChildrenMargin="0"
+						>
+							<image
+							/>
+							<Element 
+								layoutChildren="vertical"
+								ChildrenMargin="0"
+							>
+								<Label
+									textAlign="MiddleLeft"
+									text="#strRosterBlockHeader" 
+									fontWeight="bold" 
+								/>
+								<Label
+									id="idRosterBlockNumberPresent"
+								/>
+							</Element>
+						</Element>                
+						<Element sheet="#blockHR"/>
+
+						<Element sheet="#styleBlockShell"
+							id="idRosterBlockList"
+							layoutChildren="vertical"
+							ChildrenMargin="0"
+						>
+
+							<Element
+								layoutChildren="horizontal"
+							ChildrenMargin="0"
+							>
+								<image
+								/>
+								<label 
+									text="Mary Jane"
+									textAlign="MiddleLeft"
+								/>
+								<checkbox />
+							</Element>
+
+							<Element
+								layoutChildren="horizontal"
+								ChildrenMargin="0"
+							>
+								<image
+								/>
+								<label 
+									text="Mary Jane"
+									textAlign="MiddleLeft"
+								/>
+								<checkbox />
+							</Element>
+
+						</Element>
+						<Element sheet="#blockHR"/>
+					</Element>
+					<!--End Roster Block -->
+				</Element>
+				</netui>
+			</Viewer>
+			<Viewer ID="ContentsDALWrapCBCenter.xml" IsVisible="*Bind(Property=IsSelected;Source=DALWrapCBCenter.xml)">
+				<element layoutChildren="vertical">
+					<element 
+						layoutChildren="flow"
+						background="#aaddbb">
+
+						<checkbox borderthickness="1,1,1,1" bordercolor="green"
+							text="This checkbox has textAlign=wrapCenter set.  The purpose of this checkbox is to test to see how this very long string will wrap with this particular wrap setting being used on this checkbox."
+							textAlign="wrapCenter"
+							expandToFillHoriz="true"
+							background="lightblue"/>
+
+					</element>
+					<checkbox borderthickness="1,1,1,1" bordercolor="green"
+						text="This checkbox has textAlign=textAlign=wrapCenter|ExpandToNaturalWidth set.  The purpose of this checkbox is to test to see how this very long string will wrap with this particular wrap setting being used on this checkbox."
+						textAlign="wrapCenter | ExpandToNaturalWidth "
+						expandToFillHoriz="true"
+						background="lightblue"/>
+				</element>
+			</Viewer>
+			<Viewer ID="ContentsDALWrapCBLeft.xml" IsVisible="*Bind(Property=IsSelected;Source=DALWrapCBLeft.xml)">
+				<element layoutChildren="vertical" expandtofillhoriz="true">
+					<element 
+						layoutChildren="horizontal"
+						background="#aaddbb"
+						expandtofillhoriz="true">
+
+
+						<checkbox 
+							text="This checkbox has textAlign=wrapLeft set.  The purpose of this checkbox is to test to see how this very long string will wrap with this particular wrap setting being used on this checkbox."
+							textAlign="wrapLeft" background="lightblue" />
+
+					</element>
+					<checkbox borderthickness="1,1,1,1" bordercolor="green"
+						text="This checkbox has textAlign=textAlign=wrapLeft|ExpandToNaturalWidth set.  The purpose of this checkbox is to test to see how this very long string will wrap with this particular wrap setting being used on this checkbox."
+						textAlign="wrapLeft | ExpandToNaturalWidth "
+						expandToFillHoriz="true"
+						background="lightblue"/>
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALWrapCBRight.xml" IsVisible="*Bind(Property=IsSelected;Source=DALWrapCBRight.xml)">
+				<element layoutChildren="vertical">
+					<element 
+						layoutChildren="flow"
+						background="#aaddbb">
+
+						<checkbox borderthickness="1,1,1,1" bordercolor="green"
+							text="This checkbox has textAlign=wrapRight set.  The purpose of this checkbox is to test to see how this very long string will wrap with this particular wrap setting being used on this checkbox."
+							textAlign="wrapRight"
+							background="lightblue"/>
+
+					</element>
+					<checkbox borderthickness="1,1,1,1" bordercolor="green"
+						text="This checkbox has textAlign=textAlign=wrapRight|ExpandToNaturalWidth set.  The purpose of this checkbox is to test to see how this very long string will wrap with this particular wrap setting being used on this checkbox."
+						textAlign="wrapRight | ExpandToNaturalWidth "
+						expandToFillHoriz="true"
+						background="lightblue"/>
+				</element>
+
+			</Viewer>
+			<Viewer ID="Contentsdalwraplabel.xml" IsVisible="*Bind(Property=IsSelected;Source=dalwraplabel.xml)">
+				<element 
+					layoutChildren="flow"
+					background="#aaddbb">
+
+
+					<label bordercolor="green"
+						text="TextWrapping without setting the width. This is a test of a very long string being loaded This is a test of a very long string being loaded This is a test of a very long string being loaded"
+						textAlign="Wrapleft"
+						background="lightblue"/>
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsdalwraplabelWithConstraint.xml" IsVisible="*Bind(Property=IsSelected;Source=dalwraplabelWithConstraint.xml)">
+				<element 
+					layoutChildren="flow"
+					background="#aaddbb">
+
+
+					<element layoutChildren="Vertical" expandToFillHoriz="true">
+
+						<label bordercolor="green"
+							text="TextWrapping without setting the width. This is a test of a very long string being loaded This is a test of a very long string being loaded This is a test of a very long string being loaded"
+							textAlign="Wrapleft"
+							background="lightblue"/>
+					</element>
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsdalwraplabelWithoutConstraint.xml" IsVisible="*Bind(Property=IsSelected;Source=dalwraplabelWithoutConstraint.xml)">
+				<element layoutChildren="vertical">
+					<element 
+						layoutChildren="flow"
+						background="#aaddbb">
+
+
+						<element layoutChildren="Vertical">
+
+							<label bordercolor="green"
+								text="TextWrapping without setting the width. This is a test of a very long string being loaded This is a test of a very long string being loaded This is a test of a very long string being loaded"
+								textAlign="Wrapleft"
+								background="lightblue"/>
+						</element>
+
+					</element>
+					<label bordercolor="green"
+						text="textAlign=Wrapleft | ExpandToNaturalWidth. TextWrapping without setting the width. This is a test of a very long string being loaded This is a test of a very long string being loaded This is a test of a very long string being loaded"
+						textAlign="Wrapleft | ExpandToNaturalWidth"
+						background="lightblue"/>
+				</element>
+	
+			</Viewer>
+			<Viewer ID="ContentsdalwraplabelWithWidth.xml" IsVisible="*Bind(Property=IsSelected;Source=dalwraplabelWithWidth.xml)">
+				<element 
+					layoutChildren="flow"
+					background="#aaddbb">
+
+
+				<label bordercolor="green"
+					width="50"
+					text="TextWrapping without setting the width. This is a test of a very long string being loaded This is a test of a very long string being loaded This is a test of a very long string being loaded"
+					textAlign="Wrapleft"
+					background="lightblue"/>
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="Contentsdalwrapradiobutton.xml" IsVisible="*Bind(Property=IsSelected;Source=dalwrapradiobutton.xml)">
+				<element 
+					layoutChildren="flow"
+					background="#aaddbb">
+
+					<radiogroup layoutChildren="vertical" expandToFillHoriz="true" borderthickness="1,1,1,1" bordercolor="green">
+						<radiobutton  
+							text="Option 1: textAlign=wrapLeft - long long long long long long long long long long string" 
+							textAlign="wrapLeft" background="pink" expandToFillHoriz="true"/>
+
+						<radiobutton  
+							text="Option 2: textAlign=wrapCenter - long long long long long long long long long long long long string" background="pink" expandToFillHoriz="true"
+							textAlign="wrapCenter"/>
+
+						<radiobutton  
+							text="Option 3: textAlign=wrapRight - long long long long long long long long long long long long string" background="pink" expandToFillHoriz="true"
+							textAlign="wrapRight"/>
+					</radiogroup>
+
+
+				</element>
+
+			</Viewer>
+			<Viewer ID="ContentsDALZoom.xml" IsVisible="*Bind(Property=IsSelected;Source=DALZoom.xml)">
+				<Element layoutChildren="vertical" width="500" height="500" background="#aaddbb" borderthickness="10,10,10,10">
+
+
+				<element layoutChildren="overlap" padding="10, 10, 10, 10" background="blue" 
+				expandToFillHoriz="true" expandTOFillVert="true">
+
+
+				<element layoutChildren="overlap" background="green" padding="10, 10, 10, 10">
+
+				<element layoutChildren="vertical" padding="10,10,10,10" background="red">
+
+				<label text="Zoom"  expandtofillhoriz="true" textalign="middlecenter" background="#aabbcc" borderthickness="1,1,1,1"/>
+
+				<element borderthickness="0,1,0,0" expandtofillhoriz="true" bordercolor="yellow"/>
+
+				<element layoutChildren="horizontal" background="yellow">
+
+
+				<element layoutChildren="horizontal">
+
+					<radiogroup layoutChildren="vertical" indent="1">
+						<radioButton  text="Fit"/>
+						<radioButton  text="400%"/>
+						<radioButton  text="200%"/>
+						<radioButton  text="100%"/>
+						<radioButton  text="50%"/>
+						<radioButton  text="25%"/>
+
+					</radiogroup>
+
+					<element layoutChildren="vertical">
+						<combobox  fontface="tahoma" fontSize="8" width="80" selectedIndex="3">
+								<listitem text="400%" />
+								<listitem text="200%" />
+								<listitem text="100%" />
+								<listitem text="50%" />
+								<listitem text="25%" />
+						</combobox>
+					</element>
+				</element>
+
+
+				<element layoutChildren="vertical" background="cyan" alignChildren="top">
+					<button text="ok"  borderthickness="1,1,1,1" expandTofillhoriz="true"/>
+					<button text="cancel"  borderthickness="1,1,1,1"/>
+				</element>
+
+				</element>
+				</element>
+				</element>
+				</element>
+				</Element>
+
+			</Viewer>
+
+			<!--
+				This section demonstrates how using textAlign=ExpandToNaturalWidth allows wrapping text and
+				container elements to expand to text's natural width without making any of the elements
+				to expand horizontally.
+			-->
+
+			<Viewer ID="ContentsPreferredWidth.xml" IsVisible="*Bind(Property=IsSelected;Source=PreferredWidth.xml)">
+				<element layoutChildren="vertical" expandToFillHoriz="true">
+					<element layoutChildren="horizontal" expandToFillHoriz="true">
+						<element expandtofillvert="true" expandtofillhoriz="true" background="blue" />
+						<element layoutChildren="horizontal" background="green">
+							<label text="(wrap | ExpandToNaturalWidth) This label should expand to its natural width" textAlign="wrap | ExpandToNaturalWidth"/>
+							<label text="(wrap | ExpandToNaturalWidth) Short label" textAlign="wrap | ExpandToNaturalWidth" />
+						</element>
+						<element layoutChildren="horizontal" background="salmon" >
+							<label text="(wrap | ExpandToNaturalWidth) This label should expand to its natural width" textAlign="wrap | ExpandToNaturalWidth"/>
+							<label text="This is non-wrapping label" />
+							<checkbox text="This checkbox label should expand to its natural width" textAlign="wrap | ExpandToNaturalWidth"/>
+						</element>
+						<element layoutChildren="table" rows="2" cols="2" borderthickness="2,2,2,2" bordercolor="lightblue">
+							<element layoutChildren="horizontal" background="blue" expandtofillcellvert="true" expandtofillcellhoriz="true">
+								<label text="Cell(0,0) I expect this text to wrap" textAlign="wrap | ExpandToNaturalWidth" background="salmon"/>
+							</element>
+							<element layoutChildren="horizontal" background="blue" expandtofillcellvert="true" expandtofillcellhoriz="true">
+								<label text="Cell(0,1) Isn't it nice that it wraps?" textAlign="wrap | ExpandToNaturalWidth" background="green"/>
+							</element>
+							<element layoutChildren="horizontal" background="blue" expandtofillcellvert="true" expandtofillcellhoriz="true">
+								<label text="Cell(1,0) Cool wrapping" textAlign="wrap | ExpandToNaturalWidth" background="green"/>
+							</element>
+							<element layoutChildren="horizontal" background="blue" expandtofillcellvert="true" expandtofillcellhoriz="true">
+								<label text="Cell(1,1) I have to wrap too" textAlign="wrap | ExpandToNaturalWidth" background="salmon"/>
+							</element>
+						</element>
+					</element>
+					<element layoutChildren="horizonal">
+						<element background="salmon" layoutChildren="vertical" width="200">
+							<label text="(vertical) Expand To Natural Width, This label is wider than 200 pixels" textAlign="wrap | ExpandToNaturalWidth"/>
+							<label text="Just a normal label"/>
+						</element>
+						<label text="Non-wrapping label"/>
+					</element>
+					<element layoutChildren="horizonal">
+						<element background="pink" layoutChildren="horizontal" width="200">
+							<label text="(Horizontal) Expand To Natural Width, This label is wider than 200 pixels" textAlign="wrap | ExpandToNaturalWidth"/>
+							<label text="Just a normal label"/>
+						</element>
+						<label text="Non-wrapping label"/>
+					</element>
+					<element layoutChildren="horizonal">
+						<element background="pink" layoutChildren="overlap" width="200">
+							<label text="(Overlap) Expand To Natural Width, This label is wider than 200 pixels" textAlign="wrap | ExpandToNaturalWidth"/>
+							<label text="Just a normal label" IsVisible="false" />
+						</element>
+						<label text="Non-wrapping label"/>
+					</element>
+					<element layoutChildren="horizonal">
+						<element background="pink" layoutChildren="table" rows="2" cols="2" width="200">
+							<label text="(Table) Expand To Natural Width, This label is wider than 200 pixels" textAlign="wrap | ExpandToNaturalWidth"/>
+							<label text="Just a normal label"/>
+							<label text="Expand To Natural Width, This label is wider than 200 pixels" textAlign="wrap | ExpandToNaturalWidth"/>
+							<label text="Just a normal label"/>
+						</element>
+						<label text="Non-wrapping label"/>
+					</element>
+				</element>
+			</Viewer>
+			
+		</Element>
+	</Viewer>
+</Element>

@@ -1,0 +1,302 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+#include "msores.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+#include "lzbmp.h"
+
+// include versioning information
+#define VER_APP
+#define VER_ORIGINAL_FILENAME "netuiview.exe"
+#define VER_INTERNAL_NAME "netuiview.exe"
+#define VER_FILE_DESCRIPTION "NetUI File Viewer"
+#include "OfficeVersion.rc"
+// resb resource define
+#include "cresbdef.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Theming Manifest
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "netuiview.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_SHELL               ICON    DISCARDABLE     "shell.ico"
+IDI_SHELLSM             ICON    DISCARDABLE     "shellsm.ico"
+
+
+/*************************************************************************
+	Icons for NetUI
+*************************************************************************/
+IDI_EXPAND_XP        ICON    DISCARDABLE     "expandXP.ico"
+IDI_COLLAPSE_XP      ICON    DISCARDABLE     "collapseXP.ico"
+
+/*************************************************************************
+	Bitmaps
+*************************************************************************/
+IDB_LIGHTBULB  BITMAP   DISCARDABLE     "light.bmp"
+
+/*************************************************************************
+	Bitmaps matching Mso nui resources
+*************************************************************************/
+#include "mso40uistyle.rc"
+#include "mso99lstyle.rc"
+#include "nuistyle.rc"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_VIEWER MENU DISCARDABLE
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            IDM_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Recently Used #1",            IDM_MRUFILE1
+        MENUITEM "Recently Used #2",            IDM_MRUFILE2
+        MENUITEM "Recently Used #3",            IDM_MRUFILE3
+        MENUITEM "Recently Used #4",            IDM_MRUFILE4
+        MENUITEM "Recently Used #5",            IDM_MRUFILE5
+        MENUITEM "Recently Used #6",            IDM_MRUFILE6
+        MENUITEM "Recently Used #7",            IDM_MRUFILE7
+        MENUITEM "Recently Used #8",            IDM_MRUFILE8
+        MENUITEM "Recently Used #9",            IDM_MRUFILE9
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Utils"
+    BEGIN
+        MENUITEM "Refresh &Document\tF5",       ID_ACCELREFRESH
+        MENUITEM SEPARATOR
+        POPUP "Default Style:"
+        BEGIN
+            MENUITEM "&NetUI.DLL        \t Style", IDM_STYLE_NETUI
+            MENUITEM "Office Net&Pane   \t Style", IDM_STYLE_NETPANE
+            MENUITEM "Office Net&Dialog \t Style", IDM_STYLE_NUIDIALOG
+        END
+        MENUITEM "Use Taskpane (aka &Work Pane) layout", IDM_USETASKPANELAYOUT
+        MENUITEM "Use New Graphics &Mode", IDM_USENEWGRAPHICSMODE
+        MENUITEM SEPARATOR
+        POPUP "Deb&ug:"
+        BEGIN
+            MENUITEM "&Insert ListViewItem", IDM_DBG_INSERTLISTITEM
+            MENUITEM "&Remove ListViewItem", IDM_DBG_REMOVELISTITEM
+            MENUITEM "Disable &Selected ListViewItem", IDM_DGB_DISABLESELECTEDLISTITEM
+            MENUITEM "Toggle button &text", IDM_DBG_TOGGLEBTNTXT
+            MENUITEM "Trigger &MSAA Create", IDM_DGB_TRIGGERMSAACREATE
+            MENUITEM "Toggle layout &direction", IDM_DGB_TOGGLEDIRECTION
+            MENUITEM "Remove local layout for ID=LAYOUTELEMENT", IDM_DGB_REMOVELOCALLAYOUT
+            MENUITEM "Batch insert list items into document", IDM_DGB_BATCHINSERT
+            MENUITEM "Insert property binding", IDM_DGB_ADDBINDING
+            MENUITEM "Insert gallery bindings", IDM_DGB_ADDGALLERYBINDING
+            MENUITEM "Insert gallery bindings (with Categories)", IDM_DGB_ADDGALLERYCATBINDING
+            MENUITEM "Test Flex Data-binding", IDM_DBG_TESTFLEXDATA
+            MENUITEM "Change class of ID=root", IDM_DGB_CHANGECLASS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Initialize &GDI+\tCtrl+G",    IDM_INITGDIPLUS
+//        MENUITEM "&Force Different DPI\tCtrl+D",IDM_FORCE_DPI
+        MENUITEM "View &Errors in XML\tCtrl+E", ID_ACCELERRORS
+        MENUITEM SEPARATOR
+        MENUITEM "Edit &Buffer XML\tCtrl+B",    ID_ACCELBUFFER
+        MENUITEM "View &Source\tCtrl+V",        IDM_VIEWSOURCE
+    END
+    POPUP "F&avorites"
+    BEGIN
+        MENUITEM "&Add to favorites",           IDM_ADD_FAVORITE
+        MENUITEM SEPARATOR
+        MENUITEM "Favorite #1",                 IDM_FAVORITEFILE1
+        MENUITEM "Favorite #2",                 IDM_FAVORITEFILE2
+        MENUITEM "Favorite #3",                 IDM_FAVORITEFILE3
+        MENUITEM "Favorite #4",                 IDM_FAVORITEFILE4
+        MENUITEM "Favorite #5",                 IDM_FAVORITEFILE5
+        MENUITEM "Favorite #6",                 IDM_FAVORITEFILE6
+        MENUITEM "Favorite #7",                 IDM_FAVORITEFILE7
+        MENUITEM "Favorite #8",                 IDM_FAVORITEFILE8
+        MENUITEM "Favorite #9",                 IDM_FAVORITEFILE9
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+	MENUITEM "Errors in File!",                 IDM_SHOWERRORS
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_VIEWER ACCELERATORS MOVEABLE PURE
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "B",            ID_ACCELBUFFER,         VIRTKEY, CONTROL, NOINVERT
+//    "D",            IDM_FORCE_DPI,          VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_ACCELERRORS,         VIRTKEY, CONTROL, NOINVERT
+    "G",            IDM_INITGDIPLUS,        VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_ACCELOPEN,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_ACCELVIEWSOURCE,     VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_ACCELREFRESH,        VIRTKEY, NOINVERT
+    VK_PAUSE,       ID_ACCELPAUSE,          VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+#define SZIT(x) #x
+#define SZVERSIONFC(r1,r2,r3,r4) SZIT(r1.r2.r3.r4)
+
+#if rpr > 1999
+	#define BUILD_SOURCE	"PR Build by:"
+	#if defined(szVerUser)
+		#define FC_BUILD_INFO szVerUser
+	#else
+		#define FC_BUILD_INFO "Unknown user"
+	#endif
+#elif rpr > 999
+	#define BUILD_SOURCE	"Feature Crew:"
+	#if defined(szVerFCName)
+		#define FC_BUILD_INFO szVerFCName
+	#else
+		#define FC_BUILD_INFO "Unknown Feature Crew"
+	#endif
+#else
+	#define BUILD_SOURCE "Built by:"
+	#define FC_BUILD_INFO "Office Build Lab"
+#endif
+
+#if DEBUG
+	#define APP_NAME_AND_FLAVOR "NetUI/FlexUI Viewer (Debug)"
+#else
+	#define APP_NAME_AND_FLAVOR "NetUI/FlexUI Viewer (Ship)"
+#endif
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 231, 75
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 10, "MS Shell Dlg"
+BEGIN
+    ICON            IDI_SHELL,IDC_MYICON,25,15,20,20
+    LTEXT           APP_NAME_AND_FLAVOR,IDC_STATIC,64,10,138,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004 Microsoft Corporation",IDC_STATIC,64,
+                    21,138,8
+    LTEXT           SZVERSIONFC(rmj,rmm,rup,rpr),IDC_STATIC,64,32,138,8
+    LTEXT           FC_BUILD_INFO,IDC_STATIC,64,43,138,8
+    RTEXT           BUILD_SOURCE,IDC_STATIC,4,43,55,8
+    RTEXT           "Built:",IDC_STATIC,4,54,55,8
+
+    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// UIFILE
+//
+
+IDUI_BUFFER             UIFILE  DISCARDABLE     "buffer.nuipp"
+IDUI_ERRORWIN           UIFILE  DISCARDABLE     "errorwin.nuipp"
+
+IDUI_VIEWERGALLERYROOT_FLEXDL   UIFILE     DISCARDABLE     "ViewerGalleryRootDS.flexdlb"
+IDUI_GALLERYITEM_FLEXDL         UIFILE     DISCARDABLE     "GalleryItemDS.flexdlb"
+IDUI_GALLERYFILTER_FLEXDL       UIFILE     DISCARDABLE     "GalleryFilterDS.flexdlb"
+IDUI_GALLERYMENU_FLEXDL         UIFILE     DISCARDABLE     "GalleryMenuDS.flexdlb"
+IDUI_GALLERYMENUITEM_FLEXDL     UIFILE     DISCARDABLE     "GalleryMenuItemDS.flexdlb"
+IDUI_GALLERYMENUCATEGORY_FLEXDL UIFILE     DISCARDABLE     "GalleryMenuCategoryDS.flexdlb"
+IDUI_GALLERYCATEGORY_FLEXDL     UIFILE     DISCARDABLE     "GalleryCategoryDS.flexdlb"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    IDS_APP_TITLE           "NetUI XML File Viewer"
+    IDC_VIEWER              "netuiview"
+END
+
+STRINGTABLE DISCARDABLE
+BEGIN
+    IDM_FILE_OPEN           "Open a file"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
+1 rtOffResB ostrman.resb

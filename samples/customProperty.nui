@@ -1,0 +1,15 @@
+<netui background="darkblue" foreground="white">
+	<customProperty name="blah" isInherited="true" xisCascaded="false"/>
+
+	<style id="blahTest">
+		<label condition="blah==green" background="green" />
+		<button id="hasval" blah="button" />
+		<sublabel class="ButtonLabel" condition="blah==button" background="red" />
+	</style>
+
+	<element sheet="#blahTest" layoutChildren="vertical" blah="green">
+		<label text="what color am I?" />
+		<button id="hasval" text="should be red" />
+		<button id="noval"  text="normal button if !isCascaded" />
+	</element>
+</netui>

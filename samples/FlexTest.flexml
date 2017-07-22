@@ -1,0 +1,59 @@
+<!-- #include "msobtndf.h" -->
+
+<DialogView>
+	
+	<Category Label="IsMixed Test">
+		<BooleanChoice Label="Set IsMixed" Value="*Bind(Property=SetIsMixed)"/>
+		<EnterString Label="I should get set with Mixed" Value="*Bind(Property=EnterStringValue)" MaxLength="20" MixedText="I am mixed"/>
+	</Category>
+	
+	<Category Label="Validation Test">
+		<EnterString ID="ValidatingString" Label="Enter a string" Value="Start Val" ValidationDescription="Enter a string with 5 to 10 characters">
+			<EnterString.Validators>
+				<StringLengthValidator MinLength="5" MaxLength="10"/>
+			</EnterString.Validators>
+		</EnterString>
+		
+		<EnterInteger ID="ValidatingInteger" Label="Enter an integer" Value="6" Minimum="5" Maximum="15" ValidationCondition="Immediate"/>
+		<EnterInteger Label="Enter another integer" Value="*Bind(Property=Value; Source=ValidatingInteger; BindType=OneWay)" ValidationCondition="OnFocusLost"
+			ValidationDescription="Enter a number between -5 and 25" >
+			<EnterInteger.Validators>
+				<IntegerRangeValidator Minimum="-5" Maximum="25"/>
+			</EnterInteger.Validators>
+		</EnterInteger>
+		
+		<EnterDecimal ID="ValidatingDecimal" Label="Enter a decimal" Value="6" Minimum="5" Maximum="15" ValidationCondition="Immediate" RoundOff="0.25"/>
+		<EnterDecimal Label="Enter another decimal" Value="*Bind(Property=Value; Source=ValidatingDecimal; BindType=OneWay)" ValidationCondition="OnFocusLost"
+			ValidationDescription="Enter a number between -5.0 and 25.0 rounded to the nearest hundreth" >
+			<EnterDecimal.Validators>
+				<DecimalRangeValidator Minimum="-5" Maximum="25" RoundOff="0.01"/>
+			</EnterDecimal.Validators>
+		</EnterDecimal>
+		
+		<BooleanChoice Label="Validation Test: EnterString" Value="*Bind(Property=IsValid; Source=ValidatingString; BindType=OneWay)"/>
+		<BooleanChoice Label="Validation Test: EnterInteger" Value="*Bind(Property=IsValid; Source=ValidatingInteger; BindType=OneWay)"/>
+		<BooleanChoice Label="Validation Test: EnterDecimal" Value="*Bind(Property=IsValid; Source=ValidatingDecimal; BindType=OneWay)"/>
+	</Category>
+	
+	<Category Label="All Concepts Test">
+		<BooleanChoice Label="I am a &amp;Boolean Choice" Value="true" Description="This is my description"/>
+		<ShowInformation Label="I am information" />
+		<EnterString Label="Enter a string" Value="hello"/>
+		<EnterString Label="I should have multiple lines" Value="do i?" Multiline="2"/>
+		<EnterDecimal Label="Enter a decimal (has an image)" Value="1.5" ImageSource=":bitmap() jumpnext.bmp"/>
+		<EnterInteger Label="Enter an integer" Value="5"/>
+		<EnterLength Label="Enter a length" Value="1 in"/>
+		<SelectSingleItem Label="&amp;Select one item" SelectedIndex="-1">
+			<SelectionItem Label="Item One" Value="*Bind(Property=DefTest)"/>
+			<SelectionItem Label="Item Two" Value="*Bind(Property=DefTest)"/>
+			<SelectionItem Label="Item Three" Value="*Bind(Property=DefTest)"/>
+			<SelectionItem Label="Item Four - Copy" ImageSource=":msotcid(msotcidCopy)" Value="*Bind(Property=DefTest)"/>
+		</SelectSingleItem>
+		<ExecuteAction Label="Execute Me!"/>
+		<ShowProgress Label="This is Progress: " TotalSteps="200" Value="50"/>
+		<Link TargetType="WebLink" Label="Web Link"/>
+		<Link TargetType="DialogLink" Label="Dialog Link"/>
+		<PickColor Label="Color Picker:"/>
+	</Category>
+	
+</DialogView>

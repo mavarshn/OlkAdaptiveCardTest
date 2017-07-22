@@ -1,0 +1,192 @@
+<element layoutChildren="horizontal">
+
+<listview>
+
+	<listviewitem>     
+		<listcontent>
+		   <label text="starting date"/>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+		</listcontent>
+
+	</listviewitem>
+
+	<listviewitem>     
+		<listcontent>
+		   <label text="MM1 date"/>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+		</listcontent>
+
+	</listviewitem>
+
+	<listviewitem>     
+		<listcontent>
+		   <label text="MM2 date"/>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+		</listcontent>
+
+	</listviewitem>
+
+	<listviewitem>     
+		<listcontent>
+		   <label text="Ship date"/>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+		</listcontent>
+
+	</listviewitem>
+
+
+</listview>
+
+<listview>
+
+	<listviewitem>     
+		<listcontent>
+		   <label text="starting date"/>
+		</listcontent>
+		<listcontent>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+		</listcontent>
+
+	</listviewitem>
+
+	<listviewitem>     
+		<listcontent>
+		   <label text="MM1 date"/>
+		</listcontent>
+		<listcontent>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+		</listcontent>
+
+	</listviewitem>
+
+	<listviewitem>     
+		<listcontent>
+		   <label text="MM2 date"/>
+		</listcontent>
+		<listcontent>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+		</listcontent>
+
+	</listviewitem>
+
+	<listviewitem>     
+		<listcontent>
+		   <label text="Ship date"/>
+		</listcontent>
+		<listcontent>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+		</listcontent>
+
+	</listviewitem>
+
+
+</listview>
+
+<scrollviewer borderThickness="1,1,1,1">
+	<element layoutChildren="vertical">
+
+		<element layoutChildren="horizontal">
+		   <label text="starting date"/>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+		</element>
+
+		<element layoutChildren="horizontal">
+		   <label text="MM1 date"/>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+		</element>
+
+		<element layoutChildren="horizontal">
+		   <label text="MM2 date"/>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+		</element>
+
+		<element layoutChildren="horizontal">
+		   <label text="Ship date"/>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+		</element>
+	</element>
+</scrollviewer>
+
+<scrollviewer borderThickness="1,1,1,1">
+	<element layoutChildren="table" cols="2" rows="4">
+
+		   <label text="starting date"/>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+
+		   <label text="MM1 date"/>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+
+		   <label text="MM2 date"/>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+
+		   <label text="Ship date"/>
+		   <dropdown>
+              <listitem text="January" />
+              <listitem text="February" />
+              <listitem text="March" />
+		   </dropdown>
+	</element>
+</scrollviewer>
+</element>
+
+

@@ -1,0 +1,34 @@
+<netuixml>
+
+	<DialogView DataSourceType="ViewerGalleryRootDS">
+		<Category Label="Category">
+
+		<Gallery Class="simple" Layout="Horizontal" Label="Test" 
+			Items="*Bind(Property=Items)" 
+			Categories="*Bind(Property=Categories)"
+			ItemContextMenuDroppingCommand="*Bind(Event=OnContextMenuDroppingCommand)"
+			ItemContextMenuClosingCommand="*Bind(Event=OnContextMenuClosingCommand)"
+			ItemSelectionCommand="*Bind(Property=OnItemSelectionCommand)"
+			EventingItem="*Bind(Property=EventingItem)"
+			>
+
+		</Gallery>
+
+		<Gallery Class="simple" Label="Test" 
+			Anchor="DropButtonStandard"
+			Items="*Bind(Property=Items)"
+			Categories="*Bind(Property=Categories)"
+			ItemContextMenuDroppingCommand="*Bind(Event=OnContextMenuDroppingCommand)"
+			ItemContextMenuClosingCommand="*Bind(Event=OnContextMenuClosingCommand)"
+			ItemSelectionCommand="*Bind(Property=OnItemSelectionCommand)"
+			EventingItem="*Bind(Property=EventingItem)"
+			>
+		</Gallery>
+
+		</Category>
+	</DialogView>
+</netuixml>
+
+
+
+

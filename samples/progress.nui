@@ -1,0 +1,55 @@
+<element layoutChildren="vertical" padding="20,20,20,20">
+	<style ID="s">
+		<Category>
+			<Node.StyleTree>
+				<element layoutChildren="vertical" Children="*Bind(Property=Children)"/>
+			</Node.StyleTree>
+		</Category>
+
+		<EnterInteger>
+			<Node.StyleTree>
+				<element layoutChildren="horizontal">
+					<label text="*Bind(Property=Label)"/>
+					<RepeatButton text="&lt;&lt;" ClickCommand="StyledParent.EnterIntegerDecrement" active="MouseAndKeyboard"/>
+					<textbox text="*Bind(Property=EntryValue)" expandToFitString="XXXXX"/>
+					<RepeatButton text="&gt;&gt;" ClickCommand="StyledParent.EnterIntegerIncrement" active="MouseAndKeyboard"/>
+				</element>
+			</Node.StyleTree>
+		</EnterInteger>
+		
+		<repeatbutton borderThickness="2,2,2,2" borderStyle="raised" borderColor="buttonface" padding="2,2,2,2"/>
+		<repeatbutton condition="IsPressed" borderStyle="sunken"/>
+	</style>
+
+	<Category Sheet="#s">
+		<EnterInteger ID="EI" Label="Progress:" Minimum="0" Maximum="1000" Value="500" Increment="10"/>
+	</Category>
+
+	<line type="horizontal" expandToFillHoriz="true"/>
+	<label text="Progress: " />
+	<progress minimum="0" maximum="1000" position="*Bind(Property=Value;Source=EI)" width="200" foreground="blue" background="white" borderthickness="1,1,1,1" padding="1,1,1,1" height="20" />
+	<progress ID="p1" IsIndeterminate="true" minimum="0" maximum="1000" position="*Bind(Property=Value;Source=EI)" width="200" foreground="blue" background="white" borderthickness="1,1,1,1" padding="1,1,1,1" height="20" />
+	<progress IsThemeEnabled="false" minimum="0" maximum="1000" position="*Bind(Property=Value;Source=EI)" width="200" foreground="blue" background="white" borderthickness="1,1,1,1" padding="1,1,1,1" height="20" />
+	<progress IsThemeEnabled="false" IsIndeterminate="true" minimum="0" maximum="1000" position="*Bind(Property=Value;Source=EI)" width="200" foreground="blue" background="white" borderthickness="1,1,1,1" padding="1,1,1,1" height="20" />
+
+	<label lowerby="50" text="RTL progress:" />
+	<progress direction="RTL" minimum="0" maximum="1000" position="*Bind(Property=Value;Source=EI)" width="200" foreground="blue" background="white" borderthickness="1,1,1,1" padding="1,1,1,1" height="20" />
+	<progress direction="RTL" IsIndeterminate="true" minimum="0" maximum="1000" position="*Bind(Property=Value;Source=EI)" width="200" foreground="blue" background="white" borderthickness="1,1,1,1" padding="1,1,1,1" height="20" />
+	<progress IsThemeEnabled="false" direction="RTL" minimum="0" maximum="1000" position="*Bind(Property=Value;Source=EI)" width="200" foreground="blue" background="white" borderthickness="1,1,1,1" padding="1,1,1,1" height="20" />
+	<progress IsThemeEnabled="false" direction="RTL" IsIndeterminate="true" minimum="0" maximum="1000" position="*Bind(Property=Value;Source=EI)" width="200" foreground="blue" background="white" borderthickness="1,1,1,1" padding="1,1,1,1" height="20" />
+
+	<checkbox lowerby="50" text="Set IsRunning='true' on the first progress indeterminate bar" IsChecked="*Bind(Property=IsRunning; Source=p1)"/>
+	<label textAlign="wrapLeft" text="Note:  The above progress bars are data-bound together, so all will animate even though only one has a timer running."/>
+
+	<label lowerby="50" text="Progress controls, auto-running:" />
+
+	<progress IsIndeterminate="true" IsRunning="true" minimum="0" maximum="1000" width="100" expandToFillHoriz="false" foreground="blue" background="white" borderthickness="1,1,1,1" padding="1,1,1,1" height="20" />
+	<progress IsIndeterminate="true" IsRunning="true" minimum="0" maximum="1000" width="200" foreground="blue" background="white" borderthickness="1,1,1,1" padding="1,1,1,1" height="20" />
+	<progress IsIndeterminate="true" IsRunning="true" minimum="0" maximum="1000" width="200" foreground="blue" background="white" borderthickness="1,1,1,1" padding="1,1,1,1" height="20" IsThemeEnabled="false"/>
+
+	<label lowerby="50" text="ShowProgress control, auto-running:" />
+	<DialogView>
+		<ShowProgress Label="ShowProgress version:" IsIndeterminate="true" IsRunning="true" />
+	</DialogView>
+
+</element>

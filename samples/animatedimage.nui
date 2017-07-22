@@ -1,0 +1,4 @@
+<element>
+	<AnimatedImage Src="*Graphic(Filename=FsGalleryLoad.bmp; NumFrames=24; Stretch=Yes; BlendMode=AlphaConstPerPix)" 
+		EndFrame="23" FramesPerSecond="30" IsRunning="true" />
+</element>

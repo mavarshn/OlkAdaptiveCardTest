@@ -1,0 +1,29 @@
+
+DIR:
+	PATH: netui\test\viewer 
+	PASS: PASS2
+PRIORITY: 100
+DEPENDENTS:
+	NONE
+PRODUCERS:
+	netui\test\viewer (Pass0, 0, 100)
+	netui\test\viewer (Pass1 Sync, 0, 100)
+
+DIR:
+	PATH: netui\test\viewer 
+	PASS: PASS0
+PRIORITY: 100
+DEPENDENTS:
+	netui\test\viewer (PASS1, 0, 100)
+	netui\test\viewer (PASS2, 0, 100)
+PRODUCERS:
+	NONE
+
+DIR:
+	PATH: netui\test\viewer 
+	PASS: PASS1
+PRIORITY: 100
+DEPENDENTS:
+	netui\test\viewer (PASS2, 0, 100)
+PRODUCERS:
+	netui\test\viewer (Pass0, 0, 100)

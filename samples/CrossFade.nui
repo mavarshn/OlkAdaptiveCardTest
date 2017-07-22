@@ -1,0 +1,31 @@
+<netuixml>
+	<style id="s">
+		<image id="img" condition="mousewithin" CrossFadeDuration="250" BackgroundFrame="-1"/>
+		<image id="img" CrossFadeDuration="240" BackgroundFrame="0"/>
+
+		<image condition="InternalFadeInfo != *Null" Text="F"/>
+		<image TextAlign="MiddleCenter"/>
+
+		<image id="slowFade" condition="mousewithin" CrossFadeDuration="5000" BackgroundFrame="-1"/>
+		<image id="slowFade" CrossFadeDuration="5000" BackgroundFrame="0"/>
+	</style>
+
+	<element Sheet="#s" LayoutChildren="vertical">
+
+		<label Text="All items show an 'F' while a crossfade animation is still running." Margin="10"/>
+
+		<label Text="Fade quickly:" Margin="10"/>
+		<image id="img" active="mouse" background="*Graphic(Filename=32BitImageStrip.bmp; Type=Bitmap; BlendMode=NineGridAlphaConstPerPix; NumFrames=4; Margins=2,2,2,2)" borderThickness="1,1,1,1" Height="22" Width="22"/>
+		<image id="img" active="mouse" background="*Graphic(Filename=32BitImageStrip.bmp; Type=Bitmap; BlendMode=NineGridAlphaConstPerPix; NumFrames=4; Margins=2,2,2,2)" borderThickness="1,1,1,1" Height="22" Width="22"/>
+		<image id="img" active="mouse" background="*Graphic(Filename=32BitImageStrip.bmp; Type=Bitmap; BlendMode=NineGridAlphaConstPerPix; NumFrames=4; Margins=2,2,2,2)" borderThickness="1,1,1,1" Height="22" Width="22"/>
+		<image id="img" active="mouse" background="*Graphic(Filename=32BitImageStrip.bmp; Type=Bitmap; BlendMode=NineGridAlphaConstPerPix; NumFrames=4; Margins=2,2,2,2)" borderThickness="1,1,1,1" Height="22" Width="22"/>
+		<image id="img" active="mouse" background="*Graphic(Filename=32BitImageStrip.bmp; Type=Bitmap; BlendMode=NineGridAlphaConstPerPix; NumFrames=4; Margins=2,2,2,2)" borderThickness="1,1,1,1" Height="22" Width="22"/>
+		<image id="img" active="mouse" background="*Graphic(Filename=32BitImageStrip.bmp; Type=Bitmap; BlendMode=NineGridAlphaConstPerPix; NumFrames=4; Margins=2,2,2,2)" borderThickness="1,1,1,1" Height="22" Width="22"/>
+		<image id="img" active="mouse" background="*Graphic(Filename=32BitImageStrip.bmp; Type=Bitmap; BlendMode=NineGridAlphaConstPerPix; NumFrames=4; Margins=2,2,2,2)" borderThickness="1,1,1,1" Height="22" Width="22"/>
+
+
+		<label Text="Fades *very* slowly:" Margin="10"/>
+		<image id="slowFade" active="mouse" background="*Graphic(Filename=32BitImageStrip.bmp; Type=Bitmap; BlendMode=NineGridAlphaConstPerPix; NumFrames=4; Margins=2,2,2,2)" borderThickness="1,1,1,1" Height="22" Width="22"/>
+	
+	</element>
+</netuixml>

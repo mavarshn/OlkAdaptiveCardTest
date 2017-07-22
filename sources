@@ -1,0 +1,132 @@
+!IF 0
+
+Module Name:  sources file for test\viewer project.
+
+Abstract:
+
+Author:
+        MCrider
+
+!ENDIF
+ENABLE_DEFAULT_RC_INPUTS=1
+!include ..\sources.inc
+!include $(OTOOLS)\inc\liblet\liblet.pass2.inc
+
+MAJORCOMP=netui
+
+TARGETNAME=netuiview
+TARGETTYPE=PROGRAM
+
+FLEX_DLNAMESPACE=NetUIViewer
+FLEX_DLADAPTER=Default
+FLEX_DLHDRPATH=$(OBJ_PATH)\$O
+FLEX_DLBINPATH=$(OBJ_PATH)\$O
+FLEX_DLTABLEPATH=$(NETUI)\test\viewer
+FLEX_RES_DIR=$(NETUI)\test\viewer
+NUI_WARNING_OVERRIDE_FILE_FLAGS=$(NUI_WARNING_OVERRIDE_FILE_FLAGS) -Idefaults.ncl
+
+DELAYLOAD=gdiplus.dll
+
+TARGETLOBS = $(TARGETLOBS) \
+	$(LIBLET_ASSERT_MSGBOXIMPL_WIN32_LOBS) \
+	$(LIBLET_LOGGINGAPI_EMPTYIMPL_WIN_LOBS) \
+	$(LIBLET_MEMORYAPI_CRTIMPL_WIN_LOBS) \
+	$(LIBLET_OPERATORNEWMSOMEMORYTHROW_WIN_LOBS) \
+
+TARGETLIBS=\
+        $(PROJLIBDIR)\nuitest.lib          \
+        $(TARGETLIBDIR)\netui.lib          \
+        $(TARGETLIBDIR)\FlexPackage.lib    \
+        $(CORELIBDIR)\advapi32.lib         \
+        $(CORELIBDIR)\user32.lib           \
+        $(CORELIBDIR)\gdi32.lib            \
+        $(CORELIBDIR)\kernel32.lib         \
+        $(CORELIBDIR)\oleaut32.lib         \
+        $(CORELIBDIR)\oleacc.lib           \
+        $(CORELIBDIR)\ole32.lib            \
+        $(CORELIBDIR)\comdlg32.lib         \
+        $(CORELIBDIR)\shell32.lib          \
+        $(CORELIBDIR)\shlwapi.lib          \
+        $(CORELIBDIR)\msimg32.lib          \
+        $(CORELIBDIR)\uuid.lib             \
+        $(GDIPLUSLIBDIR)\GdiPlus.lib       \
+        $(LIBLET_SYSCONFIG_WIN32CLIENT_LOBS:.lob=.lib)     \
+        $(OLIBC)                           \
+
+#LINKLIBS=\
+
+INCPATH=$(INCPATH) -I$(OBJ_PATH)\$O
+
+# Include "..\core" which contains nuitest.h
+INCLUDES= \
+    $(INCLUDES);             \
+    $(OTOOLS)\inc\ostrman;   \
+    ..\core;                 \
+    ..\..\platform\inc;      \
+    StyleRes;                \
+    $(H_EXPORTSDIR)\..\user; \
+
+
+# ------------------------------------------------------------------------------
+# Theming Manifest
+
+PP_TARGETPATH = $(OBJ_PATH)\$O
+
+PP_SOURCES= \
+    netuiview.exe.manifest.pp \
+
+S_DFLAGS=$(S_DFLAGS) -DPLATFORM=$(PLATFORM)
+
+# ------------------------------------------------------------------------------
+# Incremental build rules
+
+NETUIVIEW_HEADERS = \
+	$(FLEX_DLHDRPATH)\ViewerGalleryRootDS.h \
+	$(FLEX_DLHDRPATH)\GalleryCategoryDS.h \
+	$(FLEX_DLHDRPATH)\GalleryItemDS.h \
+	$(FLEX_DLHDRPATH)\GalleryFilterDS.h \
+	$(FLEX_DLHDRPATH)\GalleryMenuDS.h \
+	$(FLEX_DLHDRPATH)\GalleryMenuCategoryDS.h \
+	$(FLEX_DLHDRPATH)\GalleryMenuItemDS.h \
+
+!REPLACE -PREFIX $(FLEX_DLHDRPATH) -REPLACEMENT $(OBJ_PATH)\$O NETUIVIEW_FLEXDLB_FILES_TEMP = $(NETUIVIEW_HEADERS)
+!REPLACE -POSTFIX .h -REPLACEMENT .flexdlb NETUIVIEW_FLEXDLB_FILES = $(NETUIVIEW_FLEXDLB_FILES_TEMP)
+
+NTTARGETFILE0=\
+        $(NTTARGETFILE0) \
+        $(NETUIVIEW_FLEXDLB_FILES) \
+        $(NETUIVIEW_HEADERS) \
+
+HEADERS = \
+	$(HEADERS) \
+	$(NETUIVIEW_HEADERS) \
+
+# ------------------------------------------------------------------------------
+
+VIEWER_RC_DEPENDENTS = \
+	$(OBJ_PATH)\$O\netuiview.exe.manifest \
+	$(OBJ_PATH)\$O\ostrman.resb \
+	$(OBJ_PATH)\$O\buffer.nuipp \
+	$(OBJ_PATH)\$O\errorwin.nuipp \
+	$(NETUIVIEW_FLEXDLB_FILES) \
+
+viewer.rc : $(VIEWER_RC_DEPENDENTS)
+
+SOURCES=\
+        viewer.cpp \
+        viewer.rc \
+        $(PP_TARGETS) \
+
+
+UMTYPE=windows
+UMLIBS=
+UMENTRY=winmain
+
+LINK_LIB_IGNORE=4206
+
+!LISTFILES -recursive PNGS = $(NETUI)\test\viewer *.png
+
+RC_FILES = \
+	$(RC_FILES) \
+	$(PNGS) \
+	$(VIEWER_RC_DEPENDENTS) \

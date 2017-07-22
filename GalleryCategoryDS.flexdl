@@ -1,0 +1,11 @@
+<!--	GalleryCategoryDS.flexdl
+		Owner: AndrewH
+		Copyright (c) Microsoft Corporation. All rights reserved. -->
+
+<DataSource ID="GalleryCategoryDS">
+	<Property ID="Label"        Type="String" />
+	<Property ID="Items"        Type="List" />
+	<Property ID="ImageSource"  Type="Image" />
+	<Property ID="GroupID"      Type="Int32" />
+</DataSource>
+

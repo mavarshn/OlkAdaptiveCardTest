@@ -1,0 +1,185 @@
+<!-- This file is used to test the NetUI PanViewer control at 100% and 150% DPI.
+
+The easiest way to use this file is in Lime's NetUI Test Toolkit:
+1. Run Lime
+2. From the Ribbon, select "NetUI Test Toolkit"
+3. Scroll down to the section "Open a NetUI Document"
+4. Browse... for this file and select "Open File"
+5. Drag the NetUI Test Toolkit across monitors with different DPI settings and verify PanViewer pans appropriately
+-->
+
+<FlexML>
+  <Style ID="PanViewerTestStyle" Src="#DialogView">
+
+    <!-- Enable PanViewer to toggle panning on hover -->
+    <DeclareProperty ID="DoesPanOnHover" Type="Bool" />
+
+    <!-- Toggle panning direction and layout of PanViewer -->
+    <DeclareProperty ID="PanDirectionAndLayout" Type="Int" />
+
+    <!-- PanViewer paddles grow with DPI -->
+    <RepeatButton RenderMethod="Arrows" />
+    <RepeatButton Condition="DPI GTE 96" Height="24" Width="24" />
+    <RepeatButton Condition="DPI GTE 144" Height="36" Width="36" />
+    
+    <!-- Content in PanViewer grows with DPI -->
+    <Button Condition="DPI GTE 96" Height="32" Width="32" />
+    <Button Condition="DPI GTE 144" Height="48" Width="48" />
+
+    <!-- Establish the layout of the PanViewer -->
+    <DialogView>
+      <Node.StyleTree>
+        <PropertyTriggers>
+          <Trigger Condition="DoesPanOnHover==True">
+            <PanViewer Target="Panner" FirstMouseOverDelay="100"/>
+          </Trigger>
+          <Trigger Condition="DoesPanOnHover==False">
+            <PanViewer Target="Panner" FirstMouseOverDelay="-1"/>
+          </Trigger>
+          <Trigger Condition="PanDirectionAndLayout==0">
+            <PanViewer Target="Panner" PanDirection="Horizontal" />
+            <Element Target="PannerContentContainer" LayoutChildren="Horizontal" />
+          </Trigger>
+          <Trigger Condition="PanDirectionAndLayout==1">
+            <PanViewer Target="Panner" PanDirection="Vertical" />
+            <Element Target="PannerContentContainer" LayoutChildren="Vertical" />
+          </Trigger>
+        </PropertyTriggers>
+        <Element Class="MenuContainer" LayoutChildren="Vertical" ExpandToFillHoriz="True" ExpandToFillVert="True">
+          <PanViewer ID="Panner" PanDirection="Horizontal" ExpandToFillHoriz="True" ExpandToFillVert="True" MouseOverDelay="50">
+            <Element ID="PannerContentContainer" Children="*Bind(Property=Children)" LayoutChildren="Horizontal"/>
+          </PanViewer>
+          <BooleanChoice ID="PanCheckBox" Label="Hover to pan" Value="*Bind(Property=DoesPanOnHover;BindType=TwoWay)"/>
+          <SelectSingleItem ID="LayoutRadioButton" Label="PanViewer Layout:" SelectedIndex="*Bind(Property=PanDirectionAndLayout;BindType=TwoWay)">
+            <SelectionItem Label="Horizontal" />
+            <SelectionItem Label="Vertical" />
+          </SelectSingleItem>
+        </Element>
+      </Node.StyleTree>
+    </DialogView>
+    
+
+  </Style>
+  <DialogView Sheet="#PanViewerTestStyle">
+    <ExecuteAction Label="1"/>
+    <ExecuteAction Label="2"/>
+    <ExecuteAction Label="3"/>
+    <ExecuteAction Label="4"/>
+    <ExecuteAction Label="5"/>
+    <ExecuteAction Label="6"/>
+    <ExecuteAction Label="7"/>
+    <ExecuteAction Label="8"/>
+    <ExecuteAction Label="9"/>
+    <ExecuteAction Label="10"/>
+    <ExecuteAction Label="11"/>
+    <ExecuteAction Label="12"/>
+    <ExecuteAction Label="13"/>
+    <ExecuteAction Label="14"/>
+    <ExecuteAction Label="15"/>
+    <ExecuteAction Label="16"/>
+    <ExecuteAction Label="17"/>
+    <ExecuteAction Label="18"/>
+    <ExecuteAction Label="19"/>
+    <ExecuteAction Label="20"/>
+    <ExecuteAction Label="21"/>
+    <ExecuteAction Label="22"/>
+    <ExecuteAction Label="23"/>
+    <ExecuteAction Label="24"/>
+    <ExecuteAction Label="25"/>
+    <ExecuteAction Label="26"/>
+    <ExecuteAction Label="27"/>
+    <ExecuteAction Label="28"/>
+    <ExecuteAction Label="29"/>
+    <ExecuteAction Label="30"/>
+    <ExecuteAction Label="31"/>
+    <ExecuteAction Label="32"/>
+    <ExecuteAction Label="33"/>
+    <ExecuteAction Label="34"/>
+    <ExecuteAction Label="35"/>
+    <ExecuteAction Label="36"/>
+    <ExecuteAction Label="37"/>
+    <ExecuteAction Label="38"/>
+    <ExecuteAction Label="39"/>
+    <ExecuteAction Label="40"/>
+    <ExecuteAction Label="41"/>
+    <ExecuteAction Label="42"/>
+    <ExecuteAction Label="43"/>
+    <ExecuteAction Label="44"/>
+    <ExecuteAction Label="45"/>
+    <ExecuteAction Label="46"/>
+    <ExecuteAction Label="47"/>
+    <ExecuteAction Label="48"/>
+    <ExecuteAction Label="49"/>
+    <ExecuteAction Label="50"/>
+    <ExecuteAction Label="51"/>
+    <ExecuteAction Label="52"/>
+    <ExecuteAction Label="53"/>
+    <ExecuteAction Label="54"/>
+    <ExecuteAction Label="55"/>
+    <ExecuteAction Label="56"/>
+    <ExecuteAction Label="57"/>
+    <ExecuteAction Label="58"/>
+    <ExecuteAction Label="59"/>
+    <ExecuteAction Label="60"/>
+    <ExecuteAction Label="61"/>
+    <ExecuteAction Label="62"/>
+    <ExecuteAction Label="63"/>
+    <ExecuteAction Label="64"/>
+    <ExecuteAction Label="65"/>
+    <ExecuteAction Label="66"/>
+    <ExecuteAction Label="67"/>
+    <ExecuteAction Label="68"/>
+    <ExecuteAction Label="69"/>
+    <ExecuteAction Label="70"/>
+    <ExecuteAction Label="71"/>
+    <ExecuteAction Label="72"/>
+    <ExecuteAction Label="73"/>
+    <ExecuteAction Label="74"/>
+    <ExecuteAction Label="75"/>
+    <ExecuteAction Label="76"/>
+    <ExecuteAction Label="77"/>
+    <ExecuteAction Label="78"/>
+    <ExecuteAction Label="79"/>
+    <ExecuteAction Label="80"/>
+    <ExecuteAction Label="81"/>
+    <ExecuteAction Label="82"/>
+    <ExecuteAction Label="83"/>
+    <ExecuteAction Label="84"/>
+    <ExecuteAction Label="85"/>
+    <ExecuteAction Label="86"/>
+    <ExecuteAction Label="87"/>
+    <ExecuteAction Label="88"/>
+    <ExecuteAction Label="89"/>
+    <ExecuteAction Label="90"/>
+    <ExecuteAction Label="91"/>
+    <ExecuteAction Label="92"/>
+    <ExecuteAction Label="93"/>
+    <ExecuteAction Label="94"/>
+    <ExecuteAction Label="95"/>
+    <ExecuteAction Label="96"/>
+    <ExecuteAction Label="97"/>
+    <ExecuteAction Label="98"/>
+    <ExecuteAction Label="99"/>
+    <ExecuteAction Label="100"/>
+    <ExecuteAction Label="101"/>
+    <ExecuteAction Label="102"/>
+    <ExecuteAction Label="103"/>
+    <ExecuteAction Label="104"/>
+    <ExecuteAction Label="105"/>
+    <ExecuteAction Label="106"/>
+    <ExecuteAction Label="107"/>
+    <ExecuteAction Label="108"/>
+    <ExecuteAction Label="109"/>
+    <ExecuteAction Label="110"/>
+    <ExecuteAction Label="111"/>
+    <ExecuteAction Label="112"/>
+    <ExecuteAction Label="113"/>
+    <ExecuteAction Label="114"/>
+    <ExecuteAction Label="115"/>
+    <ExecuteAction Label="116"/>
+    <ExecuteAction Label="117"/>
+    <ExecuteAction Label="118"/>
+    <ExecuteAction Label="119"/>
+    <ExecuteAction Label="120"/>
+  </DialogView>
+</FlexML>

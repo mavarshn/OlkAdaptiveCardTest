@@ -1,0 +1,162 @@
+<FlexML>
+	<DeclareCustomConcept Name="MoveFocusOnSelected" Base="BooleanChoice">
+		<DeclareProperty Name="Type" Type="int"/>
+	</DeclareCustomConcept>
+
+	<DeclareCustomConcept Name="TestNoWindowFocus" Base="Concept">
+		<DeclareProperty Name="IsRunning" Type="boolean"/>
+		<DeclareProperty Name="Value" Type="int"/>
+	</DeclareCustomConcept>
+
+	<DeclareCustomConcept Name="TestMultiLevel" Base="Concept">
+		<DeclareProperty Name="IsVisible" Type="boolean"/>
+	</DeclareCustomConcept>
+
+	<Style ID="CustomStyle" Src="#DialogView">
+		<MoveFocusOnSelected>
+			<Node.StyleTree>
+				<element LayoutChildren="horizontal">
+					<checkbox IsChecked="*Bind(Property=Value)" Text="*Bind(Property=Label; BindType=OneWay)"/>
+					<textbox ID="t" ExpandToFitString="WWWWWWWWWWWW"/>
+				</element>
+				<PropertyTriggers>
+					<Trigger Condition="Value==true">
+						<textbox Target="t" KeyFocused="true"/>
+					</Trigger>
+				</PropertyTriggers>
+			</Node.StyleTree>
+		</MoveFocusOnSelected>
+
+		<MoveFocusOnSelected Class="TwoButtons">
+			<Node.StyleTree>
+				<element LayoutChildren="horizontal">
+					<checkbox IsChecked="*Bind(Property=Value)" Text="*Bind(Property=Label; BindType=OneWay)"/>
+					<Button ID="B1" Text="Button One"/>
+					<Button ID="B2" Text="Button Two"/>
+				</element>
+				<PropertyTriggers>
+					<Trigger Condition="Value==true">
+						<Button Target="B2" KeyFocused="true"/>
+					</Trigger>
+					<Trigger Condition="Value==false; Type==1">
+						<Button Target="B1" KeyFocused="true"/>
+					</Trigger>
+				</PropertyTriggers>
+			</Node.StyleTree>
+		</MoveFocusOnSelected>
+
+		<TestNoWindowFocus>
+			<Node.StyleTree>
+				<element LayoutChildren="horizontal">
+					<checkbox IsChecked="*Bind(Property=IsRunning)" Text="*Bind(Property=Label; BindType=OneWay)"/>
+					<Button ID="B1" Text="Button One"/>
+					<Button ID="B2" Text="Button Two"/>
+					<Button ID="B3" Text="Button Three"/>
+					<Button ID="B4" Text="Button Four"/>
+					<Progress IsIndeterminate="true" IsRunning="*Bind(Property=IsRunning; BindType=OneWay)"
+						Position="*Bind(Property=Value; BindType=TwoWay)" Width="500" Maximum="4"/>
+				</element>
+				<PropertyTriggers>
+					<Trigger Condition="Value==0; IsRunning==true">
+						<Button Target="B1" KeyFocused="true"/>
+					</Trigger>
+					<Trigger Condition="Value==1; IsRunning==true">
+						<Button Target="B2" KeyFocused="true"/>
+					</Trigger>
+					<Trigger Condition="Value==2; IsRunning==true">
+						<Button Target="B3" KeyFocused="true"/>
+					</Trigger>
+					<Trigger Condition="Value==3; IsRunning==true">
+						<Button Target="B4" KeyFocused="true"/>
+					</Trigger>
+				</PropertyTriggers>
+			</Node.StyleTree>
+		</TestNoWindowFocus>
+
+		<TestNoWindowFocus Class="textboxes">
+			<Node.StyleTree>
+				<element LayoutChildren="horizontal">
+					<checkbox IsChecked="*Bind(Property=IsRunning)" Text="*Bind(Property=Label; BindType=OneWay)"/>
+					<Textbox ID="T1" Text="Textbox One"   ExpandToFitString="Textbox WWWWW"/>
+					<Textbox ID="T2" Text="Textbox Two"   ExpandToFitString="Textbox WWWWW"/>
+					<Textbox ID="T3" Text="Textbox Three" ExpandToFitString="Textbox WWWWW"/>
+					<Textbox ID="T4" Text="Textbox Four"  ExpandToFitString="Textbox WWWWW"/>
+					<Progress IsIndeterminate="true" IsRunning="*Bind(Property=IsRunning; BindType=OneWay)"
+						Position="*Bind(Property=Value; BindType=TwoWay)" Width="500" Maximum="4"/>
+				</element>
+				<PropertyTriggers>
+					<Trigger Condition="Value==0; IsRunning==true">
+						<Textbox Target="T1" KeyFocused="true"/>
+					</Trigger>
+					<Trigger Condition="Value==1; IsRunning==true">
+						<Textbox Target="T2" KeyFocused="true"/>
+					</Trigger>
+					<Trigger Condition="Value==2; IsRunning==true">
+						<Textbox Target="T3" KeyFocused="true"/>
+					</Trigger>
+					<Trigger Condition="Value==3; IsRunning==true">
+						<Textbox Target="T4" KeyFocused="true"/>
+					</Trigger>
+				</PropertyTriggers>
+			</Node.StyleTree>
+		</TestNoWindowFocus>
+
+		<EnterString>
+			<Node.StyleTree>
+				<element LayoutChildren="horizontal">
+					<label Text="*Bind(Property=Label; BindType=OneWay)"/>
+					<textbox Text="*Bind(Property=Value; BindType=TwoWay)" ExpandToFitString="WWWWWW"/>
+					<Button ID="B1" Text="One"/>
+					<Button ID="B2" Text="Two"/>
+					<Button ID="B3" Text="Three"/>
+					<Button ID="B4" Text="Four"/>
+				</element>
+				<PropertyTriggers>
+					<Trigger Condition="Value==One">
+						<Button Target="B1" KeyFocused="true"/>
+					</Trigger>
+					<Trigger Condition="Value==Two">
+						<Button Target="B2" KeyFocused="true"/>
+					</Trigger>
+					<Trigger Condition="Value==Three">
+						<Button Target="B3" KeyFocused="true"/>
+					</Trigger>
+					<Trigger Condition="Value==Four">
+						<Button Target="B4" KeyFocused="true"/>
+					</Trigger>
+				</PropertyTriggers>
+			</Node.StyleTree>
+		</EnterString>
+
+		<TestMultiLevel>
+			<Node.StyleTree>
+				<Element IsVisible="*Bind(Property=IsVisible; BindType=OneWay)" LayoutChildren="vertical">
+					<Label Text="*Bind(Property=Label; BindType=OneWay)"/>
+					<Element LayoutChildren="vertical">
+						<Button ID="button" Text="Key Focus Goes Here"/>
+					</Element>
+				</Element>
+				<PropertyTriggers>
+					<Trigger Condition="StyleTree.IsVisible">
+						<Button Target="button" KeyFocused="true"/>
+					</Trigger>
+				</PropertyTriggers>
+			</Node.StyleTree>
+		</TestMultiLevel>
+	</Style>
+
+	<DialogView Sheet="#CustomStyle">
+		<MoveFocusOnSelected Label="First Test"/>
+		<MoveFocusOnSelected Label="Second Test"/>
+		<MoveFocusOnSelected Class="TwoButtons" Type="0" Label="Set Focus to Button Two"/>
+		<MoveFocusOnSelected Class="TwoButtons" Type="1" Label="Set Focus to Button Two when checked, and Button One when unchecked"/>
+		<TestNoWindowFocus Label="Start no window focus test"/>
+		<EnterString Label="Moves focus to button with same name:"/>
+		<TestNoWindowFocus Class="textboxes" Label="Start no window focus test"/>
+		<Category Label="Test multi-level visibility">
+			<BooleanChoice ID="bc-vis" Label="Check to show subtree and set key focus"/>
+			<TestMultiLevel IsVisible="*Bind(Property=Value; Source=bc-vis; BindType=OneWay)" Label="Multi-level"/>
+		</Category>
+	</DialogView>
+
+</FlexML>

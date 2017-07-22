@@ -1,0 +1,12 @@
+<netuixml>
+	<style id="s">
+		<image background="blue" padding="20,20,20,20"/>
+
+		<image condition="src==GRAPHIC_NULL" background="red" padding="20,20,20,20"/>
+	</style>
+
+	<element sheet="#s" layoutChildren="vertical">
+		<image src=":rcicon(320)"/>
+		<image/>
+	</element>
+</netuixml>

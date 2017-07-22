@@ -1,0 +1,11 @@
+<DialogView>
+	<Category Label="This is the Category Label">
+		<SelectSingleItem Label="Select one item">
+			<List Items="*Bind(Property=Items)">
+				<ItemTemplate>
+					<SelectionItem Label="*Bind(Property=Label)" Value="*Bind(Property=Label)"/>
+				</ItemTemplate>
+			</List>
+		</SelectSingleItem>
+	</Category>
+</DialogView>

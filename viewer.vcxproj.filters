@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{7ec31ba0-7628-42e8-a6a5-4fc2a4258ad4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{22bcf562-5b7f-4b22-a605-bc74851e9af6}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Demos">
+      <UniqueIdentifier>{d486c726-b7cd-4f58-90bc-96c3f7d8e7af}</UniqueIdentifier>
+      <Extensions>*.xml;*.ui;*.nui</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{b965e8eb-55f6-4966-ace1-6e0c9ee393ae}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="shell.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="shellsm.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="viewer.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="samples\accessibility.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\checkboxes.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="..\cit\cit1.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALAbsolute.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\dalall.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALanim.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALCheckBox.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALCit.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALFlow.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALFrameGroup.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALGroupBox.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALHierarchy.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALHorizDistribute.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALhorizVert.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALHyperLink.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALImage.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALLabel.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALLayout.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALListView.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\dalmargin.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALNoMargin.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALOverLap.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALPcc.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALRTL.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALScrollViewer.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALSelfLayout.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\dalShrinkWidthCrash.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALtable.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALTable2.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\DALZoom.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\dui1.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\dui2.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\dui3-multicond.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\dui3-StyleDefs.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\dui3.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\dui4.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\dui5.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\externalStyles.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\image.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\imagebutton.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\mytest.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\perf-2000buttons.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\radiobuttons.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\richedit.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\richlabel.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+    <Xml Include="samples\scrollviewer.xml">
+      <Filter>Demos</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="buffer.nui">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="errorwin.nui">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="OfficeStyles.nui">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+<!--	GalleryMenuItemDS.flexdl
+		Owner: AndrewH
+		Copyright (c) Microsoft Corporation. All rights reserved. -->
+
+<DataSource ID="GalleryMenuItemDS">
+	<Property ID="Label"       Type="String" />
+	<Property ID="ImageSource" Type="Image" />
+	<Event    ID="OnCommand" />
+
+</DataSource>
+
+

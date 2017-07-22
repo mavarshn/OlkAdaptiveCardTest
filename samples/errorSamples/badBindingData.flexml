@@ -1,0 +1,16 @@
+<DialogView>
+	<style id="unused">
+		<ExecuteAction StyleOverride="Blah">
+			<Node.StyleTree>
+				<Button Text="Blah"/>
+			</Node.StyleTree>
+		</ExecuteAction>
+	</style>
+
+	<ExecuteAction ID="e" Label="specified" />
+	<ExecuteAction Label="*Bind(Property=Label; Source=e; UpdateType=badUpdate)" />
+	<ExecuteAction Label="*Bind(Property=Label; Source=e; BindType=badBind)" />
+	<ExecuteAction Label="*Bind(Source=e)" />
+	<ExecuteAction Label="*Bind(Property=Label; Source=e; Style=OnlyValidOnChildren)" />
+	<ExecuteAction StyleOverride="CantSetDirectly" Label="Can't Set StyleOverride test" />
+</DialogView>

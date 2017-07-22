@@ -1,0 +1,201 @@
+<!-- This file is used to test the NetUI RepeatButton control at 100% and 150% DPI.
+The RepeatButton scales its content (arrows) with DPI, but otherwise looks like a
+SimpleButton that usually lives inside another control.
+
+The easiest way to use this file is in Lime's NetUI Test Toolkit:
+1. Run Lime
+2. From the Ribbon, select "NetUI Test Toolkit"
+3. Scroll down to the section "Open a NetUI Document"
+4. Browse... for this file and select "Open File"
+5. Drag the NetUI Test Toolkit across monitors with different DPI settings and verify RepeatButtons are pretty
+-->
+<FlexML>
+  <Element LayoutChildren="Vertical" Background="WhiteSmoke" >
+
+    <!-- RepeatButtons in PanViewers only have arrows if explicity desired with RenderMethod. -->
+    <Style ID="PanViewerScrollButton" >
+      <RepeatButton RenderMethod="Arrows" />
+      <RepeatButton Condition="DPI GTE 96" Height="30" />
+      <RepeatButton Condition="DPI GTE 144" Height="45" />
+    </Style>
+
+    <Style ID="ScrollViewerScrollButton" >
+      <RepeatButton IsThemeEnabled="False" />
+    </Style>
+
+    <!-- RepeatButtons can have various explicit arrow sizes. The default is Auto. -->
+    <Style ID="LegacyAuto20">
+      <RepeatButton IsThemeEnabled="False" />
+      <Spinner Condition="DPI GTE 96"
+        Height="20" Width="20" />
+      <Spinner Condition="DPI GTE 144"
+        Height="30" Width="30" />
+    </Style>
+    <Style ID="ThemedAuto20">
+      <Spinner Condition="DPI GTE 96"
+        Height="20" Width="20" />
+      <Spinner Condition="DPI GTE 144"
+        Height="30" Width="30" />
+    </Style>
+    <Style ID="LegacyAuto12">
+      <RepeatButton IsThemeEnabled="False" />
+      <Spinner Condition="DPI GTE 96"
+        Height="12" Width="12" />
+      <Spinner Condition="DPI GTE 144"
+        Height="18" Width="18" />
+    </Style>
+    <Style ID="ThemedAuto12">
+      <Spinner Condition="DPI GTE 96"
+        Height="12" Width="12" />
+      <Spinner Condition="DPI GTE 144"
+        Height="18" Width="18" />
+    </Style>
+    <Style ID="LegacyExtraSmall20">
+      <RepeatButton IsThemeEnabled="False" ArrowSize="VerySmall" />
+      <Spinner Condition="DPI GTE 96"
+        Height="20" Width="20" />
+      <Spinner Condition="DPI GTE 144"
+        Height="30" Width="30" />
+    </Style>
+    <Style ID="LegacySmall20">
+      <RepeatButton IsThemeEnabled="False" ArrowSize="Small" />
+      <Spinner Condition="DPI GTE 96"
+        Height="20" Width="20" />
+      <Spinner Condition="DPI GTE 144"
+        Height="30" Width="30" />
+    </Style>
+    <Style ID="LegacyMedium20">
+      <RepeatButton IsThemeEnabled="False" ArrowSize="Medium" />
+      <Spinner Condition="DPI GTE 96"
+        Height="20" Width="20" />
+      <Spinner Condition="DPI GTE 144"
+        Height="30" Width="30" />
+    </Style>
+    <Style ID="LegacyLarge20">
+      <RepeatButton IsThemeEnabled="False" ArrowSize="Large" />
+      <Spinner Condition="DPI GTE 96"
+        Height="20" Width="20" />
+      <Spinner Condition="DPI GTE 144"
+        Height="30" Width="30" />
+    </Style>
+    <Style ID="LegacyExtraLarge20">
+      <RepeatButton IsThemeEnabled="False" ArrowSize="VeryLarge" />
+      <Spinner Condition="DPI GTE 96"
+        Height="20" Width="20" />
+      <Spinner Condition="DPI GTE 144"
+        Height="30" Width="30" />
+    </Style>
+
+    <!-- Themes override arrow size because they go through a separate render path -->
+    <Style ID="ThemedExtraSmall20">
+      <RepeatButton ArrowSize="VerySmall" />
+      <Spinner Condition="DPI GTE 96"
+        Height="20" Width="20" />
+      <Spinner Condition="DPI GTE 144"
+        Height="30" Width="30" />
+    </Style>
+    <Style ID="ThemedSmall20">
+      <RepeatButton ArrowSize="Small" />
+      <Spinner Condition="DPI GTE 96"
+        Height="20" Width="20" />
+      <Spinner Condition="DPI GTE 144"
+        Height="30" Width="30" />
+    </Style>
+    <Style ID="ThemedMedium20">
+      <RepeatButton ArrowSize="Medium" />
+      <Spinner Condition="DPI GTE 96"
+        Height="20" Width="20" />
+      <Spinner Condition="DPI GTE 144"
+        Height="30" Width="30" />
+    </Style>
+    <Style ID="ThemedLarge20">
+      <RepeatButton ArrowSize="Large" />
+      <Spinner Condition="DPI GTE 96"
+        Height="20" Width="20" />
+      <Spinner Condition="DPI GTE 144"
+        Height="30" Width="30" />
+    </Style>
+    <Style ID="ThemedExtraLarge20">
+      <RepeatButton ArrowSize="VeryLarge" />
+      <Spinner Condition="DPI GTE 96"
+        Height="20" Width="20" />
+      <Spinner Condition="DPI GTE 144"
+        Height="30" Width="30" />
+    </Style>
+
+    <!-- Larger Spinner (and thus larger RepeatButtons) -->
+    <Style ID="LegacyLarge40">
+      <RepeatButton IsThemeEnabled="False" ArrowSize="Large" />
+      <Spinner Condition="DPI GTE 96"
+        Height="40" Width="40" />
+      <Spinner Condition="DPI GTE 144"
+        Height="60" Width="60" />
+    </Style>
+
+    <!-- RepeatButtons with arrows on a larger surface -->
+    <PanViewer PanDirection="Vertical" ExpandToFillVert="True" ExpandToFillHoriz="True" IsThemeEnabled="False"  Sheet="#PanViewerScrollButton">
+
+      <!-- RepeatButtons with various arrow sizes -->
+      <Element LayoutChildren="Vertical" padding="20,20,20,20">
+        <Element Sheet="#LegacyAuto20" LayoutChildren="Horizontal">
+          <Label Text="Legacy painted Spinner with Auto arrow sizing" />
+          <Spinner ID="LegacyAuto20Spinner" />
+        </Element>
+        <Element Sheet="#ThemedAuto20" LayoutChildren="Horizontal">
+          <Label Text="Themed Spinner with Auto arrow sizing" />
+          <Spinner ID="ThemedAuto20Spinner" />
+        </Element>
+        <Element Sheet="#LegacyExtraSmall20" LayoutChildren="Horizontal">
+          <Label Text="Legacy painted Spinner with Extra Small arrow sizing" />
+          <Spinner ID="LegacyExtraSmall20Spinner" />
+        </Element>
+        <Element Sheet="#ThemedExtraSmall20" LayoutChildren="Horizontal">
+          <Label Text="Themed Spinner with Extra Small arrow sizing" />
+          <Spinner ID="ThemedExtraSmall20Spinner" />
+        </Element>
+        <Element Sheet="#LegacySmall20" LayoutChildren="Horizontal">
+          <Label Text="Legacy painted Spinner with Small arrow sizing" />
+          <Spinner ID="LegacySmall20Spinner" />
+        </Element>
+        <Element Sheet="#ThemedSmall20" LayoutChildren="Horizontal">
+          <Label Text="Themed Spinner with Small arrow sizing" />
+          <Spinner ID="ThemedSmall20Spinner" />
+        </Element>
+        <Element Sheet="#LegacyMedium20" LayoutChildren="Horizontal">
+          <Label Text="Legacy painted Spinner with Medmium arrow sizing" />
+          <Spinner ID="LegacyMedium20Spinner" />
+        </Element>
+        <Element Sheet="#ThemedMedium20" LayoutChildren="Horizontal">
+          <Label Text="Themed Spinner with Medmium arrow sizing" />
+          <Spinner ID="ThemedMedium20Spinner" />
+        </Element>
+        <Element Sheet="#LegacyLarge20" LayoutChildren="Horizontal">
+          <Label Text="Legacy painted Spinner with Large arrow sizing" />
+          <Spinner ID="LegacyLarge20Spinner" />
+        </Element>
+        <Element Sheet="#ThemedLarge20" LayoutChildren="Horizontal">
+          <Label Text="Themed Spinner with Large arrow sizing" />
+          <Spinner ID="ThemedLarge20Spinner" />
+        </Element>
+        <Element Sheet="#LegacyExtraLarge20" LayoutChildren="Horizontal">
+          <Label Text="Legacy painted Spinner with Extra Large arrow sizing" />
+          <Spinner ID="LegacyExtraLarge20Spinner" />
+        </Element>
+        <Element Sheet="#ThemedExtraLarge20" LayoutChildren="Horizontal">
+          <Label Text="Themed Spinner with Extra Large arrow sizing" />
+          <Spinner ID="ThemedExtraLarge20Spinner" />
+        </Element>
+        <Element Sheet="#LegacyLarge40" LayoutChildren="Horizontal">
+          <Label Text="Legacy painted Spinner with Large arrow sizing" />
+          <Spinner ID="LegacyLarge40Spinner" />
+        </Element>
+      </Element>
+
+      <!-- Horizontal RepeatButtons -->
+      <ScrollViewer HasHorizontalScrollbar="True" Sheet="#ScrollViewerScrollButton">
+        <Label Text="ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ" />
+      </ScrollViewer>
+
+    </PanViewer>
+  </Element>
+</FlexML>

@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName>viewer</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <Keyword>MakeFileProj</Keyword>
+    <ProjectGuid>{CD754A4E-2079-4EBF-9AA4-E9E23F733518}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <NMakeBuildCommandLine>obuild.bat debug</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>obuild.bat debug full</NMakeReBuildCommandLine>
+    <NMakeOutput>netuiview.exe</NMakeOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <NMakeBuildCommandLine>obuild.bat ship</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>obuild.bat ship full</NMakeReBuildCommandLine>
+    <NMakeOutput>netuiview.exe</NMakeOutput>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="viewer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="buffer.nui" />
+    <CustomBuild Include="errorwin.nui" />
+    <CustomBuild Include="OfficeStyles.nui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="shell.ico" />
+    <Image Include="shellsm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="viewer.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\cit\cit1.xml" />
+    <Xml Include="samples\accessibility.xml" />
+    <Xml Include="samples\checkboxes.xml" />
+    <Xml Include="samples\DALAbsolute.xml" />
+    <Xml Include="samples\dalall.xml" />
+    <Xml Include="samples\DALanim.xml" />
+    <Xml Include="samples\DALCheckBox.xml" />
+    <Xml Include="samples\DALCit.xml" />
+    <Xml Include="samples\DALFlow.xml" />
+    <Xml Include="samples\DALFrameGroup.xml" />
+    <Xml Include="samples\DALGroupBox.xml" />
+    <Xml Include="samples\DALHierarchy.xml" />
+    <Xml Include="samples\DALHorizDistribute.xml" />
+    <Xml Include="samples\DALhorizVert.xml" />
+    <Xml Include="samples\DALHyperLink.xml" />
+    <Xml Include="samples\DALImage.xml" />
+    <Xml Include="samples\DALLabel.xml" />
+    <Xml Include="samples\DALLayout.xml" />
+    <Xml Include="samples\DALListView.xml" />
+    <Xml Include="samples\dalmargin.xml" />
+    <Xml Include="samples\DALNoMargin.xml" />
+    <Xml Include="samples\DALOverLap.xml" />
+    <Xml Include="samples\DALPcc.xml" />
+    <Xml Include="samples\DALRTL.xml" />
+    <Xml Include="samples\DALScrollViewer.xml" />
+    <Xml Include="samples\DALSelfLayout.xml" />
+    <Xml Include="samples\dalShrinkWidthCrash.xml" />
+    <Xml Include="samples\DALtable.xml" />
+    <Xml Include="samples\DALTable2.xml" />
+    <Xml Include="samples\DALZoom.xml" />
+    <Xml Include="samples\dui1.xml" />
+    <Xml Include="samples\dui2.xml" />
+    <Xml Include="samples\dui3-multicond.xml" />
+    <Xml Include="samples\dui3-StyleDefs.xml" />
+    <Xml Include="samples\dui3.xml" />
+    <Xml Include="samples\dui4.xml" />
+    <Xml Include="samples\dui5.xml" />
+    <Xml Include="samples\externalStyles.xml" />
+    <Xml Include="samples\image.xml" />
+    <Xml Include="samples\imagebutton.xml" />
+    <Xml Include="samples\mytest.xml" />
+    <Xml Include="samples\perf-2000buttons.xml" />
+    <Xml Include="samples\radiobuttons.xml" />
+    <Xml Include="samples\richedit.xml" />
+    <Xml Include="samples\richlabel.xml" />
+    <Xml Include="samples\scrollviewer.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

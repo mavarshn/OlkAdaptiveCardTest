@@ -1,0 +1,12 @@
+<!--	GalleryMenuCategoryDS.flexdl
+		Owner: AndrewH
+		Copyright (c) Microsoft Corporation. All rights reserved. -->
+
+<DataSource ID="GalleryMenuCategoryDS">
+
+	<Property ID="Class"           Type="Atom" />
+	<Property ID="MenuItems"       Type="List" />
+
+</DataSource>
+
+

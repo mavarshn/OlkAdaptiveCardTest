@@ -1,0 +1,55 @@
+<xml>
+
+<defs>
+	<color id="softBlue"> #D6DFF7 </color>
+	<color id="textNormal"> buttontext </color>
+	<color id="deepBlue"> #6579D7 </color>
+	<color id="hiliteBlue"> #C1D2EE </color>
+	<color id="borderBlue"> #316AC5 </color>
+	<color id="background"> #EFEDDE </color>
+	<color id="pressedBlue"> #98B5E2 </color>
+	<color id="dropTargetBG"> #00FF00 </color>
+</defs>
+
+<customProperty name="dohighlight" isInherited="true" />
+
+<style id="olscbar">
+	<label foreground="#textNormal"/>
+	<xlabel condition="isCurrentDropTarget" background="#dropTargetBG"/>
+	<ximage condition="isCurrentDropTarget" background="#dropTargetBG"/>
+	<element class="button" condition="isCurrentDropTarget" xbackground="#dropTargetBG" dohighlight="1"/>
+	<image padding="3,3,3,3" />
+	<element class="button" background="#background" borderThickness="0,0,0,0" isDropTarget="true"/>
+	<element class="button" condition="mousewithin" dohighlight="1" />
+	<element class="button" isDraggable="true" />
+
+	<image class="dropper" alpha="0" isDropTarget="true"/>
+	<image class="dropper" condition="isCurrentDropTarget" alpha="255" background="none" />
+	<image condition="dohighlight==1" background="#hiliteBlue" padding="2,2,2,2" borderThickness="1,1,1,1" borderColor="#borderBlue" />
+	<image condition="dohighlight==2" background="#pressedBlue" padding="2,2,2,2" borderThickness="1,1,1,1" borderColor="#borderBlue" />
+</style>
+
+<element sheet="#olscbar" layoutChildren="vertical" background="white" alignChildren="center" padding="10,10,10,10" expandToFillHoriz="true" expandToFillVert="true" childrenMargin="10">
+	<scrollviewer expandToFillHoriz="true" expandToFillVert="true" background="#softBlue" xisDraggable="true" borderThickness="2,2,2,2" borderStyle="solid">
+		<element sheet="#olscbar" layoutChildren="vertical" childrenMargin="0" background="#background" padding="20,5,5,5" alignChildren="center">
+			<image class="dropper" src=":bitmap() dropper.bmp" />
+			<element class="button" layoutChildren="vertical" alignChildren="center"> <image src=":icon() dstorfdr.ico" /> <label text="Outlook Today" /> </element>
+			<image class="dropper" src=":bitmap() dropper.bmp" />
+			<element class="button" layoutChildren="vertical" alignChildren="center"> <image src=":icon() inbxfdr.ico"  /> <label text="Inbox (16)" /> </element>
+			<image class="dropper" src=":bitmap() dropper.bmp" />
+			<element class="button" layoutChildren="vertical" alignChildren="center"> <image src=":icon() apptbook.ico" /> <label text="Calendar" /> </element>
+			<image class="dropper" src=":bitmap() dropper.bmp" />
+			<element class="button" layoutChildren="vertical" alignChildren="center"> <image src=":icon() addrbook.ico" /> <label text="Contacts" /> </element>
+			<image class="dropper" src=":bitmap() dropper.bmp" />
+			<element class="button" layoutChildren="vertical" alignChildren="center"> <image src=":icon() taskbook.ico" /> <label text="Tasks" /> </element>
+			<image class="dropper" src=":bitmap() dropper.bmp" />
+			<element class="button" layoutChildren="vertical" alignChildren="center"> <image src=":icon() notebook.ico" /> <label text="Notes" /> </element>
+			<image class="dropper" src=":bitmap() dropper.bmp" />
+			<element class="button" layoutChildren="vertical" alignChildren="center"> <image src=":icon() wastefdr.ico" /> <label text="Deleted Items" /> </element>
+			<image class="dropper" src=":bitmap() dropper.bmp" />
+		</element>
+	</scrollviewer>
+</element>
+
+
+</xml>

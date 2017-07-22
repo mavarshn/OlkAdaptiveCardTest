@@ -1,0 +1,680 @@
+<netpane layoutChildren="vertical" expandToFillVert="true">
+
+	<customProperty name="isTreeDropTarget" isInherited="true" />
+	<style ID="myStyle">
+		<treeViewExpander borderColor="black" width="16" height="16" />
+		<treeviewitem isDropTarget="true" isTreeDropTarget="0" animation="rectanglev | veryfast"/>
+		<treeviewitem condition="isCurrentDropTarget" isTreeDropTarget="1"/>
+		<treeviewcontent condition="isTreeDropTarget==1" background="highlight" foreground="highlightText"/>
+	</style>
+
+	<element sheet="#myStyle" layoutChildren="vertical" padding="20,20,20,20" alignChildren="topLeft">
+	
+		<button text="button before tree"/>
+
+		<treeView expandToFillVert="true" width="200" hasVerticalScrollBar="true" listHeight="4">
+
+			<treeViewItem  text="Item 3 - draggable" isDraggable="true"/>
+			<treeViewItem text="Item 1 - draggable"  isDraggable="true"/>
+			<treeViewItem text="Item 2 - draggable"  isDraggable="true">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci - draggable" isDraggable="true"/>
+						<treeViewItem text="Item 2cii - draggable" isDraggable="true"/>
+						<treeViewItem text="Item 2ciii - draggable" isDraggable="true"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Has Long child" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c has a long long item name">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+					<treeViewItem text="Item 3">
+						<treeViewItem text="Item 3ci"/>
+						<treeViewItem text="Item 3cii also has a long name"/>
+						<treeViewItem text="Item 3ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren levelIndent="100">
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2 - bigger" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+					<treeViewItem text="Item 2d">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+					<treeViewItem text="Item 2e">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+					<treeViewItem text="Item 2f">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+					<treeViewItem text="Item 2g"/>
+					<treeViewItem text="Item 2h"/>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2 - not a target" isDropTarget="false">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+					<treeViewItem text="Item 2d">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+					<treeViewItem text="Item 2e">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+					<treeViewItem text="Item 2f">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+					<treeViewItem text="Item 2g"/>
+					<treeViewItem text="Item 2h"/>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren levelIndent="100">
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren levelIndent="100">
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2" >
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren levelIndent="100">
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren levelIndent="100">
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+			<treeViewItem text="Item 1" />
+			<treeViewItem text="Item 2">
+				<treeViewChildren>
+					<treeViewItem text="Item 2a"   />
+					<treeViewItem text="Item 2b"/>
+					<treeViewItem text="Item 2c">
+						<treeViewItem text="Item 2ci"/>
+						<treeViewItem text="Item 2cii"/>
+						<treeViewItem text="Item 2ciii"/>
+					</treeViewItem>
+				</treeViewChildren>
+			</treeViewItem>
+
+			<treeViewItem  text="Item 3"/>
+
+		</treeView>
+
+		<button text="button after tree" />
+
+	</element>
+
+</netpane>

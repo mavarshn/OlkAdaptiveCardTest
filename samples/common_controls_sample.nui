@@ -1,0 +1,234 @@
+<element background="window" layoutChildren="vertical" >
+
+<label text="Layout Containers" fontsize="14" />
+<element layoutchildren="horizontal" >
+
+	<!-- basic layout containers -->
+
+	<label text="horizontal layout" />
+	<element layoutChildren="horizontal" >
+		<button text="1" />
+		<button text="2" />
+	</element>
+
+	<label text="vertical layout" />
+	<element layoutChildren="vertical" >
+		<button text="1" />
+		<button text="2" />
+	</element>
+
+	<label text="flow layout" />
+	<scrollviewer width="80" height="80">
+	<element layoutChildren="flow" >
+		<button text="1" />
+		<button text="2" />
+		<button text="3" />
+		<button text="4" />
+	</element>
+	</scrollviewer>
+
+
+	<label text="verticalFlow layout" />
+	<scrollviewer width="80" height="80">
+	<element layoutChildren="verticalFlow" >
+		<button text="1" />
+		<button text="2" />
+		<button text="3" />
+		<button text="4" />
+	</element>
+	</scrollviewer>
+
+
+	<label text="table layout" />
+	<element layoutChildren="table" cols="3" rows="3" >
+		<button text="1" />
+		<button text="2" />
+		<button text="3" />
+		<button text="4" />
+		<button text="5" />
+		<button text="6" />
+		<button text="7" />
+		<button text="8" />
+		<button text="9" />
+	</element>
+
+	<element layoutchildren="vertical" >
+		<label text="indents"/>
+		<label text="indents" indent="1"/>
+		<label text="indents" indent="2"/>
+		<label text="indents" indent="3"/>
+		<label text="indents" indent="4"/>
+	</element>
+
+</element>
+
+
+<!-- basic controls -->
+
+<label text="Common Controls" fontsize="14" lowerby="18" />
+
+<element layoutChildren="horizontal">
+
+	<label text="label" />
+
+	<button text="^button" />
+
+	<checkbox text="checkbox" />
+
+	<radiogroup layoutChildren="vertical" bordercolor="black">
+		<radiobutton text="RadioButton ^1" indent="1" />
+		<radiobutton text="RadioButton ^2" indent="1" />
+	</radiogroup>
+
+
+	<hyperlink text="Hyperlink" height="35" href="http://www.hotmail.com/" imageSrc="msn.bmp" />
+
+	<textbox text="Textbox" width="120" isEditable="true" isMultiline="false" /> <!-- passwordCharacter="*" -->
+
+		
+	<pcc>
+		<pcccontent layoutChildren="vertical">
+			<label text="(Pop-up container control)" />
+		</pcccontent>
+		<dropButton />
+	</pcc>
+
+	<combobox selectedIndex="0" listHeight="6" width="100" maxCharacters="30" >
+		<listitem text="Combobox" />
+		<listitem text="30 minutes" />
+		<listitem text="1 hour" />
+		<listitem text="2 hours" />
+		<listitem text="4 hours" />
+		<listitem text="8 hours" />
+	</combobox>
+
+	<dropdown selectedIndex="0" listHeight="6" width="100" maxCharacters="30" >
+		<listitem text="Dropdown" />
+		<listitem text="30 minutes" />
+		<listitem text="1 hour" />
+		<listitem text="2 hours" />
+		<listitem text="4 hours" />
+		<listitem text="8 hours" />
+	</dropdown>
+
+</element>
+
+<element>
+   
+	<groupBox grouptype="groupheader" iscollapsible="true" >   <!-- grouptype can be groupheader, groupline, groupbox -->
+		<groupheader linecolor="black" text="Collapsible Group Header" />
+		<groupContent >
+			<label text="Item 1" />
+			<label text="Item 2" />
+		</groupContent>
+	</groupBox>
+
+	<element width="100">
+
+		<groupBox grouptype="groupline" >   <!-- grouptype can be groupheader, groupline, groupbox -->
+			<groupheader linecolor="black" text="Group Line" />
+			<groupContent>
+				<label text="Item 1" />
+				<label text="Item 2" />
+			</groupContent>
+		</groupBox>
+
+	</element>
+
+	<groupBox grouptype="groupBox" >   <!-- grouptype can be groupheader, groupline, groupbox -->
+		<groupheader linecolor="black" text="Group Box" />
+		<groupContent>
+			<label text="Item 1" />
+			<label text="Item 2" />
+		</groupContent>
+	</groupBox>
+
+
+</element>
+
+<element layoutChildren="horizontal">
+
+	<treeView width="200" hasVerticalScrollBar="true" listHeight="4">
+
+		<treeViewItem text="treeview" >
+			<treeViewItem text="treeview"/>
+			<treeViewItem text="treeview"/>
+		</treeViewItem>
+		<treeViewItem text="treeview" >
+			<treeViewItem text="treeview"/>
+			<treeViewItem text="treeview"/>
+		</treeViewItem>
+
+	</treeView>
+
+
+	<listview listheight="5">
+		<checkbox text="simple list view" />
+		<checkbox text="simple list view" />
+		<checkbox text="simple list view" />
+		<checkbox text="simple list view" />
+		<checkbox text="simple list view" />
+		<checkbox text="simple list view" />
+	</listview>
+
+
+	<listview>
+
+		<listheader showcolumnheaders="true" >
+			<listcolumn text="ListView" arrow="none" />
+			<listcolumn text="ListView" arrow="none" />
+		</listheader>
+
+		<listviewitem>
+			<listcontent>
+				<label text="listview" />
+			</listcontent>
+			<listcontent>
+				<label text="listview" />
+			</listcontent>
+		</listviewitem>
+
+		<listviewitem>
+			<listcontent>
+				<label text="listview" />
+			</listcontent>
+			<listcontent>
+				<label text="listview" />
+			</listcontent>
+		</listviewitem>
+
+	</listview>
+
+	<Element LayoutChildren="Horizontal" AlignChildren="Left" Background="ButtonFace" Foreground="ButtonText" Sheet="#DialogStyles">
+		<Label Text="Slider:"/>
+		<slider Minimum="0" Maximum="100"/>
+	</Element>
+
+</element>
+
+
+<label text="Graphics Stuff" fontsize="14" lowerby="18" />
+
+<element layoutChildren="horizontal">
+	<!-- graphics stuff -->
+
+	<!-- a gradient -->
+	<button IsThemeEnabled="false" background="gradient(red,blue,horizontal)" foreground="white" text="red to blue gradient"/>
+
+	<!-- widths, heights -->
+	<button text="width/height" width="120" height="20" />
+
+	<!-- padding -->
+	<button text="padding" padding="8,8,8,8" />
+
+	<!-- border -->
+	<button text="solid border" bordercolor="blue" borderstyle="solid" borderthickness="2,2,2,2" />
+	<button text="raised border" bordercolor="blue" borderstyle="raised" borderthickness="2,2,2,2" />
+	<button text="sunken border" bordercolor="blue" borderstyle="sunken" borderthickness="2,2,2,2" />
+
+	<!-- fonts -->
+	<label text="font attributes" fontface="tahoma" fontSize="24" fontstyle="underline | italic | strikeout" />
+
+</element>
+
+</element>

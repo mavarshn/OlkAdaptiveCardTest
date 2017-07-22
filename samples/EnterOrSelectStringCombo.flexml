@@ -1,0 +1,24 @@
+<DialogView>
+	<Category Label="Test of normal Combobox">
+		<EnterOrSelectString ShowOnlySelected="true" ID="EOSS" Label="Combobox:">
+			<SelectionItem ID="SI1" Label="First" ImageSource=":rcicon(321)"/>
+			<SelectionItem ID="SI2" Label="Second" ImageSource=":rcicon(320)"/>
+			<SelectionItem ID="SI3" Label="Third" ImageSource=":rcicon(321)"/>
+		</EnterOrSelectString>
+
+		<ShowInformation Label="SelectedIndex:" Value="*Bind(Property=SelectedIndex; Source=EOSS; BindType=OneWay)" />
+		<ShowInformation Label="SOSSelectedItem.Label:" Value="*Bind(Property=SOSSelectedItem.Label; Source=EOSS; BindType=OneWay)" />
+		<ShowInformation Label="TelemetryId:" Value="*Bind(Property=Telemetry; BindType=OneWay)" />
+		<ShowInformation Label="SelectedString:" Value="*Bind(Property=SelectedString; Source=EOSS; BindType=OneWay)" />
+		<ShowInformation Label="HighlightedItem.Label:" Value="*Bind(Property=HighlightedItem.Label; Source=EOSS; BindType=OneWay)" />
+	</Category>
+
+	<Category Label="Test of Combobox with MaxLength">
+		<EnterOrSelectString ShowOnlySelected="true" Label="Type up to 10 characters:" MaxLength="10" SizeControlToFitItems="false" AnchorRepresentativeString="0123456789">
+			<SelectionItem Label="First" ImageSource=":rcicon(321)"/>
+			<SelectionItem Label="Second" ImageSource=":rcicon(320)"/>
+			<SelectionItem Label="Third" ImageSource=":rcicon(321)"/>
+		</EnterOrSelectString>
+	</Category>
+
+</DialogView>

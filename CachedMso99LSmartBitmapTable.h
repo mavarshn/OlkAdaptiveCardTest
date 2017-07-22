@@ -1,0 +1,463 @@
+/*------------------------------------------------------------------------------ 
+	This is a cached copy of the Mso99LSmartBitmapTable.h, don't modify manually. 
+	Run UpdateStyleRes.bat to update this file, along with all the SmartBitmaps   
+------------------------------------------------------------------------------*/ 
+/*****************************************************************************
+	Mso99LSmartBitmapTable.h
+
+	SmartBitmap definitions.  This file is processed by nuicl.exe and is
+	included into multiple other files.
+
+	DETAILS:
+	SmartBitmap entries (NUI_SB) give a name and information about how
+	to render the bitmap.  The bitmap must exist in %mso%\nui\styleres
+	as Name.png.
+
+	If this bitmap should render in low-color and high contrast
+	modes then a bitmap should exist in the same directory named Name-Low.bmp.
+	This bitmap should be a 256 indexed color bitmap.  The first 30 colors
+	are remapped to system colors (COLOR_SCROLLBAR .. COLOR_MENUBAR).
+	If a low color version of this bitmap does not exist then it will not
+	be rendered in low color and high contrast modes.
+
+	Alternate themes can be defined in NUISmartBitmapThemes.h.  If
+	a bitmap with the name Name.Theme.png exists then it will be used when
+	that theme is active otherwise the original bitmap will be rendered.
+
+	Copyright (c) Microsoft Corporation. All rights reserved.
+*****************************************************************************/
+
+//
+// Scaling Sets
+// It is possible to have a set of bitmaps which represent the same image at different sizes (similar to tcid icons).
+// Each of these bitmaps can have different nine-grid margins, etc, which describe how it is drawn.
+// Scaling sets should be placed in the SmartBitmap table sorted from largest to smallest in consecutive order.
+// The last bitmap in the set (the smallest or single bitmap sets) should have the "Smallest In Scaling Set" column set to true.
+//
+
+#ifdef NUI_SB
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Common Controls                       NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( FsButton,                            7,       3,    10,    3,    11,        true,       true,     true,     false,     false,         true   )
+NUI_SB( FsCheckbox_192,                     12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( FsCheckbox_144,                     12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( FsCheckbox_120,                     12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( FsCheckbox,                         12,       0,     0,    0,     0,       false,      false,     true,      true,     false,         true   )
+NUI_SB( FsComboDropButton,                   5,       7,     9,    7,    10,        true,       true,     true,     false,      true,         true   )
+NUI_SB( FsLargeSplitContentButton,           8,      21,    19,   21,    19,        true,       true,     true,     false,     false,         true   )
+NUI_SB( FsLargeSplitDropButton,              7,      21,    11,   21,    15,        true,       true,     true,     false,     false,         true   )
+NUI_SB( FsSplitContentWithLabel,             7,       2,     2,    2,     2,        true,       true,     true,     false,      true,         true   )
+NUI_SB( FsSplitDropButton,                   7,       5,     9,    5,    12,        true,       true,     true,     false,      true,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Icons                                 NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( FsDialogLauncher_192,                6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsDialogLauncher_144,                6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsDialogLauncher_120,                6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsDialogLauncher,                    6,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsMDIHelpButton_144,                 6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIHelpButton_120,                 6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIHelpButton,                     6,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsChevronGlyph_192,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsChevronGlyph_144,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsChevronGlyph_120,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsChevronGlyph,                      4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsMDIPushPinButton_192,              4,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIPushPinButton_144,              4,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIPushPinButton_120,              4,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIPushPinButton,                  4,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsMDIPushPinButtonLight,             6,       0,     0,    0,     0,        true,      false,     true,      true,      true,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// QAT                                   NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( FsButtonQATChunk,                    3,       4,     3,    3,     4,        true,       true,     true,     false,     false,         true   )
+NUI_SB( FsCustomizeWidget_192,               4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsCustomizeWidget_144,               4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsCustomizeWidget_120,               4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsCustomizeWidget,                   4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsQATMoreItems_192,                  4,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsQATMoreItems_144,                  4,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsQATMoreItems_120,                  4,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsQATMoreItems,                      4,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Arrows                                NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( ArrowCollapsedHover_192,             1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowCollapsedHover_144,             1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowCollapsedHover_120,             1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowCollapsedHover,                 1,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( ArrowCollapsedRest_192,              1,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( ArrowCollapsedRest_144,              1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowCollapsedRest_120,              1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowCollapsedRest,                  1,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( ArrowExpandedHover_192,              1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowExpandedHover_144,              1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowExpandedHover_120,              1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowExpandedHover,                  1,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( ArrowExpandedRest_192,               1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowExpandedRest_144,               1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowExpandedRest_120,               1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowExpandedRest,                   1,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( ArrowsSelectable_192,                8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowsSelectable_144,                8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowsSelectable_120,                8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowsSelectable,                    8,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( CallArrowCollapsedHover_192,         1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowCollapsedHover_144,         1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowCollapsedHover_120,         1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowCollapsedHover,             1,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( CallArrowCollapsedRest_192,          1,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CallArrowCollapsedRest_144,          1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowCollapsedRest_120,          1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowCollapsedRest,              1,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( CallArrowExpandedHover_192,          1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowExpandedHover_144,          1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowExpandedHover_120,          1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowExpandedHover,              1,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( CallArrowExpandedRest_192,           1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowExpandedRest_144,           1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowExpandedRest_120,           1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowExpandedRest,               1,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// App Frame                             NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( FsAppFrameHelper,                    1,       0,     6,    0,     2,       false,       true,     true,     false,      true,         true   )
+NUI_SB( FsAppFrameHelperInactive,            1,       0,     6,    0,     2,       false,       true,     true,     false,      true,         true   )
+NUI_SB( FsFrameCloseButtonLarge,             7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameCloseButton,                  7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameCloseButtonSmall,             7,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsFrameMaximizeButtonLarge,          7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameMaximizeButton,               7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameMaximizeButtonSmall,          7,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsFrameMinimizeButtonLarge,          7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameMinimizeButton,               7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameMinimizeButtonSmall,          7,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsFrameRestoreButtonLarge,           7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameRestoreButton,                7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameRestoreButtonSmall,           7,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// MDI                                   NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( FsMDICloseGlyph_192,                 5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDICloseGlyph_144,                 5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDICloseGlyph_120,                 5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDICloseGlyph,                     5,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsMDIRestoreGlyph_192,               5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDIRestoreGlyph_144,               5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDIRestoreGlyph_120,               5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDIRestoreGlyph,                   5,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsMDIMinimizeGlyph_192,              5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDIMinimizeGlyph_144,              5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDIMinimizeGlyph_120,              5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDIMinimizeGlyph,                  5,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsMDIHelpGlyph_192,                  5,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIHelpGlyph_144,                  5,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIHelpGlyph_120,                  5,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIHelpGlyph,                      5,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Menus                                 NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( MenuArrow_192,                       4,       0,     0,    0,     0,        true,      false,    false,     false,      true,        false   )
+NUI_SB( MenuArrow_144,                       4,       0,     0,    0,     0,        true,      false,    false,     false,      true,        false   )
+NUI_SB( MenuArrow_120,                       4,       0,     0,    0,     0,        true,      false,    false,     false,      true,        false   )
+NUI_SB( MenuArrow,                           4,       0,     0,    0,     0,        true,      false,    false,     false,      true,         true   )
+NUI_SB( MenuChecksExtraLarge,                2,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( MenuChecksLarge,                     2,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( MenuChecks,                          2,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( MenuItemContent,                     4,       4,     9,    4,    12,        true,       true,     true,     false,      true,         true   )
+NUI_SB( MenuToggleBoxes,                     2,       2,     2,    2,     2,        true,       true,     true,     false,     false,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Galleries                             NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( InRibbonGalleryDropdownArrowTouch_192,4,      0,     0,    0,     0,       false,      false,     true,     false,      true,        false   )
+NUI_SB( InRibbonGalleryDropdownArrowTouch_144,4,      0,     0,    0,     0,       false,      false,     true,     false,      true,        false   )
+NUI_SB( InRibbonGalleryDropdownArrowTouch_120,4,      0,     0,    0,     0,       false,      false,     true,     false,      true,        false   )
+NUI_SB( InRibbonGalleryDropdownArrowTouch,   4,       0,     0,    0,     0,       false,      false,     true,     false,      true,         true   )
+NUI_SB( InRibbonGalleryDropdownArrow_192,    7,       0,     0,    0,     0,        true,      false,     true,     false,      true,        false   )
+NUI_SB( InRibbonGalleryDropdownArrow_144,    7,       0,     0,    0,     0,        true,      false,     true,     false,      true,        false   )
+NUI_SB( InRibbonGalleryDropdownArrow_120,    7,       0,     0,    0,     0,        true,      false,     true,     false,      true,        false   )
+NUI_SB( InRibbonGalleryDropdownArrow,        7,       0,     0,    0,     0,        true,      false,     true,     false,      true,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Notifications                         NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( MbMessageBarCloseButton_144,         4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( MbMessageBarCloseButton_120,         4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( MbMessageBarCloseButton,             4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Status Bar                            NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( SbBg,                                1,       0,     0,    0,     0,       false,      false,     true,     false,     false,         true   )
+NUI_SB( SbGroupBtnSingle,                    4,       2,     2,    2,     2,        true,       true,     true,     false,      true,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Office Start UX                       NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( FsExpandCollapseDown_192,            6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsExpandCollapseDown_144,            6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsExpandCollapseDown_120,            6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsExpandCollapseDown,                6,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsExpandCollapseUp_144,              6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsExpandCollapseUp_120,              6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsExpandCollapseUp,                  6,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsExpandCollapseLeft_192,            6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsExpandCollapseLeft_144,            6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsExpandCollapseLeft_120,            6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsExpandCollapseLeft,                6,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsExpandCollapseRight_192,           6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsExpandCollapseRight_144,           6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsExpandCollapseRight_120,           6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsExpandCollapseRight,               6,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Work Pane                             NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( WpCheckbox_192,                     12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( WpCheckbox_144,                     12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( WpCheckbox_120,                     12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( WpCheckbox,                         12,       0,     0,    0,     0,       false,      false,     true,      true,     false,         true   )
+NUI_SB( WpRadiobutton_192,                   8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( WpRadiobutton_144,                   8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( WpRadiobutton_120,                   8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( WpRadiobutton,                       8,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Callout                               NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( CallCheckbox_192,                   12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( CallCheckbox_144,                   12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( CallCheckbox_120,                   12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( CallCheckbox,                       12,       0,     0,    0,     0,       false,      false,     true,      true,     false,         true   )
+NUI_SB( CallCloseButton_192,                 6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CallCloseButton_144,                 6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CallCloseButton_120,                 6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CallCloseButton,                     6,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( CallRadiobutton_192,                 8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallRadiobutton_144,                 8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallRadiobutton_120,                 8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallRadiobutton,                     8,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Miscellaneous                         NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( CbCloseButton_144,                   6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CbCloseButton_120,                   6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CbCloseButton,                       6,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( CbMenuButton_144,                    6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CbMenuButton_120,                    6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CbMenuButton,                        6,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( SelectionCaret,                      2,       2,     2,    2,     2,        true,       true,     true,     false,     false,         true   )
+NUI_SB( SelectionCaret_Outlook,              2,       2,     2,    2,     2,        true,       true,     true,     false,     false,         true   )
+NUI_SB( STConceptMarker_192,                 1,       0,     0,    0,     0,        true,      false,     true,      true,     false,        false   )
+NUI_SB( STConceptMarker_144,                 1,       0,     0,    0,     0,        true,      false,     true,      true,     false,        false   )
+NUI_SB( STConceptMarker_120,                 1,       0,     0,    0,     0,        true,      false,     true,      true,     false,        false   )
+NUI_SB( STConceptMarker,                     1,       0,     0,    0,     0,        true,      false,     true,      true,     false,         true   )
+NUI_SB( WpDivider,                           1,      60,     1,   59,     0,        true,       true,     true,     false,      true,         true   )
+NUI_SB( WpDottedDivider,                     2,       0,     0,    0,     0,        true,       true,    false,     false,     false,         true   )
+NUI_SB( WpButton,                            6,      10,    10,   10,    10,        true,       true,     true,     false,     false,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Outspace                              NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( OsDropdown,                          5,       5,     9,    5,    11,        true,       true,     true,     false,      true,         true   )
+NUI_SB( OsRadiobutton, 8, 0, 0, 0, 0, true, false, false, true, true, true)
+NUI_SB( OsRadiobutton_120,                   8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( OsRadiobutton_144,                   8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( OsRadiobutton_196,                   8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( OsPlaceDividerLine,                  1,       0,   107,    0,   107,        true,       true,     true,     false,      true,         true   )
+NUI_SB( OsProgressDots_192,                 50,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( OsProgressDots,                     50,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( OsProgressDotsSmall_192,            50,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( OsProgressDotsSmall,                50,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Quicklink                             NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( QuickLinkArrow_192,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkArrow_144,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkArrow_120,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkArrow,                      4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( QuickLinkEmail_192,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkEmail_144,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkEmail_120,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkEmail,                      4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( QuickLinkInstantMessage_192,         4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkInstantMessage_144,         4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkInstantMessage_120,         4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkInstantMessage,             4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( QuickLinkPhone_192,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkPhone_144,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkPhone_120,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkPhone,                      4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( QuickLinkVideoCall_192,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkVideoCall_144,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkVideoCall_120,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkVideoCall,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+
+//                                                  |-Nine-grid margins-------|                                  Keep Aspect               Smallest In
+// Overrides                             NumFrames   Left   Top  Right  Bottom   fAlphaBlend  fNineGrid fStretch    Ratio    fFlipInRTL    Scaling Set
+NUI_SB( ArrowCollapsedHover_120_OLK,         1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowCollapsedHover_144_OLK,         1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowCollapsedHover_192_OLK,         1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowCollapsedHover_OLK,             1,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( ArrowExpandedHover_120_OLK,          1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowExpandedHover_144_OLK,          1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowExpandedHover_192_OLK,          1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( ArrowExpandedHover_OLK,              1,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( CallArrowCollapsedHover_120_OLK,     1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowCollapsedHover_144_OLK,     1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowCollapsedHover_192_OLK,     1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowCollapsedHover_OLK,         1,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( CallArrowExpandedHover_120_OLK,      1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowExpandedHover_144_OLK,      1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowExpandedHover_192_OLK,      1,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallArrowExpandedHover_OLK,          1,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( CallCheckbox_120_OLK,               12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( CallCheckbox_144_OLK,               12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( CallCheckbox_192_OLK,               12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( CallCheckbox_OLK,                   12,       0,     0,    0,     0,       false,      false,     true,      true,     false,         true   )
+NUI_SB( CallCloseButton_120_OLK,             6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CallCloseButton_144_OLK,             6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CallCloseButton_192_OLK,             6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CallCloseButton_OLK,                 6,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( CallRadiobutton_120_OLK,             8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallRadiobutton_144_OLK,             8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallRadiobutton_192_OLK,             8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( CallRadiobutton_OLK,                 8,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( CbCloseButton_120_OLK,               6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CbCloseButton_144_OLK,               6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CbCloseButton_OLK,                   6,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( CbMenuButton_120_OLK,                6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CbMenuButton_144_OLK,                6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( CbMenuButton_OLK,                    6,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsButton_OLK,                        7,       3,    10,    3,    11,        true,       true,     true,     false,     false,         true   )
+NUI_SB( FsButtonQATChunk_OLK,                3,       4,     3,    3,     4,        true,       true,     true,     false,     false,         true   )
+NUI_SB( FsCheckbox_120_OLK,                 12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( FsCheckbox_144_OLK,                 12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( FsCheckbox_192_OLK,                 12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( FsCheckbox_OLK,                     12,       0,     0,    0,     0,       false,      false,     true,      true,     false,         true   )
+NUI_SB( FsComboDropButton_OLK,               5,       7,     9,    7,    10,        true,       true,     true,     false,      true,         true   )
+NUI_SB( FsFrameHelpGlyph_192_OLK,            5,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsFrameHelpGlyph_144_OLK,            5,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsFrameHelpGlyph_120_OLK,            5,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsFrameHelpGlyph_OLK,                5,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsMDICloseGlyph_192_OLK,             5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDICloseGlyph_144_OLK,             5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDICloseGlyph_120_OLK,             5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDICloseGlyph_OLK,                 5,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsMDIHelpGlyph_192_OLK,              5,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIHelpGlyph_144_OLK,              5,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIHelpGlyph_120_OLK,              5,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIHelpGlyph_OLK,                  5,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsMDIMinimizeGlyph_192_OLK,          5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDIMinimizeGlyph_144_OLK,          5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDIMinimizeGlyph_120_OLK,          5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDIMinimizeGlyph_OLK,              5,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsMDIRestoreGlyph_192_OLK,           5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDIRestoreGlyph_144_OLK,           5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDIRestoreGlyph_120_OLK,           5,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsMDIRestoreGlyph_OLK,               5,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsLargeSplitContentButton_OLK,       8,      21,    19,   21,    19,        true,       true,     true,     false,     false,         true   )
+NUI_SB( FsLargeSplitDropButton_OLK,          7,      21,    11,   21,    15,        true,       true,     true,     false,     false,         true   )
+NUI_SB( FsSplitContentWithLabel_OLK,         7,       2,     2,    2,     2,        true,       true,     true,     false,      true,         true   )
+NUI_SB( FsSplitDropButton_OLK,               7,       5,     9,    5,    12,        true,       true,     true,     false,      true,         true   )
+NUI_SB( GalleryScrollArrowDown_192_OLK,      7,       0,     0,    0,     0,        true,      false,     true,     false,      true,        false   )
+NUI_SB( GalleryScrollArrowDown_144_OLK,      7,       0,     0,    0,     0,        true,      false,     true,     false,      true,        false   )
+NUI_SB( GalleryScrollArrowDown_120_OLK,      7,       0,     0,    0,     0,        true,      false,     true,     false,      true,        false   )
+NUI_SB( GalleryScrollArrowDown_OLK,          7,       0,     0,    0,     0,        true,      false,     true,     false,      true,         true   )
+NUI_SB( GalleryScrollArrowUp_192_OLK,        4,       0,     0,    0,     0,        true,      false,     true,     false,      true,        false   )
+NUI_SB( GalleryScrollArrowUp_144_OLK,        4,       0,     0,    0,     0,        true,      false,     true,     false,      true,        false   )
+NUI_SB( GalleryScrollArrowUp_120_OLK,        4,       0,     0,    0,     0,        true,      false,     true,     false,      true,        false   )
+NUI_SB( GalleryScrollArrowUp_OLK,            4,       0,     0,    0,     0,        true,      false,     true,     false,      true,         true   )
+NUI_SB( InRibbonGalleryDropdownArrowTouch_192_OLK,4,  0,     0,    0,     0,       false,      false,     true,     false,      true,        false   )
+NUI_SB( InRibbonGalleryDropdownArrowTouch_144_OLK,4,  0,     0,    0,     0,       false,      false,     true,     false,      true,        false   )
+NUI_SB( InRibbonGalleryDropdownArrowTouch_120_OLK,4,  0,     0,    0,     0,       false,      false,     true,     false,      true,        false   )
+NUI_SB( InRibbonGalleryDropdownArrowTouch_OLK,4,      0,     0,    0,     0,       false,      false,     true,     false,      true,         true   )
+NUI_SB( InRibbonGalleryDropdownArrow_192_OLK,7,       0,     0,    0,     0,        true,      false,     true,     false,      true,        false   )
+NUI_SB( InRibbonGalleryDropdownArrow_144_OLK,7,       0,     0,    0,     0,        true,      false,     true,     false,      true,        false   )
+NUI_SB( InRibbonGalleryDropdownArrow_120_OLK,7,       0,     0,    0,     0,        true,      false,     true,     false,      true,        false   )
+NUI_SB( InRibbonGalleryDropdownArrow_OLK,    7,       0,     0,    0,     0,        true,      false,     true,     false,      true,         true   )
+NUI_SB( MenuItemContent_OLK,                 4,       4,     9,    4,    12,        true,       true,     true,     false,      true,         true   )
+NUI_SB( MenuToggleBoxes_OLK,                 2,       2,     2,    2,     2,        true,       true,     true,     false,     false,         true   )
+NUI_SB( OsRadiobutton_120_OLK,               8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( OsRadiobutton_144_OLK,               8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( OsRadiobutton_196_OLK,               8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( OsRadiobutton_OLK,                   8,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( QuickLinkArrow_OLK,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( QuickLinkArrow_OLK_120,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkArrow_OLK_144,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkArrow_OLK_192,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkEmail_OLK,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( QuickLinkEmail_OLK_120,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkEmail_OLK_144,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkEmail_OLK_192,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkInstantMessage_OLK,         4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( QuickLinkInstantMessage_OLK_120,     4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkInstantMessage_OLK_144,     4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkInstantMessage_OLK_192,     4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkPhone_OLK,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( QuickLinkPhone_OLK_120,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkPhone_OLK_144,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkPhone_OLK_192,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkVideoCall_OLK,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( QuickLinkVideoCall_OLK_120,          4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkVideoCall_OLK_144,          4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( QuickLinkVideoCall_OLK_192,          4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( SbBg_OLK,                            1,       0,     0,    0,     0,       false,      false,     true,     false,     false,         true   )
+NUI_SB( SbGroupBtnSingle_OLK,                4,       2,     2,    2,     2,        true,       true,     true,     false,      true,         true   )
+NUI_SB( WpButton_OLK,                        6,      10,    10,   10,    10,        true,       true,     true,     false,     false,         true   )
+NUI_SB( WpCheckbox_120_OLK,                 12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( WpCheckbox_144_OLK,                 12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( WpCheckbox_192_OLK,                 12,       0,     0,    0,     0,       false,      false,     true,      true,     false,        false   )
+NUI_SB( WpCheckbox_OLK,                     12,       0,     0,    0,     0,       false,      false,     true,      true,     false,         true   )
+NUI_SB( WpLabelButton_OLK,                   7,       3,    10,    3,    11,        true,       true,     true,     false,     false,         true   )
+NUI_SB( WpRadiobutton_120_OLK,               8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( WpRadiobutton_144_OLK,               8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( WpRadiobutton_192_OLK,               8,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( WpRadiobutton_OLK,                   8,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsDialogLauncher_192_OLK,            6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsDialogLauncher_144_OLK,            6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsDialogLauncher_120_OLK,            6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsDialogLauncher_OLK,                6,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsMDIHelpButton_144_OLK,             6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIHelpButton_120_OLK,             6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIHelpButton_OLK,                 6,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsChevronGlyph_192_OLK,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsChevronGlyph_144_OLK,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsChevronGlyph_120_OLK,              4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsChevronGlyph_OLK,                  4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsMDIPushPinButton_192_OLK,          4,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIPushPinButton_144_OLK,          4,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIPushPinButton_120_OLK,          4,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsMDIPushPinButton_OLK,              4,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsCustomizeWidget_192_OLK,           4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsCustomizeWidget_144_OLK,           4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsCustomizeWidget_120_OLK,           4,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsCustomizeWidget_OLK,               4,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsQATMoreItems_192_OLK,              4,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsQATMoreItems_144_OLK,              4,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsQATMoreItems_120_OLK,              4,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsQATMoreItems_OLK,                  4,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsExpandCollapseDown_192_OLK,        6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsExpandCollapseDown_144_OLK,        6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsExpandCollapseDown_120_OLK,        6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsExpandCollapseDown_OLK,            6,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsExpandCollapseLeft_192_OLK,        6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsExpandCollapseLeft_144_OLK,        6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsExpandCollapseLeft_120_OLK,        6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsExpandCollapseLeft_OLK,            6,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsExpandCollapseRight_192_OLK,       6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsExpandCollapseRight_144_OLK,       6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsExpandCollapseRight_120_OLK,       6,       0,     0,    0,     0,        true,      false,    false,      true,      true,        false   )
+NUI_SB( FsExpandCollapseRight_OLK,           6,       0,     0,    0,     0,        true,      false,    false,      true,      true,         true   )
+NUI_SB( FsExpandCollapseUp_144_OLK,          6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsExpandCollapseUp_120_OLK,          6,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsExpandCollapseUp_OLK,              6,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsFrameCloseButtonLarge_OLK,         7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameCloseButton_OLK,              7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameCloseButtonSmall_OLK,         7,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsFrameMaximizeButtonLarge_OLK,      7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameMaximizeButton_OLK,           7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameMaximizeButtonSmall_OLK,      7,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsFrameMinimizeButtonLarge_OLK,      7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameMinimizeButton_OLK,           7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameMinimizeButtonSmall_OLK,      7,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+NUI_SB( FsFrameRestoreButtonLarge_OLK,       7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameRestoreButton_OLK,            7,       0,     0,    0,     0,        true,      false,    false,      true,     false,        false   )
+NUI_SB( FsFrameRestoreButtonSmall_OLK,       7,       0,     0,    0,     0,        true,      false,    false,      true,     false,         true   )
+
+#endif //NUI_SB

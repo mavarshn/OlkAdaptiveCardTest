@@ -1,0 +1,110 @@
+<FlexML>
+	<DeclareCustomConcept Name="PathSelection" Base="Concept" />
+
+	<Style ID="CustomStyle" Src="#DialogView">
+
+		<BreadCrumbBar
+		  ExpandToFillVert="True"
+		  accessibleRole="LIST"
+		  accessibleState="NORMAL"
+		  accessibledefaultAction="Press"/>
+
+		<Element Class="BreadCrumbContainer"
+		   isAccessible="true"
+		   accessibleRole="LISTITEM"
+		   accessibleState="Focusable"
+		   accessibledefaultAction="Press"/>
+
+		<Element Class="BreadCrumbBarSeparator"
+		   Background="-1"
+		   expandtofillvert="true"
+		   expandtofillhoriz="true"
+		   text="*Graphic(SmartBitmapId=sbidMenuArrow_120)"
+		   border="none"
+		   isAccessible="true"
+		   accessibleName="Separator"
+		   accessibleRole="LISTITEM"
+		   accessibleState="UNAVAILABLE"
+		   padding="0,5,0,5"/>
+
+		<Label Class="FormatLabel"
+			   width="0"
+			   fontsize="8"/>
+
+		<Label Class="BreadCrumbBarSubLabel"
+		  isAccessible="false"
+		  fontsize="8"
+		  border="none"
+		  background="none"
+		  TextAlign="MiddleRight|endEllipsis|ExpandtoNaturalWidth"/>
+
+		<Image Class="HomePicture"
+		 isAccessible="false"
+		 border="none"
+		 background="none"
+		 Src="*Graphic(Filename=BreadCrumbHome.bmp)"
+		 TextAlign="MiddleRight|endEllipsis|ExpandtoNaturalWidth"
+		 Expandtofillvert="true"
+	 />
+
+		<BreadCrumbButton
+			isAccessible="true"
+			accessibleRole="LISTITEM"
+			accessibleState="Focusable"
+			accessibledefaultAction="Press"
+			CrossFadeDuration="0"
+			expandtofillvert="true"
+			border="none"
+			Background="*Graphic(SmartBitmapId=sbidFsButton)"
+			BackgroundFrame="-1"
+			Foreground="msocbvcrRBCtlText"
+			padding = "5,5,5,5"/>
+
+
+		<BreadCrumbButton condition="ControlState == Button.Hover"
+		   BackgroundFrame="0"
+		   Foreground="msocbvcrRBCtlTextMouseOver"/>
+
+		<BreadCrumbButton condition="ControlState == Button.Selected.Hover"
+				BackgroundFrame="3"
+				Foreground="msocbvcrRBCtlTextMouseOver"/>
+
+		<BreadCrumbButton condition="ControlState == Button.Pressed"
+				BackgroundFrame="1"
+				Foreground="msocbvcrRBCtlTextMouseDown"/>
+
+		<BreadCrumbButton  condition="ControlState == Button.Selected.Pressed"
+		  BackgroundFrame="2"
+		  Foreground="msocbvcrRBCtlTextMouseDown"/>
+
+		<BreadCrumbButton condition="ControlState == Button.Selected"
+				BackgroundFrame="2"
+				Foreground="msocbvcrRBCtlTextSelected"/>
+
+		<BreadCrumbButton condition="ControlState == Button.Selected.Disabled"
+				BackgroundFrame="2"
+				Foreground="msocbvcrRBCtlTextSelected"/>
+
+		<PathSelection>
+			<Node.StyleTree>
+				<element layoutchildren="vertical" background ="silver" borderthickness="2,2,2,2" borderstyle="1" expandtofillhoriz="true">
+					<element layoutchildren="horizontal" expandtofillvert="true">
+						<element expandtofillvert="true" alignchildren="center">
+							<button text="{-"/>
+							<button text="-}"/>
+						</element>
+						<label class="FormatLabel"
+							   text="FormattingPurposes"/>
+						<breadcrumbbar ID="t" path="*Bind(Property=Label;BindType=TwoWay)"/>
+					</element>
+					<textbox Target="t" text="*Bind(Property=Label)" expandtofillhoriz="true"/>
+				</element>
+			</Node.StyleTree>
+		</PathSelection>
+	</Style>
+
+	<DialogView Sheet="#CustomStyle">
+		<PathSelection Label="\Home\Office\Templates\MyTemplates\Download"/>
+	</DialogView>
+
+</FlexML>

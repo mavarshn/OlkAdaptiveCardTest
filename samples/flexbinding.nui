@@ -1,0 +1,41 @@
+<netuixml>
+	<customProperty name="ExpandoText" />
+
+	<style id="s">
+		<node id="root" class="default">
+			<Node.StyleTree>
+				<element layoutChildren="vertical" background="msocbvcrCBCtlBkgdMouseDown">
+					<element text="text before children"/>
+					<element layoutChildren="vertical" Children="*Bind(Property=Children)"/>
+					<element text="text after children"/>
+				</element>
+			</Node.StyleTree>
+		</node>
+		<node id="root" class="pretty">
+			<Node.StyleTree>
+				<element layoutChildren="table" rows="3" cols="3" background="gradient(msocbvcrCBGradVertBegin,msocbvcrCBGradVertEnd,vertical)" Children="*Bind(Property=Children)"/>
+			</Node.StyleTree>
+		</node>
+		<node id="root" class="nostyletree">
+			<Node.StyleTree>
+			</Node.StyleTree>
+		</node>
+		<node id="child">
+			<Node.StyleTree>
+				<element Text="*Bind(Property=Text)"/>
+			</Node.StyleTree>
+		</node>
+		<node id="edit_child">
+			<Node.StyleTree>
+				<textbox text="*Bind(Property=Text; BindType=TwoWay)" expandToFitString="0123456789012345"/>
+			</Node.StyleTree>
+		</node>
+	</style>
+	<node sheet="#s" id="root" class="default">
+		<node id="child" text="Child 1" />
+		<node id="child" text="Child 2" />
+		<node id="child" text="Child 3" />
+		<node id="child" text="*Bind(Property=hszStyleClickType; BindType=OneWay)" />
+		<node id="edit_child" text="*Bind(Property=hszStyleClickType; BindType=TwoWay)"/>
+	</node>
+</netuixml>

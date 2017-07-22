@@ -1,0 +1,32 @@
+<DialogView>
+
+	<Category Label="Horizontal Gallery">
+
+		<Gallery 
+			Layout="vertical" 
+			Label="Horizontal, items, filters, commands" 
+			IsFilterVisible="true"
+			>
+
+			<Gallery.Items>
+				<GalleryItem Label="ITEM 1" TextPosition="right" TextPercentImage="200" ImageSource=":bitmap() light.bmp" />
+				<GalleryItem Label="ITEM 2" TextPosition="right" TextPercentImage="200" ImageSource=":bitmap() light.bmp"/>
+				<GalleryItem Label="ITEM 3" TextPosition="right" TextPercentImage="200" ImageSource=":bitmap() light.bmp"/>
+				<GalleryItem Label="ITEM 4" TextPosition="right" TextPercentImage="200" ImageSource=":bitmap() light.bmp"/>
+				<GalleryItem Label="ITEM 5" TextPosition="right" TextPercentImage="200" ImageSource=":bitmap() light.bmp" MenuSrcId="#1234" />
+			</Gallery.Items>
+			<Gallery.FilterItems>
+				<GalleryFilterItem Label="Filter0" />
+				<GalleryFilterItem Label="Filter1" />
+			</Gallery.FilterItems>
+			<Gallery.Commands>
+				<ExecuteAction Label="Command 1" ImageSource=":bitmap() light.bmp" />
+				<ExecuteAction Label="Command 2" ImageSource=":bitmap() light.bmp" />
+			</Gallery.Commands>
+		</Gallery>
+
+	</Category>
+
+	
+</DialogView>
+
