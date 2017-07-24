@@ -44,7 +44,7 @@ void AdaptiveColumnSet::AddLabels(NetUI::Element* pColumn)
 {
 	if (pColumn)
 	{
-		for (int i = 0; i < 3; i++)
+		for (int i = 0; i < 2; i++)
 		{
 			NetUI::Element* pe;
 			NetUI::Label* pl;

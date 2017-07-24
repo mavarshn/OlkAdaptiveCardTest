@@ -27,17 +27,5 @@ DEPENDENTS:
 	netui\test\viewer (PASS2, 0, 100)
 PRODUCERS:
 	netui\test\viewer (Pass0, 0, 100)
-DBBAPI (dependence): Build failure detected for netui\test\viewer in PASS1
-DBBAPI (dbbincr): netui\test\viewer (PASS2): updated input=g:\off2\build\x64\debug\netui\test\viewer\objd\x64\adaptivecolumnset.obj
-DBBAPI (dbbincr): netui\test\viewer (PASS2): updated input=g:\off2\build\x64\debug\netui\test\viewer\objd\x64\viewer.obj
-DBBAPI (dbbincr): netui\test\viewer (PASS2): changed. Rebuild needed.
-Deletes for g:\off2\dev\netui\test\viewer (Pass: Pass2) 
-g:\off2\build\x64\debug\netui\test\viewer\objd\x64\_builddirinfo.pass2.mac
-g:\off2\build\x64\debug\netui\test\viewer\objd\x64\buffer.nuipp
-g:\off2\build\x64\debug\netui\test\viewer\objd\x64\buffer.nuipp0
-g:\off2\build\x64\debug\netui\test\viewer\objd\x64\errorwin.nuipp
-g:\off2\build\x64\debug\netui\test\viewer\objd\x64\errorwin.nuipp0
-g:\off2\build\x64\debug\netui\test\viewer\objd\x64\link.rsp
-g:\off2\build\x64\debug\netui\test\viewer\objd\x64\link.rsp.bak
-g:\off2\build\x64\debug\netui\test\viewer\objd\x64\ostrman.resb
-g:\off2\build\x64\debug\netui\test\viewer\objd\x64\viewer.res
+DBBAPI (dbbincr): netui\test\viewer (PASS1): updated input=g:\off2\dev\netui\test\viewer\adaptivecolumnset.cpp
+DBBAPI (dbbincr): netui\test\viewer (PASS1): outputs not affected. Rebuild not needed.

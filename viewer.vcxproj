@@ -70,9 +70,9 @@
     <IntDir>.\Debug\</IntDir>
     <NMakeBuildCommandLine>%otools%\bin\obuild.bat debug</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>%otools%\bin\obuild.bat debug full</NMakeReBuildCommandLine>
-    <NMakeOutput>netuiview.exe</NMakeOutput>
     <NMakeIncludeSearchPath>G:\Off2\dev\netui;G:\Off2\dev\netui\platform;G:\Off2\dev\otools;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
     <NMakeAssemblySearchPath>G:\Off2\dev\otools;G:\Off2\dev\netui;$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <NMakeOutput>$(TargetPath)\netuiview.exe</NMakeOutput>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <NMakeBuildCommandLine>obuild.bat debug</NMakeBuildCommandLine>

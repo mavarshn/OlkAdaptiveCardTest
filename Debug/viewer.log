@@ -8,25 +8,19 @@
   BUILD: TARGETS: X64
   BUILD: MODE: Generate Headers, Compile, Link
   BUILD: LOG: g:\off2\dev\netui\test\viewer\build.x64.debug.log
-  BUILD: Start time: Mon Jul 24 14:31:20 2017
+  BUILD: Start time: Mon Jul 24 14:56:44 2017
    
   Examining g:\off2\dev\netui\test\viewer 
   BUILD: Processing dependencies...
-  Compiling g:\off2\dev\netui\test\viewer [100%]
-  Compiling - g:\off2\dev\netui\test\viewer\adaptivecolumnset.cpp
-  Linking for g:\off2\dev\netui\test\viewer [100%]
-  Preprocessing - g:\off2\build\x64\debug\netui\test\viewer\objd\x64\buffer.nuipp
-  Preprocessing - g:\off2\build\x64\debug\netui\test\viewer\objd\x64\errorwin.nuipp
-  Compiling resources - g:\off2\dev\netui\test\viewer\viewer.rc
-  BUILD: Finish time: Mon Jul 24 14:31:36 2017
+  BUILD: Finish time: Mon Jul 24 14:56:44 2017
   BUILD: Done
   
-      5 files compiled - 1 Warning
+      0 files compiled - 1 Warning
   
   ------------------------------------------------------------------------------
-  OBUILD: Started  at Mon Jul 24 14:31:20 2017
-  OBUILD: Finished at Mon Jul 24 14:31:39 2017
+  OBUILD: Started  at Mon Jul 24 14:56:44 2017
+  OBUILD: Finished at Mon Jul 24 14:56:47 2017
   
-  OBUILD: Total Time to build was 19 Seconds
+  OBUILD: Total Time to build was 3 Seconds
   ------------------------------------------------------------------------------
   

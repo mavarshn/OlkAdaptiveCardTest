@@ -1,18 +1,18 @@
 SYSTEM RESOURCE UTILIZATION:
                                                      PASS 0           PASS 1           PASS 2           PASS 3             MISC          OVERALL
                                                   ============     ============     ============     ============     ============     ============
-Runtime                                               00:00:00         00:00:00         00:00:13         00:00:00         00:00:00         00:00:16
-\Processor Information(_Total)\% Processor Time              0               17               20                0                5               19
-\Memory\Available MBytes                                     0            27047            26992                0            27057            27000
-\Memory\Page Faults/sec                                      0            45607            22414                0             1374            22549
-\System\Threads                                              0             1458             1453                0             1438             1452
+Runtime                                               00:00:00         00:00:00         00:00:00         00:00:00         00:00:00         00:00:01
+\Processor Information(_Total)\% Processor Time              0                0                0                0                6                6
+\Memory\Available MBytes                                     0                0                0                0            27631            27631
+\Memory\Page Faults/sec                                      0                0                0                0             9258             9258
+\System\Threads                                              0                0                0                0             1558             1558
 \System\Processor Queue Length                               0                0                0                0                0                0
-\System\Context Switches/sec                                 0            19343            10821                0             8033            11179
-\PhysicalDisk(0 C: D:)\% Disk Time                           0                0                1                0                0                1
+\System\Context Switches/sec                                 0                0                0                0             4473             4473
+\PhysicalDisk(0 C: D:)\% Disk Time                           0                0                0                0                1                1
 \PhysicalDisk(1 E:)\% Disk Time                              0                0                0                0                0                0
 \PhysicalDisk(2 F:)\% Disk Time                              0                0                0                0                0                0
-\PhysicalDisk(3 G:)\% Disk Time                              0                0               35                0               33               33
-\PhysicalDisk(0 C: D:)\Avg. Disk sec/Transfer            0.000            0.000            0.002            0.000            0.000            0.002
+\PhysicalDisk(3 G:)\% Disk Time                              0                0                0                0                0                0
+\PhysicalDisk(0 C: D:)\Avg. Disk sec/Transfer            0.000            0.000            0.000            0.000            0.001            0.001
 \PhysicalDisk(1 E:)\Avg. Disk sec/Transfer               0.000            0.000            0.000            0.000            0.000            0.000
 \PhysicalDisk(2 F:)\Avg. Disk sec/Transfer               0.000            0.000            0.000            0.000            0.000            0.000
-\PhysicalDisk(3 G:)\Avg. Disk sec/Transfer               0.000            0.000            0.006            0.000            0.014            0.006
+\PhysicalDisk(3 G:)\Avg. Disk sec/Transfer               0.000            0.000            0.000            0.000            0.000            0.000
