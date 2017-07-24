@@ -75,6 +75,7 @@ namespace NetUI
 #include <msotb.h>
 #include <msoapp/appinfo.h>
 #include <UIColor/CBVisuals.h>
+#include "AdaptiveColumnSet.h"
 
 /* Allow MSO clients without a toolbar set to update MSO's system colors on their
 WM_SYSCOLORCHANGE handler */
@@ -2058,6 +2059,20 @@ void RefreshFile()
 		pElem->SetKeyFocus(ESCR_OTHER, false/*fSetWindowFocus*/);
 }
 
+void RefreshNetUI()
+{
+	if (g_pDocument)
+	{
+		Element *peRoot = g_pDocument->GetRootElement();
+
+		if (peRoot)
+		{
+			std::shared_ptr<AdaptiveColumnSet> spAdaptiveColumnSet = std::make_shared<AdaptiveColumnSet>();
+			spAdaptiveColumnSet->AddColumnSet(peRoot);
+		}
+	}
+}
+
 /*-----------------------------------------------------------------------------
 	%%Owner:  MCrider
 	%%Id:  cb56f620-dbb6-426b-81d9-bfa65dca37df
@@ -3550,6 +3565,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			}
 		case ID_ACCELREFRESH:
 			RefreshFile();
+			break;
+		case IDM_REFRESH_NETUI:
+			RefreshNetUI();
 			break;
 		case IDM_VIEWSOURCE:
 		case ID_ACCELVIEWSOURCE:

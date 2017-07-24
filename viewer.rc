@@ -146,7 +146,11 @@ BEGIN
     BEGIN
         MENUITEM "&About ...",                  IDM_ABOUT
     END
-	MENUITEM "Errors in File!",                 IDM_SHOWERRORS
+	POPUP "&OlkTest"
+	BEGIN
+		MENUITEM "&RefreshNETUI"				IDM_REFRESH_NETUI
+END
+MENUITEM "Errors in File!",                 IDM_SHOWERRORS
 END
 
 
@@ -157,16 +161,17 @@ END
 
 IDC_VIEWER ACCELERATORS MOVEABLE PURE
 BEGIN
-    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
-    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
-    "B",            ID_ACCELBUFFER,         VIRTKEY, CONTROL, NOINVERT
+"/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+"?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+"B",            ID_ACCELBUFFER,         VIRTKEY, CONTROL, NOINVERT
 //    "D",            IDM_FORCE_DPI,          VIRTKEY, CONTROL, NOINVERT
-    "E",            ID_ACCELERRORS,         VIRTKEY, CONTROL, NOINVERT
-    "G",            IDM_INITGDIPLUS,        VIRTKEY, CONTROL, NOINVERT
-    "O",            ID_ACCELOPEN,           VIRTKEY, CONTROL, NOINVERT
-    "V",            ID_ACCELVIEWSOURCE,     VIRTKEY, CONTROL, NOINVERT
-    VK_F5,          ID_ACCELREFRESH,        VIRTKEY, NOINVERT
-    VK_PAUSE,       ID_ACCELPAUSE,          VIRTKEY, NOINVERT
+"E",            ID_ACCELERRORS,         VIRTKEY, CONTROL, NOINVERT
+"G",            IDM_INITGDIPLUS,        VIRTKEY, CONTROL, NOINVERT
+"O",            ID_ACCELOPEN,           VIRTKEY, CONTROL, NOINVERT
+"V",            ID_ACCELVIEWSOURCE,     VIRTKEY, CONTROL, NOINVERT
+VK_F5,          ID_ACCELREFRESH,        VIRTKEY, NOINVERT
+VK_F6,          IDM_REFRESH_NETUI,      VIRTKEY, NOINVERT
+VK_PAUSE,       ID_ACCELPAUSE,          VIRTKEY, NOINVERT
 END
 
 
@@ -179,28 +184,28 @@ END
 #define SZVERSIONFC(r1,r2,r3,r4) SZIT(r1.r2.r3.r4)
 
 #if rpr > 1999
-	#define BUILD_SOURCE	"PR Build by:"
-	#if defined(szVerUser)
-		#define FC_BUILD_INFO szVerUser
-	#else
-		#define FC_BUILD_INFO "Unknown user"
-	#endif
-#elif rpr > 999
-	#define BUILD_SOURCE	"Feature Crew:"
-	#if defined(szVerFCName)
-		#define FC_BUILD_INFO szVerFCName
-	#else
-		#define FC_BUILD_INFO "Unknown Feature Crew"
-	#endif
+#define BUILD_SOURCE	"PR Build by:"
+#if defined(szVerUser)
+#define FC_BUILD_INFO szVerUser
 #else
-	#define BUILD_SOURCE "Built by:"
-	#define FC_BUILD_INFO "Office Build Lab"
+#define FC_BUILD_INFO "Unknown user"
+#endif
+#elif rpr > 999
+#define BUILD_SOURCE	"Feature Crew:"
+#if defined(szVerFCName)
+#define FC_BUILD_INFO szVerFCName
+#else
+#define FC_BUILD_INFO "Unknown Feature Crew"
+#endif
+#else
+#define BUILD_SOURCE "Built by:"
+#define FC_BUILD_INFO "Office Build Lab"
 #endif
 
 #if DEBUG
-	#define APP_NAME_AND_FLAVOR "NetUI/FlexUI Viewer (Debug)"
+#define APP_NAME_AND_FLAVOR "NetUI/FlexUI Viewer (Debug)"
 #else
-	#define APP_NAME_AND_FLAVOR "NetUI/FlexUI Viewer (Ship)"
+#define APP_NAME_AND_FLAVOR "NetUI/FlexUI Viewer (Ship)"
 #endif
 
 IDD_ABOUTBOX DIALOG DISCARDABLE  22, 17, 231, 75
@@ -208,16 +213,16 @@ STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
 CAPTION "About"
 FONT 10, "MS Shell Dlg"
 BEGIN
-    ICON            IDI_SHELL,IDC_MYICON,25,15,20,20
-    LTEXT           APP_NAME_AND_FLAVOR,IDC_STATIC,64,10,138,8,SS_NOPREFIX
-    LTEXT           "Copyright (C) 2004 Microsoft Corporation",IDC_STATIC,64,
-                    21,138,8
-    LTEXT           SZVERSIONFC(rmj,rmm,rup,rpr),IDC_STATIC,64,32,138,8
-    LTEXT           FC_BUILD_INFO,IDC_STATIC,64,43,138,8
-    RTEXT           BUILD_SOURCE,IDC_STATIC,4,43,55,8
-    RTEXT           "Built:",IDC_STATIC,4,54,55,8
+ICON            IDI_SHELL,IDC_MYICON,25,15,20,20
+LTEXT           APP_NAME_AND_FLAVOR,IDC_STATIC,64,10,138,8,SS_NOPREFIX
+LTEXT           "Copyright (C) 2004 Microsoft Corporation",IDC_STATIC,64,
+21,138,8
+LTEXT           SZVERSIONFC(rmj,rmm,rup,rpr),IDC_STATIC,64,32,138,8
+LTEXT           FC_BUILD_INFO,IDC_STATIC,64,43,138,8
+RTEXT           BUILD_SOURCE,IDC_STATIC,4,43,55,8
+RTEXT           "Built:",IDC_STATIC,4,54,55,8
 
-    DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
+DEFPUSHBUTTON   "OK",IDOK,195,6,30,11,WS_GROUP
 
 END
 
@@ -230,22 +235,22 @@ END
 
 2 TEXTINCLUDE DISCARDABLE
 BEGIN
-    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
-    "#include ""windows.h""\r\n"
-    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
-    "#include ""resource.h""\r\n"
-    "\0"
+"#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+"#include ""windows.h""\r\n"
+"#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+"#include ""resource.h""\r\n"
+"\0"
 END
 
 3 TEXTINCLUDE DISCARDABLE
 BEGIN
-    "\r\n"
-    "\0"
+"\r\n"
+"\0"
 END
 
 1 TEXTINCLUDE DISCARDABLE
 BEGIN
-    "resource.h\0"
+"resource.h\0"
 END
 
 #endif    // APSTUDIO_INVOKED
@@ -275,13 +280,13 @@ IDUI_GALLERYCATEGORY_FLEXDL     UIFILE     DISCARDABLE     "GalleryCategoryDS.fl
 
 STRINGTABLE DISCARDABLE
 BEGIN
-    IDS_APP_TITLE           "NetUI XML File Viewer"
-    IDC_VIEWER              "netuiview"
+IDS_APP_TITLE           "NetUI XML File Viewer"
+IDC_VIEWER              "netuiview"
 END
 
 STRINGTABLE DISCARDABLE
 BEGIN
-    IDM_FILE_OPEN           "Open a file"
+IDM_FILE_OPEN           "Open a file"
 END
 
 #endif    // English (U.S.) resources

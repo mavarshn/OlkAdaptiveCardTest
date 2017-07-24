@@ -112,6 +112,7 @@
 #define IDM_DBG_TESTFLEXDATA            32851
 #define IDM_DGB_ADDGALLERYBINDING       32854
 #define IDM_DGB_ADDGALLERYCATBINDING    32855
+#define IDM_REFRESH_NETUI				32856
 #define IDC_STATIC                      -1
 
 // Next default values for new objects

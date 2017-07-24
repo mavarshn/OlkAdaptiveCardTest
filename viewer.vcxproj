@@ -42,9 +42,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>.\Debug\</OutDir>
     <IntDir>.\Debug\</IntDir>
-    <NMakeBuildCommandLine>obuild.bat debug</NMakeBuildCommandLine>
-    <NMakeReBuildCommandLine>obuild.bat debug full</NMakeReBuildCommandLine>
+    <NMakeBuildCommandLine>%otools%\bin\obuild.bat debug</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine>%otools%\bin\obuild.bat debug full</NMakeReBuildCommandLine>
     <NMakeOutput>netuiview.exe</NMakeOutput>
+    <NMakeIncludeSearchPath>G:\Off2\dev\netui;G:\Off2\dev\netui\platform;G:\Off2\dev\otools;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeAssemblySearchPath>G:\Off2\dev\otools;G:\Off2\dev\netui;$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>.\Release\</OutDir>
@@ -56,6 +58,7 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AdaptiveColumnSet.cpp" />
     <ClCompile Include="viewer.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +67,7 @@
     <CustomBuild Include="OfficeStyles.nui" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AdaptiveColumnSet.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

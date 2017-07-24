@@ -1,0 +1,18 @@
+SYSTEM RESOURCE UTILIZATION:
+                                                     PASS 0           PASS 1           PASS 2           PASS 3             MISC          OVERALL
+                                                  ============     ============     ============     ============     ============     ============
+Runtime                                               00:00:00         00:00:00         00:00:00         00:00:00         00:00:00         00:00:01
+\Processor Information(_Total)\% Processor Time              0                0                0                0                7                7
+\Memory\Available MBytes                                     0                0                0                0            26112            26112
+\Memory\Page Faults/sec                                      0                0                0                0             9873             9873
+\System\Threads                                              0                0                0                0             1438             1438
+\System\Processor Queue Length                               0                0                0                0                0                0
+\System\Context Switches/sec                                 0                0                0                0             4297             4297
+\PhysicalDisk(0 C: D:)\% Disk Time                           0                0                0                0                1                1
+\PhysicalDisk(1 E:)\% Disk Time                              0                0                0                0                0                0
+\PhysicalDisk(2 F:)\% Disk Time                              0                0                0                0                0                0
+\PhysicalDisk(3 G:)\% Disk Time                              0                0                0                0                0                0
+\PhysicalDisk(0 C: D:)\Avg. Disk sec/Transfer            0.000            0.000            0.000            0.000            0.002            0.002
+\PhysicalDisk(1 E:)\Avg. Disk sec/Transfer               0.000            0.000            0.000            0.000            0.000            0.000
+\PhysicalDisk(2 F:)\Avg. Disk sec/Transfer               0.000            0.000            0.000            0.000            0.000            0.000
+\PhysicalDisk(3 G:)\Avg. Disk sec/Transfer               0.000            0.000            0.000            0.000            0.000            0.000

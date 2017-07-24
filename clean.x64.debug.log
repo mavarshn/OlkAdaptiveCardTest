@@ -1,0 +1,67 @@
+LOG: g:\off2\dev\netui\test\viewer\clean.x64.debug.log
+BUILD COMMAND: G:\Off2\dev\otools\bin\build.exe  -jpath "." -j clean.x64.debug  -x64 -cleanonly -E   
+
+Start time: Mon Jul 24 13:02:37 2017
+Launching process: tracer.exe  -f:.\clean.x64.debug.trc -guid:g:\off2\dev\otools\bin\registered_data.ini -a:"-merge:g:\off2\build\x64\debug\core.build.ldg -reportconfig:g:\off2\dev\otools\bin\dbb_report_config_core.xml" /c:"buildc.exe /hideinfo " /s:localhost:28025
+1>  *************
+1>'tracer.exe  -f:.\clean.x64.debug.trc -guid:g:\off2\dev\otools\bin\registered_data.ini -a:"-merge:g:\off2\build\x64\debug\core.build.ldg -reportconfig:g:\off2\dev\otools\bin\dbb_report_config_core.xml" /c:"buildc.exe /hideinfo " /s:localhost:28025'
+1>Microsoft (R) Build Tracer [Build 10011]
+1>Copyright (C) Microsoft Corporation. All rights reserved.
+1>TRACER: Starting Realtime Build Trace File Logger 657e7022-3af6-471a-b843-bcad1b95ad31...
+1>TRACER: Enabling trace provider...
+1>Processing Build Trace File Logger 657e7022-3af6-471a-b843-bcad1b95ad31
+1>TRACER: Launching: "g:\off2\dev\otools\bin\buildc.exe /hideinfo  /hostname localhost /hostport 28025"
+BUILD: (ActiveWorkLoad)*, ElapsedTime(s),Counter,Available Memory (%),Disk I/O (ms),Disk Usage (%),CPU (%),Previous,New,Last Max,Permitted Threads,Running Threads,WorkItems (Available), WorkItems (Waiting),Pass,Priority,Directory
+BUILD: (TpSubmitQ:ALLOC) PASS:Pass Misc TICK:0
+g:\off2\dev\netui\test\viewer: oacr invalidate :debug_x64 /ignoreunknown
+BUILD: (TpSubmitQ:COMPLETE) PASS:Pass Misc WorkItem:34e2a800 TICK:0 REFCOUNT:0
+PERF: Set terminate event.
+PERF: terminating perf data collector thread.
+1>PERF: Waiting for performance monitor thread to terminate.
+TP: Threadpool cleanup.
+1>TRACER: Execute time = 1.186s
+1>TRACER: Disabling trace provider...
+1>TRACER: Stopping Build Trace File Logger 657e7022-3af6-471a-b843-bcad1b95ad31...
+1>Finalizing...
+1>Total Files = 50
+1>Total Processes = 1
+1>Total Accesses = 51
+1>Total Process time = 0.188s (Logging time = 0.036s, Detour time = 0.000s)
+1>TRACER: Launching: "g:\off2\dev\otools\bin\analyzer.exe /in:bin "g:\off2\dev\netui\test\viewer\clean.x64.debug.trc"  -merge:g:\off2\build\x64\debug\core.build.ldg -reportconfig:g:\off2\dev\otools\bin\dbb_report_config_core.xml"
+1>Microsoft (R) Build Trace Analyzer [Build 10011]
+1>Copyright (C) Microsoft Corporation. All rights reserved.
+1>Processing g:\off2\dev\otools\bin\dbb_report_config_core.xml
+1>Processing g:\off2\dev\otools\bin\dbb_report_baselines_core.xml
+1>Processing g:\off2\dev\otools\bin\dbb_exclusions.xml
+1>Processing g:\off2\dev\netui\test\viewer\clean.x64.debug.trc
+1>Trace start time: 07/24/2017 01:02:37 PM
+1>Finalizing...
+1>Total Files = 50
+1>Total Processes = 1
+1>Total Accesses = 51
+1>Parse time = 0.003s
+1>Processing g:\off2\build\x64\debug\core.build.ldg
+1>Parse time (g:\off2\build\x64\debug\core.build.ldg) = 0.013s
+1>Merge time = 0.001s
+1>Finalizing...
+1>Total Files = 21358
+1>Total Accesses = 51
+1>Analysis time = 0.009s
+1>Write time (g:\off2\build\x64\debug\core.build.ldg) = 0.026s
+1>Generating reports...
+1>Processing g:\off2\dev\otools\bin\cdg\core.build.x64.debug.cdg
+1>Finalizing...
+1>Total Files = 494322
+1>Report time (copynotouch) = 0.000s
+1>Report time (crossproject) = 0.000s
+1>Report time (multiwrite) = 0.000s
+1>Report time (readwrite) = 0.000s
+1>Report time (sdxwrite) = 0.000s
+1>Report time (sourcesdep) = 0.000s
+1>Report time = 1.489s
+1>TRACER: Analysis time = 1.673s
+TP: Threadpool cleanup.
+Finish time: Mon Jul 24 13:02:37 2017
+BUILD: Done
+
+    0 files compiled - 1 Warning
