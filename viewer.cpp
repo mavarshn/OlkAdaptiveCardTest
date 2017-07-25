@@ -328,7 +328,6 @@ int APIENTRY WinMain(HINSTANCE hInstance,
 		}
 	}
 
-
 LError:
 	NETUI_EXPORT_API_(void) NetUIUninitLiblets();
 	NetUIUninitLiblets();
@@ -2067,6 +2066,7 @@ void RefreshNetUI()
 
 		if (peRoot)
 		{
+			NetUI::AutoDeferBlock adb;
 			std::shared_ptr<AdaptiveColumnSet> spAdaptiveColumnSet = std::make_shared<AdaptiveColumnSet>();
 			spAdaptiveColumnSet->AddColumnSet(peRoot);
 		}
