@@ -75,7 +75,16 @@ namespace NetUI
 #include <msotb.h>
 #include <msoapp/appinfo.h>
 #include <UIColor/CBVisuals.h>
+
+/*********************************************************/
+// Added by srikar.
+#include <nuilabel.h>
+#include "..\AdaptiveCard\SharedAdaptiveCard.h"
+#include <fstream>
+#include <string>
 #include "AdaptiveColumnSet.h"
+
+/*********************************************************/
 
 /* Allow MSO clients without a toolbar set to update MSO's system colors on their
 WM_SYSCOLORCHANGE handler */
@@ -2071,6 +2080,12 @@ void RefreshNetUI()
 			spAdaptiveColumnSet->AddColumnSet(peRoot);
 		}
 	}
+
+	std::ifstream ifs("card.txt");
+	std::string jsonCard((std::istreambuf_iterator<char>(ifs)),
+	(std::istreambuf_iterator<char>()));
+
+	std::shared_ptr<::AdaptiveCards::AdaptiveCard> sharedAdaptiveCard = ::AdaptiveCards::AdaptiveCard::DeserializeFromString(jsonCard);
 }
 
 /*-----------------------------------------------------------------------------
