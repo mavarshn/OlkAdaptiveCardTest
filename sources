@@ -36,6 +36,7 @@ TARGETLOBS = $(TARGETLOBS) \
 TARGETLIBS=\
         $(PROJLIBDIR)\nuitest.lib          \
         $(TARGETLIBDIR)\netui.lib          \
+		$(PROJLIBDIR)\adaptivecard.lib   \
         $(TARGETLIBDIR)\FlexPackage.lib    \
         $(CORELIBDIR)\advapi32.lib         \
         $(CORELIBDIR)\user32.lib           \
