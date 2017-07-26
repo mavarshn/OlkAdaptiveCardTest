@@ -149,6 +149,7 @@ BEGIN
 	POPUP "&OlkTest"
 	BEGIN
 		MENUITEM "&RefreshNETUI"				IDM_REFRESH_NETUI
+		MENUITEM "Refresh&AdaptiveCard"			IDM_REFRESH_ADAPTIVECARD
 END
 MENUITEM "Errors in File!",                 IDM_SHOWERRORS
 END
