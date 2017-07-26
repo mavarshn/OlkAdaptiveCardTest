@@ -78,10 +78,7 @@ namespace NetUI
 
 /*********************************************************/
 // Added by srikar.
-#include <nuilabel.h>
-#include "..\OlkAdaptiveCardObjectModel\SharedAdaptiveCard.h"
-#include <fstream>
-#include <string>
+#include "AdaptiveNetUIViewer.h"
 #include "AdaptiveColumnSet.h"
 
 /*********************************************************/
@@ -2083,12 +2080,22 @@ void RefreshNetUI()
 			}
 		}
 	}
+}
 
-	std::ifstream ifs("card.txt");
-	std::string jsonCard((std::istreambuf_iterator<char>(ifs)),
-	(std::istreambuf_iterator<char>()));
+void RefreshAdaptiveCard()
+{
+	if (g_pDocument)
+	{
+		Element *peRoot = g_pDocument->GetRootElement();
 
-	std::shared_ptr<::AdaptiveCards::AdaptiveCard> sharedAdaptiveCard = ::AdaptiveCards::AdaptiveCard::DeserializeFromString(jsonCard);
+		if (peRoot)
+		{
+			Element *card = nullptr;
+			AdaptiveNetUIViewer netUIHelper;
+			netUIHelper.BuildAdaptiveCardFromTextFile(&card);
+			peRoot->AddElement(card);
+		}
+	}
 }
 
 /*-----------------------------------------------------------------------------
@@ -3586,6 +3593,9 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			break;
 		case IDM_REFRESH_NETUI:
 			RefreshNetUI();
+			break;
+		case IDM_REFRESH_ADAPTIVECARD:
+			RefreshAdaptiveCard();
 			break;
 		case IDM_VIEWSOURCE:
 		case ID_ACCELVIEWSOURCE:
