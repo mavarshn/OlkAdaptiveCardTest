@@ -79,7 +79,7 @@ namespace NetUI
 /*********************************************************/
 // Added by srikar.
 #include <nuilabel.h>
-#include "..\AdaptiveObjectModel\SharedAdaptiveCard.h"
+#include "..\OlkAdaptiveCardObjectModel\SharedAdaptiveCard.h"
 #include <fstream>
 #include <string>
 #include "AdaptiveColumnSet.h"
