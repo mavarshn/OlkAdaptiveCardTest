@@ -79,7 +79,7 @@ namespace NetUI
 /*********************************************************/
 // Added by srikar.
 #include <nuilabel.h>
-#include "..\AdaptiveCard\SharedAdaptiveCard.h"
+#include "..\AdaptiveObjectModel\SharedAdaptiveCard.h"
 #include <fstream>
 #include <string>
 #include "AdaptiveColumnSet.h"
@@ -2075,9 +2075,12 @@ void RefreshNetUI()
 
 		if (peRoot)
 		{
-			NetUI::AutoDeferBlock adb;
 			std::shared_ptr<AdaptiveColumnSet> spAdaptiveColumnSet = std::make_shared<AdaptiveColumnSet>();
 			spAdaptiveColumnSet->AddColumnSet(peRoot);
+			{
+				NetUI::AutoDeferBlock adb;
+				spAdaptiveColumnSet->LayoutColumnSet(peRoot);
+			}
 		}
 	}
 

@@ -8,7 +8,7 @@
   BUILD: TARGETS: X64
   BUILD: MODE: Generate Headers, Compile, Link
   BUILD: LOG: g:\off2\dev\netui\test\viewer\build.x64.debug.log
-  BUILD: Start time: Tue Jul 25 11:27:21 2017
+  BUILD: Start time: Tue Jul 25 18:39:22 2017
    
   Examining g:\off2\dev\netui\test\viewer 
   BUILD: Processing dependencies...
@@ -18,15 +18,15 @@
   Preprocessing - g:\off2\build\x64\debug\netui\test\viewer\objd\x64\buffer.nuipp
   Preprocessing - g:\off2\build\x64\debug\netui\test\viewer\objd\x64\errorwin.nuipp
   Compiling resources - g:\off2\dev\netui\test\viewer\viewer.rc
-  BUILD: Finish time: Tue Jul 25 11:27:55 2017
+  BUILD: Finish time: Tue Jul 25 18:39:59 2017
   BUILD: Done
   
       5 files compiled - 1 Warning
   
   ------------------------------------------------------------------------------
-  OBUILD: Started  at Tue Jul 25 11:27:21 2017
-  OBUILD: Finished at Tue Jul 25 11:27:58 2017
+  OBUILD: Started  at Tue Jul 25 18:39:22 2017
+  OBUILD: Finished at Tue Jul 25 18:40:02 2017
   
-  OBUILD: Total Time to build was 37 Seconds
+  OBUILD: Total Time to build was 40 Seconds
   ------------------------------------------------------------------------------
   

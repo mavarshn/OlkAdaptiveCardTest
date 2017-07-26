@@ -95,6 +95,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AdaptiveColumnSet.cpp" />
+    <ClCompile Include="AdaptiveLabel.cpp" />
     <ClCompile Include="viewer.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -104,6 +105,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdaptiveColumnSet.h" />
+    <ClInclude Include="AdaptiveLabel.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

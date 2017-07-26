@@ -57,6 +57,7 @@ BUILD_PASS2_CONSUMES= \
     liblet\stringcore\win|PASS1 \
     liblet\sysconfig\win32client|PASS1 \
     netui\platform\dll|PASS1 \
+    netui\test\adaptiveobjectmodel|PASS1 \
     netui\test\core|PASS1 \
     netui\test\flexpackage|PASS1 \
     netui\test\sharedpch|PASS1 \

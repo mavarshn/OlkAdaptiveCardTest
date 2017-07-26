@@ -1,7 +1,7 @@
 LOG: g:\off2\dev\netui\test\viewer\build.x64.debug.log
 BUILD COMMAND: G:\Off2\dev\otools\bin\build.exe  -E -jpath "." -j build.x64.debug  -x64 -Fewig -nmake -K    
 
-Start time: Tue Jul 25 11:27:21 2017
+Start time: Tue Jul 25 18:39:22 2017
 Launching process: tracer.exe  -f:.\build.x64.debug.trc -guid:g:\off2\dev\otools\bin\registered_data.ini -a:"-merge:g:\off2\build\x64\debug\core.build.ldg -reportconfig:g:\off2\dev\otools\bin\dbb_report_config_core.xml" /c:"buildc.exe /hideinfo " /s:localhost:28025
 1>  *************
 1>'tracer.exe  -f:.\build.x64.debug.trc -guid:g:\off2\dev\otools\bin\registered_data.ini -a:"-merge:g:\off2\build\x64\debug\core.build.ldg -reportconfig:g:\off2\dev\otools\bin\dbb_report_config_core.xml" /c:"buildc.exe /hideinfo " /s:localhost:28025'
@@ -14,7 +14,7 @@ Launching process: tracer.exe  -f:.\build.x64.debug.trc -guid:g:\off2\dev\otools
 BUILD: (ActiveWorkLoad)*, ElapsedTime(s),Counter,Available Memory (%),Disk I/O (ms),Disk Usage (%),CPU (%),Previous,New,Last Max,Permitted Threads,Running Threads,WorkItems (Available), WorkItems (Waiting),Pass,Priority,Directory
 BUILD: (TpSubmitQ:ALLOC) PASS:Pass Misc TICK:0
 g:\off2\dev\netui\test\viewer: oacr invalidate :debug_x64 /ignoreunknown
-BUILD: (TpSubmitQ:COMPLETE) PASS:Pass Misc WorkItem:ab6eb550 TICK:0 REFCOUNT:0
+BUILD: (TpSubmitQ:COMPLETE) PASS:Pass Misc WorkItem:b8fcaef0 TICK:0 REFCOUNT:0
 BUILD: Pass complete => PASS0
 1>Compiling g:\off2\dev\netui\test\viewer [100%] *************
 1>'nmake /nologo BUILDMSG=Stop. -K /nologo /f g:\off2\dev\otools\inc\otools\makefile.def BUILD_PASS=PASS1 NOLINK=1 BUILDAPP=netui NETUI=g:\off2\dev\netui PROJROOT=g:\off2\dev\netui MAKEDIR_RELATIVE_TO_BASEDIR=netui\test\viewer'
@@ -26,7 +26,7 @@ BUILD: Pass complete => PASS0
 BUILD: Pass complete => PASS1
 2>Linking for g:\off2\dev\netui\test\viewer [100%] *************
 2>'nmake /nologo BUILDMSG=Stop. -K /nologo /f g:\off2\dev\otools\inc\otools\makefile.def BUILD_PASS=PASS2 LINKONLY=1 NOPASS0=1 BUILDAPP=netui NETUI=g:\off2\dev\netui PROJROOT=g:\off2\dev\netui MAKEDIR_RELATIVE_TO_BASEDIR=netui\test\viewer'
-BUILD: (ActiveWorkLoad)*,3.69,CPU,81,2,0,19,8,0,0,0,0,0,0,PASS2,100,netui\test\viewer
+BUILD: (ActiveWorkLoad)*,1.51,CPU,81,1,1,12,8,0,0,0,0,0,0,PASS2,100,netui\test\viewer
 2> g:\off2\dev\otools\bin\builddirinfogen.exe -o g:\off2\build\x64\debug\netui\test\viewer\objd\x64\_builddirinfo.PASS2.mac
 2> F:\NugetCache\.A\Perl.ActiveState.IaF3FuLkREPZSlZpfZIR9g\bin\perl.exe g:\off2\dev\otools\bin\expandRsp.bat g:\off2\build\x64\debug\netui\test\viewer\objd\x64\link.rsp
 2> g:\off2\dev\otools\bin\oresman.exe -hb -rest g:\off2\build\x64\debug\netui\inc\NUIPlatform.resT -binary g:\off2\build\x64\debug\netui\test\viewer\objd\x64\ostrman.resB
@@ -44,10 +44,10 @@ BUILD: (ActiveWorkLoad)*,3.69,CPU,81,2,0,19,8,0,0,0,0,0,0,PASS2,100,netui\test\v
 2> g:\off2\dev\otools\bin\localgac64.bat g:\off2\dev\otools\bin\oacrlink.exe -out:"G:\Off2\target\x64\debug\netui\x-none\netuiview.exe" -machine:x64 @g:\off2\build\x64\debug\netui\test\viewer\objd\x64\link.rsp
 2>Microsoft (R) Incremental Linker Version 14.10.25017.0
 2>Copyright (C) Microsoft Corporation.  All rights reserved.
-2>IncrPass2: Interval #1, time = 0.719s
+2>IncrPass2: Interval #1, time = 0.797s
 2>  Wait PDB close: Total time = 0.016s
-2>IncrPass2: Interval #2, time = 0.203s
-2>Final: Total time = 0.922s
+2>IncrPass2: Interval #2, time = 0.281s
+2>Final: Total time = 1.078s
 2>Stop.
 BUILD: Pass complete => PASS2
 
@@ -55,14 +55,14 @@ PERF: Set terminate event.
 PERF: terminating perf data collector thread.
 1>PERF: Waiting for performance monitor thread to terminate.
 TP: Threadpool cleanup.
-1>TRACER: Execute time = 34.362s
+1>TRACER: Execute time = 38.262s
 1>TRACER: Disabling trace provider...
 1>TRACER: Stopping Build Trace File Logger 657e7022-3af6-471a-b843-bcad1b95ad31...
 1>Finalizing...
-1>Total Files = 15347
+1>Total Files = 15373
 1>Total Processes = 35
-1>Total Accesses = 35353
-1>Total Process time = 30.438s (Logging time = 0.780s, Detour time = 0.191s)
+1>Total Accesses = 35388
+1>Total Process time = 36.328s (Logging time = 0.785s, Detour time = 0.209s)
 1>TRACER: Launching: "g:\off2\dev\otools\bin\analyzer.exe /in:bin "g:\off2\dev\netui\test\viewer\build.x64.debug.trc"  -merge:g:\off2\build\x64\debug\core.build.ldg -reportconfig:g:\off2\dev\otools\bin\dbb_report_config_core.xml"
 1>Microsoft (R) Build Trace Analyzer [Build 10011]
 1>Copyright (C) Microsoft Corporation. All rights reserved.
@@ -70,42 +70,42 @@ TP: Threadpool cleanup.
 1>Processing g:\off2\dev\otools\bin\dbb_report_baselines_core.xml
 1>Processing g:\off2\dev\otools\bin\dbb_exclusions.xml
 1>Processing g:\off2\dev\netui\test\viewer\build.x64.debug.trc
-1>Trace start time: 07/25/2017 11:27:21 AM
+1>Trace start time: 07/25/2017 06:39:22 PM
 1>Finalizing...
-1>Total Files = 15347
+1>Total Files = 15373
 1>Total Processes = 35
-1>Total Accesses = 35353
-1>Parse time = 0.019s
+1>Total Accesses = 35388
+1>Parse time = 0.018s
 1>Processing g:\off2\build\x64\debug\core.build.ldg
-1>Parse time (g:\off2\build\x64\debug\core.build.ldg) = 0.017s
-1>Merge time = 0.029s
+1>Parse time (g:\off2\build\x64\debug\core.build.ldg) = 0.014s
+1>Merge time = 0.031s
 1>Finalizing...
-1>Total Files = 26151
-1>Total Accesses = 35353
-1>Analysis time = 0.040s
-1>Write time (g:\off2\build\x64\debug\core.build.ldg) = 0.047s
+1>Total Files = 26273
+1>Total Accesses = 35388
+1>Analysis time = 0.041s
+1>Write time (g:\off2\build\x64\debug\core.build.ldg) = 0.048s
 1>Generating reports...
 1>Processing g:\off2\dev\otools\bin\cdg\core.build.x64.debug.cdg
 1>Finalizing...
 1>Total Files = 494322
 1>Report time (copynotouch) = 0.000s
-1>Report time (crossproject) = 0.613s
+1>Report time (crossproject) = 0.606s
 1>Report time (multiwrite) = 0.000s
 1>Report time (readwrite) = 0.000s
 1>Report time (sdxwrite) = 0.001s
-1>Report time (sourcesdep) = 0.004s
-1>Report time = 2.092s
-1>TRACER: Analysis time = 2.417s
+1>Report time (sourcesdep) = 0.001s
+1>Report time = 2.058s
+1>TRACER: Analysis time = 2.343s
 TP: Threadpool cleanup.
-Finish time: Tue Jul 25 11:27:55 2017
+Finish time: Tue Jul 25 18:39:59 2017
 BUILD: Done
 
     5 files compiled - 1 Warning
 
 ------------------------------------------------------------------------------
-OBUILD: Started  at Tue Jul 25 11:27:21 2017
-OBUILD: Finished at Tue Jul 25 11:27:58 2017
+OBUILD: Started  at Tue Jul 25 18:39:22 2017
+OBUILD: Finished at Tue Jul 25 18:40:02 2017
 
-OBUILD: Total Time to build was 37 Seconds
+OBUILD: Total Time to build was 40 Seconds
 ------------------------------------------------------------------------------
 

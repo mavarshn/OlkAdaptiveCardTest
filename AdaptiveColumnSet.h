@@ -5,9 +5,6 @@
 class AdaptiveColumnSet
 {
 public:
-	AdaptiveColumnSet();
-	~AdaptiveColumnSet();
-
 	void AddColumnSet(NetUI::Element* pRootElement);
 	void AddColumn(NetUI::Element* pColumnSet, const std::wstring &label, bool setWrap = false);
 	void LayoutColumnSet(NetUI::Element* pRootElement);

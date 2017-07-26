@@ -117,6 +117,7 @@ SOURCES=\
         viewer.cpp \
         viewer.rc \
         AdaptiveColumnSet.cpp \
+        AdaptiveLabel.cpp \
         $(PP_TARGETS) \
 
 
