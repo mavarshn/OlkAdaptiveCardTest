@@ -80,6 +80,8 @@ namespace NetUI
 // Added by srikar.
 #include "AdaptiveNetUIViewer.h"
 #include "AdaptiveColumnSet.h"
+#include "SharedAdaptiveCard.h"
+#include "AdaptiveCardTestRenderer.h"
 #include "AdaptiveLabel.h"
 
 /*********************************************************/
@@ -172,7 +174,7 @@ void SetParserErrorStatus();
 void SetFlexSmartBitmapTable();
 HRESULT CreateViewerCtxUIUser(IMsoCtxUIUser **ppUser);
 
-std::shared_ptr<AdaptiveColumnSet> m_spAdaptiveColumnSet;
+std::shared_ptr<AdaptiveCardTestRenderer> m_spAdaptiveCardTestRenderer;
 
 /*-----------------------------------------------------------------------------
 	%%Owner:  MikeBor
@@ -2072,12 +2074,12 @@ void RefreshNetUI()
 	if (g_pDocument)
 	{
 		Element *peRoot = g_pDocument->GetRootElement();
-		if (peRoot && m_spAdaptiveColumnSet == nullptr)
+		if (peRoot && m_spAdaptiveCardTestRenderer == nullptr)
 		{
 			AdaptiveLabel::Register();
-			m_spAdaptiveColumnSet = std::make_shared<AdaptiveColumnSet>(peRoot);
-			m_spAdaptiveColumnSet->AddColumnSet();
-			m_spAdaptiveColumnSet->LayoutColumnSet();
+			m_spAdaptiveCardTestRenderer = std::make_shared<AdaptiveCardTestRenderer>(peRoot);
+			m_spAdaptiveCardTestRenderer->AddColumnSet();
+			m_spAdaptiveCardTestRenderer->LayoutColumnSet();
 		}
 	}
 }
