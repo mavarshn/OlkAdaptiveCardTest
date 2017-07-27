@@ -1,6 +1,7 @@
 #pragma once
 
 #include "SharedAdaptiveCard.h"
+#include "nuielement.h"
 #include <fstream>
 #include <string>
 
@@ -10,6 +11,6 @@ public:
 	AdaptiveNetUIViewer();
 	~AdaptiveNetUIViewer();
 
-	HRESULT BuildAdaptiveCardFromTextFile(NetUI::Element ** card);
+	HRESULT AdaptiveNetUIViewer::RenderAdaptiveCardFromTextFile(NetUI::NUIDocument * nuiDocument);
 };
 

@@ -15,8 +15,9 @@ AdaptiveNetUIViewer::~AdaptiveNetUIViewer()
 }
 
 
-HRESULT AdaptiveNetUIViewer::BuildAdaptiveCardFromTextFile(NetUI::Element ** card)
+HRESULT AdaptiveNetUIViewer::RenderAdaptiveCardFromTextFile(NetUI::NUIDocument * nuiDocument)
 {
+	NetUI::Element * card;
 	std::ifstream ifs("card.txt");
 	std::string jsonCard((std::istreambuf_iterator<char>(ifs)),
 		(std::istreambuf_iterator<char>()));
@@ -30,7 +31,12 @@ HRESULT AdaptiveNetUIViewer::BuildAdaptiveCardFromTextFile(NetUI::Element ** car
 		if ((*it)->GetElementType() == AdaptiveCards::CardElementType::TextBlock)
 		{
 			AdaptiveCardNetUIRenderer renderer;
-			return renderer.BuildTextBlock((AdaptiveCards::TextBlock&)(**it), &(*card));
+			HRESULT hr = renderer.BuildTextBlock((AdaptiveCards::TextBlock&)(**it), &card);
+			NetUI::Element *peRoot = nuiDocument->GetRootElement();
+			peRoot->DestroyAllChildren();
+			peRoot->AddElement(card);
+
+			return hr;
 		}
 	}
 
