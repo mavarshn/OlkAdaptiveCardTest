@@ -121,6 +121,7 @@ SOURCES=\
         AdaptiveColumnSet.cpp \
         AdaptiveLabel.cpp \
         AdaptiveCardElementListener.cpp \
+        AdaptiveCardLayoutUtil.cpp \
 		AdaptiveCardNetUIRenderer.cpp \
 		AdaptiveNetUIViewer.cpp \
         $(PP_TARGETS) \

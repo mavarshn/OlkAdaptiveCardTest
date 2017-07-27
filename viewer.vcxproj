@@ -103,6 +103,7 @@ $(BUILDROOT)\x64\debug\outlook\sharedlibs\networkdiagnostics\objd\x64;$(SRCROOT)
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AdaptiveCardElementListener.cpp" />
+    <ClCompile Include="AdaptiveCardLayoutUtil.cpp" />
     <ClCompile Include="AdaptiveCardNetUIRenderer.cpp" />
     <ClCompile Include="AdaptiveCardTestRenderer.cpp" />
     <ClCompile Include="AdaptiveColumnSet.cpp" />
@@ -117,6 +118,7 @@ $(BUILDROOT)\x64\debug\outlook\sharedlibs\networkdiagnostics\objd\x64;$(SRCROOT)
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdaptiveCardElementListener.h" />
+    <ClInclude Include="AdaptiveCardLayoutUtil.h" />
     <ClInclude Include="AdaptiveCardNetUIRenderer.h" />
     <ClInclude Include="AdaptiveCardTestRenderer.h" />
     <ClInclude Include="AdaptiveColumnSet.h" />
