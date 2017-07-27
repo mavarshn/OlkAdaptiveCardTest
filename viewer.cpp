@@ -79,10 +79,11 @@ namespace NetUI
 /*********************************************************/
 // Added by srikar.
 #include <nuilabel.h>
-#include "..\OlkAdaptiveCardObjectModel\SharedAdaptiveCard.h"
+#include "..\AdaptiveObjectModel\SharedAdaptiveCard.h"
 #include <fstream>
 #include <string>
 #include "AdaptiveColumnSet.h"
+#include "AdaptiveLabel.h"
 
 /*********************************************************/
 
@@ -173,6 +174,8 @@ void ReleaseDefaultStyles();
 void SetParserErrorStatus();
 void SetFlexSmartBitmapTable();
 HRESULT CreateViewerCtxUIUser(IMsoCtxUIUser **ppUser);
+
+std::shared_ptr<AdaptiveColumnSet> m_spAdaptiveColumnSet;
 
 /*-----------------------------------------------------------------------------
 	%%Owner:  MikeBor
@@ -2072,15 +2075,12 @@ void RefreshNetUI()
 	if (g_pDocument)
 	{
 		Element *peRoot = g_pDocument->GetRootElement();
-
-		if (peRoot)
+		if (peRoot && m_spAdaptiveColumnSet == nullptr)
 		{
-			std::shared_ptr<AdaptiveColumnSet> spAdaptiveColumnSet = std::make_shared<AdaptiveColumnSet>();
-			spAdaptiveColumnSet->AddColumnSet(peRoot);
-			{
-				NetUI::AutoDeferBlock adb;
-				spAdaptiveColumnSet->LayoutColumnSet(peRoot);
-			}
+			AdaptiveLabel::Register();
+			m_spAdaptiveColumnSet = std::make_shared<AdaptiveColumnSet>(peRoot);
+			m_spAdaptiveColumnSet->AddColumnSet();
+			m_spAdaptiveColumnSet->LayoutColumnSet();
 		}
 	}
 

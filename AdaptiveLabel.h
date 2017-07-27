@@ -14,5 +14,7 @@ public:
 
 	// ClassInfo accessors
 	DEFINE_NETUI_CLASS_INFO;
+
+	void AdjustLayout();
 };
 

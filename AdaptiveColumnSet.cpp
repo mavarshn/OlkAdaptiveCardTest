@@ -8,7 +8,6 @@ using namespace NetUI;
 
 struct layoutParams
 {
-	bool adjustWidth;
 	ULONG totalWidthAvailable;
 	ULONG totalWidthToFit;
 };
@@ -37,15 +36,7 @@ _Callback_ HRESULT NETUI_API UpdateWrap(Element *pe, void*)
 
 	if (pLabel)
 	{
-		bool wrapbool = pLabel->GetWrapText();
-		if (wrapbool)
-		{
-			pLabel->SetTextAlign(CA_WrapLeft | CA_EndEllipsis);
-		}
-		else
-		{
-			pLabel->SetTextAlign(CA_Left | CA_EndEllipsis);
-		}
+		pLabel->AdjustLayout();
 	}
 
 	return NOERROR;
@@ -60,19 +51,19 @@ _Callback_ HRESULT NETUI_API AdjustWidth(Element *pe, void *pv)
 
 	layoutParams* pparams = (layoutParams*) pv;
 
-	if (pparams->adjustWidth && pparams->totalWidthToFit > 0 && pparams->totalWidthAvailable)
-	{
-		ULONG width = pe->GetExtent().cx;
+	ULONG width = pe->GetExtent().cx;
 
+	if (pparams->totalWidthToFit &&
+		pparams->totalWidthAvailable)
+	{
 		if (width > 0)
 		{
-			ULONG targetWidth = width * pparams->totalWidthAvailable / pparams->totalWidthToFit;
-
-			pe->SetWidth(targetWidth);
+			width = width * pparams->totalWidthAvailable / pparams->totalWidthToFit;
 		}
 	}
 
-	pe->ForAllDescendentsOfType(L"Label", UpdateWrap, nullptr);
+	pe->SetWidth(width);
+	pe->ForAllDescendentsOfType(L"AdaptiveLabel", UpdateWrap, nullptr);
 
 	return NOERROR;
 }
@@ -124,9 +115,30 @@ HRESULT ForAllDescendentsWithId(Element* pRoot, LPCWSTR wzClassName, ElementIter
 	return ForAllDescendentsWithAtomId(pRoot, GetSearchAtom(wzClassName), pfnElement, pv);
 }
 
-void AdaptiveColumnSet::AddColumnSet(Element* pRootElement)
+_Callback_ HRESULT NETUI_API UpdateColumnLayout(Element *pe, void *pv)
 {
-	if (pRootElement)
+	Assert(pe != nullptr);
+	Assert(pe->IsElement());
+	if (pe != nullptr && !pe->IsElement())
+		return S_FALSE;
+
+	ULONG totalWidth = 0;
+	ForAllDescendentsWithId(pe, L"Column", FindTotalWidth, &totalWidth);
+
+	ULONG totalAvailableWidth = *(ULONG*)pv;
+	layoutParams params;
+
+	params.totalWidthAvailable = totalAvailableWidth;
+	params.totalWidthToFit = totalWidth;
+
+	ForAllDescendentsWithId(pe, L"Column", AdjustWidth, &params);
+
+	return NOERROR;
+}
+
+void AdaptiveColumnSet::AddColumnSet()
+{
+	if (m_pRootElement)
 	{
 		Element* pe;
 		Element::Create(EC_Normal, &pe);
@@ -134,7 +146,7 @@ void AdaptiveColumnSet::AddColumnSet(Element* pRootElement)
 		pe->SetID(L"columnSet");
 		pe->SetChildrenMargin(10);
 		pe->SetColumns(3);
-		pRootElement->AddElement(pe);
+		m_pRootElement->AddElement(pe);
 
 		AddColumn(pe, L"Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large", true);
 		AddColumn(pe, L"Small Small");
@@ -175,25 +187,33 @@ void AdaptiveColumnSet::AddLabels(Element* pColumn, const std::wstring &label, b
 	}
 }
 
-void AdaptiveColumnSet::LayoutColumnSet(Element* pRootElement)
+void AdaptiveColumnSet::LayoutColumnSet()
+{
+	if (m_pRootElement)
+	{
+		AutoDeferBlock adb;
+		ULONG availableWidth = m_pRootElement->GetExtent().cx;
+		ForAllDescendentsWithId(m_pRootElement, L"columnSet", UpdateColumnLayout, &availableWidth);
+	}
+}
+
+AdaptiveColumnSet::AdaptiveColumnSet(Element* pRootElement): m_pRootElement(pRootElement)
 {
 	if (pRootElement)
 	{
-		Element* pColumnSet = pRootElement->FindDescendentByID(L"columnSet");
-
-		if (pColumnSet)
+		// TODO : remove capturing "this", instead capture weak_ptr
+		m_pAdaptiveCardElementListener = new AdaptiveCardElementListener([this]()
 		{
-			ULONG totalWidth = 0;
-			ForAllDescendentsWithId(pColumnSet, L"Column", FindTotalWidth, &totalWidth);
+			LayoutColumnSet();
+		});
+		pRootElement->AddListener(m_pAdaptiveCardElementListener);
+	}
+}
 
-			ULONG totalAvailableWidth = pRootElement->GetExtent().cx;
-			layoutParams params;
-
-			params.adjustWidth = totalWidth > totalAvailableWidth;
-			params.totalWidthAvailable = totalAvailableWidth;
-			params.totalWidthToFit = totalWidth;
-
-			ForAllDescendentsWithId(pColumnSet, L"Column", AdjustWidth, &params);
-		}
+AdaptiveColumnSet::~AdaptiveColumnSet()
+{
+	if (m_pRootElement && m_pAdaptiveCardElementListener)
+	{
+		m_pRootElement->RemoveListener(m_pAdaptiveCardElementListener);
 	}
 }

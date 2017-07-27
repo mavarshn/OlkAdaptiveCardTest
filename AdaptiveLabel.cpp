@@ -10,6 +10,18 @@ HRESULT AdaptiveLabel::Create(OUT Element** ppElement)
 	CommonElementCreate(AdaptiveLabel, ppElement);
 }
 
+void AdaptiveLabel::AdjustLayout()
+{
+	if (GetWrapText())
+	{
+		SetTextAlign(CA_WrapLeft | CA_EndEllipsis);
+	}
+	else
+	{
+		SetTextAlign(CA_Left | CA_EndEllipsis);
+	}
+}
+
 ////////////////////////////////////////////////////////
 // Property definitions
 ////////////////////////////////////////////////////////
