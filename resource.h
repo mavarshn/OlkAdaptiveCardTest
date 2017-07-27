@@ -113,6 +113,7 @@
 #define IDM_DGB_ADDGALLERYBINDING       32854
 #define IDM_DGB_ADDGALLERYCATBINDING    32855
 #define IDM_REFRESH_NETUI				32856
+#define IDM_REFRESH_ADAPTIVECARD		32857
 #define IDC_STATIC                      -1
 
 // Next default values for new objects

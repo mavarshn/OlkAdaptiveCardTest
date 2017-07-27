@@ -66,6 +66,7 @@ INCLUDES= \
     ..\..\platform\inc;      \
     StyleRes;                \
     $(H_EXPORTSDIR)\..\user; \
+	..\OlkAdaptiveCardObjectModel \
 
 
 # ------------------------------------------------------------------------------
@@ -119,6 +120,7 @@ SOURCES=\
         AdaptiveColumnSet.cpp \
         AdaptiveLabel.cpp \
         AdaptiveCardElementListener.cpp \
+		AdaptiveCardNetUIRenderer.cpp \
         $(PP_TARGETS) \
 
 
