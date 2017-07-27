@@ -1,6 +1,6 @@
 #pragma once
 
-#include "..\OlkAdaptiveCardObjectModel\SharedAdaptiveCard.h"
+#include "SharedAdaptiveCard.h"
 #include <fstream>
 #include <string>
 

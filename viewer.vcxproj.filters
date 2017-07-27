@@ -29,9 +29,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AdaptiveCardElementListener.cpp">
+            <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="AdaptiveNetUIViewer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+        <ClCompile Include="AdaptiveCardNetUIRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -49,6 +52,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AdaptiveNetUIViewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdaptiveCardNetUIRenderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
