@@ -17,8 +17,5 @@ HRESULT AdaptiveCardNetUIRenderer::BuildTextBlock(const AdaptiveCards::TextBlock
 	if (FAILED(hr))
 		return hr;
 
-	std::wstring_convert<std::codecvt_utf8_utf16<wchar_t>> converter;
-	std::wstring wide = converter.from_bytes(textBlock.GetText());
-
-	return (*label)->SetContentString(wide.c_str());
+	return (*label)->SetContentString(textBlock.GetText().c_str());
 }

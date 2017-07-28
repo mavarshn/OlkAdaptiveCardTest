@@ -1,0 +1,75 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "0.5",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "this is textBlock.",
+            "wrap": true                                    
+        },
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large",
+                            "wrap": true                                    
+                        },
+                         {
+                            "type": "TextBlock",
+                            "text": "Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large",
+                            "wrap": true                                    
+                        },
+                         {
+                            "type": "TextBlock",
+                            "text": "Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large Large",
+                            "wrap": true                                    
+                        }
+                        
+                    ],
+                    "size":"auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Small Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Small Small"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Small Small"
+                        }
+                    ],
+                    "size":"auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Medium Medium Medium Medium Medium Medium Medium Medium"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Medium Medium Medium Medium Medium Medium Medium Medium"
+                        },
+                        {
+                            "type": "TextBlock",
+                            "text": "Medium Medium Medium Medium Medium Medium Medium Medium"
+                        }
+                    ],
+                    "size":"auto"
+                }
+            ]
+        }
+    ]
+}

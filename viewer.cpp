@@ -79,6 +79,7 @@ namespace NetUI
 /*********************************************************/
 // Added by srikar.
 #include "AdaptiveNetUIViewer.h"
+#include "AdaptiveColumnSet.h"
 #include "SharedAdaptiveCard.h"
 #include "AdaptiveCardTestRenderer.h"
 #include "AdaptiveLabel.h"
@@ -2087,15 +2088,8 @@ void RefreshAdaptiveCard()
 {
 	if (g_pDocument)
 	{
-		Element *peRoot = g_pDocument->GetRootElement();
-
-		if (peRoot)
-		{
-			Element *card = nullptr;
-			AdaptiveNetUIViewer netUIHelper;
-			netUIHelper.BuildAdaptiveCardFromTextFile(&card);
-			peRoot->AddElement(card);
-		}
+		AdaptiveNetUIViewer netUIHelper;
+		netUIHelper.RenderAdaptiveCardFromTextFile(g_pDocument);
 	}
 }
 

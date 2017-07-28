@@ -19,6 +19,7 @@ BUILD_PASS1_CONSUMES= \
     liblet\uicolor\public|PASS0 \
     msoprep\legacy|PASS0 \
     netui\test\viewer|PASS0 \
+    opensource\cpprestsdk\jsondom\public|PASS0 \
     netui\test\sharedpch|PASS1 \
 
 BUILD_PASS2_CONSUMES= \
@@ -42,6 +43,8 @@ BUILD_PASS2_CONSUMES= \
     liblet\comsec\win32|PASS1 \
     liblet\crash\crashwithrecovery\win|PASS1 \
     liblet\debugassertapi\win|PASS1 \
+    liblet\errorcode\win|PASS1 \
+    liblet\json\win|PASS1 \
     liblet\libletapi\win|PASS1 \
     liblet\loggingapi\emptyimpl\win|PASS1 \
     liblet\loggingapi\simpleimpl\win|PASS1 \
