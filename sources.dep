@@ -65,6 +65,7 @@ BUILD_PASS2_CONSUMES= \
     netui\test\flexpackage|PASS1 \
     netui\test\sharedpch|PASS1 \
     netui\test\viewer|PASS1 \
+    opensource\cpprestsdk\jsondom\win|PASS1 \
     orapi\core\lib\mso\win|PASS1 \
     util\olibc\win32|PASS1 \
     liblet\comsec\win32|PASS2 \

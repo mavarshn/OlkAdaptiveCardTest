@@ -18,11 +18,8 @@ AdaptiveNetUIViewer::~AdaptiveNetUIViewer()
 HRESULT AdaptiveNetUIViewer::RenderAdaptiveCardFromTextFile(NetUI::NUIDocument * nuiDocument)
 {
 	NetUI::Element * card;
-	std::ifstream ifs("card.txt");
-	std::string jsonCard((std::istreambuf_iterator<char>(ifs)),
-		(std::istreambuf_iterator<char>()));
 
-	std::shared_ptr<::AdaptiveCards::AdaptiveCard> sharedAdaptiveCard = ::AdaptiveCards::AdaptiveCard::DeserializeFromString(jsonCard);
+	std::shared_ptr<::AdaptiveCards::AdaptiveCard> sharedAdaptiveCard = ::AdaptiveCards::AdaptiveCard::DeserializeFromFile(L"AdaptiveCard.json");
 
 	std::vector<std::shared_ptr<AdaptiveCards::BaseCardElement>> cardBody = sharedAdaptiveCard->GetBody();
 

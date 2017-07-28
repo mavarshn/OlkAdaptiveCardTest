@@ -34,8 +34,8 @@ TARGETLOBS = $(TARGETLOBS) \
 	$(LIBLET_OPERATORNEWMSOMEMORYTHROW_WIN_LOBS) \
 
 TARGETLIBS=\
-		libs\json.lib \
-		libs\jsondomwin.lib \
+		..\..\..\..\Import\x64\debug\netui\x-none\liblet_json\x-none\lib\json.lib \
+		..\..\..\..\Import\x64\debug\netui\x-none\opensource_cpprestsdk\x-none\lib\jsondomwin.lib \
         $(PROJLIBDIR)\nuitest.lib          \
         $(TARGETLIBDIR)\netui.lib          \
 		$(PROJLIBDIR)\adaptivecard.lib   \
