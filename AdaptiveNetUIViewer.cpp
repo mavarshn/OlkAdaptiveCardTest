@@ -17,7 +17,12 @@ AdaptiveNetUIViewer::~AdaptiveNetUIViewer()
 
 HRESULT AdaptiveNetUIViewer::RenderAdaptiveCardFromTextFile(NetUI::NUIDocument * nuiDocument)
 {
-	std::shared_ptr<::AdaptiveCards::AdaptiveCard> sharedAdaptiveCard = ::AdaptiveCards::AdaptiveCard::DeserializeFromFile(L"AdaptiveCard.json");
+	NetUI::Element * card;
+	std::ifstream ifs("card.txt");
+	std::string jsonCard((std::istreambuf_iterator<char>(ifs)),
+		(std::istreambuf_iterator<char>()));
+
+	std::shared_ptr<::AdaptiveCards::AdaptiveCard> sharedAdaptiveCard = ::AdaptiveCards::AdaptiveCard::DeserializeFromString(jsonCard);
 
 	std::vector<std::shared_ptr<AdaptiveCards::BaseCardElement>> cardBody = sharedAdaptiveCard->GetBody();
 
@@ -26,7 +31,6 @@ HRESULT AdaptiveNetUIViewer::RenderAdaptiveCardFromTextFile(NetUI::NUIDocument *
 		if ((*it)->GetElementType() == AdaptiveCards::CardElementType::TextBlock)
 		{
 			AdaptiveCardNetUIRenderer renderer;
-			NetUI::Element* card;
 			HRESULT hr = renderer.BuildTextBlock((AdaptiveCards::TextBlock&)(**it), &card);
 			NetUI::Element *peRoot = nuiDocument->GetRootElement();
 			peRoot->DestroyAllChildren();
