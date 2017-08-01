@@ -1,14 +1,9 @@
 #include "stdafx.h"
 #include "AdaptiveCardLayoutUtil.h"
 #include "AdaptiveLabel.h"
+#include "AdaptiveColumnSet.h"
 
 using namespace NetUI;
-
-struct layoutParams
-{
-	ULONG totalWidthAvailable;
-	ULONG totalWidthToFit;
-};
 
 _Callback_ HRESULT NETUI_API FindTotalWidth(Element *pe, void *pv)
 {
@@ -23,128 +18,80 @@ _Callback_ HRESULT NETUI_API FindTotalWidth(Element *pe, void *pv)
 	return NOERROR;
 }
 
-_Callback_ HRESULT NETUI_API UpdateWrap(Element *pe, void*)
-{
-	Assert(pe != nullptr);
-	Assert(pe->IsElement());
-	if (pe != nullptr && !pe->IsElement())
-		return S_FALSE;
-
-	AdaptiveLabel* pLabel = nui_control_cast<AdaptiveLabel>(pe);
-
-	if (pLabel)
-	{
-		pLabel->Layout();
-	}
-
-	return NOERROR;
-}
-
-_Callback_ HRESULT NETUI_API AdjustWidth(Element *pe, void *pv)
-{
-	Assert(pe != nullptr);
-	Assert(pe->IsElement());
-	if (pe != nullptr && !pe->IsElement())
-		return S_FALSE;
-
-	layoutParams* pparams = (layoutParams*) pv;
-
-	ULONG width = pe->GetExtent().cx;
-
-	if (pparams->totalWidthToFit &&
-		pparams->totalWidthAvailable)
-	{
-		if (width > 0)
-		{
-			width = width * pparams->totalWidthAvailable / pparams->totalWidthToFit;
-		}
-	}
-
-	pe->SetWidth(width);
-	pe->ForAllDescendentsOfType(L"AdaptiveLabel", UpdateWrap, nullptr);
-
-	return NOERROR;
-}
-
-HRESULT ForAllDescendentsWithAtomId(Element* pRoot, ATOM atomID, ElementIterator pfnElement, void *pv)
-{
-	HRESULT hr;
-
-
-	if (pRoot == nullptr || atomID == 0)
-	{
-		return S_FALSE;
-	}
-
-	// Check this Element
-	if (pRoot->GetID() == atomID)
-	{
-		hr = pfnElement(pRoot, pv);
-		if (FAILED(hr))
-			return hr;
-	}
-	else
-		hr = S_FALSE;
-
-	TreeIterator iter(pRoot);
-
-	for (Element* peChild = iter.FirstElement(); peChild != NULL; peChild = iter.NextElement(peChild))
-	{
-		HRESULT hrChild = ForAllDescendentsWithAtomId(peChild, atomID, pfnElement, pv);
-
-		if (hrChild != S_FALSE)
-			hr = hrChild;
-
-		if (FAILED(hrChild))
-			break;
-	}
-
-	return hr;
-}
-
-HRESULT ForAllDescendentsWithId(Element* pRoot, LPCWSTR wzClassName, ElementIterator pfnElement, void *pv)
+HRESULT ForAllChildrenOfType(Element* pRoot, LPCWSTR wzClassName, ElementIterator pfnElement, void *pv)
 {
 	if (pRoot == nullptr || MsoFEmptyWz(wzClassName))
 	{
 		return S_FALSE;
 	}
 
-	return ForAllDescendentsWithAtomId(pRoot, GetSearchAtom(wzClassName), pfnElement, pv);
-}
+	const IClassInfo *pci = Node::LookupClassInfo(wzClassName);
+	AssertSz(pci != nullptr, "Could not find class info for given class name.");
 
-_Callback_ HRESULT NETUI_API UpdateColumnLayout(Element *pe, void *pv)
-{
-	Assert(pe != nullptr);
-	Assert(pe->IsElement());
-	if (pe != nullptr && !pe->IsElement())
+	if (pci == nullptr)
+	{
 		return S_FALSE;
+	}
 
-	ULONG totalWidth = 0;
-	ForAllDescendentsWithId(pe, L"Column", FindTotalWidth, &totalWidth);
+	TreeIterator iter(pRoot);
 
-	ULONG totalAvailableWidth = *(ULONG*) pv;
-	layoutParams params;
+	for (Element* peChild = iter.FirstElement(); peChild != nullptr; peChild = iter.NextElement(peChild))
+	{
+		AssertSz(peChild != nullptr, "Given child node is null.");
+		AssertSz(peChild->IsElement(), "Given child node is not an element.");
+		if (peChild != nullptr && !peChild->IsElement())
+		{
+			return S_FALSE;
+		}
 
-	params.totalWidthAvailable = totalAvailableWidth;
-	params.totalWidthToFit = totalWidth;
-
-	ForAllDescendentsWithId(pe, L"Column", AdjustWidth, &params);
+		// if child is of given type; call the callback
+		if (peChild->GetIClassInfo()->IsSubclassOf(pci))
+		{
+			(void)pfnElement(peChild, pv);
+		}
+	}
 
 	return NOERROR;
 }
 
-
-std::wstring GetWStringIdFromAtom(ATOM atomId)
+HRESULT LayoutAdaptiveColumnSets(Element* pRoot, ULONG ulWidth)
 {
-	const int MAX_ATOM_LENGTH = 256;
-	WCHAR wzBuffer[MAX_ATOM_LENGTH] = L"";
-	GetAtomNameW(atomId, wzBuffer, MAX_ATOM_LENGTH);
-
-	if (MsoFEmptyWz(wzBuffer))
+	if (pRoot == nullptr)
 	{
-		return std::wstring();
+		return S_FALSE;
 	}
 
-	return std::wstring(wzBuffer);
-}
+	const IClassInfo *pci = Node::LookupClassInfo(L"AdaptiveColumnSet");
+	AssertSz(pci != nullptr, "Could not find class info for given class name.");
 
+	if (pci == nullptr)
+	{
+		return S_FALSE;
+	}
+
+	TreeIterator iter(pRoot);
+
+	for (Element* peChild = iter.FirstElement(); peChild != nullptr; peChild = iter.NextElement(peChild))
+	{
+		AssertSz(peChild != nullptr, "Given child node is null.");
+		AssertSz(peChild->IsElement(), "Given child node is not an element.");
+		if (peChild != nullptr && !peChild->IsElement())
+		{
+			return S_FALSE;
+		}
+
+		// if child is AdaptiveColumnSet type, layout
+		// else try finding columns set in subtree rooted at peChild
+		if (peChild->GetIClassInfo()->IsSubclassOf(pci))
+		{
+			AdaptiveColumnSet* pAdaptiveColumnSet = (AdaptiveColumnSet*) peChild;
+			pAdaptiveColumnSet->Layout(ulWidth);
+		}
+		else
+		{
+			LayoutAdaptiveColumnSets(peChild, ulWidth);
+		}
+	}
+
+	return NOERROR;
+}

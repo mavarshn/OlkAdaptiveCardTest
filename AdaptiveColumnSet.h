@@ -16,7 +16,7 @@ public:
 	DEFINE_NETUI_CLASS_INFO;
 
 	void Populate(const std::shared_ptr<ColumnSet>& spColumnSet);
-	void Layout();
+	void Layout(ULONG ulWidth);
 
 private:
 	std::shared_ptr<ColumnSet> m_spColumnSet;

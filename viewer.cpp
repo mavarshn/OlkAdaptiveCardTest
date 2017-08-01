@@ -2086,8 +2086,7 @@ void RefreshNetUI()
 			}
 			
 			m_spAdaptiveCardTestRenderer->AddColumnSet();
-			m_spAdaptiveCardTestRenderer->TestTreeTraversal();
-			m_spAdaptiveCardTestRenderer->LayoutColumnSet();
+			m_spAdaptiveCardTestRenderer->Layout();
 		}
 	}
 }
