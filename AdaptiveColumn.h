@@ -2,12 +2,12 @@
 
 #include <nuielement.h>
 #include <nuivalue.h>
-#include "ColumnSet.h"
+#include "Column.h"
 
 using namespace NetUI;
 using namespace AdaptiveCards;
 
-class AdaptiveColumnSet : public Element
+class AdaptiveColumn : public Element
 {
 public:
 	static HRESULT NETUI_API Create(OUT Element** ppElement);
@@ -15,9 +15,9 @@ public:
 	// ClassInfo accessors
 	DEFINE_NETUI_CLASS_INFO;
 
-	void Populate(const std::shared_ptr<ColumnSet>& spColumnSet);
+	void Populate(const std::shared_ptr<Column>& spColumn);
 	void Layout();
 
 private:
-	std::shared_ptr<ColumnSet> m_spColumnSet;
+	std::shared_ptr<Column> m_spColumn;
 };

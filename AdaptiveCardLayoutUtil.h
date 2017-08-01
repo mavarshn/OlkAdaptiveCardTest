@@ -13,3 +13,4 @@ HRESULT ForAllDescendentsWithId(Element* pRoot, LPCWSTR wzClassName, ElementIter
 
 _Callback_ HRESULT NETUI_API UpdateColumnLayout(Element *pe, void *pv);
 
+std::wstring GetWStringIdFromAtom(ATOM atomId);

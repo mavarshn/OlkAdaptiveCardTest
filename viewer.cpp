@@ -83,6 +83,7 @@ namespace NetUI
 #include "SharedAdaptiveCard.h"
 #include "AdaptiveCardTestRenderer.h"
 #include "AdaptiveLabel.h"
+#include "AdaptiveColumn.h"
 
 /*********************************************************/
 
@@ -2074,11 +2075,18 @@ void RefreshNetUI()
 	if (g_pDocument)
 	{
 		Element *peRoot = g_pDocument->GetRootElement();
-		if (peRoot && m_spAdaptiveCardTestRenderer == nullptr)
+		if (peRoot)
 		{
-			AdaptiveLabel::Register();
-			m_spAdaptiveCardTestRenderer = std::make_shared<AdaptiveCardTestRenderer>(peRoot);
+			if (m_spAdaptiveCardTestRenderer == nullptr)
+			{
+				AdaptiveLabel::Register();
+				AdaptiveColumn::Register();
+				AdaptiveColumnSet::Register();
+				m_spAdaptiveCardTestRenderer = std::make_shared<AdaptiveCardTestRenderer>(peRoot);
+			}
+			
 			m_spAdaptiveCardTestRenderer->AddColumnSet();
+			m_spAdaptiveCardTestRenderer->TestTreeTraversal();
 			m_spAdaptiveCardTestRenderer->LayoutColumnSet();
 		}
 	}

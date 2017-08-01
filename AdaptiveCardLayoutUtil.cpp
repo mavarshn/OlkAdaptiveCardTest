@@ -34,7 +34,7 @@ _Callback_ HRESULT NETUI_API UpdateWrap(Element *pe, void*)
 
 	if (pLabel)
 	{
-		pLabel->AdjustLayout();
+		pLabel->Layout();
 	}
 
 	return NOERROR;
@@ -132,3 +132,19 @@ _Callback_ HRESULT NETUI_API UpdateColumnLayout(Element *pe, void *pv)
 
 	return NOERROR;
 }
+
+
+std::wstring GetWStringIdFromAtom(ATOM atomId)
+{
+	const int MAX_ATOM_LENGTH = 256;
+	WCHAR wzBuffer[MAX_ATOM_LENGTH] = L"";
+	GetAtomNameW(atomId, wzBuffer, MAX_ATOM_LENGTH);
+
+	if (MsoFEmptyWz(wzBuffer))
+	{
+		return std::wstring();
+	}
+
+	return std::wstring(wzBuffer);
+}
+

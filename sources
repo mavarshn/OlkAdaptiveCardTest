@@ -120,6 +120,7 @@ SOURCES=\
         viewer.cpp \
         viewer.rc \
         AdaptiveCardTestRenderer.cpp \
+        AdaptiveColumn.cpp \
         AdaptiveColumnSet.cpp \
         AdaptiveLabel.cpp \
         AdaptiveCardElementListener.cpp \

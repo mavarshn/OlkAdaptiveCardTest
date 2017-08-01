@@ -40,6 +40,7 @@ BUILD_PASS2_CONSUMES= \
     netui\platform\ui\winuia\public|PASS0 \
     netui\platform\util\public|PASS0 \
     netui\test\viewer|PASS0 \
+    opensource\cpprestsdk\jsondom\public|PASS0 \
     liblet\comsec\win32|PASS1 \
     liblet\crash\crashwithrecovery\win|PASS1 \
     liblet\debugassertapi\win|PASS1 \
