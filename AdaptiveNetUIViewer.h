@@ -8,9 +8,6 @@
 class AdaptiveNetUIViewer
 {
 public:
-	AdaptiveNetUIViewer();
-	~AdaptiveNetUIViewer();
-
 	HRESULT AdaptiveNetUIViewer::RenderAdaptiveCardFromTextFile(NetUI::NUIDocument * nuiDocument);
 };
 

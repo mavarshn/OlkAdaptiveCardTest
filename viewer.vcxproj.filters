@@ -37,9 +37,6 @@
     <ClCompile Include="AdaptiveCardNetUIRenderer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AdaptiveCardTestRenderer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="AdaptiveCardLayoutUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -64,9 +61,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AdaptiveCardNetUIRenderer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AdaptiveCardTestRenderer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="AdaptiveCardLayoutUtil.h">

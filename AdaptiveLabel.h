@@ -2,6 +2,7 @@
 
 #include <nuielement.h>
 #include <nuivalue.h>
+#include "BaseCardElement.h"
 #include "TextBlock.h"
 
 using namespace NetUI;
@@ -15,7 +16,8 @@ public:
 	// ClassInfo accessors
 	DEFINE_NETUI_CLASS_INFO;
 
-	void Populate(const std::shared_ptr<TextBlock>& spTextBlock);
+	void Load(const std::shared_ptr<BaseCardElement>& spTextBlock);
+
 	void Layout();
 
 private:

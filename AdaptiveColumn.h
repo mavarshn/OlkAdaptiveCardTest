@@ -2,6 +2,7 @@
 
 #include <nuielement.h>
 #include <nuivalue.h>
+#include "BaseCardElement.h"
 #include "Column.h"
 
 using namespace NetUI;
@@ -15,7 +16,7 @@ public:
 	// ClassInfo accessors
 	DEFINE_NETUI_CLASS_INFO;
 
-	void Populate(const std::shared_ptr<Column>& spColumn);
+	void Load(const std::shared_ptr<BaseCardElement>& spColumn);
 	void Layout(ULONG ulWidth);
 
 private:

@@ -119,7 +119,6 @@ viewer.rc : $(VIEWER_RC_DEPENDENTS)
 SOURCES=\
         viewer.cpp \
         viewer.rc \
-        AdaptiveCardTestRenderer.cpp \
         AdaptiveColumn.cpp \
         AdaptiveColumnSet.cpp \
         AdaptiveLabel.cpp \

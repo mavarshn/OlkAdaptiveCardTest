@@ -10,13 +10,14 @@ HRESULT AdaptiveLabel::Create(OUT Element** ppElement)
 	CommonElementCreate(AdaptiveLabel, ppElement);
 }
 
-void AdaptiveLabel::Populate(const std::shared_ptr<TextBlock>& spTextBlock)
+void AdaptiveLabel::Load(const std::shared_ptr<BaseCardElement>& spTextBlock)
 {
-	m_spTextBlock = spTextBlock;
+	m_spTextBlock = std::static_pointer_cast<TextBlock>(spTextBlock);
 
 	this->SetTextAlign(CA_Left);
 	this->SetExpandToFillHoriz(true);
-	this->SetTextString(spTextBlock->GetText().c_str());
+	this->SetExpandToFillVert(false);
+	this->SetTextString(m_spTextBlock->GetText().c_str());
 }
 
 void AdaptiveLabel::Layout()

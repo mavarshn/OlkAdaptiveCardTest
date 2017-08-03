@@ -10,20 +10,6 @@
 using namespace AdaptiveCards;
 using namespace NetUI;
 
-_Callback_ HRESULT NETUI_API LayoutAdaptiveLabel(Element *pe, void *)
-{
-	Assert(pe != nullptr);
-	Assert(pe->IsElement());
-	if (pe != nullptr && !pe->IsElement())
-		return S_FALSE;
-
-	AdaptiveLabel* pAdaptiveLabel = (AdaptiveLabel*) pe;
-	
-	pAdaptiveLabel->Layout();
-
-	return NOERROR;
-}
-
 void AdaptiveCardTestRenderer::AddColumnSet()
 {
 	if (m_pRootElement)
@@ -40,7 +26,7 @@ void AdaptiveCardTestRenderer::AddColumnSet()
 				pc = (AdaptiveColumnSet*) pe;
 
 				m_pRootElement->AddElement(pc);
-				pc->Populate(std::static_pointer_cast<ColumnSet>(spElement));
+				pc->Load(std::static_pointer_cast<ColumnSet>(spElement));
 			}
 		}
 	}

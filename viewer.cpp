@@ -79,11 +79,6 @@ namespace NetUI
 /*********************************************************/
 // Added by srikar.
 #include "AdaptiveNetUIViewer.h"
-#include "AdaptiveColumnSet.h"
-#include "SharedAdaptiveCard.h"
-#include "AdaptiveCardTestRenderer.h"
-#include "AdaptiveLabel.h"
-#include "AdaptiveColumn.h"
 
 /*********************************************************/
 
@@ -174,8 +169,6 @@ void ReleaseDefaultStyles();
 void SetParserErrorStatus();
 void SetFlexSmartBitmapTable();
 HRESULT CreateViewerCtxUIUser(IMsoCtxUIUser **ppUser);
-
-std::shared_ptr<AdaptiveCardTestRenderer> m_spAdaptiveCardTestRenderer;
 
 /*-----------------------------------------------------------------------------
 	%%Owner:  MikeBor
@@ -2070,27 +2063,6 @@ void RefreshFile()
 		pElem->SetKeyFocus(ESCR_OTHER, false/*fSetWindowFocus*/);
 }
 
-void RefreshNetUI()
-{
-	if (g_pDocument)
-	{
-		Element *peRoot = g_pDocument->GetRootElement();
-		if (peRoot)
-		{
-			if (m_spAdaptiveCardTestRenderer == nullptr)
-			{
-				AdaptiveLabel::Register();
-				AdaptiveColumn::Register();
-				AdaptiveColumnSet::Register();
-				m_spAdaptiveCardTestRenderer = std::make_shared<AdaptiveCardTestRenderer>(peRoot);
-			}
-			
-			m_spAdaptiveCardTestRenderer->AddColumnSet();
-			m_spAdaptiveCardTestRenderer->Layout();
-		}
-	}
-}
-
 void RefreshAdaptiveCard()
 {
 	if (g_pDocument)
@@ -3592,9 +3564,6 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 			}
 		case ID_ACCELREFRESH:
 			RefreshFile();
-			break;
-		case IDM_REFRESH_NETUI:
-			RefreshNetUI();
 			break;
 		case IDM_REFRESH_ADAPTIVECARD:
 			RefreshAdaptiveCard();

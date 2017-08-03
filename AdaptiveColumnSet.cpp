@@ -2,8 +2,10 @@
 #include "AdaptiveColumnSet.h"
 #include "AdaptiveColumn.h"
 #include "AdaptiveCardLayoutUtil.h"
+#include "AdaptiveCardNetUIRenderer.h"
 
 using namespace NetUI;
+using namespace AdaptiveCards;
 DEFINE_DEFAULT_VALUES;  // ValueStatics
 
 struct layoutParams
@@ -43,24 +45,19 @@ HRESULT AdaptiveColumnSet::Create(OUT Element** ppElement)
 	CommonElementCreate(AdaptiveColumnSet, ppElement);
 }
 
-void AdaptiveColumnSet::Populate(const std::shared_ptr<ColumnSet>& spColumnSet)
+void AdaptiveColumnSet::Load(const std::shared_ptr<BaseCardElement>& spColumnSet)
 {
-	m_spColumnSet = spColumnSet;
+	m_spColumnSet = std::static_pointer_cast<ColumnSet>(spColumnSet);;
 
 	this->SetLayout(DLT_Horiz);
-	this->SetChildrenMargin(10);
 	this->SetExpandToFillVert(false);
 	this->SetBorderThickness(1,1,1,1);
 
-	for (auto & spColumn : spColumnSet->GetColumns())
+	for (auto & spColumn : m_spColumnSet->GetColumns())
 	{
 		Element* pe;
-		AdaptiveColumn* pc;
-		AdaptiveColumn::Create(&pe);
-		pc = (AdaptiveColumn*) pe;
-
-		this->AddElement(pc);
-		pc->Populate(spColumn);
+		AdaptiveCardNetUIRenderer::HrCreateAdaptiveElement(spColumn, &pe);
+		this->AddElement(pe);
 	}
 }
 

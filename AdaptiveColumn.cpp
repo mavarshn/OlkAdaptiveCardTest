@@ -1,8 +1,7 @@
 #include "stdafx.h"
 #include "AdaptiveColumn.h"
-#include "AdaptiveLabel.h"
-#include "AdaptiveColumnSet.h"
 #include "AdaptiveCardLayoutUtil.h"
+#include "AdaptiveCardNetUIRenderer.h"
 
 using namespace NetUI;
 DEFINE_DEFAULT_VALUES;  // ValueStatics
@@ -12,37 +11,19 @@ HRESULT AdaptiveColumn::Create(OUT Element** ppElement)
 	CommonElementCreate(AdaptiveColumn, ppElement);
 }
 
-void AdaptiveColumn::Populate(const std::shared_ptr<Column>& spColumn)
+void AdaptiveColumn::Load(const std::shared_ptr<BaseCardElement>& spColumn)
 {
-	m_spColumn = spColumn;
+	m_spColumn = std::static_pointer_cast<Column>(spColumn);
 
 	this->SetLayout(DLT_Vert);
 	this->SetChildrenMargin(10);
 	this->SetBorderThickness(1, 1, 1, 1);
 
-	for (auto & spItem : spColumn->GetItems())
+	for (auto & spItem : m_spColumn->GetItems())
 	{
-		if (spItem->GetElementType() == CardElementType::TextBlock)
-		{
-			Element* pe;
-			AdaptiveLabel* pl;
-			AdaptiveLabel::Create(&pe);
-			pl = (AdaptiveLabel*) pe;
-
-			this->AddElement(pl);
-			pl->Populate(std::static_pointer_cast<TextBlock> (spItem));
-		}
-
-		if (spItem->GetElementType() == CardElementType::ColumnSet)
-		{
-			Element* pe;
-			AdaptiveColumnSet* pcs;
-			AdaptiveColumnSet::Create(&pe);
-			pcs = (AdaptiveColumnSet*) pe;
-
-			this->AddElement(pcs);
-			pcs->Populate(std::static_pointer_cast<ColumnSet>(spItem));
-		}
+		Element* pe;
+		AdaptiveCardNetUIRenderer::HrCreateAdaptiveElement(spItem, &pe);
+		this->AddElement(pe);
 	}
 }
 
