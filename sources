@@ -117,15 +117,17 @@ VIEWER_RC_DEPENDENTS = \
 viewer.rc : $(VIEWER_RC_DEPENDENTS)
 
 SOURCES=\
-        viewer.cpp \
-        viewer.rc \
-        AdaptiveColumn.cpp \
-        AdaptiveColumnSet.cpp \
-        AdaptiveLabel.cpp \
         AdaptiveCardElementListener.cpp \
         AdaptiveCardLayoutUtil.cpp \
 		AdaptiveCardNetUIRenderer.cpp \
+		AdaptiveColumn.cpp \
+        AdaptiveColumnSet.cpp \
+        AdaptiveContainer.cpp \
+        AdaptiveFactSet.cpp \
+		AdaptiveLabel.cpp \
 		AdaptiveNetUIViewer.cpp \
+		viewer.cpp \
+        viewer.rc \
         $(PP_TARGETS) \
 
 

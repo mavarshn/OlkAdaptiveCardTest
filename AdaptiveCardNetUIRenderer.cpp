@@ -3,6 +3,8 @@
 #include "AdaptiveLabel.h"
 #include "AdaptiveColumn.h"
 #include "AdaptiveColumnSet.h"
+#include "AdaptiveContainer.h"
+#include "AdaptiveFactSet.h"
 #include <codecvt>
 
 using namespace NetUI;
@@ -47,6 +49,22 @@ HRESULT AdaptiveCardNetUIRenderer::HrCreateAdaptiveElement(const std::shared_ptr
 			AdaptiveColumn* pAdaptiveColumn;
 			hr = HrCreateAdaptiveElement(&pAdaptiveColumn, spCardElement);
 			*ppElement = pAdaptiveColumn;
+			break;
+		}
+
+		case CardElementType::Container:
+		{
+			AdaptiveContainer* pAdaptiveContainer;
+			hr = HrCreateAdaptiveElement(&pAdaptiveContainer, spCardElement);
+			*ppElement = pAdaptiveContainer;
+			break;
+		}
+
+		case CardElementType::FactSet:
+		{
+			AdaptiveFactSet* pAdaptiveFactSet;
+			hr = HrCreateAdaptiveElement(&pAdaptiveFactSet, spCardElement);
+			*ppElement = pAdaptiveFactSet;
 			break;
 		}
 

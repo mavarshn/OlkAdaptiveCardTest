@@ -107,6 +107,8 @@ $(BUILDROOT)\x64\debug\outlook\sharedlibs\networkdiagnostics\objd\x64;$(SRCROOT)
     <ClCompile Include="AdaptiveCardNetUIRenderer.cpp" />
     <ClCompile Include="AdaptiveColumn.cpp" />
     <ClCompile Include="AdaptiveColumnSet.cpp" />
+    <ClCompile Include="AdaptiveContainer.cpp" />
+    <ClCompile Include="AdaptiveFactSet.cpp" />
     <ClCompile Include="AdaptiveLabel.cpp" />
     <ClCompile Include="AdaptiveNetUIViewer.cpp" />
     <ClCompile Include="viewer.cpp" />
@@ -122,6 +124,8 @@ $(BUILDROOT)\x64\debug\outlook\sharedlibs\networkdiagnostics\objd\x64;$(SRCROOT)
     <ClInclude Include="AdaptiveCardNetUIRenderer.h" />
     <ClInclude Include="AdaptiveColumn.h" />
     <ClInclude Include="AdaptiveColumnSet.h" />
+    <ClInclude Include="AdaptiveContainer.h" />
+    <ClInclude Include="AdaptiveFactSet.h" />
     <ClInclude Include="AdaptiveLabel.h" />
     <ClInclude Include="AdaptiveNetUIViewer.h" />
     <ClInclude Include="resource.h" />
