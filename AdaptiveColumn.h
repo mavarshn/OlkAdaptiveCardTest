@@ -13,7 +13,7 @@ class AdaptiveColumn : public Element
 public:
 	static HRESULT NETUI_API Create(OUT Element** ppElement);
 
-	// ClassInfo accessors
+	// ClassInfo accessors 
 	DEFINE_NETUI_CLASS_INFO;
 
 	void Load(const std::shared_ptr<BaseCardElement>& spColumn);
